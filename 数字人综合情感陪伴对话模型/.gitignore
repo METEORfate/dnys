@@ -1,0 +1,14 @@
+# training data
+participant/training/data/*.jsonl
+
+# model weights
+participant/model/
+
+# training output
+participant/training/output/
+
+# checkpoints
+checkpoint/
+checkpoints/
+*.safetensors
+*.bin
