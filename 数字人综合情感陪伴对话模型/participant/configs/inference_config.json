@@ -1,6 +1,6 @@
 {
-  "backend": "transformers",
-  "model_path": "./model",
+  "backend": "openai_compatible",
+  "model_path": "./model/Qwen2___5-7B-Instruct",
   "trust_remote_code": false,
   "device_map": "auto",
   "torch_dtype": "auto",
@@ -16,5 +16,5 @@
     "top_p": 1.0
   },
   "performance_rounds": 100,
-  "hardware_label": "fill-in-before-official-run"
+  "hardware_label": "4090*2"
 }
