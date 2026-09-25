@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Training generated files
+training/data/*.jsonl
+training/data/*.json
+
+# Model files
+*.safetensors
+*.bin
