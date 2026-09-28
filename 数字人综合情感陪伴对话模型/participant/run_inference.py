@@ -11,6 +11,7 @@ import json
 import os
 import re
 import statistics
+import sys
 import time
 import urllib.error
 import urllib.request
@@ -21,30 +22,12 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = ROOT / "configs" / "inference_config.json"
-EMOTIONS = {
-    "joy", "gratitude", "relaxed", "care", "pride", "neutral", "surprise",
-    "mixed", "sadness", "loneliness", "anxiety", "anger", "fear", "disgust",
-    "shame", "helplessness",
-}
-PROFILE_LABELS = {
-    "personality_traits": {"extroverted", "introverted", "open", "conservative", "high_conscientiousness", "casual", "agreeable", "assertive", "emotionally_stable", "sensitive"},
-    "interests": {"study_exam", "programming_technology", "reading_writing", "film_animation", "music", "games", "sports_fitness", "travel_outdoor", "pets", "social", "career_development", "art_design"},
-    "style": {"brief", "detailed", "colloquial", "formal", "direct", "indirect", "humorous", "rational", "high_emotional_expression", "low_emotional_expression", "emoji_user"},
-}
-MEMORY_RE = re.compile(r"^mem_[0-9]{6}$")
-SYSTEM_PROMPT = """你正在参加数字情感陪伴比赛。根据截止到最新用户消息的对话历史，完成下一轮 Assistant 回复预测。
-
-只输出一个 JSON object，不要输出 Markdown 或解释。object 必须且只能包含：
-- response_text: 非空中文回复，应自然、贴合上下文和用户偏好；
-- emotion_label: 最新用户消息的情绪，只能从 {emotions} 中选择；
-- user_profile: object，包含 personality_traits、interests、style 三个字符串数组；
-- memory_refs: 固定输出 []，因为测试集没有公开 memory bank。
-
-画像标签只能使用以下枚举；没有充分证据时宁可输出空数组：
-personality_traits: {personality}
-interests: {interests}
-style: {styles}
-"""
+PROJECT_ROOT = ROOT.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from core.message_builder import build_messages
+from core.output_schema import EMOTIONS, MEMORY_RE, PROFILE_LABELS, parse_prediction
+from core.prompt_loader import load_system_prompt
 
 
 def parse_args() -> argparse.Namespace:
@@ -226,93 +209,7 @@ def request_chat_completion(
 
 
 def conversation_text(sample: dict[str, Any]) -> str:
-    rendered = []
-    for turn in sample["history"]:
-        if not isinstance(turn, dict) or turn.get("role") not in {"user", "assistant"} or not isinstance(turn.get("content"), str):
-            raise ValueError(f"样本 {sample['id']} 的 history 格式无效")
-        rendered.append(f"{turn['role']}: {turn['content']}")
-    return "样本 ID: " + sample["id"] + "\n对话历史:\n" + "\n".join(rendered)
-
-
-def extract_object(text: str) -> dict[str, Any]:
-    text = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
-    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, flags=re.S | re.I)
-    candidate = fenced.group(1) if fenced else text
-    decoder = json.JSONDecoder()
-    for match in re.finditer(r"\{", candidate):
-        try:
-            value, _ = decoder.raw_decode(candidate[match.start():])
-        except json.JSONDecodeError:
-            continue
-        if isinstance(value, dict):
-            return value
-    raise ValueError("模型输出中没有可解析的 JSON object")
-
-
-def recover_response_text(text: str) -> str:
-    """Preserve useful model text when its surrounding JSON is malformed."""
-    cleaned = re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
-    cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", cleaned, flags=re.I).strip()
-    match = re.search(
-        r'"response_text"\s*:\s*"((?:\\.|[^"\\])*)',
-        cleaned,
-        flags=re.S,
-    )
-    if match:
-        try:
-            recovered = json.loads(f'"{match.group(1)}"')
-            if isinstance(recovered, str):
-                return recovered.strip()
-        except json.JSONDecodeError:
-            pass
-    return cleaned
-
-
-def normalize_prediction(sample_id: str, raw: dict[str, Any]) -> dict[str, Any]:
-    response = raw.get("response_text")
-    emotion = raw.get("emotion_label")
-    profile = raw.get("user_profile")
-    memories = raw.get("memory_refs")
-    clean_response = response.strip() if isinstance(response, str) else ""
-    clean_emotion = emotion if isinstance(emotion, str) and emotion in EMOTIONS else ""
-    profile = profile if isinstance(profile, dict) else {}
-    clean_profile: dict[str, list[str]] = {}
-    for name, allowed in PROFILE_LABELS.items():
-        values = profile.get(name)
-        valid = (
-            isinstance(values, list)
-            and all(isinstance(value, str) for value in values)
-            and len(values) == len(set(values))
-            and set(values) <= allowed
-        )
-        clean_profile[name] = values if valid else []
-    valid_memories = (
-        isinstance(memories, list)
-        and all(isinstance(value, str) and MEMORY_RE.fullmatch(value) for value in memories)
-        and len(memories) == len(set(memories))
-    )
-    return {
-        "id": sample_id,
-        "response_text": clean_response,
-        "emotion_label": clean_emotion,
-        "user_profile": clean_profile,
-        "memory_refs": memories if valid_memories else [],
-    }
-
-
-def parse_prediction(sample_id: str, decoded: str) -> tuple[dict[str, Any], bool]:
-    try:
-        raw_prediction = extract_object(decoded)
-        parse_failed = False
-    except ValueError:
-        raw_prediction = {
-            "response_text": recover_response_text(decoded),
-            "emotion_label": "",
-            "user_profile": {},
-            "memory_refs": [],
-        }
-        parse_failed = True
-    return normalize_prediction(sample_id, raw_prediction), parse_failed
+    return build_messages(sample)[1]["content"]
 
 
 def synchronize(torch_module: Any) -> None:
@@ -401,15 +298,10 @@ def main() -> None:
     parse_failure_ids: list[str] = []
     generation = dict(config["generation"])
 
-    system_prompt = SYSTEM_PROMPT.format(
-        emotions=", ".join(EMOTIONS),
-        personality=", ".join(sorted(PROFILE_LABELS["personality_traits"])),
-        interests=", ".join(sorted(PROFILE_LABELS["interests"])),
-        styles=", ".join(sorted(PROFILE_LABELS["style"])),
-    )
+    system_prompt = load_system_prompt()
 
     for index, sample in enumerate(samples, 1):
-        messages = [{"role": "system", "content": system_prompt}, {"role": "user", "content": conversation_text(sample)}]
+        messages = build_messages(sample)
         if backend == "transformers":
             prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
             synchronize(torch)

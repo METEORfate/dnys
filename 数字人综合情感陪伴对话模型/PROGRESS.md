@@ -199,3 +199,6 @@ fixed []
 当前阶段：
 architecture refactor preparation
 
+
+2026-09-28: Completed competition runtime architecture alignment. Added core prompt/message/schema modules; participant, preprocess, evaluator now use shared runtime. Rebuilt train=18657 and val=2354 SFT data; alignment passed. Commit pending. See sanlogs/log_20260928_192931_local.md.
+

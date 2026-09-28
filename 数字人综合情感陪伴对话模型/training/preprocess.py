@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from collections import Counter
 from itertools import islice
 from pathlib import Path
@@ -13,12 +14,9 @@ from typing import Any, Iterator
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SYSTEM_PROMPT = (
-    "你是中文情感陪伴助手。根据截止到当前用户消息的对话历史，预测下一轮回复。"
-    "只输出一个 JSON object，不要输出 Markdown 或解释。"
-    "JSON 必须包含 response_text、emotion_label、user_profile、memory_refs。"
-    "user_profile 必须包含 personality_traits、interests、style 三个字符串数组。"
-)
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from core.message_builder import build_messages_from_turns
 
 
 def env_bool(name: str, default: bool) -> bool:
@@ -106,11 +104,13 @@ def build_samples(row: dict[str, Any], enable_memory_refs: bool) -> Iterator[dic
         if not isinstance(target["user_profile"], dict) or not isinstance(target["memory_refs"], list):
             raise ValueError(f"{conversation_id}: 画像或记忆引用类型无效")
 
-        # Use turn_id values, never array positions. Strictly exclude the target user
-        # turn and every turn after the labelled assistant response.
+        # Use turn_id values, never array positions. Include the target user and
+        # explicitly remove the labelled assistant response. This also handles
+        # the four malformed train points whose response_id precedes user_id
+        # without leaking the labelled assistant or future turns.
         history = [
             turn for turn in ordered_turns
-            if turn["turn_id"] < target_id and turn["turn_id"] <= response_id
+            if turn["turn_id"] <= target_id and turn["turn_id"] != response_id
         ]
         user_content = "对话历史:\n" + "\n".join(
             f"{turn['role']}: {turn['content']}" for turn in history
@@ -121,13 +121,9 @@ def build_samples(row: dict[str, Any], enable_memory_refs: bool) -> Iterator[dic
             "user_profile": target["user_profile"],
             "memory_refs": target["memory_refs"] if enable_memory_refs else [],
         }
-        yield {
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_content},
-                {"role": "assistant", "content": json.dumps(answer, ensure_ascii=False, separators=(",", ":"))},
-            ]
-        }
+        messages = build_messages_from_turns(history)
+        messages.append({"role": "assistant", "content": json.dumps(answer, ensure_ascii=False, separators=(",", ":"))})
+        yield {"messages": messages}
 
 
 def convert(input_path: Path, output_path: Path, enable_memory_refs: bool) -> dict[str, Any]:
