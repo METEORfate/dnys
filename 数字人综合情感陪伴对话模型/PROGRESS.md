@@ -202,3 +202,6 @@ architecture refactor preparation
 
 2026-09-28: Completed competition runtime architecture alignment. Added core prompt/message/schema modules; participant, preprocess, evaluator now use shared runtime. Rebuilt train=18657 and val=2354 SFT data; alignment passed. Commit pending. See sanlogs/log_20260928_192931_local.md.
 
+
+2026-10-01: Competition Runtime LoRA integration prepared. participant/start.sh now requires participant/model/lora_adapter and starts vLLM with emotion-companion-lora. Commit pending. See sanlogs/log_20261001_182928_local.md.
+
