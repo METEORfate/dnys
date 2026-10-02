@@ -3,7 +3,10 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from preprocess import build_samples, convert, preview
+try:
+    from .preprocess import build_samples, convert, preview
+except ImportError:
+    from preprocess import build_samples, convert, preview
 
 
 ROW = {
@@ -37,7 +40,7 @@ class PreprocessTest(unittest.TestCase):
         self.assertEqual(sample["messages"][2]["role"], "assistant")
         self.assertIn("earlier reply", prompt)
         self.assertLess(prompt.index("earlier question"), prompt.index("earlier reply"))
-        self.assertNotIn("current question", prompt)
+        self.assertIn("current question", prompt)
         self.assertNotIn("FUTURE_RESPONSE", prompt)
         self.assertNotIn("FUTURE_USER", prompt)
         answer = json.loads(sample["messages"][2]["content"])

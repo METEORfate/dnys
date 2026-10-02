@@ -1,0 +1,21 @@
+{
+  "split_version": "g2b-v1",
+  "seed": 42,
+  "split_method": "seeded conversation_id shuffle with nearest target point count",
+  "dev_ratio_target": 0.7,
+  "source_sample_count": 2354,
+  "source_conversation_count": 900,
+  "dev_sample_count": 1649,
+  "dev_conversation_count": 631,
+  "holdout_sample_count": 705,
+  "holdout_conversation_count": 269,
+  "conversation_overlap_count": 0,
+  "duplicate_count": 0,
+  "missing_count": 0,
+  "duplicate_prediction_point_count": 0,
+  "missing_prediction_point_count": 0,
+  "raw_file_hash": "043aa546fd2cf79d019fa57be538857736a67e8e018563d87d11909afcebf4cc",
+  "source_file_hash": "16849d74a2d0b60051b5090701ada4e5a15ab998ae1e39d7bb075e01b695f766",
+  "dev_file_hash": "8228ffdb8685ac006347b5ee4df57265155739cf44a9c9c2fe5cb84587927845",
+  "holdout_file_hash": "ac6260e5ced385e8e1c1593e0365218c8e2deb08dbf6966340ade6fca6cfd2f0"
+}

@@ -17,3 +17,8 @@ training/**/__pycache__/
 training/**pycache**/
 training/outputs/
 training/eval_results/
+training/eval_results*/
+result_baseline/
+*.zip
+__pycache__/
+*.pyc
