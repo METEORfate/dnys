@@ -1,0 +1,417 @@
+{
+  "samples": 1649,
+  "v2e1_accuracy": 0.7647058823529411,
+  "latest": {
+    "accuracy": 0.3117040630685264,
+    "macro_f1": 0.029704114655570966,
+    "classes": {
+      "joy": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 13
+      },
+      "gratitude": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 87
+      },
+      "relaxed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 290
+      },
+      "care": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 7
+      },
+      "pride": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 31
+      },
+      "neutral": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 39
+      },
+      "surprise": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 7
+      },
+      "mixed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 120
+      },
+      "sadness": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 93
+      },
+      "loneliness": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 77
+      },
+      "anxiety": {
+        "precision": 0.3117040630685264,
+        "recall": 1.0,
+        "f1": 0.47526583448913545,
+        "support": 514
+      },
+      "anger": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 79
+      },
+      "fear": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 92
+      },
+      "disgust": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 15
+      },
+      "shame": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 82
+      },
+      "helplessness": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 103
+      }
+    },
+    "pair": {
+      "llm_wrong_classifier_right": 114,
+      "llm_right_classifier_wrong": 861,
+      "both_correct": 400,
+      "both_wrong": 274
+    },
+    "hybrids": [
+      {
+        "threshold": 0.55,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.55,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.65,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.65,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.75,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.75,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.85,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.85,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.9,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.9,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      }
+    ]
+  },
+  "context": {
+    "accuracy": 0.3117040630685264,
+    "macro_f1": 0.029704114655570966,
+    "classes": {
+      "joy": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 13
+      },
+      "gratitude": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 87
+      },
+      "relaxed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 290
+      },
+      "care": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 7
+      },
+      "pride": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 31
+      },
+      "neutral": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 39
+      },
+      "surprise": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 7
+      },
+      "mixed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 120
+      },
+      "sadness": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 93
+      },
+      "loneliness": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 77
+      },
+      "anxiety": {
+        "precision": 0.3117040630685264,
+        "recall": 1.0,
+        "f1": 0.47526583448913545,
+        "support": 514
+      },
+      "anger": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 79
+      },
+      "fear": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 92
+      },
+      "disgust": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 15
+      },
+      "shame": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 82
+      },
+      "helplessness": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "support": 103
+      }
+    },
+    "pair": {
+      "llm_wrong_classifier_right": 114,
+      "llm_right_classifier_wrong": 861,
+      "both_correct": 400,
+      "both_wrong": 274
+    },
+    "hybrids": [
+      {
+        "threshold": 0.55,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.55,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.65,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.65,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.75,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.75,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.85,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.85,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.9,
+        "allowlist": false,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      },
+      {
+        "threshold": 0.9,
+        "allowlist": true,
+        "accuracy": 0.7647058823529411,
+        "override_count": 0,
+        "wrong_to_right": 0,
+        "right_to_wrong": 0
+      }
+    ]
+  },
+  "labels": [
+    "joy",
+    "gratitude",
+    "relaxed",
+    "care",
+    "pride",
+    "neutral",
+    "surprise",
+    "mixed",
+    "sadness",
+    "loneliness",
+    "anxiety",
+    "anger",
+    "fear",
+    "disgust",
+    "shame",
+    "helplessness"
+  ],
+  "response_changed": "NO",
+  "profile_changed": "NO",
+  "best_classifier": "LATEST_USER",
+  "best_hybrid": {
+    "threshold": "none",
+    "allowlist": "none",
+    "accuracy": 0.7647058823529411,
+    "accuracy_delta": 0.0,
+    "override_count": 0,
+    "wrong_to_right": 0,
+    "right_to_wrong": 0
+  },
+  "classifier_avg_latency_ms": 6.3091156259179115,
+  "classifier_p95_latency_ms": 6.706221029162407,
+  "result": "REJECT"
+}

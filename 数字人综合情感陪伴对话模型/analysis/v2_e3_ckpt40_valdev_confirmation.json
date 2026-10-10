@@ -1,0 +1,79 @@
+{
+  "candidate_adapter": "training/outputs/v2-e3-profile-boost/checkpoint-40",
+  "baseline": {
+    "emotion_accuracy": 0.7647058824,
+    "emotion_f1": 0.6980062645,
+    "personality": 0.6373559733,
+    "interests": 0.8259551243,
+    "style": 0.4627046695,
+    "profile_mean": 0.6420052557,
+    "BLEU": 0.1467965098,
+    "ROUGE": 0.296921823
+  },
+  "samples": 1649,
+  "FULL_RESULT": "REJECT",
+  "blocking_issue": "NONE",
+  "BERTScore": null,
+  "BERTScore_delta": null,
+  "prediction_lines": 1649,
+  "json_parse_success_rate": 1.0,
+  "metrics": {
+    "emotion_accuracy": {
+      "baseline": 0.7647058824,
+      "candidate": 0.7701637355973318,
+      "delta": 0.005457853197331719
+    },
+    "emotion_f1": {
+      "baseline": 0.6980062645,
+      "candidate": 0.6967969018519943,
+      "delta": -0.0012093626480057518
+    },
+    "personality": {
+      "baseline": 0.6373559733,
+      "candidate": 0.6434202546998181,
+      "delta": 0.006064281399818072
+    },
+    "interests": {
+      "baseline": 0.8259551243,
+      "candidate": 0.8247422680412371,
+      "delta": -0.0012128562587628844
+    },
+    "style": {
+      "baseline": 0.4627046695,
+      "candidate": 0.44329896907216493,
+      "delta": -0.01940570042783507
+    },
+    "profile_mean": {
+      "baseline": 0.6420052557,
+      "candidate": 0.6371538306044067,
+      "delta": -0.004851425095593331
+    },
+    "BLEU": {
+      "baseline": 0.1467965098,
+      "candidate": 0.14614470094148613,
+      "delta": -0.0006518088585138748
+    },
+    "ROUGE": {
+      "baseline": 0.296921823,
+      "candidate": 0.295330567471937,
+      "delta": -0.0015912555280629959
+    }
+  },
+  "gates": {
+    "emotion": true,
+    "profile": false,
+    "BLEU": true,
+    "ROUGE": true,
+    "json_parse": true
+  },
+  "response_nonempty_rate": 1.0,
+  "bertscore_status": "SKIPPED_FAILED_PRELIMINARY_GATE",
+  "execution_notes": [
+    "The unchanged evaluator automatically attempted its default BERTScore Hugging Face request; this request failed and produced no score. The fixed-local-model paired BERTScore was skipped because the profile gate failed. This is an execution deviation from the requested offline BERTScore flow."
+  ],
+  "verified_input_lines": 1649,
+  "verified_prediction_json_valid": 1649,
+  "verified_response_nonempty_count": 1649,
+  "evaluator_prompt_data_hashes_unchanged": true,
+  "verified_at_beijing": "2026-10-09T15:38:23.753912+08:00"
+}

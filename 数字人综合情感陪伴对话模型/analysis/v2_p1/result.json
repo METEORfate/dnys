@@ -1,0 +1,479 @@
+{
+  "dimensions": {
+    "personality_traits": {
+      "unique_set_classes": 69,
+      "rare_set_classes": 31,
+      "top_sets": [
+        {
+          "set": [
+            "__EMPTY__"
+          ],
+          "count": 10492
+        },
+        {
+          "set": [
+            "sensitive"
+          ],
+          "count": 2909
+        },
+        {
+          "set": [
+            "high_conscientiousness",
+            "sensitive"
+          ],
+          "count": 972
+        },
+        {
+          "set": [
+            "high_conscientiousness"
+          ],
+          "count": 907
+        },
+        {
+          "set": [
+            "conservative"
+          ],
+          "count": 664
+        },
+        {
+          "set": [
+            "conservative",
+            "sensitive"
+          ],
+          "count": 463
+        },
+        {
+          "set": [
+            "assertive"
+          ],
+          "count": 324
+        },
+        {
+          "set": [
+            "introverted"
+          ],
+          "count": 270
+        },
+        {
+          "set": [
+            "introverted",
+            "sensitive"
+          ],
+          "count": 260
+        },
+        {
+          "set": [
+            "assertive",
+            "sensitive"
+          ],
+          "count": 198
+        }
+      ],
+      "v2": 0.6373559733171619,
+      "exact_set_classifier": 0.6015767131594906,
+      "multilabel_classifier": 0.6215888417222559,
+      "threshold": 0.6,
+      "grid": [
+        [
+          0.45906610066707093,
+          0.4
+        ],
+        [
+          0.5706488781079442,
+          0.5
+        ],
+        [
+          0.6215888417222559,
+          0.6
+        ],
+        [
+          0.6209824135839903,
+          0.7
+        ],
+        [
+          0.613705275924803,
+          0.8
+        ]
+      ],
+      "winner": "V2_E1",
+      "hybrid_accuracy": 0.6373559733171619,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "labels": {
+        "agreeable": {
+          "gt_positive": 31,
+          "v2_false_negative": 17,
+          "classifier_false_negative": 27
+        },
+        "assertive": {
+          "gt_positive": 59,
+          "v2_false_negative": 40,
+          "classifier_false_negative": 58
+        },
+        "casual": {
+          "gt_positive": 4,
+          "v2_false_negative": 4,
+          "classifier_false_negative": 4
+        },
+        "conservative": {
+          "gt_positive": 206,
+          "v2_false_negative": 101,
+          "classifier_false_negative": 123
+        },
+        "emotionally_stable": {
+          "gt_positive": 8,
+          "v2_false_negative": 8,
+          "classifier_false_negative": 8
+        },
+        "extroverted": {
+          "gt_positive": 2,
+          "v2_false_negative": 2,
+          "classifier_false_negative": 2
+        },
+        "high_conscientiousness": {
+          "gt_positive": 148,
+          "v2_false_negative": 62,
+          "classifier_false_negative": 100
+        },
+        "introverted": {
+          "gt_positive": 39,
+          "v2_false_negative": 35,
+          "classifier_false_negative": 37
+        },
+        "open": {
+          "gt_positive": 4,
+          "v2_false_negative": 4,
+          "classifier_false_negative": 4
+        },
+        "sensitive": {
+          "gt_positive": 337,
+          "v2_false_negative": 212,
+          "classifier_false_negative": 218
+        }
+      }
+    },
+    "interests": {
+      "unique_set_classes": 76,
+      "rare_set_classes": 41,
+      "top_sets": [
+        {
+          "set": [
+            "__EMPTY__"
+          ],
+          "count": 12919
+        },
+        {
+          "set": [
+            "career_development"
+          ],
+          "count": 1286
+        },
+        {
+          "set": [
+            "social"
+          ],
+          "count": 657
+        },
+        {
+          "set": [
+            "study_exam"
+          ],
+          "count": 643
+        },
+        {
+          "set": [
+            "games"
+          ],
+          "count": 641
+        },
+        {
+          "set": [
+            "pets"
+          ],
+          "count": 639
+        },
+        {
+          "set": [
+            "sports_fitness"
+          ],
+          "count": 542
+        },
+        {
+          "set": [
+            "art_design"
+          ],
+          "count": 287
+        },
+        {
+          "set": [
+            "reading_writing"
+          ],
+          "count": 258
+        },
+        {
+          "set": [
+            "travel_outdoor"
+          ],
+          "count": 119
+        }
+      ],
+      "v2": 0.8259551243177683,
+      "exact_set_classifier": 0.7786537295330503,
+      "multilabel_classifier": 0.7774408732565191,
+      "threshold": 0.7,
+      "grid": [
+        [
+          0.7210430563978169,
+          0.4
+        ],
+        [
+          0.7519708914493632,
+          0.5
+        ],
+        [
+          0.7695573074590661,
+          0.6
+        ],
+        [
+          0.7774408732565191,
+          0.7
+        ],
+        [
+          0.7738023044269254,
+          0.8
+        ]
+      ],
+      "winner": "V2_E1",
+      "hybrid_accuracy": 0.8259551243177683,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "labels": {
+        "art_design": {
+          "gt_positive": 28,
+          "v2_false_negative": 13,
+          "classifier_false_negative": 18
+        },
+        "career_development": {
+          "gt_positive": 99,
+          "v2_false_negative": 77,
+          "classifier_false_negative": 84
+        },
+        "film_animation": {
+          "gt_positive": 13,
+          "v2_false_negative": 3,
+          "classifier_false_negative": 13
+        },
+        "games": {
+          "gt_positive": 49,
+          "v2_false_negative": 12,
+          "classifier_false_negative": 24
+        },
+        "music": {
+          "gt_positive": 19,
+          "v2_false_negative": 10,
+          "classifier_false_negative": 19
+        },
+        "pets": {
+          "gt_positive": 60,
+          "v2_false_negative": 9,
+          "classifier_false_negative": 26
+        },
+        "programming_technology": {
+          "gt_positive": 1,
+          "v2_false_negative": 1,
+          "classifier_false_negative": 1
+        },
+        "reading_writing": {
+          "gt_positive": 36,
+          "v2_false_negative": 24,
+          "classifier_false_negative": 36
+        },
+        "social": {
+          "gt_positive": 14,
+          "v2_false_negative": 14,
+          "classifier_false_negative": 14
+        },
+        "sports_fitness": {
+          "gt_positive": 68,
+          "v2_false_negative": 6,
+          "classifier_false_negative": 27
+        },
+        "study_exam": {
+          "gt_positive": 73,
+          "v2_false_negative": 50,
+          "classifier_false_negative": 59
+        },
+        "travel_outdoor": {
+          "gt_positive": 15,
+          "v2_false_negative": 5,
+          "classifier_false_negative": 15
+        }
+      }
+    },
+    "style": {
+      "unique_set_classes": 62,
+      "rare_set_classes": 22,
+      "top_sets": [
+        {
+          "set": [
+            "__EMPTY__"
+          ],
+          "count": 8731
+        },
+        {
+          "set": [
+            "rational"
+          ],
+          "count": 3414
+        },
+        {
+          "set": [
+            "direct"
+          ],
+          "count": 1737
+        },
+        {
+          "set": [
+            "brief"
+          ],
+          "count": 800
+        },
+        {
+          "set": [
+            "detailed"
+          ],
+          "count": 744
+        },
+        {
+          "set": [
+            "high_emotional_expression"
+          ],
+          "count": 638
+        },
+        {
+          "set": [
+            "colloquial"
+          ],
+          "count": 428
+        },
+        {
+          "set": [
+            "direct",
+            "rational"
+          ],
+          "count": 379
+        },
+        {
+          "set": [
+            "indirect"
+          ],
+          "count": 346
+        },
+        {
+          "set": [
+            "detailed",
+            "rational"
+          ],
+          "count": 235
+        }
+      ],
+      "v2": 0.46270466949666467,
+      "exact_set_classifier": 0.5548817465130382,
+      "multilabel_classifier": 0.540933899332929,
+      "threshold": 0.7,
+      "grid": [
+        [
+          0.3444511825348696,
+          0.4
+        ],
+        [
+          0.469981807155852,
+          0.5
+        ],
+        [
+          0.5166767738023045,
+          0.6
+        ],
+        [
+          0.540933899332929,
+          0.7
+        ],
+        [
+          0.5397210430563978,
+          0.8
+        ]
+      ],
+      "winner": "EXACT_SET",
+      "hybrid_accuracy": 0.5548817465130382,
+      "wrong_to_right": 372,
+      "right_to_wrong": 220,
+      "labels": {
+        "brief": {
+          "gt_positive": 84,
+          "v2_false_negative": 75,
+          "classifier_false_negative": 67
+        },
+        "colloquial": {
+          "gt_positive": 33,
+          "v2_false_negative": 20,
+          "classifier_false_negative": 32
+        },
+        "detailed": {
+          "gt_positive": 94,
+          "v2_false_negative": 65,
+          "classifier_false_negative": 91
+        },
+        "direct": {
+          "gt_positive": 196,
+          "v2_false_negative": 128,
+          "classifier_false_negative": 166
+        },
+        "emoji_user": {
+          "gt_positive": 0,
+          "v2_false_negative": 0,
+          "classifier_false_negative": 0
+        },
+        "formal": {
+          "gt_positive": 17,
+          "v2_false_negative": 17,
+          "classifier_false_negative": 17
+        },
+        "high_emotional_expression": {
+          "gt_positive": 43,
+          "v2_false_negative": 29,
+          "classifier_false_negative": 40
+        },
+        "humorous": {
+          "gt_positive": 7,
+          "v2_false_negative": 6,
+          "classifier_false_negative": 7
+        },
+        "indirect": {
+          "gt_positive": 37,
+          "v2_false_negative": 37,
+          "classifier_false_negative": 37
+        },
+        "low_emotional_expression": {
+          "gt_positive": 0,
+          "v2_false_negative": 0,
+          "classifier_false_negative": 0
+        },
+        "rational": {
+          "gt_positive": 400,
+          "v2_false_negative": 88,
+          "classifier_false_negative": 220
+        }
+      }
+    }
+  },
+  "hybrid_profile_mean": 0.6727309480493228,
+  "profile_mean_delta": 0.03072569233879119,
+  "latency_avg_ms": 1.207608561962843,
+  "latency_p50_ms": 1.1343187652528286,
+  "latency_p95_ms": 1.9766333512961864,
+  "result": "STRONG_PROMOTE",
+  "emotion_changed": false,
+  "response_changed": false,
+  "memory_refs_changed": false,
+  "samples": 1649
+}

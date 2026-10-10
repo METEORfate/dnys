@@ -1,0 +1,51 @@
+{
+  "preserved": {
+    "response_text": 100,
+    "emotion_label": 100,
+    "memory_refs": 100,
+    "id": 100,
+    "personality_traits": 100,
+    "interests": 100
+  },
+  "style_changed": 31,
+  "style_unchanged": 69,
+  "invalid_style_count": 0,
+  "fallback_count": 0,
+  "repeatability": {
+    "response_text": 0.3,
+    "emotion_label": 1.0,
+    "memory_refs": 1.0,
+    "personality_traits": 0.8666666666666667,
+    "interests": 0.9
+  },
+  "independent_run_nondeterminism": true,
+  "candidate_schema": 100,
+  "candidate_success": 100,
+  "candidate_avg_ms": 2090.664429,
+  "candidate_p50_ms": 1590.86421,
+  "candidate_p95_ms": 5954.441951,
+  "classifier_avg_ms": 5.136256078258157,
+  "classifier_p95_ms": 11.209293268620968,
+  "logs": {
+    "repeat30_1": {
+      "lora_registered": true,
+      "api_error": false,
+      "oom": false,
+      "crash": false
+    },
+    "repeat30_2": {
+      "lora_registered": true,
+      "api_error": false,
+      "oom": false,
+      "crash": false
+    },
+    "causal100": {
+      "lora_registered": true,
+      "api_error": false,
+      "oom": false,
+      "crash": false
+    }
+  },
+  "ready": true,
+  "official_runtime_unchanged": true
+}

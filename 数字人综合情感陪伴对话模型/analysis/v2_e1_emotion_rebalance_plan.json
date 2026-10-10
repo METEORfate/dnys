@@ -1,0 +1,289 @@
+{
+  "experiment_name": "V2-E1-emotion-rebalance",
+  "target_metric": "emotion_accuracy",
+  "secondary_metric": "emotion_macro_f1",
+  "single_variable_changed": "TRAINING_SAMPLE_DISTRIBUTION",
+  "original_train_samples": 18657,
+  "train_emotion_distribution": {
+    "anxiety": {
+      "count": 6340,
+      "ratio": 0.3398188347537117,
+      "group": "HEAD"
+    },
+    "relaxed": {
+      "count": 2819,
+      "ratio": 0.15109610333922924,
+      "group": "HEAD"
+    },
+    "helplessness": {
+      "count": 1575,
+      "ratio": 0.0844187168355041,
+      "group": "HEAD"
+    },
+    "fear": {
+      "count": 1388,
+      "ratio": 0.07439566918582838,
+      "group": "HEAD"
+    },
+    "sadness": {
+      "count": 1085,
+      "ratio": 0.05815511604223616,
+      "group": "HEAD"
+    },
+    "mixed": {
+      "count": 945,
+      "ratio": 0.05065123010130246,
+      "group": "MID"
+    },
+    "loneliness": {
+      "count": 876,
+      "ratio": 0.046952886316128,
+      "group": "MID"
+    },
+    "anger": {
+      "count": 855,
+      "ratio": 0.04582730342498794,
+      "group": "MID"
+    },
+    "shame": {
+      "count": 752,
+      "ratio": 0.040306587339872434,
+      "group": "MID"
+    },
+    "gratitude": {
+      "count": 695,
+      "ratio": 0.03725143377820657,
+      "group": "MID"
+    },
+    "neutral": {
+      "count": 654,
+      "ratio": 0.03505386718121885,
+      "group": "MID"
+    },
+    "pride": {
+      "count": 234,
+      "ratio": 0.012542209358417752,
+      "group": "MID"
+    },
+    "joy": {
+      "count": 171,
+      "ratio": 0.009165460684997588,
+      "group": "MID"
+    },
+    "disgust": {
+      "count": 125,
+      "ratio": 0.006699898161547944,
+      "group": "MID"
+    },
+    "care": {
+      "count": 79,
+      "ratio": 0.004234335638098301,
+      "group": "TAIL"
+    },
+    "surprise": {
+      "count": 64,
+      "ratio": 0.0034303478587125475,
+      "group": "TAIL"
+    }
+  },
+  "known_confusion_class_counts": {
+    "gratitude": 695,
+    "relaxed": 2819,
+    "fear": 1388,
+    "anxiety": 6340,
+    "mixed": 945
+  },
+  "candidates": {
+    "A": {
+      "method": "sqrt inverse frequency, cap 3, head factor 0.85",
+      "counts": {
+        "anxiety": 5389,
+        "fear": 2359,
+        "mixed": 2835,
+        "relaxed": 2396,
+        "joy": 513,
+        "neutral": 1962,
+        "anger": 2565,
+        "sadness": 1844,
+        "helplessness": 2677,
+        "shame": 2256,
+        "loneliness": 2628,
+        "care": 237,
+        "gratitude": 2085,
+        "pride": 702,
+        "surprise": 192,
+        "disgust": 375
+      },
+      "total": 31015,
+      "max_repeat_factor": 3,
+      "repeats": {
+        "anxiety": 1,
+        "fear": 2,
+        "mixed": 3,
+        "relaxed": 1,
+        "joy": 3,
+        "neutral": 3,
+        "anger": 3,
+        "sadness": 2,
+        "helplessness": 2,
+        "shame": 3,
+        "loneliness": 3,
+        "care": 3,
+        "gratitude": 3,
+        "pride": 3,
+        "surprise": 3,
+        "disgust": 3
+      }
+    },
+    "B": {
+      "method": "sqrt inverse frequency, cap 2, head factor 0.9",
+      "counts": {
+        "anxiety": 5706,
+        "fear": 2498,
+        "mixed": 1890,
+        "relaxed": 2537,
+        "joy": 342,
+        "neutral": 1308,
+        "anger": 1710,
+        "sadness": 1953,
+        "helplessness": 2835,
+        "shame": 1504,
+        "loneliness": 1752,
+        "care": 158,
+        "gratitude": 1390,
+        "pride": 468,
+        "surprise": 128,
+        "disgust": 250
+      },
+      "total": 26429,
+      "max_repeat_factor": 2,
+      "repeats": {
+        "anxiety": 1,
+        "fear": 2,
+        "mixed": 2,
+        "relaxed": 1,
+        "joy": 2,
+        "neutral": 2,
+        "anger": 2,
+        "sadness": 2,
+        "helplessness": 2,
+        "shame": 2,
+        "loneliness": 2,
+        "care": 2,
+        "gratitude": 2,
+        "pride": 2,
+        "surprise": 2,
+        "disgust": 2
+      }
+    },
+    "C": {
+      "method": "sqrt inverse frequency, cap 4, head factor 0.8",
+      "counts": {
+        "anxiety": 5072,
+        "fear": 2220,
+        "mixed": 2835,
+        "relaxed": 2255,
+        "joy": 684,
+        "neutral": 1962,
+        "anger": 2565,
+        "sadness": 1736,
+        "helplessness": 2520,
+        "shame": 2256,
+        "loneliness": 2628,
+        "care": 316,
+        "gratitude": 2085,
+        "pride": 936,
+        "surprise": 256,
+        "disgust": 500
+      },
+      "total": 30826,
+      "max_repeat_factor": 4,
+      "repeats": {
+        "anxiety": 1,
+        "fear": 2,
+        "mixed": 3,
+        "relaxed": 1,
+        "joy": 4,
+        "neutral": 3,
+        "anger": 3,
+        "sadness": 2,
+        "helplessness": 2,
+        "shame": 3,
+        "loneliness": 3,
+        "care": 4,
+        "gratitude": 3,
+        "pride": 4,
+        "surprise": 4,
+        "disgust": 4
+      }
+    }
+  },
+  "recommended_strategy": "A",
+  "recommended_details": {
+    "method": "sqrt inverse frequency, cap 3, head factor 0.85",
+    "counts": {
+      "anxiety": 5389,
+      "fear": 2359,
+      "mixed": 2835,
+      "relaxed": 2396,
+      "joy": 513,
+      "neutral": 1962,
+      "anger": 2565,
+      "sadness": 1844,
+      "helplessness": 2677,
+      "shame": 2256,
+      "loneliness": 2628,
+      "care": 237,
+      "gratitude": 2085,
+      "pride": 702,
+      "surprise": 192,
+      "disgust": 375
+    },
+    "total": 31015,
+    "max_repeat_factor": 3,
+    "repeats": {
+      "anxiety": 1,
+      "fear": 2,
+      "mixed": 3,
+      "relaxed": 1,
+      "joy": 3,
+      "neutral": 3,
+      "anger": 3,
+      "sadness": 2,
+      "helplessness": 2,
+      "shame": 3,
+      "loneliness": 3,
+      "care": 3,
+      "gratitude": 3,
+      "pride": 3,
+      "surprise": 3,
+      "disgust": 3
+    }
+  },
+  "resampled_train_samples": 31015,
+  "max_repeat_factor": 3,
+  "manifest": "/root/development/dnys/数字人综合情感陪伴对话模型/training/data/v2_e1_emotion_rebalance_manifest.jsonl",
+  "val_dev_unchanged": true,
+  "val_holdout_unchanged": true,
+  "data_leakage": false,
+  "overlap_counts": {
+    "train_val_dev": 0,
+    "train_val_holdout": 0
+  },
+  "fixed_variables": [
+    "Base model",
+    "LoRA config",
+    "Prompt",
+    "loss",
+    "max_length",
+    "epochs",
+    "learning rate",
+    "batch size",
+    "gradient accumulation",
+    "decoding",
+    "evaluator",
+    "val_dev",
+    "val_holdout",
+    "/root/participant"
+  ]
+}

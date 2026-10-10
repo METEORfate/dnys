@@ -1,0 +1,116 @@
+{
+  "results": {
+    "A": {
+      "FULL_REPLACE": {
+        "prompt": "A",
+        "gate": "FULL_REPLACE",
+        "accuracy": 0.5,
+        "correct_count": 48,
+        "accuracy_delta": -0.19791666666666666,
+        "wrong_to_right": 7,
+        "right_to_wrong": 26,
+        "recall": {
+          "anxiety": 0.8333333333333334,
+          "mixed": 0.2857142857142857,
+          "relaxed": 0.29411764705882354,
+          "fear": 0.2,
+          "helplessness": 0.0,
+          "sadness": 0.6
+        },
+        "avg_latency_ms": 334.53124328904477,
+        "p50_latency_ms": 261.1175933852792,
+        "p95_latency_ms": 589.3978700041771,
+        "fallback_count": 26
+      },
+      "CONFUSION_ONLY": {
+        "prompt": "A",
+        "gate": "CONFUSION_ONLY",
+        "accuracy": 0.6979166666666666,
+        "correct_count": 67,
+        "accuracy_delta": 0.0,
+        "wrong_to_right": 4,
+        "right_to_wrong": 4,
+        "recall": {
+          "anxiety": 0.8,
+          "mixed": 0.42857142857142855,
+          "relaxed": 0.7647058823529411,
+          "fear": 0.2,
+          "helplessness": 0.3333333333333333,
+          "sadness": 0.8
+        },
+        "avg_latency_ms": 334.53124328904477,
+        "p50_latency_ms": 261.1175933852792,
+        "p95_latency_ms": 589.3978700041771,
+        "fallback_count": 26
+      }
+    },
+    "B": {
+      "FULL_REPLACE": {
+        "prompt": "B",
+        "gate": "FULL_REPLACE",
+        "accuracy": 0.40625,
+        "correct_count": 39,
+        "accuracy_delta": -0.2916666666666667,
+        "wrong_to_right": 4,
+        "right_to_wrong": 32,
+        "recall": {
+          "anxiety": 0.7,
+          "mixed": 0.2857142857142857,
+          "relaxed": 0.29411764705882354,
+          "fear": 0.4,
+          "helplessness": 0.0,
+          "sadness": 0.0
+        },
+        "avg_latency_ms": 322.7775596412054,
+        "p50_latency_ms": 256.43416261300445,
+        "p95_latency_ms": 590.0507727637887,
+        "fallback_count": 21
+      },
+      "CONFUSION_ONLY": {
+        "prompt": "B",
+        "gate": "CONFUSION_ONLY",
+        "accuracy": 0.6979166666666666,
+        "correct_count": 67,
+        "accuracy_delta": 0.0,
+        "wrong_to_right": 4,
+        "right_to_wrong": 4,
+        "recall": {
+          "anxiety": 0.7666666666666667,
+          "mixed": 0.42857142857142855,
+          "relaxed": 0.7647058823529411,
+          "fear": 0.4,
+          "helplessness": 0.3333333333333333,
+          "sadness": 0.8
+        },
+        "avg_latency_ms": 322.7775596412054,
+        "p50_latency_ms": 256.43416261300445,
+        "p95_latency_ms": 590.0507727637887,
+        "fallback_count": 21
+      }
+    }
+  },
+  "best": {
+    "prompt": "B",
+    "gate": "CONFUSION_ONLY",
+    "accuracy": 0.6979166666666666,
+    "correct_count": 67,
+    "accuracy_delta": 0.0,
+    "wrong_to_right": 4,
+    "right_to_wrong": 4,
+    "recall": {
+      "anxiety": 0.7666666666666667,
+      "mixed": 0.42857142857142855,
+      "relaxed": 0.7647058823529411,
+      "fear": 0.4,
+      "helplessness": 0.3333333333333333,
+      "sadness": 0.8
+    },
+    "avg_latency_ms": 322.7775596412054,
+    "p50_latency_ms": 256.43416261300445,
+    "p95_latency_ms": 590.0507727637887,
+    "fallback_count": 21
+  },
+  "V2_C3_RESULT": "REJECT",
+  "latency_status": "LATENCY_TRADEOFF",
+  "runtime_unchanged": true
+}
