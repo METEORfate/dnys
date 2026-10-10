@@ -329,10 +329,12 @@ def main() -> None:
             prediction = style_postprocessor.apply(prediction, sample["history"])
         for key in ("id", "response_text", "emotion_label", "memory_refs"):
             assert pre_style_result[key] == prediction[key], f"Non-style field changed: {key}"
-        for key in ("personality_traits", "interests"):
+        for key in ("interests",):
             assert pre_style_result["user_profile"][key] == prediction["user_profile"][key], f"Non-style profile changed: {key}"
         final_style = prediction["user_profile"]["style"]
         assert isinstance(final_style, list) and len(final_style)==len(set(final_style)) and set(final_style)<=PROFILE_LABELS["style"]
+        final_personality = prediction["user_profile"]["personality_traits"]
+        assert isinstance(final_personality, list) and len(final_personality)==len(set(final_personality)) and set(final_personality)<=PROFILE_LABELS["personality_traits"]
         if backend == "transformers":
             synchronize(torch)
         elapsed_ms = (time.perf_counter() - started) * 1000
@@ -362,6 +364,9 @@ def main() -> None:
         "submission_sha256": sha256(submission_path),
         "samples": len(predictions),
         "style_classifier_loaded": style_postprocessor.loaded,
+        "personality_classifier_loaded": style_postprocessor.personality_loaded,
+        "personality_override_count": style_postprocessor.personality_override_count,
+        "personality_fallback_count": style_postprocessor.personality_fallback_count,
         "style_classifier_invalid_output_count": style_postprocessor.invalid_output_count,
         "classifier_average_latency_ms": statistics.fmean(style_postprocessor.predict_latencies_ms) if style_postprocessor.predict_latencies_ms else None,
         "classifier_p50_latency_ms": statistics.median(style_postprocessor.predict_latencies_ms) if style_postprocessor.predict_latencies_ms else None,
