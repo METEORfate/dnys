@@ -6,6 +6,7 @@ Public CLI contract: python run_inference.py TEST_FILE RESULT_DIR
 from __future__ import annotations
 
 import argparse
+from copy import deepcopy
 import hashlib
 import json
 import os
@@ -28,6 +29,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from core.message_builder import build_messages
 from core.output_schema import EMOTIONS, MEMORY_RE, PROFILE_LABELS, parse_prediction
 from core.prompt_loader import load_system_prompt
+from style_postprocessor import StylePostprocessor
 
 
 def parse_args() -> argparse.Namespace:
@@ -293,12 +295,15 @@ def main() -> None:
     samples = read_jsonl(test_file)
     submission_path = result_dir / "submission.jsonl"
     submission_path.write_text("", encoding="utf-8")
+    (result_dir / "style_causal_audit.jsonl").write_text("", encoding="utf-8")
     latencies: list[float] = []
     predictions: list[dict[str, Any]] = []
     parse_failure_ids: list[str] = []
     generation = dict(config["generation"])
 
     system_prompt = load_system_prompt()
+    style_postprocessor = StylePostprocessor()
+    print("STYLE_CLASSIFIER_LOADED:", style_postprocessor.loaded, flush=True)
 
     for index, sample in enumerate(samples, 1):
         messages = build_messages(sample)
@@ -319,11 +324,22 @@ def main() -> None:
         prediction, parse_failed = parse_prediction(sample["id"], decoded)
         if parse_failed:
             parse_failure_ids.append(sample["id"])
+        pre_style_result = deepcopy(prediction)
+        if not parse_failed:
+            prediction = style_postprocessor.apply(prediction, sample["history"])
+        for key in ("id", "response_text", "emotion_label", "memory_refs"):
+            assert pre_style_result[key] == prediction[key], f"Non-style field changed: {key}"
+        for key in ("personality_traits", "interests"):
+            assert pre_style_result["user_profile"][key] == prediction["user_profile"][key], f"Non-style profile changed: {key}"
+        final_style = prediction["user_profile"]["style"]
+        assert isinstance(final_style, list) and len(final_style)==len(set(final_style)) and set(final_style)<=PROFILE_LABELS["style"]
         if backend == "transformers":
             synchronize(torch)
         elapsed_ms = (time.perf_counter() - started) * 1000
         if index <= config["performance_rounds"]:
             latencies.append(elapsed_ms)
+        with (result_dir / "style_causal_audit.jsonl").open("a", encoding="utf-8") as audit:
+            audit.write(json.dumps({"pre_style_result": pre_style_result, "final_result": prediction}, ensure_ascii=False) + "\n")
         predictions.append(prediction)
         with submission_path.open("a", encoding="utf-8") as handle:
             handle.write(json.dumps(prediction, ensure_ascii=False, separators=(",", ":")) + "\n")
@@ -345,6 +361,12 @@ def main() -> None:
         "test_file_sha256": sha256(test_file),
         "submission_sha256": sha256(submission_path),
         "samples": len(predictions),
+        "style_classifier_loaded": style_postprocessor.loaded,
+        "style_classifier_invalid_output_count": style_postprocessor.invalid_output_count,
+        "classifier_average_latency_ms": statistics.fmean(style_postprocessor.predict_latencies_ms) if style_postprocessor.predict_latencies_ms else None,
+        "classifier_p50_latency_ms": statistics.median(style_postprocessor.predict_latencies_ms) if style_postprocessor.predict_latencies_ms else None,
+        "classifier_p95_latency_ms": percentile95(style_postprocessor.predict_latencies_ms) if style_postprocessor.predict_latencies_ms else None,
+        "style_classifier_fallback_count": style_postprocessor.fallback_count,
         "parse_failure_count": len(parse_failure_ids),
         "parse_failure_ids": parse_failure_ids,
     }

@@ -12,7 +12,7 @@ HOST="${VLLM_HOST:-127.0.0.1}"
 PORT="${VLLM_PORT:-8000}"
 API_KEY="${VLLM_API_KEY:-}"
 START_TIMEOUT="${VLLM_START_TIMEOUT:-600}"
-PYTHON_CMD="${PYTHON_BIN:-python3}"
+PYTHON_CMD="${PYTHON_BIN:-$SCRIPT_DIR/python_env/bin/python}"
 VLLM_BIN="${VLLM_BIN:-vllm}"
 VLLM_ARGS=(--tensor-parallel-size 2) # 例如：VLLM_ARGS=(--tensor-parallel-size 2)
 
