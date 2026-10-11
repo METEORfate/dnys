@@ -17,5 +17,5 @@
     "top_p": 1.0
   },
   "performance_rounds": 100,
-  "hardware_label": "4090*2"
+  "hardware_label": "verify-on-actual-runtime"
 }
