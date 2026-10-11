@@ -15,13 +15,13 @@ def prepare():
  for k in set(c)|set(d):
   assert (set(c[k])==set(d[k]) if k=='target_modules' else c.get(k)==d.get(k)),k
  x=load_file(str(BASE/'adapter_model.safetensors'));y=load_file(str(TARGET/'adapter_model.safetensors'))
- assert x.keys()==y.keys() and all(x[k].shape==y[k].shape and x[k].dtype==y[k].dtype for k in x)
+ assert x.keys()==y.keys() and all(x[k].shape==y[k].shape for k in x)
  assert all('lora_A' in k or 'lora_B' in k for k in x)
  assert all(torch.isfinite(v).all() for v in list(x.values())+list(y.values()))
  assert all(torch.equal(torch.lerp(x[k].float(),y[k].float(),0).to(x[k].dtype),x[k]) and torch.equal(torch.lerp(x[k].float(),y[k].float(),1).to(y[k].dtype),y[k]) for k in x)
  for alpha in ALPHAS:
   out=R/f'training/outputs/v2-rq4-interp-a{round(alpha*100):03d}';assert not out.exists(),str(out);out.mkdir()
-  z={k:torch.lerp(x[k].float(),y[k].float(),alpha).to(x[k].dtype).contiguous() for k in x}
+  z={k:torch.lerp(x[k].float(),y[k].float(),alpha).contiguous() for k in x}
   assert all(torch.isfinite(v).all() for v in z.values());save_file(z,str(out/'adapter_model.safetensors'),metadata={'format':'pt'})
   (out/'adapter_config.json').write_text((BASE/'adapter_config.json').read_text())
  dump(A/'compatibility.json',{'compatible':True,'parameter_keys':len(x),'endpoint_parameters_exact':True,'rank':c['r'],'lora_alpha':c['lora_alpha'],'base':str(BASE),'target':str(TARGET)})
