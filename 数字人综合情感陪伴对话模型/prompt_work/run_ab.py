@@ -19,6 +19,7 @@ from core.output_schema import EMOTIONS, PROFILE_LABELS, extract_object, normali
 from core.prompt_loader import load_system_prompt, prompt_metadata
 from training.create_validation_split import choose_dev_conversations
 from training.evaluate_lora import sentence_bleu4, rouge_l_f1, classification_diagnostics
+sys.path.insert(0, str(ROOT / "participant"))
 from participant.run_inference import request_chat_completion, load_config, percentile95
 
 DEFAULT_DATA = ROOT / "训练-验证-数据集/val/val_public.jsonl"
