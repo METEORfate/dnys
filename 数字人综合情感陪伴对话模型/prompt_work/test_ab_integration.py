@@ -84,7 +84,7 @@ class ABIntegrationTest(unittest.TestCase):
             self.assertEqual(updated["model_raw_normalized"]["raw_validity_rates"]["json_object"], 1)
             self.assertEqual(baseline["model_raw_normalized"]["json_parse_failures"], len(calls)//2)
             self.assertEqual(updated["model_raw_normalized"]["json_parse_failures"], 0)
-            self.assertEqual(len(list((run_dir / "prompt_v0" / "predictions.jsonl").open(encoding="utf-8"))), len(calls)//2)
+            self.assertEqual(len((run_dir / "prompt_v0" / "predictions.jsonl").read_text(encoding="utf-8").splitlines()), len(calls)//2)
             self.assertEqual(len(calls) % 2, 0)
 
 if __name__ == "__main__":
