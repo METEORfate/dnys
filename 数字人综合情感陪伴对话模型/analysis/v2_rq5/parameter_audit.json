@@ -1,0 +1,64 @@
+{
+  "compatible": true,
+  "layer_count": 28,
+  "half_start": 14,
+  "quarter_start": 21,
+  "rank": 16,
+  "alpha": 32,
+  "candidates": {
+    "ATTN_ALL": {
+      "selected_key_count": 224,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 25.0,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-attn_all"
+    },
+    "MLP_ALL": {
+      "selected_key_count": 168,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 75.0,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-mlp_all"
+    },
+    "LATE_HALF_ALL": {
+      "selected_key_count": 196,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 50.0,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_all"
+    },
+    "LATE_HALF_ATTN": {
+      "selected_key_count": 112,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 12.5,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_attn"
+    },
+    "LATE_HALF_MLP": {
+      "selected_key_count": 84,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 37.5,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_mlp"
+    },
+    "LATE_QUARTER_ALL": {
+      "selected_key_count": 98,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 25.0,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_quarter_all"
+    }
+  }
+}
