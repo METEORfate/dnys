@@ -42,10 +42,12 @@ def pipeline():
   if code:raise RuntimeError(f'{log} exited {code}')
  try:
   audit=prepare();state['phase']='GPU_PREFLIGHT';dump(A/'status.json',state)
-  import torch
-  assert torch.cuda.is_available() and torch.cuda.device_count()==2,'GPU_UNAVAILABLE'
-  for i in range(2):
-   x=torch.ones(2,2,device=f'cuda:{i}');x@x;torch.cuda.synchronize(i)
+  completed=all((R/f'training/eval_results/v2_rq5_{n.lower()}/summary.json').exists() for n in NAMES)
+  if not completed:
+   import torch
+   assert torch.cuda.is_available() and torch.cuda.device_count()==2,'GPU_UNAVAILABLE'
+   for i in range(2):
+    x=torch.ones(2,2,device=f'cuda:{i}');x@x;torch.cuda.synchronize(i)
   state['phase']='FAST96';dump(A/'status.json',state)
   def worker(gpu):
    for name in NAMES[gpu::2]:
@@ -85,5 +87,13 @@ def pipeline():
   state['phase']='BLOCKED';state['blocking_issue']=str(exc) or type(exc).__name__;dump(A/'status.json',state);raise
 if __name__=='__main__':
  if len(sys.argv)>1 and sys.argv[1]=='post':
-  sys.path.insert(0,str(R/'analysis/v2_rq4'));from run_interpolation import post;post(pathlib.Path(sys.argv[2]))
+  sys.path.insert(0,str(R/'analysis/v2_rq4'))
+  import run_interpolation
+  import bert_score
+  original_score=bert_score.score
+  def cpu_score(*args,**kwargs):
+   kwargs['device']='cpu';return original_score(*args,**kwargs)
+  bert_score.score=cpu_score
+  import torch;torch.set_num_threads(8)
+  run_interpolation.post(pathlib.Path(sys.argv[2]))
  else:pipeline()
