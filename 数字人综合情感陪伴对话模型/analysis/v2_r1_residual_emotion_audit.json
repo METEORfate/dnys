@@ -1,0 +1,1199 @@
+{
+  "dataset_sizes": {
+    "train": 18657,
+    "val_dev": 1649,
+    "holdout": 705
+  },
+  "train_emotion_support": {
+    "anxiety": 6340,
+    "fear": 1388,
+    "mixed": 945,
+    "relaxed": 2819,
+    "joy": 171,
+    "neutral": 654,
+    "anger": 855,
+    "sadness": 1085,
+    "helplessness": 1575,
+    "shame": 752,
+    "loneliness": 876,
+    "care": 79,
+    "gratitude": 695,
+    "pride": 234,
+    "surprise": 64,
+    "disgust": 125
+  },
+  "class_summary": {
+    "anger": {
+      "train_support": 855,
+      "val_dev": {
+        "support": 79,
+        "correct": 68,
+        "error_count": 11,
+        "recall": 0.8607594936708861,
+        "precision": 0.7906976744186046,
+        "f1": 0.8242424242424243
+      },
+      "holdout": {
+        "support": 36,
+        "correct": 32,
+        "error_count": 4,
+        "recall": 0.8888888888888888,
+        "precision": 0.8888888888888888,
+        "f1": 0.8888888888888888
+      },
+      "priority_score": 15,
+      "val_dev_recall_delta": 0.0,
+      "holdout_recall_delta": 0.08333333333333326,
+      "v1_val_dev_recall": 0.8607594936708861,
+      "v1_holdout_recall": 0.8055555555555556
+    },
+    "anxiety": {
+      "train_support": 6340,
+      "val_dev": {
+        "support": 514,
+        "correct": 400,
+        "error_count": 114,
+        "recall": 0.7782101167315175,
+        "precision": 0.851063829787234,
+        "f1": 0.8130081300813009
+      },
+      "holdout": {
+        "support": 237,
+        "correct": 194,
+        "error_count": 43,
+        "recall": 0.8185654008438819,
+        "precision": 0.8398268398268398,
+        "f1": 0.8290598290598291
+      },
+      "priority_score": 157,
+      "val_dev_recall_delta": -0.07587548638132291,
+      "holdout_recall_delta": -0.04219409282700426,
+      "v1_val_dev_recall": 0.8540856031128404,
+      "v1_holdout_recall": 0.8607594936708861
+    },
+    "care": {
+      "train_support": 79,
+      "val_dev": {
+        "support": 7,
+        "correct": 2,
+        "error_count": 5,
+        "recall": 0.2857142857142857,
+        "precision": 0.125,
+        "f1": 0.17391304347826086
+      },
+      "holdout": {
+        "support": 4,
+        "correct": 2,
+        "error_count": 2,
+        "recall": 0.5,
+        "precision": 0.2857142857142857,
+        "f1": 0.36363636363636365
+      },
+      "priority_score": 7,
+      "val_dev_recall_delta": 0.14285714285714285,
+      "holdout_recall_delta": 0.5,
+      "v1_val_dev_recall": 0.14285714285714285,
+      "v1_holdout_recall": 0.0
+    },
+    "disgust": {
+      "train_support": 125,
+      "val_dev": {
+        "support": 15,
+        "correct": 15,
+        "error_count": 0,
+        "recall": 1.0,
+        "precision": 0.7894736842105263,
+        "f1": 0.8823529411764706
+      },
+      "holdout": {
+        "support": 6,
+        "correct": 5,
+        "error_count": 1,
+        "recall": 0.8333333333333334,
+        "precision": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      "priority_score": 1,
+      "val_dev_recall_delta": 0.4,
+      "holdout_recall_delta": 0.5,
+      "v1_val_dev_recall": 0.6,
+      "v1_holdout_recall": 0.3333333333333333
+    },
+    "fear": {
+      "train_support": 1388,
+      "val_dev": {
+        "support": 92,
+        "correct": 75,
+        "error_count": 17,
+        "recall": 0.8152173913043478,
+        "precision": 0.6756756756756757,
+        "f1": 0.7389162561576353
+      },
+      "holdout": {
+        "support": 32,
+        "correct": 29,
+        "error_count": 3,
+        "recall": 0.90625,
+        "precision": 0.5918367346938775,
+        "f1": 0.7160493827160493
+      },
+      "priority_score": 20,
+      "val_dev_recall_delta": 0.14130434782608692,
+      "holdout_recall_delta": 0.21875,
+      "v1_val_dev_recall": 0.6739130434782609,
+      "v1_holdout_recall": 0.6875
+    },
+    "gratitude": {
+      "train_support": 695,
+      "val_dev": {
+        "support": 87,
+        "correct": 72,
+        "error_count": 15,
+        "recall": 0.8275862068965517,
+        "precision": 0.7912087912087912,
+        "f1": 0.8089887640449438
+      },
+      "holdout": {
+        "support": 31,
+        "correct": 26,
+        "error_count": 5,
+        "recall": 0.8387096774193549,
+        "precision": 0.8387096774193549,
+        "f1": 0.8387096774193549
+      },
+      "priority_score": 20,
+      "val_dev_recall_delta": 0.48275862068965514,
+      "holdout_recall_delta": 0.3548387096774194,
+      "v1_val_dev_recall": 0.3448275862068966,
+      "v1_holdout_recall": 0.4838709677419355
+    },
+    "helplessness": {
+      "train_support": 1575,
+      "val_dev": {
+        "support": 103,
+        "correct": 77,
+        "error_count": 26,
+        "recall": 0.7475728155339806,
+        "precision": 0.719626168224299,
+        "f1": 0.7333333333333333
+      },
+      "holdout": {
+        "support": 39,
+        "correct": 27,
+        "error_count": 12,
+        "recall": 0.6923076923076923,
+        "precision": 0.84375,
+        "f1": 0.7605633802816902
+      },
+      "priority_score": 38,
+      "val_dev_recall_delta": 0.058252427184465994,
+      "holdout_recall_delta": 0.02564102564102566,
+      "v1_val_dev_recall": 0.6893203883495146,
+      "v1_holdout_recall": 0.6666666666666666
+    },
+    "joy": {
+      "train_support": 171,
+      "val_dev": {
+        "support": 13,
+        "correct": 4,
+        "error_count": 9,
+        "recall": 0.3076923076923077,
+        "precision": 0.8,
+        "f1": 0.4444444444444444
+      },
+      "holdout": {
+        "support": 7,
+        "correct": 6,
+        "error_count": 1,
+        "recall": 0.8571428571428571,
+        "precision": 1.0,
+        "f1": 0.923076923076923
+      },
+      "priority_score": 10,
+      "val_dev_recall_delta": -0.15384615384615385,
+      "holdout_recall_delta": 0.2857142857142857,
+      "v1_val_dev_recall": 0.46153846153846156,
+      "v1_holdout_recall": 0.5714285714285714
+    },
+    "loneliness": {
+      "train_support": 876,
+      "val_dev": {
+        "support": 77,
+        "correct": 65,
+        "error_count": 12,
+        "recall": 0.8441558441558441,
+        "precision": 0.8441558441558441,
+        "f1": 0.8441558441558441
+      },
+      "holdout": {
+        "support": 38,
+        "correct": 30,
+        "error_count": 8,
+        "recall": 0.7894736842105263,
+        "precision": 0.8333333333333334,
+        "f1": 0.8108108108108109
+      },
+      "priority_score": 20,
+      "val_dev_recall_delta": 0.2597402597402597,
+      "holdout_recall_delta": 0.1842105263157895,
+      "v1_val_dev_recall": 0.5844155844155844,
+      "v1_holdout_recall": 0.6052631578947368
+    },
+    "mixed": {
+      "train_support": 945,
+      "val_dev": {
+        "support": 120,
+        "correct": 57,
+        "error_count": 63,
+        "recall": 0.475,
+        "precision": 0.5533980582524272,
+        "f1": 0.5112107623318386
+      },
+      "holdout": {
+        "support": 57,
+        "correct": 21,
+        "error_count": 36,
+        "recall": 0.3684210526315789,
+        "precision": 0.6176470588235294,
+        "f1": 0.4615384615384615
+      },
+      "priority_score": 99,
+      "val_dev_recall_delta": 0.20833333333333331,
+      "holdout_recall_delta": 0.19298245614035087,
+      "v1_val_dev_recall": 0.26666666666666666,
+      "v1_holdout_recall": 0.17543859649122806
+    },
+    "neutral": {
+      "train_support": 654,
+      "val_dev": {
+        "support": 39,
+        "correct": 19,
+        "error_count": 20,
+        "recall": 0.48717948717948717,
+        "precision": 0.4523809523809524,
+        "f1": 0.4691358024691358
+      },
+      "holdout": {
+        "support": 14,
+        "correct": 7,
+        "error_count": 7,
+        "recall": 0.5,
+        "precision": 0.30434782608695654,
+        "f1": 0.3783783783783784
+      },
+      "priority_score": 27,
+      "val_dev_recall_delta": 0.17948717948717946,
+      "holdout_recall_delta": 0.35714285714285715,
+      "v1_val_dev_recall": 0.3076923076923077,
+      "v1_holdout_recall": 0.14285714285714285
+    },
+    "pride": {
+      "train_support": 234,
+      "val_dev": {
+        "support": 31,
+        "correct": 27,
+        "error_count": 4,
+        "recall": 0.8709677419354839,
+        "precision": 0.5510204081632653,
+        "f1": 0.6749999999999999
+      },
+      "holdout": {
+        "support": 9,
+        "correct": 6,
+        "error_count": 3,
+        "recall": 0.6666666666666666,
+        "precision": 0.5,
+        "f1": 0.5714285714285715
+      },
+      "priority_score": 7,
+      "val_dev_recall_delta": 0.32258064516129037,
+      "holdout_recall_delta": 0.4444444444444444,
+      "v1_val_dev_recall": 0.5483870967741935,
+      "v1_holdout_recall": 0.2222222222222222
+    },
+    "relaxed": {
+      "train_support": 2819,
+      "val_dev": {
+        "support": 290,
+        "correct": 242,
+        "error_count": 48,
+        "recall": 0.8344827586206897,
+        "precision": 0.8461538461538461,
+        "f1": 0.8402777777777778
+      },
+      "holdout": {
+        "support": 119,
+        "correct": 98,
+        "error_count": 21,
+        "recall": 0.8235294117647058,
+        "precision": 0.8099173553719008,
+        "f1": 0.8166666666666667
+      },
+      "priority_score": 69,
+      "val_dev_recall_delta": -0.1344827586206897,
+      "holdout_recall_delta": -0.09243697478991597,
+      "v1_val_dev_recall": 0.9689655172413794,
+      "v1_holdout_recall": 0.9159663865546218
+    },
+    "sadness": {
+      "train_support": 1085,
+      "val_dev": {
+        "support": 93,
+        "correct": 68,
+        "error_count": 25,
+        "recall": 0.7311827956989247,
+        "precision": 0.7083333333333334,
+        "f1": 0.7195767195767196
+      },
+      "holdout": {
+        "support": 38,
+        "correct": 27,
+        "error_count": 11,
+        "recall": 0.7105263157894737,
+        "precision": 0.675,
+        "f1": 0.6923076923076923
+      },
+      "priority_score": 36,
+      "val_dev_recall_delta": -0.08602150537634412,
+      "holdout_recall_delta": -0.13157894736842102,
+      "v1_val_dev_recall": 0.8172043010752689,
+      "v1_holdout_recall": 0.8421052631578947
+    },
+    "shame": {
+      "train_support": 752,
+      "val_dev": {
+        "support": 82,
+        "correct": 64,
+        "error_count": 18,
+        "recall": 0.7804878048780488,
+        "precision": 0.7529411764705882,
+        "f1": 0.7664670658682634
+      },
+      "holdout": {
+        "support": 36,
+        "correct": 32,
+        "error_count": 4,
+        "recall": 0.8888888888888888,
+        "precision": 0.8421052631578947,
+        "f1": 0.8648648648648649
+      },
+      "priority_score": 22,
+      "val_dev_recall_delta": 0.18292682926829273,
+      "holdout_recall_delta": 0.2777777777777777,
+      "v1_val_dev_recall": 0.5975609756097561,
+      "v1_holdout_recall": 0.6111111111111112
+    },
+    "surprise": {
+      "train_support": 64,
+      "val_dev": {
+        "support": 7,
+        "correct": 6,
+        "error_count": 1,
+        "recall": 0.8571428571428571,
+        "precision": 1.0,
+        "f1": 0.923076923076923
+      },
+      "holdout": {
+        "support": 2,
+        "correct": 2,
+        "error_count": 0,
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "priority_score": 1,
+      "val_dev_recall_delta": 0.1428571428571428,
+      "holdout_recall_delta": 1.0,
+      "v1_val_dev_recall": 0.7142857142857143,
+      "v1_holdout_recall": 0.0
+    }
+  },
+  "val_dev_top_errors": [
+    [
+      "anxiety",
+      {
+        "train_support": 6340,
+        "val_dev": {
+          "support": 514,
+          "correct": 400,
+          "error_count": 114,
+          "recall": 0.7782101167315175,
+          "precision": 0.851063829787234,
+          "f1": 0.8130081300813009
+        },
+        "holdout": {
+          "support": 237,
+          "correct": 194,
+          "error_count": 43,
+          "recall": 0.8185654008438819,
+          "precision": 0.8398268398268398,
+          "f1": 0.8290598290598291
+        },
+        "priority_score": 157,
+        "val_dev_recall_delta": -0.07587548638132291,
+        "holdout_recall_delta": -0.04219409282700426,
+        "v1_val_dev_recall": 0.8540856031128404,
+        "v1_holdout_recall": 0.8607594936708861
+      }
+    ],
+    [
+      "mixed",
+      {
+        "train_support": 945,
+        "val_dev": {
+          "support": 120,
+          "correct": 57,
+          "error_count": 63,
+          "recall": 0.475,
+          "precision": 0.5533980582524272,
+          "f1": 0.5112107623318386
+        },
+        "holdout": {
+          "support": 57,
+          "correct": 21,
+          "error_count": 36,
+          "recall": 0.3684210526315789,
+          "precision": 0.6176470588235294,
+          "f1": 0.4615384615384615
+        },
+        "priority_score": 99,
+        "val_dev_recall_delta": 0.20833333333333331,
+        "holdout_recall_delta": 0.19298245614035087,
+        "v1_val_dev_recall": 0.26666666666666666,
+        "v1_holdout_recall": 0.17543859649122806
+      }
+    ],
+    [
+      "relaxed",
+      {
+        "train_support": 2819,
+        "val_dev": {
+          "support": 290,
+          "correct": 242,
+          "error_count": 48,
+          "recall": 0.8344827586206897,
+          "precision": 0.8461538461538461,
+          "f1": 0.8402777777777778
+        },
+        "holdout": {
+          "support": 119,
+          "correct": 98,
+          "error_count": 21,
+          "recall": 0.8235294117647058,
+          "precision": 0.8099173553719008,
+          "f1": 0.8166666666666667
+        },
+        "priority_score": 69,
+        "val_dev_recall_delta": -0.1344827586206897,
+        "holdout_recall_delta": -0.09243697478991597,
+        "v1_val_dev_recall": 0.9689655172413794,
+        "v1_holdout_recall": 0.9159663865546218
+      }
+    ],
+    [
+      "helplessness",
+      {
+        "train_support": 1575,
+        "val_dev": {
+          "support": 103,
+          "correct": 77,
+          "error_count": 26,
+          "recall": 0.7475728155339806,
+          "precision": 0.719626168224299,
+          "f1": 0.7333333333333333
+        },
+        "holdout": {
+          "support": 39,
+          "correct": 27,
+          "error_count": 12,
+          "recall": 0.6923076923076923,
+          "precision": 0.84375,
+          "f1": 0.7605633802816902
+        },
+        "priority_score": 38,
+        "val_dev_recall_delta": 0.058252427184465994,
+        "holdout_recall_delta": 0.02564102564102566,
+        "v1_val_dev_recall": 0.6893203883495146,
+        "v1_holdout_recall": 0.6666666666666666
+      }
+    ],
+    [
+      "sadness",
+      {
+        "train_support": 1085,
+        "val_dev": {
+          "support": 93,
+          "correct": 68,
+          "error_count": 25,
+          "recall": 0.7311827956989247,
+          "precision": 0.7083333333333334,
+          "f1": 0.7195767195767196
+        },
+        "holdout": {
+          "support": 38,
+          "correct": 27,
+          "error_count": 11,
+          "recall": 0.7105263157894737,
+          "precision": 0.675,
+          "f1": 0.6923076923076923
+        },
+        "priority_score": 36,
+        "val_dev_recall_delta": -0.08602150537634412,
+        "holdout_recall_delta": -0.13157894736842102,
+        "v1_val_dev_recall": 0.8172043010752689,
+        "v1_holdout_recall": 0.8421052631578947
+      }
+    ],
+    [
+      "neutral",
+      {
+        "train_support": 654,
+        "val_dev": {
+          "support": 39,
+          "correct": 19,
+          "error_count": 20,
+          "recall": 0.48717948717948717,
+          "precision": 0.4523809523809524,
+          "f1": 0.4691358024691358
+        },
+        "holdout": {
+          "support": 14,
+          "correct": 7,
+          "error_count": 7,
+          "recall": 0.5,
+          "precision": 0.30434782608695654,
+          "f1": 0.3783783783783784
+        },
+        "priority_score": 27,
+        "val_dev_recall_delta": 0.17948717948717946,
+        "holdout_recall_delta": 0.35714285714285715,
+        "v1_val_dev_recall": 0.3076923076923077,
+        "v1_holdout_recall": 0.14285714285714285
+      }
+    ],
+    [
+      "shame",
+      {
+        "train_support": 752,
+        "val_dev": {
+          "support": 82,
+          "correct": 64,
+          "error_count": 18,
+          "recall": 0.7804878048780488,
+          "precision": 0.7529411764705882,
+          "f1": 0.7664670658682634
+        },
+        "holdout": {
+          "support": 36,
+          "correct": 32,
+          "error_count": 4,
+          "recall": 0.8888888888888888,
+          "precision": 0.8421052631578947,
+          "f1": 0.8648648648648649
+        },
+        "priority_score": 22,
+        "val_dev_recall_delta": 0.18292682926829273,
+        "holdout_recall_delta": 0.2777777777777777,
+        "v1_val_dev_recall": 0.5975609756097561,
+        "v1_holdout_recall": 0.6111111111111112
+      }
+    ],
+    [
+      "fear",
+      {
+        "train_support": 1388,
+        "val_dev": {
+          "support": 92,
+          "correct": 75,
+          "error_count": 17,
+          "recall": 0.8152173913043478,
+          "precision": 0.6756756756756757,
+          "f1": 0.7389162561576353
+        },
+        "holdout": {
+          "support": 32,
+          "correct": 29,
+          "error_count": 3,
+          "recall": 0.90625,
+          "precision": 0.5918367346938775,
+          "f1": 0.7160493827160493
+        },
+        "priority_score": 20,
+        "val_dev_recall_delta": 0.14130434782608692,
+        "holdout_recall_delta": 0.21875,
+        "v1_val_dev_recall": 0.6739130434782609,
+        "v1_holdout_recall": 0.6875
+      }
+    ],
+    [
+      "loneliness",
+      {
+        "train_support": 876,
+        "val_dev": {
+          "support": 77,
+          "correct": 65,
+          "error_count": 12,
+          "recall": 0.8441558441558441,
+          "precision": 0.8441558441558441,
+          "f1": 0.8441558441558441
+        },
+        "holdout": {
+          "support": 38,
+          "correct": 30,
+          "error_count": 8,
+          "recall": 0.7894736842105263,
+          "precision": 0.8333333333333334,
+          "f1": 0.8108108108108109
+        },
+        "priority_score": 20,
+        "val_dev_recall_delta": 0.2597402597402597,
+        "holdout_recall_delta": 0.1842105263157895,
+        "v1_val_dev_recall": 0.5844155844155844,
+        "v1_holdout_recall": 0.6052631578947368
+      }
+    ],
+    [
+      "gratitude",
+      {
+        "train_support": 695,
+        "val_dev": {
+          "support": 87,
+          "correct": 72,
+          "error_count": 15,
+          "recall": 0.8275862068965517,
+          "precision": 0.7912087912087912,
+          "f1": 0.8089887640449438
+        },
+        "holdout": {
+          "support": 31,
+          "correct": 26,
+          "error_count": 5,
+          "recall": 0.8387096774193549,
+          "precision": 0.8387096774193549,
+          "f1": 0.8387096774193549
+        },
+        "priority_score": 20,
+        "val_dev_recall_delta": 0.48275862068965514,
+        "holdout_recall_delta": 0.3548387096774194,
+        "v1_val_dev_recall": 0.3448275862068966,
+        "v1_holdout_recall": 0.4838709677419355
+      }
+    ],
+    [
+      "anger",
+      {
+        "train_support": 855,
+        "val_dev": {
+          "support": 79,
+          "correct": 68,
+          "error_count": 11,
+          "recall": 0.8607594936708861,
+          "precision": 0.7906976744186046,
+          "f1": 0.8242424242424243
+        },
+        "holdout": {
+          "support": 36,
+          "correct": 32,
+          "error_count": 4,
+          "recall": 0.8888888888888888,
+          "precision": 0.8888888888888888,
+          "f1": 0.8888888888888888
+        },
+        "priority_score": 15,
+        "val_dev_recall_delta": 0.0,
+        "holdout_recall_delta": 0.08333333333333326,
+        "v1_val_dev_recall": 0.8607594936708861,
+        "v1_holdout_recall": 0.8055555555555556
+      }
+    ],
+    [
+      "joy",
+      {
+        "train_support": 171,
+        "val_dev": {
+          "support": 13,
+          "correct": 4,
+          "error_count": 9,
+          "recall": 0.3076923076923077,
+          "precision": 0.8,
+          "f1": 0.4444444444444444
+        },
+        "holdout": {
+          "support": 7,
+          "correct": 6,
+          "error_count": 1,
+          "recall": 0.8571428571428571,
+          "precision": 1.0,
+          "f1": 0.923076923076923
+        },
+        "priority_score": 10,
+        "val_dev_recall_delta": -0.15384615384615385,
+        "holdout_recall_delta": 0.2857142857142857,
+        "v1_val_dev_recall": 0.46153846153846156,
+        "v1_holdout_recall": 0.5714285714285714
+      }
+    ],
+    [
+      "pride",
+      {
+        "train_support": 234,
+        "val_dev": {
+          "support": 31,
+          "correct": 27,
+          "error_count": 4,
+          "recall": 0.8709677419354839,
+          "precision": 0.5510204081632653,
+          "f1": 0.6749999999999999
+        },
+        "holdout": {
+          "support": 9,
+          "correct": 6,
+          "error_count": 3,
+          "recall": 0.6666666666666666,
+          "precision": 0.5,
+          "f1": 0.5714285714285715
+        },
+        "priority_score": 7,
+        "val_dev_recall_delta": 0.32258064516129037,
+        "holdout_recall_delta": 0.4444444444444444,
+        "v1_val_dev_recall": 0.5483870967741935,
+        "v1_holdout_recall": 0.2222222222222222
+      }
+    ],
+    [
+      "care",
+      {
+        "train_support": 79,
+        "val_dev": {
+          "support": 7,
+          "correct": 2,
+          "error_count": 5,
+          "recall": 0.2857142857142857,
+          "precision": 0.125,
+          "f1": 0.17391304347826086
+        },
+        "holdout": {
+          "support": 4,
+          "correct": 2,
+          "error_count": 2,
+          "recall": 0.5,
+          "precision": 0.2857142857142857,
+          "f1": 0.36363636363636365
+        },
+        "priority_score": 7,
+        "val_dev_recall_delta": 0.14285714285714285,
+        "holdout_recall_delta": 0.5,
+        "v1_val_dev_recall": 0.14285714285714285,
+        "v1_holdout_recall": 0.0
+      }
+    ],
+    [
+      "disgust",
+      {
+        "train_support": 125,
+        "val_dev": {
+          "support": 15,
+          "correct": 15,
+          "error_count": 0,
+          "recall": 1.0,
+          "precision": 0.7894736842105263,
+          "f1": 0.8823529411764706
+        },
+        "holdout": {
+          "support": 6,
+          "correct": 5,
+          "error_count": 1,
+          "recall": 0.8333333333333334,
+          "precision": 0.8333333333333334,
+          "f1": 0.8333333333333334
+        },
+        "priority_score": 1,
+        "val_dev_recall_delta": 0.4,
+        "holdout_recall_delta": 0.5,
+        "v1_val_dev_recall": 0.6,
+        "v1_holdout_recall": 0.3333333333333333
+      }
+    ],
+    [
+      "surprise",
+      {
+        "train_support": 64,
+        "val_dev": {
+          "support": 7,
+          "correct": 6,
+          "error_count": 1,
+          "recall": 0.8571428571428571,
+          "precision": 1.0,
+          "f1": 0.923076923076923
+        },
+        "holdout": {
+          "support": 2,
+          "correct": 2,
+          "error_count": 0,
+          "recall": 1.0,
+          "precision": 1.0,
+          "f1": 1.0
+        },
+        "priority_score": 1,
+        "val_dev_recall_delta": 0.1428571428571428,
+        "holdout_recall_delta": 1.0,
+        "v1_val_dev_recall": 0.7142857142857143,
+        "v1_holdout_recall": 0.0
+      }
+    ]
+  ],
+  "val_dev_top_confusions": [
+    {
+      "gt": "anxiety",
+      "pred": "fear",
+      "count": 30,
+      "gt_support": 514,
+      "error_share": 0.2631578947368421
+    },
+    {
+      "gt": "anxiety",
+      "pred": "mixed",
+      "count": 22,
+      "gt_support": 514,
+      "error_share": 0.19298245614035087
+    },
+    {
+      "gt": "mixed",
+      "pred": "anxiety",
+      "count": 18,
+      "gt_support": 120,
+      "error_share": 0.2857142857142857
+    },
+    {
+      "gt": "anxiety",
+      "pred": "helplessness",
+      "count": 14,
+      "gt_support": 514,
+      "error_share": 0.12280701754385964
+    },
+    {
+      "gt": "relaxed",
+      "pred": "pride",
+      "count": 14,
+      "gt_support": 290,
+      "error_share": 0.2916666666666667
+    },
+    {
+      "gt": "gratitude",
+      "pred": "relaxed",
+      "count": 12,
+      "gt_support": 87,
+      "error_share": 0.8
+    },
+    {
+      "gt": "fear",
+      "pred": "anxiety",
+      "count": 11,
+      "gt_support": 92,
+      "error_share": 0.6470588235294118
+    },
+    {
+      "gt": "relaxed",
+      "pred": "gratitude",
+      "count": 11,
+      "gt_support": 290,
+      "error_share": 0.22916666666666666
+    },
+    {
+      "gt": "mixed",
+      "pred": "relaxed",
+      "count": 11,
+      "gt_support": 120,
+      "error_share": 0.1746031746031746
+    },
+    {
+      "gt": "helplessness",
+      "pred": "anxiety",
+      "count": 10,
+      "gt_support": 103,
+      "error_share": 0.38461538461538464
+    },
+    {
+      "gt": "helplessness",
+      "pred": "sadness",
+      "count": 9,
+      "gt_support": 103,
+      "error_share": 0.34615384615384615
+    },
+    {
+      "gt": "sadness",
+      "pred": "helplessness",
+      "count": 9,
+      "gt_support": 93,
+      "error_share": 0.36
+    },
+    {
+      "gt": "anxiety",
+      "pred": "neutral",
+      "count": 9,
+      "gt_support": 514,
+      "error_share": 0.07894736842105263
+    },
+    {
+      "gt": "anxiety",
+      "pred": "relaxed",
+      "count": 8,
+      "gt_support": 514,
+      "error_share": 0.07017543859649122
+    },
+    {
+      "gt": "anxiety",
+      "pred": "shame",
+      "count": 8,
+      "gt_support": 514,
+      "error_share": 0.07017543859649122
+    }
+  ],
+  "holdout_top_confusions": [
+    {
+      "gt": "mixed",
+      "pred": "anxiety",
+      "count": 15,
+      "gt_support": 57,
+      "error_share": 0.4166666666666667
+    },
+    {
+      "gt": "anxiety",
+      "pred": "fear",
+      "count": 14,
+      "gt_support": 237,
+      "error_share": 0.32558139534883723
+    },
+    {
+      "gt": "anxiety",
+      "pred": "mixed",
+      "count": 9,
+      "gt_support": 237,
+      "error_share": 0.20930232558139536
+    },
+    {
+      "gt": "relaxed",
+      "pred": "neutral",
+      "count": 7,
+      "gt_support": 119,
+      "error_share": 0.3333333333333333
+    },
+    {
+      "gt": "mixed",
+      "pred": "relaxed",
+      "count": 6,
+      "gt_support": 57,
+      "error_share": 0.16666666666666666
+    },
+    {
+      "gt": "helplessness",
+      "pred": "anxiety",
+      "count": 6,
+      "gt_support": 39,
+      "error_share": 0.5
+    },
+    {
+      "gt": "relaxed",
+      "pred": "anxiety",
+      "count": 5,
+      "gt_support": 119,
+      "error_share": 0.23809523809523808
+    },
+    {
+      "gt": "anxiety",
+      "pred": "relaxed",
+      "count": 5,
+      "gt_support": 237,
+      "error_share": 0.11627906976744186
+    },
+    {
+      "gt": "gratitude",
+      "pred": "relaxed",
+      "count": 4,
+      "gt_support": 31,
+      "error_share": 0.8
+    },
+    {
+      "gt": "loneliness",
+      "pred": "sadness",
+      "count": 4,
+      "gt_support": 38,
+      "error_share": 0.5
+    },
+    {
+      "gt": "anxiety",
+      "pred": "shame",
+      "count": 4,
+      "gt_support": 237,
+      "error_share": 0.09302325581395349
+    },
+    {
+      "gt": "relaxed",
+      "pred": "gratitude",
+      "count": 4,
+      "gt_support": 119,
+      "error_share": 0.19047619047619047
+    },
+    {
+      "gt": "anxiety",
+      "pred": "neutral",
+      "count": 4,
+      "gt_support": 237,
+      "error_share": 0.09302325581395349
+    },
+    {
+      "gt": "mixed",
+      "pred": "pride",
+      "count": 4,
+      "gt_support": 57,
+      "error_share": 0.1111111111111111
+    },
+    {
+      "gt": "sadness",
+      "pred": "loneliness",
+      "count": 4,
+      "gt_support": 38,
+      "error_share": 0.36363636363636365
+    }
+  ],
+  "top_confusions_both": [
+    {
+      "gt": "anxiety",
+      "pred": "fear",
+      "count": 44,
+      "val_dev_count": 30,
+      "holdout_count": 14
+    },
+    {
+      "gt": "mixed",
+      "pred": "anxiety",
+      "count": 33,
+      "val_dev_count": 18,
+      "holdout_count": 15
+    },
+    {
+      "gt": "anxiety",
+      "pred": "mixed",
+      "count": 31,
+      "val_dev_count": 22,
+      "holdout_count": 9
+    },
+    {
+      "gt": "mixed",
+      "pred": "relaxed",
+      "count": 17,
+      "val_dev_count": 11,
+      "holdout_count": 6
+    },
+    {
+      "gt": "gratitude",
+      "pred": "relaxed",
+      "count": 16,
+      "val_dev_count": 12,
+      "holdout_count": 4
+    },
+    {
+      "gt": "anxiety",
+      "pred": "helplessness",
+      "count": 16,
+      "val_dev_count": 14,
+      "holdout_count": 2
+    },
+    {
+      "gt": "helplessness",
+      "pred": "anxiety",
+      "count": 16,
+      "val_dev_count": 10,
+      "holdout_count": 6
+    },
+    {
+      "gt": "relaxed",
+      "pred": "pride",
+      "count": 16,
+      "val_dev_count": 14,
+      "holdout_count": 2
+    },
+    {
+      "gt": "relaxed",
+      "pred": "gratitude",
+      "count": 15,
+      "val_dev_count": 11,
+      "holdout_count": 4
+    },
+    {
+      "gt": "fear",
+      "pred": "anxiety",
+      "count": 14,
+      "val_dev_count": 11,
+      "holdout_count": 3
+    },
+    {
+      "gt": "anxiety",
+      "pred": "relaxed",
+      "count": 13,
+      "val_dev_count": 8,
+      "holdout_count": 5
+    },
+    {
+      "gt": "anxiety",
+      "pred": "neutral",
+      "count": 13,
+      "val_dev_count": 9,
+      "holdout_count": 4
+    },
+    {
+      "gt": "relaxed",
+      "pred": "anxiety",
+      "count": 12,
+      "val_dev_count": 7,
+      "holdout_count": 5
+    },
+    {
+      "gt": "anxiety",
+      "pred": "shame",
+      "count": 12,
+      "val_dev_count": 8,
+      "holdout_count": 4
+    },
+    {
+      "gt": "neutral",
+      "pred": "relaxed",
+      "count": 12,
+      "val_dev_count": 8,
+      "holdout_count": 4
+    }
+  ],
+  "high_value_classes": [
+    "anxiety",
+    "mixed",
+    "relaxed",
+    "helplessness",
+    "sadness",
+    "neutral",
+    "shame",
+    "fear",
+    "loneliness",
+    "gratitude",
+    "anger",
+    "joy"
+  ],
+  "v2_regressed_high_support": [
+    "anxiety",
+    "relaxed",
+    "sadness",
+    "joy"
+  ],
+  "recommendation": {
+    "primary_target": "anxiety",
+    "secondary_target": "mixed",
+    "top3_targets": [
+      "anxiety",
+      "mixed",
+      "relaxed"
+    ],
+    "do_not_touch_classes": [],
+    "recommended_max_steps": 160,
+    "recommended_lr": 1e-05,
+    "strategy": "continued SFT from V2-E1 FINAL_2334; 70-80% V2-E1 emotion anchors and 20-30% targeted hard examples for the primary/secondary confusion pairs, <=8000 samples, max_steps<=160, lr<=1e-5; protect profile/response with FAST96 gates."
+  }
+}

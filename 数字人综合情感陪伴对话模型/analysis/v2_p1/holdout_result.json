@@ -1,0 +1,142 @@
+{
+  "samples": 705,
+  "baseline": {
+    "personality_traits": 0.6340425531914894,
+    "interests": 0.8609929078014185,
+    "style": 0.4808510638297872,
+    "profile_mean": 0.6586288416075651
+  },
+  "hybrid": {
+    "personality_traits": 0.6340425531914894,
+    "interests": 0.8609929078014185,
+    "style": 0.5531914893617021,
+    "profile_mean": 0.68274231678487
+  },
+  "style_delta": 0.07234042553191489,
+  "style_delta_ci95": [
+    0.031205673758865248,
+    0.11347517730496454
+  ],
+  "profile_mean_delta": 0.02411347517730496,
+  "profile_mean_delta_ci95": [
+    0.010401891252955082,
+    0.037825059101654845
+  ],
+  "wrong_to_right": 138,
+  "right_to_wrong": 87,
+  "both_right": 252,
+  "both_wrong": 228,
+  "net_gain": 51,
+  "label_fn": {
+    "rational": {
+      "gt_positive": 185,
+      "before": 43,
+      "after": 95
+    },
+    "direct": {
+      "gt_positive": 85,
+      "before": 48,
+      "after": 69
+    },
+    "detailed": {
+      "gt_positive": 53,
+      "before": 39,
+      "after": 48
+    }
+  },
+  "gt_empty_rate": 0.4907801418439716,
+  "v2_empty_rate": 0.3276595744680851,
+  "classifier_empty_rate": 0.7092198581560284,
+  "top_gt_sets": [
+    {
+      "set": [],
+      "support": 346,
+      "v2_accuracy": 0.5086705202312138,
+      "classifier_accuracy": 0.8641618497109826
+    },
+    {
+      "set": [
+        "rational"
+      ],
+      "support": 147,
+      "v2_accuracy": 0.8095238095238095,
+      "classifier_accuracy": 0.5102040816326531
+    },
+    {
+      "set": [
+        "direct"
+      ],
+      "support": 54,
+      "v2_accuracy": 0.4074074074074074,
+      "classifier_accuracy": 0.16666666666666666
+    },
+    {
+      "set": [
+        "detailed"
+      ],
+      "support": 38,
+      "v2_accuracy": 0.21052631578947367,
+      "classifier_accuracy": 0.13157894736842105
+    },
+    {
+      "set": [
+        "brief"
+      ],
+      "support": 21,
+      "v2_accuracy": 0.23809523809523808,
+      "classifier_accuracy": 0.0
+    },
+    {
+      "set": [
+        "colloquial"
+      ],
+      "support": 12,
+      "v2_accuracy": 0.6666666666666666,
+      "classifier_accuracy": 0.08333333333333333
+    },
+    {
+      "set": [
+        "indirect"
+      ],
+      "support": 12,
+      "v2_accuracy": 0.08333333333333333,
+      "classifier_accuracy": 0.0
+    },
+    {
+      "set": [
+        "direct",
+        "rational"
+      ],
+      "support": 11,
+      "v2_accuracy": 0.0,
+      "classifier_accuracy": 0.0
+    },
+    {
+      "set": [
+        "detailed",
+        "rational"
+      ],
+      "support": 10,
+      "v2_accuracy": 0.0,
+      "classifier_accuracy": 0.0
+    },
+    {
+      "set": [
+        "high_emotional_expression"
+      ],
+      "support": 8,
+      "v2_accuracy": 0.0,
+      "classifier_accuracy": 0.125
+    }
+  ],
+  "latency_avg_ms": 1.4594329573900988,
+  "latency_p50_ms": 1.2399600818753242,
+  "latency_p95_ms": 2.6271104812622066,
+  "statistically_supported": true,
+  "result": "HOLDOUT_PROMOTE",
+  "model_hashes": {
+    "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-p1-profile-classifier/vectorizer.joblib": "f000d8ae34f561b2e377fb66bcca1db3bf4ce85e15f680c932419fcf5577fb61",
+    "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-p1-profile-classifier/classifiers.joblib": "b4d2ffad6afbd167e1bf27df1408a856b125bd32b1b7dc1a55855c88f4b69f86",
+    "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-p1-profile-classifier/config.json": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc"
+  }
+}

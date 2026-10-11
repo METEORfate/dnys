@@ -1,0 +1,25 @@
+{
+  "samples": 705,
+  "bertscore_model": "/root/development/assets/bert-base-multilingual-cased",
+  "num_layers": 9,
+  "v1_precision": 0.7469531893730164,
+  "v1_recall": 0.7394378781318665,
+  "v1_f1": 0.7426420450210571,
+  "v2_precision": 0.7418308854103088,
+  "v2_recall": 0.7399420738220215,
+  "v2_f1": 0.7403573989868164,
+  "bertscore_f1_delta": -0.002284563602285182,
+  "bertscore_f1_delta_ci95": [
+    -0.0048878508256682265,
+    0.00046746570167812047
+  ],
+  "v2_better_samples": 339,
+  "v1_better_samples": 362,
+  "equal_samples": 4,
+  "bleu_delta": -0.002878742,
+  "rouge_delta": -0.0082214718,
+  "response_quality_direction": "SLIGHTLY_DEGRADED",
+  "FINAL_MODEL_CANDIDATE": "V2_E1",
+  "runtime_baseline_preserved": "YES",
+  "blocking_issue": "NONE"
+}

@@ -1,0 +1,81 @@
+{
+  "experiment": "V2-E3-FAST-PROFILE-BOOST",
+  "dataset_total": 6000,
+  "emotion_anchor_count": 4200,
+  "profile_positive_count": 1800,
+  "training_steps": 120,
+  "training_minutes": 36.0,
+  "checkpoints": {
+    "checkpoint-40": {
+      "step": 40,
+      "emotion": 0.6875,
+      "profile": 0.6736111111111112,
+      "personality": 0.6875,
+      "interests": 0.8645833333333334,
+      "style": 0.46875,
+      "bleu": 0.13741460309766393,
+      "rouge": 0.2754317032629465,
+      "bert": 0.7322163581848145,
+      "result": "PROMOTE",
+      "proxy": 0.381687554848475,
+      "deltas": {
+        "emotion": -0.01041666666666663,
+        "profile": 0.01736111111111116,
+        "bleu": 0.002755252303706879,
+        "rouge": 0.005958407243479791,
+        "bert": 0.0010238289848144566
+      }
+    },
+    "checkpoint-80": {
+      "step": 80,
+      "emotion": 0.6875,
+      "profile": 0.6840277777777778,
+      "personality": 0.6875,
+      "interests": 0.8645833333333334,
+      "style": 0.5,
+      "bleu": 0.1316111340348243,
+      "rouge": 0.2690777258182968,
+      "bert": 0.7316448092460632,
+      "result": "REJECT (BLEU protection)",
+      "proxy": 0.3774445563663948,
+      "deltas": {
+        "emotion": -0.01041666666666663,
+        "profile": 0.02777777777777779,
+        "bleu": -0.003048216759132749,
+        "rouge": -0.0003955702011699258,
+        "bert": 0.0004522800460632359
+      }
+    },
+    "checkpoint-120": {
+      "step": 120,
+      "emotion": 0.6875,
+      "profile": 0.6666666666666666,
+      "personality": 0.6666666666666666,
+      "interests": 0.8645833333333334,
+      "style": 0.46875,
+      "bleu": 0.13212206681017014,
+      "rouge": 0.2657061240814187,
+      "bert": 0.7301947474479675,
+      "result": "REJECT (ROUGE protection)",
+      "proxy": 0.37600764611318543,
+      "deltas": {
+        "emotion": -0.01041666666666663,
+        "profile": 0.01041666666666663,
+        "bleu": -0.0025372839837869143,
+        "rouge": -0.0037671719380480417,
+        "bert": -0.0009977817520324672
+      }
+    }
+  },
+  "baseline": {
+    "emotion": 0.6979166666666666,
+    "profile": 0.65625,
+    "bleu": 0.13465935079395705,
+    "rouge": 0.26947329601946673,
+    "bert": 0.7311925292
+  },
+  "fast_winner": "checkpoint-40",
+  "blocking_issue": "NONE",
+  "unique_original_samples": 5550,
+  "max_repeat_factor": 2
+}

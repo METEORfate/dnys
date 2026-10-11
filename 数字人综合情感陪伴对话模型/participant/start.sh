@@ -12,7 +12,7 @@ HOST="${VLLM_HOST:-127.0.0.1}"
 PORT="${VLLM_PORT:-8000}"
 API_KEY="${VLLM_API_KEY:-}"
 START_TIMEOUT="${VLLM_START_TIMEOUT:-600}"
-PYTHON_CMD="${PYTHON_BIN:-python3}"
+PYTHON_CMD="${PYTHON_BIN:-$SCRIPT_DIR/python_env/bin/python}"
 VLLM_BIN="${VLLM_BIN:-vllm}"
 VLLM_ARGS=(--tensor-parallel-size 2) # 例如：VLLM_ARGS=(--tensor-parallel-size 2)
 
@@ -44,14 +44,8 @@ if [[ -z "$BACKEND" ]]; then
     "$CONFIG_FILE")"
 fi
 
-if [[ "$BACKEND" == "transformers" ]]; then
-  echo "后端: transformers（直接加载本地模型）"
-  export EVALUATION_BACKEND="transformers"
-  exec "$PYTHON_CMD" "$SCRIPT_DIR/run_inference.py" "$TEST_FILE" "$RESULT_DIR"
-fi
-
 if [[ "$BACKEND" != "openai_compatible" ]]; then
-  echo "ERROR: backend 必须为 transformers 或 openai_compatible: $BACKEND" >&2
+  echo "ERROR: Competition Runtime LoRA requires backend=openai_compatible (vLLM): $BACKEND" >&2
   exit 1
 fi
 
@@ -62,11 +56,15 @@ MODEL_DIR="${VLLM_MODEL_DIR:-${EVALUATION_MODEL_PATH:-$CONFIG_MODEL_PATH}}"
 if [[ -n "$MODEL_DIR" && "$MODEL_DIR" != /* ]]; then
   MODEL_DIR="$SCRIPT_DIR/$MODEL_DIR"
 fi
-MODEL_BASENAME="$(basename -- "$MODEL_DIR")"
-MODEL_NAME="${VLLM_SERVED_MODEL_NAME:-$MODEL_BASENAME}"
+MODEL_NAME="emotion-companion-lora"
 
 [[ -d "$MODEL_DIR" && -f "$MODEL_DIR/config.json" ]] || {
   echo "ERROR: vLLM 模型目录不存在或缺少 config.json: $MODEL_DIR" >&2
+  exit 1
+}
+ADAPTER_DIR="$SCRIPT_DIR/model/lora_adapter"
+[[ -f "$ADAPTER_DIR/adapter_config.json" && -f "$ADAPTER_DIR/adapter_model.safetensors" ]] || {
+  echo "ERROR: LoRA adapter 不完整，要求正式路径包含 adapter_config.json 和 adapter_model.safetensors: $ADAPTER_DIR" >&2
   exit 1
 }
 command -v "$VLLM_BIN" >/dev/null 2>&1 || {
@@ -97,6 +95,8 @@ COMMAND=(
   --host "$HOST"
   --port "$PORT"
   --served-model-name "$MODEL_NAME"
+  --enable-lora
+  --lora-modules "emotion-companion-lora=$ADAPTER_DIR"
   "${VLLM_ARGS[@]}"
 )
 [[ -n "$API_KEY" ]] && COMMAND+=(--api-key "$API_KEY")

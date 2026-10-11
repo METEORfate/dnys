@@ -1,0 +1,14 @@
+{
+  "dataset_total": 6000,
+  "anchor_count": 4800,
+  "recovery_count": 1200,
+  "recovered_anxiety": 600,
+  "recovered_relaxed": 300,
+  "recovered_sadness": 150,
+  "recovered_mixed": 150,
+  "mixed_anchor": 313,
+  "recovery_samples_previously_missing_from_v2e1": 1200,
+  "unique_original": 5461,
+  "max_repeat": 2,
+  "train_only_verified": true
+}

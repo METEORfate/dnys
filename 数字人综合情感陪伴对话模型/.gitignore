@@ -1,0 +1,50 @@
+# training data
+participant/training/data/*.jsonl
+
+# model weights
+participant/model/
+
+# training output
+participant/training/output/
+
+# checkpoints
+checkpoint/
+checkpoints/
+*.safetensors
+*.bin
+# local training artifacts
+training/**/__pycache__/
+training/**pycache**/
+training/outputs/
+training/eval_results/
+training/eval_results*/
+result_baseline/
+*.zip
+__pycache__/
+*.pyc
+
+# Local models, environments and runtime outputs
+*.pt
+*.pth
+*.ckpt
+*.joblib
+python_env/
+conda_env/
+runtime_test/
+profile_classifier/
+.cache/
+.ipynb_checkpoints/
+*.tar
+*.tar.gz
+# Raw datasets stay local; already tracked copies are not removed
+训练-验证-数据集/
+# Analysis input conversations and row predictions are not source reports
+analysis/fast_iter_mini_dev_96.jsonl
+analysis/HUMAN_REVIEW_PACKET.md
+analysis/human_review_packet.jsonl
+analysis/v2_c3_second_pass/A.json
+analysis/v2_c3_second_pass/B.json
+analysis/v2_c3_second_pass/*predictions.jsonl
+# Explicitly version index-only manifests, never materialized SFT text
+!training/data/v2_e1_emotion_rebalance_manifest.jsonl
+!training/data/v2_e1_emotion_rebalance_fixed18657_manifest.jsonl

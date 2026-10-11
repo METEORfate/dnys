@@ -1,0 +1,23 @@
+{
+  "prediction_row_mapping_verified": true,
+  "verification_method": "CODE_PROOF",
+  "prediction_path": "training/eval_results/v1_valdev_reconstructed/prediction.jsonl",
+  "val_dev_path": "training/data/val_dev_sft.jsonl",
+  "input_lines": 1649,
+  "prediction_lines": 1649,
+  "prediction_fields": [
+    "emotion_label",
+    "id",
+    "memory_refs",
+    "response_text",
+    "user_profile"
+  ],
+  "input_order_preserved_by_code": "YES",
+  "shuffle_present": "NO",
+  "filter_or_drop_present": "NO (only blank physical lines are skipped; dataset has 1649 nonblank lines)",
+  "async_reordering_present": "NO",
+  "mapping_checks": "N/A; prediction stores no input/reference fields",
+  "mapping_matches": "N/A",
+  "row_manifest": "analysis/v1_valdev_row_manifest.jsonl",
+  "notes": "read_rows enumerates original JSONL order; main loop iterates rows directly; one prediction append/write per row; no DataLoader, shuffle, async, or exception skip branch. Prediction id fields are empty in the generated file, so identity is established by code proof and row count, not IDs."
+}

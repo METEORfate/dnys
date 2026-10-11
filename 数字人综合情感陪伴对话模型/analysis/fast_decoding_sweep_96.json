@@ -1,0 +1,23 @@
+{
+  "A": {
+    "emotion": 0.6979166666666666,
+    "profile": 0.65625,
+    "BLEU": 0.13465935079395705,
+    "ROUGE": 0.26947329601946673,
+    "BERTScore": 0.7311925292,
+    "proxy": 0.3784417253378079
+  },
+  "C": {
+    "emotion": 0.6979166666666666,
+    "profile": 0.6666666666666666,
+    "BLEU": 0.1376048241249046,
+    "ROUGE": 0.26599930444277275,
+    "BERTScore": 0.7300489545,
+    "proxy": 0.3778843610225591
+  },
+  "B": "SKIP_IDENTICAL_TO_A",
+  "D": "UNSUPPORTED_BY_FORMAL_EVALUATOR",
+  "winner": "CURRENT",
+  "elapsed_minutes": "~20",
+  "blocking_issue": "D and C required temporary evaluator; C completed, D skipped as instructed"
+}
