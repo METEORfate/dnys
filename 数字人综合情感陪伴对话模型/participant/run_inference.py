@@ -28,7 +28,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 from core.message_builder import build_messages
 from core.output_schema import EMOTIONS, MEMORY_RE, PROFILE_LABELS, parse_prediction
-from core.prompt_loader import load_system_prompt
+from core.prompt_loader import load_system_prompt, prompt_metadata
 from style_postprocessor import StylePostprocessor
 
 
