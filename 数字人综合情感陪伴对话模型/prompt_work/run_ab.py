@@ -16,11 +16,13 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from core.message_builder import conversation_text
 from core.output_schema import EMOTIONS, PROFILE_LABELS, extract_object, normalize_prediction
+from copy import deepcopy
 from core.prompt_loader import load_system_prompt, prompt_metadata
 from training.create_validation_split import choose_dev_conversations
 from training.evaluate_lora import sentence_bleu4, rouge_l_f1, classification_diagnostics
 sys.path.insert(0, str(ROOT / "participant"))
 from participant.run_inference import request_chat_completion, load_config, percentile95
+from style_postprocessor import StylePostprocessor
 
 DEFAULT_DATA = ROOT / "训练-验证-数据集/val/val_public.jsonl"
 
@@ -105,6 +107,7 @@ def metrics(rows):
     flags = set().union(*(r["validity"].keys() for r in rows))
     return {
         "samples":size,"inference_failures":sum(r["error"] is not None for r in rows),
+        "json_parse_failures":sum(r.get("parse_error") is not None for r in rows),
         "emotion_accuracy":sum(correct)/size,
         "emotion_macro_f1":sum(v["f1"] for v in classes.values())/len(classes),
         "emotion_classes":classes,"confusion_matrix":matrix,
@@ -134,6 +137,7 @@ def main():
     if config["backend"]!="openai_compatible":
         parser.error("A/B uses one prestarted OpenAI-compatible service; set EVALUATION_BACKEND=openai_compatible")
     config_public={key:value for key,value in config.items() if key not in ("api_key",)}
+    processor=StylePostprocessor()
     rows=selected_rows(dataset(args.data_file,args.split,args.seed),args.tier,args.seed)
     run_dir=args.output_dir/(datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")+"_"+args.tier)
     run_dir.mkdir(parents=True,exist_ok=False)
@@ -154,25 +158,35 @@ def main():
             start=time.perf_counter()
             raw_text=""
             error=None
+            parse_error=None
             try:
                 raw_text=request_chat_completion(config,messages,config["generation"])
-                raw=extract_object(raw_text)
+                try:
+                    raw=extract_object(raw_text)
+                except ValueError as exc:
+                    parse_error=str(exc)
+                    raw={}
             except Exception as exc:
                 error=f"{type(exc).__name__}: {str(exc)[:200]}"
                 raw={}
             elapsed=(time.perf_counter()-start)*1000
             normalized=normalize_prediction(row["id"],raw)
+            final_prediction=deepcopy(normalized)
+            if error is None and parse_error is None:
+                final_prediction=processor.apply(normalized,row["history"])
             results.append({"id":row["id"],"raw_text":raw_text,"raw_object":raw,
-                            "validity":validity(raw),"prediction":normalized,"target":row["target"],
-                            "error":error,"latency_ms":elapsed})
+                            "validity":validity(raw),"prediction":normalized,"postprocessed_prediction":final_prediction,
+                            "target":row["target"],"error":error,"parse_error":parse_error,"latency_ms":elapsed})
             print(f"{key} {len(results)}/{len(rows)} {row['id']}",flush=True)
         with (out_dir/"predictions.jsonl").open("w",encoding="utf-8") as f:
             for r in results:
                 f.write(json.dumps(r,ensure_ascii=False)+"\n")
         scores=metrics(results)
-        summaries[key]={"prompt":meta,"metrics":scores}
+        final_rows=[{**r,"prediction":r["postprocessed_prediction"]} for r in results]
+        final_scores=metrics(final_rows)
+        summaries[key]={"prompt":meta,"metrics":scores,"postprocessed_metrics":final_scores}
         all_results[key]=results
-        (out_dir/"metrics.json").write_text(json.dumps(scores,ensure_ascii=False,indent=2),encoding="utf-8")
+        (out_dir/"metrics.json").write_text(json.dumps({"model_raw_normalized":scores,"after_classifier":final_scores},ensure_ascii=False,indent=2),encoding="utf-8")
     keys=list(summaries)
     a,b=all_results[keys[0]],all_results[keys[1]]
     changes=[]
