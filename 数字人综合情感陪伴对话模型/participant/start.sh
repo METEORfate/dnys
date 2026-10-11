@@ -14,7 +14,7 @@ API_KEY="${VLLM_API_KEY:-}"
 START_TIMEOUT="${VLLM_START_TIMEOUT:-600}"
 PYTHON_CMD="${PYTHON_BIN:-$SCRIPT_DIR/python_env/bin/python}"
 VLLM_BIN="${VLLM_BIN:-vllm}"
-VLLM_ARGS=(--tensor-parallel-size 2) # 例如：VLLM_ARGS=(--tensor-parallel-size 2)
+VLLM_ARGS=(--tensor-parallel-size "${VLLM_TENSOR_PARALLEL_SIZE:-1}") # 默认单卡
 
 if [[ $# -ne 2 ]]; then
   echo "用法: $0 TEST_FILE RESULT_DIR" >&2
