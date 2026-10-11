@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from core.message_builder import conversation_text
-from core.output_schema import EMOTIONS, PROFILE_LABELS, extract_object, normalize_prediction
+from core.output_schema import EMOTIONS, PROFILE_LABELS, extract_object, normalize_prediction, parse_prediction
 from copy import deepcopy
 from core.prompt_loader import load_system_prompt, prompt_metadata
 from training.create_validation_split import choose_dev_conversations
@@ -136,10 +136,16 @@ def main():
     config=load_config()
     if config["backend"]!="openai_compatible":
         parser.error("A/B uses one prestarted OpenAI-compatible service; set EVALUATION_BACKEND=openai_compatible")
-    config_public={key:value for key,value in config.items() if key not in ("api_key",)}
+    config_public={key:value for key,value in config.items() if key not in ("api_key","api_options")}
+    config_public["api_options_redacted"]=bool(config.get("api_options"))
     processor=StylePostprocessor()
     rows=selected_rows(dataset(args.data_file,args.split,args.seed),args.tier,args.seed)
-    run_dir=args.output_dir/(datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")+"_"+args.tier)
+    manifest_path=ROOT/"training"/"validation_split_manifest.json"
+    manifest=json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.is_file() else {}
+    manifest_hash=manifest.get("raw_file_hash")
+    raw_hash=digest(args.data_file)
+    import uuid
+    run_dir=args.output_dir/(datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")+"_"+args.tier+"_"+uuid.uuid4().hex[:6])
     run_dir.mkdir(parents=True,exist_ok=False)
     summaries={}
     all_results={}
@@ -170,7 +176,7 @@ def main():
                 error=f"{type(exc).__name__}: {str(exc)[:200]}"
                 raw={}
             elapsed=(time.perf_counter()-start)*1000
-            normalized=normalize_prediction(row["id"],raw)
+            normalized=parse_prediction(row["id"],raw_text)[0] if error is None else normalize_prediction(row["id"],{})
             final_prediction=deepcopy(normalized)
             if error is None and parse_error is None:
                 final_prediction=processor.apply(normalized,row["history"])
@@ -202,7 +208,7 @@ def main():
     regressions=sum(c["outcome"]=="regressed" for c in changes)
     diff=summaries[keys[1]]["metrics"]["emotion_macro_f1"]-summaries[keys[0]]["metrics"]["emotion_macro_f1"]
     recommendation="REVIEW (proxy only; human reply review required)"
-    report={"status":"local proxy only, not official score","data_sha256":digest(args.data_file),
+    report={"status":"local proxy only, not official score","data_sha256":raw_hash,"manifest_raw_sha256":manifest_hash,"manifest_sha256_matches":raw_hash==manifest_hash if manifest_hash else None,
             "tier":args.tier,"split":args.split,"seed":args.seed,"config":config_public,
             "versions":summaries,"paired_emotion_improvements":improvements,
             "paired_emotion_regressions":regressions,"macro_f1_delta":diff,"recommendation":recommendation}
