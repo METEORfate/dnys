@@ -165,10 +165,12 @@ def main():
             raw_text=""
             error=None
             parse_error=None
+            json_valid=False
             try:
                 raw_text=request_chat_completion(config,messages,config["generation"])
                 try:
                     raw=extract_object(raw_text)
+                    json_valid=True
                 except ValueError as exc:
                     parse_error=str(exc)
                     raw={}
@@ -181,7 +183,7 @@ def main():
             if error is None and parse_error is None:
                 final_prediction=processor.apply(normalized,row["history"])
             results.append({"id":row["id"],"raw_text":raw_text,"raw_object":raw,
-                            "validity":validity(raw),"prediction":normalized,"postprocessed_prediction":final_prediction,
+                            "validity":{**validity(raw),"json_object":json_valid},"prediction":normalized,"postprocessed_prediction":final_prediction,
                             "target":row["target"],"error":error,"parse_error":parse_error,"latency_ms":elapsed})
             print(f"{key} {len(results)}/{len(rows)} {row['id']}",flush=True)
         with (out_dir/"predictions.jsonl").open("w",encoding="utf-8") as f:
