@@ -1,0 +1,209 @@
+{
+  "dataset_count": 2800,
+  "boundary_count": 1960,
+  "anchor_count": 840,
+  "unique_original_count": 2800,
+  "distribution": {
+    "anxiety": 636,
+    "relaxed": 379,
+    "fear": 425,
+    "helplessness": 376,
+    "pride": 23,
+    "gratitude": 327,
+    "loneliness": 54,
+    "neutral": 45,
+    "mixed": 318,
+    "shame": 50,
+    "sadness": 62,
+    "disgust": 15,
+    "anger": 54,
+    "joy": 18,
+    "care": 10,
+    "surprise": 8
+  },
+  "boundary_quotas": {
+    "anxiety": 480,
+    "fear": 360,
+    "helplessness": 300,
+    "gratitude": 280,
+    "relaxed": 280,
+    "mixed": 260
+  },
+  "hard_selection": {
+    "anxiety": {
+      "selected": 480,
+      "two_or_more_cue_groups": 480
+    },
+    "fear": {
+      "selected": 360,
+      "two_or_more_cue_groups": 124
+    },
+    "helplessness": {
+      "selected": 300,
+      "two_or_more_cue_groups": 101
+    },
+    "gratitude": {
+      "selected": 280,
+      "two_or_more_cue_groups": 157
+    },
+    "relaxed": {
+      "selected": 280,
+      "two_or_more_cue_groups": 168
+    },
+    "mixed": {
+      "selected": 260,
+      "two_or_more_cue_groups": 191
+    }
+  },
+  "train_only_verified": true,
+  "source_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
+  "planned_adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary",
+  "training_steps": 0,
+  "training_minutes": 0,
+  "checkpoints": {
+    "checkpoint-40": {
+      "status": "NOT_CREATED",
+      "metrics": null
+    },
+    "checkpoint-80": {
+      "status": "NOT_CREATED",
+      "metrics": null
+    }
+  },
+  "mask_audit": {
+    "samples": 2800,
+    "trimmed": 226,
+    "zero_supervised_samples": 0,
+    "assistant_target_over_budget": 0,
+    "context_over_budget": 0,
+    "prefix_mismatch": 0,
+    "status": "PASS"
+  },
+  "validation": {
+    "syntax": "PASS",
+    "cpu_mask_truncation_tests": "PASS",
+    "dual_gpu_preflight": "FAIL"
+  },
+  "gpu_errors": [
+    "rank0: RuntimeError: No CUDA GPUs are available",
+    "rank1: RuntimeError: No CUDA GPUs are available",
+    "nvidia-smi: Failed to initialize NVML: Unknown Error"
+  ],
+  "experiment_result": "ABORTED_INFRA",
+  "fast96": null,
+  "fast192": null,
+  "formal_runtime_modified": false,
+  "formal_runtime_hashes_unchanged": true,
+  "automatic_promotion": false,
+  "blocking_issue": "GPU_PLATFORM_UNSTABLE",
+  "setup": {
+    "seed": 66,
+    "dataset_count": 2800,
+    "boundary_count": 1960,
+    "anchor_count": 840,
+    "unique_original_count": 2800,
+    "boundary_quotas": {
+      "anxiety": 480,
+      "fear": 360,
+      "helplessness": 300,
+      "gratitude": 280,
+      "relaxed": 280,
+      "mixed": 260
+    },
+    "hard_selection": {
+      "anxiety": {
+        "selected": 480,
+        "two_or_more_cue_groups": 480
+      },
+      "fear": {
+        "selected": 360,
+        "two_or_more_cue_groups": 124
+      },
+      "helplessness": {
+        "selected": 300,
+        "two_or_more_cue_groups": 101
+      },
+      "gratitude": {
+        "selected": 280,
+        "two_or_more_cue_groups": 157
+      },
+      "relaxed": {
+        "selected": 280,
+        "two_or_more_cue_groups": 168
+      },
+      "mixed": {
+        "selected": 260,
+        "two_or_more_cue_groups": 191
+      }
+    },
+    "distribution": {
+      "anxiety": 636,
+      "relaxed": 379,
+      "fear": 425,
+      "helplessness": 376,
+      "pride": 23,
+      "gratitude": 327,
+      "loneliness": 54,
+      "neutral": 45,
+      "mixed": 318,
+      "shame": 50,
+      "sadness": 62,
+      "disgust": 15,
+      "anger": 54,
+      "joy": 18,
+      "care": 10,
+      "surprise": 8
+    },
+    "anchor_distribution": {
+      "sadness": 62,
+      "anxiety": 156,
+      "mixed": 58,
+      "fear": 65,
+      "shame": 50,
+      "helplessness": 76,
+      "gratitude": 47,
+      "relaxed": 99,
+      "neutral": 45,
+      "anger": 54,
+      "loneliness": 54,
+      "pride": 23,
+      "surprise": 8,
+      "care": 10,
+      "disgust": 15,
+      "joy": 18
+    },
+    "train_only": true,
+    "selection_uses_validation": false,
+    "system_prompt_effective_sha256": "51a4e746644812c000b8ab14f06081a4c60beb58c67a4164fc74617d6ee5ba20",
+    "runtime_hashes": {
+      "start.sh": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744",
+      "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+      "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+      "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "configs/inference_config.json": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a",
+      "model/lora_adapter/adapter_config.json": "822b9ce3855d29412381617933a2b360f38ccbe402cc30ee93afaa615891d932",
+      "model/lora_adapter/adapter_model.safetensors": "229ba09680f66a30ba66a68cbd6ff576320ebddaad046d694ecd0ef74797501b"
+    },
+    "source_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
+    "output_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary",
+    "training": {
+      "max_steps": 80,
+      "save_steps": 40,
+      "learning_rate": 1e-05,
+      "batch": 1,
+      "gradient_accumulation": 8,
+      "max_length": 4096,
+      "assistant_only_loss": true,
+      "packing": false,
+      "gradient_checkpointing": true
+    },
+    "guardrails": {
+      "emotion_delta_min": 0,
+      "macro_f1_delta_min": 0,
+      "profile_delta_min": -0.007,
+      "bleu_delta_min": -0.003,
+      "rouge_delta_min": -0.003,
+      "bert_delta_min": -0.002
+    }
+  }
+}
