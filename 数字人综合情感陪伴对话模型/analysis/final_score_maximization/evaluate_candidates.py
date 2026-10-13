@@ -83,15 +83,21 @@ try:
    for i,(p,q,t) in enumerate(zip(basepred,pred,targets[:N])):
     pc=p['emotion_label']==t['emotion_label'];qc=q['emotion_label']==t['emotion_label'];wr+=not pc and qc;rw+=pc and not qc
     if p['emotion_label']!=q['emotion_label']:trans.append({'id':inputs[i]['id'],'gt':t['emotion_label'],'baseline':p['emotion_label'],'candidate':q['emotion_label']})
-   gain=round(delta['emotion']*N)>=1 or (delta['emotion']>=-1e-9 and delta['bleu']>=.002 and delta['rouge']>=.002 and delta['bert']>=-.0005);guard=delta['profile_mean']>=-.007 and m['json_valid']==1 and m['nonempty']==1
+   gain=delta['emotion']>=1/96-1e-9 or (delta['emotion']>=-1e-9 and delta['bleu']>=.002 and delta['rouge']>=.002 and delta['bert']>=-.0005);guard=delta['profile_mean']>=-.007 and m['json_valid']==1 and m['nonempty']==1
    res['candidates'][name]={'metrics':m,'delta':delta,'wrong_to_right':wr,'right_to_wrong':rw,'transitions':trans,'passes':bool(gain and guard)}
    if N==192:
     extra_gt=[q['emotion_label'] for q in targets[96:192]];bc=sum(p['emotion_label']==t for p,t in zip(basepred[96:],extra_gt));cc=sum(p['emotion_label']==t for p,t in zip(pred[96:],extra_gt));res['candidates'][name]['fresh96_emotion_delta']=(cc-bc)/96
+    fresh={
+     'bleu':sum(sentence_bleu4(t['response_text'],c['response_text'])-sentence_bleu4(t['response_text'],b['response_text']) for t,c,b in zip(targets[96:192],pred[96:],basepred[96:]))/96,
+     'rouge':sum(rouge_l_f1(t['response_text'],c['response_text'])-rouge_l_f1(t['response_text'],b['response_text']) for t,c,b in zip(targets[96:192],pred[96:],basepred[96:]))/96,
+     'bert':float(np.mean(bert[96:]-bbert[96:]))}
+    res['candidates'][name]['fresh96_response_delta']=fresh
+    res['candidates'][name]['fresh96_passes']=(cc-bc)>=1 or ((cc-bc)>=0 and fresh['bleu']>=.002 and fresh['rouge']>=.002 and fresh['bert']>=-.0005)
   save(A/('fast'+str(N)+'_result.json'),res);return res
  generate(0,96);state['phase']='FAST96_METRICS';save(A/'evaluation_status.json',state);first=evaluate(96,['linear','mlp','rule','hybrid','response_wrapper']);passed=[n for n,x in first['candidates'].items() if x['passes']];second=None
  if passed:
   generate(96,192);state['phase']='FAST192_METRICS';save(A/'evaluation_status.json',state);second=evaluate(192,passed)
- candidates=[n for n in passed if second['candidates'][n]['passes'] and second['candidates'][n]['fresh96_emotion_delta']>=0] if second else []
+ candidates=[n for n in passed if second['candidates'][n]['passes'] and second['candidates'][n]['fresh96_passes']] if second else []
  best=max(candidates,key=lambda n:(second['candidates'][n]['metrics']['emotion'],sum(second['candidates'][n]['delta'][k] for k in ['bleu','rouge','bert']))) if candidates else 'CURRENT'
  assert pp.fallback_count==pp.personality_fallback_count==0
  for p,h in setup['runtime_hashes'].items():assert hashlib.sha256((O/p).read_bytes()).hexdigest()==h
