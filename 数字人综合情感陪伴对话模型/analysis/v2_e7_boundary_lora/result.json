@@ -1,102 +1,5 @@
 {
-  "dataset_count": 2800,
-  "boundary_count": 1960,
-  "anchor_count": 840,
-  "unique_original_count": 2800,
-  "distribution": {
-    "anxiety": 636,
-    "relaxed": 379,
-    "fear": 425,
-    "helplessness": 376,
-    "pride": 23,
-    "gratitude": 327,
-    "loneliness": 54,
-    "neutral": 45,
-    "mixed": 318,
-    "shame": 50,
-    "sadness": 62,
-    "disgust": 15,
-    "anger": 54,
-    "joy": 18,
-    "care": 10,
-    "surprise": 8
-  },
-  "boundary_quotas": {
-    "anxiety": 480,
-    "fear": 360,
-    "helplessness": 300,
-    "gratitude": 280,
-    "relaxed": 280,
-    "mixed": 260
-  },
-  "hard_selection": {
-    "anxiety": {
-      "selected": 480,
-      "two_or_more_cue_groups": 480
-    },
-    "fear": {
-      "selected": 360,
-      "two_or_more_cue_groups": 124
-    },
-    "helplessness": {
-      "selected": 300,
-      "two_or_more_cue_groups": 101
-    },
-    "gratitude": {
-      "selected": 280,
-      "two_or_more_cue_groups": 157
-    },
-    "relaxed": {
-      "selected": 280,
-      "two_or_more_cue_groups": 168
-    },
-    "mixed": {
-      "selected": 260,
-      "two_or_more_cue_groups": 191
-    }
-  },
-  "train_only_verified": true,
-  "source_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
-  "planned_adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary",
-  "training_steps": 0,
-  "training_minutes": 0,
-  "checkpoints": {
-    "checkpoint-40": {
-      "status": "NOT_CREATED",
-      "metrics": null
-    },
-    "checkpoint-80": {
-      "status": "NOT_CREATED",
-      "metrics": null
-    }
-  },
-  "mask_audit": {
-    "samples": 2800,
-    "trimmed": 226,
-    "zero_supervised_samples": 0,
-    "assistant_target_over_budget": 0,
-    "context_over_budget": 0,
-    "prefix_mismatch": 0,
-    "status": "PASS"
-  },
-  "validation": {
-    "syntax": "PASS",
-    "cpu_mask_truncation_tests": "PASS",
-    "dual_gpu_preflight": "FAIL"
-  },
-  "gpu_errors": [
-    "rank0: RuntimeError: No CUDA GPUs are available",
-    "rank1: RuntimeError: No CUDA GPUs are available",
-    "nvidia-smi: Failed to initialize NVML: Unknown Error"
-  ],
-  "experiment_result": "ABORTED_INFRA",
-  "fast96": null,
-  "fast192": null,
-  "formal_runtime_modified": false,
-  "formal_runtime_hashes_unchanged": true,
-  "automatic_promotion": false,
-  "blocking_issue": "GPU_PLATFORM_UNSTABLE",
-  "setup": {
+  "dataset": {
     "seed": 66,
     "dataset_count": 2800,
     "boundary_count": 1960,
@@ -205,5 +108,66 @@
       "rouge_delta_min": -0.003,
       "bert_delta_min": -0.002
     }
-  }
+  },
+  "dataset_count": 2800,
+  "boundary_count": 1960,
+  "anchor_count": 840,
+  "distribution": {
+    "anxiety": 636,
+    "relaxed": 379,
+    "fear": 425,
+    "helplessness": 376,
+    "pride": 23,
+    "gratitude": 327,
+    "loneliness": 54,
+    "neutral": 45,
+    "mixed": 318,
+    "shame": 50,
+    "sadness": 62,
+    "disgust": 15,
+    "anger": 54,
+    "joy": 18,
+    "care": 10,
+    "surprise": 8
+  },
+  "training_steps": 80,
+  "training_minutes": 16.11917424996694,
+  "training_status": "COMPLETED",
+  "train_loss": 0.9087026476860046,
+  "continuation_tensor_exact_verified": true,
+  "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary",
+  "checkpoints": {
+    "40": {
+      "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-40",
+      "status": "TRAINED_EVALUATION_PENDING",
+      "metrics": null,
+      "compatible": true,
+      "finite": true,
+      "changed_tensor_count": 392,
+      "total_tensor_count": 392,
+      "adapter_sha256": "b7d79d499edfcc7cd11225b5a533a347b926379cc470ccd5c03dbac0cb87b747"
+    },
+    "80": {
+      "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-80",
+      "status": "TRAINED_EVALUATION_PENDING",
+      "metrics": null,
+      "compatible": true,
+      "finite": true,
+      "changed_tensor_count": 392,
+      "total_tensor_count": 392,
+      "adapter_sha256": "471dd1623e1a12d3bd2782456934cb25216c63dad01d418fed91e0648de6ac6a"
+    }
+  },
+  "fast96": null,
+  "fast192": null,
+  "prediction_count": 0,
+  "experiment_result": "INCOMPLETE_INFRA",
+  "formal_runtime_modified": false,
+  "formal_runtime_hashes_unchanged": true,
+  "automatic_promotion": false,
+  "blocking_issue": "GPU_PLATFORM_UNSTABLE_AFTER_TRAINING",
+  "gpu_errors": [
+    "nvidia-smi: Failed to initialize NVML: Unknown Error",
+    "CUDA unavailable in training and runtime environments; device_count=0"
+  ]
 }

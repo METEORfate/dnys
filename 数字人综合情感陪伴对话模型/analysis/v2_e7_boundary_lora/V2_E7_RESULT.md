@@ -1,15 +1,14 @@
 # V2-E7 Emotion Boundary LoRA Experiment
 
-Result: ABORTED_INFRA
+Result: INCOMPLETE_INFRA (training completed, evaluation pending)
 FORMAL_RUNTIME_MODIFIED=NO
 
 Source adapter: /root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2
-Planned output: /root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary
-P0/P1/P2/model/LoRA official files unchanged; hashes checked.
+Output adapter: /root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary
 
 ## Dataset
-2800 unique original train samples = 1960 boundary + 840 V2-E1-distribution anchor. Seed=66. No generated or relabeled samples; no validation or holdout used in training selection.
-Hard selection: fixed keyword cue groups on latest user text, prioritized co-occurring boundary cues within GT classes; not verified LLM training errors.
+2800 unique original train samples = 1960 boundary + 840 V2-E1-distribution anchor. Seed=66. No generated or relabeled data; no validation/holdout used in training selection.
+Hard examples selected using fixed latest-user keyword boundary cues within GT classes, not confirmed LLM errors.
 
 |emotion|count|
 |---|---|
@@ -30,15 +29,22 @@ Hard selection: fixed keyword cue groups on latest user text, prioritized co-occ
 |shame|50|
 |surprise|8|
 
-## Loss mask audit
-Full assistant-only CE, packing=false, max_length=4096. 2800 kept; 226 context-trimmed; zero-supervised=0; target-over-budget=0; context-over-budget=0; prefix-mismatch=0.
-Syntax and existing CPU mask/truncation unit tests PASS.
+## Training
+80 steps completed; elapsed including loading 16.12 minutes; trainer optimization runtime 889.9513 seconds; train loss 0.908703.
+Continued V2-E1 weights exact verified on both ranks before training. r=16, alpha=32, 7 original target modules. lr=1e-5 with existing linear scheduler; batch=1, grad_acc=8, world_size=2, gradient checkpointing, max_length=4096, packing=false, full assistant-only loss.
+Mask audit: 2800 retained, 226 context-trimmed, zero supervised samples=0; existing 7 CPU mask/truncation tests PASS.
 
-## Training and evaluation
-Planned continued V2-E1 LoRA: r=16, alpha=32, existing 7 modules; lr=1e-5, batch=1, grad_acc=8, gradient checkpointing; max_steps=80, save_steps=40.
-Training steps=0; training minutes=0. No checkpoint created. FAST96/FAST192 metrics unavailable.
+## Checkpoints
+checkpoint-40: /root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-40
+Compatible keys/shapes/rank/alpha/targets; all finite; 392/392 tensors changed vs V2-E1; sha256=b7d79d499edfcc7cd11225b5a533a347b926379cc470ccd5c03dbac0cb87b747
+checkpoint-80: /root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-80
+Compatible keys/shapes/rank/alpha/targets; all finite; 392/392 tensors changed vs V2-E1; sha256=471dd1623e1a12d3bd2782456934cb25216c63dad01d418fed91e0648de6ac6a
+
+## Evaluation
+FAST96 completed=0. FAST192 not run. No quality verdict or promotion.
+All metrics pending; no fabricated baseline/checkpoint metrics.
 
 ## Blocking issue
-Dual rank preflight: both ranks RuntimeError: No CUDA GPUs are available. nvidia-smi: Failed to initialize NVML: Unknown Error.
-GPU_PLATFORM_UNSTABLE. No environment modification, automatic restart or promotion performed.
-Prepared dataset/features can be reused after platform recovery.
+GPU_PLATFORM_UNSTABLE_AFTER_TRAINING. nvidia-smi: Failed to initialize NVML: Unknown Error. Both training/runtime environments: cuda_available=False, device_count=0.
+No CUDA/software/environment modifications. Official runtime hashes unchanged.
+Recovery requires only rerunning evaluate.py after GPU recovery, using the saved checkpoints; do not rerun training.
