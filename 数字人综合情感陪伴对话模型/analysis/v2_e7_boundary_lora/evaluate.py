@@ -67,7 +67,7 @@ try:
    for i,(p,c,t) in enumerate(zip(preds['p0'],preds[name],gt)):
     bc=p['emotion_label']==t;cc=c['emotion_label']==t;wr+=not bc and cc;rw+=bc and not cc
     if p['emotion_label']!=c['emotion_label']:changes.append({'id':inputs[i]['id'],'gt':t,'before':p['emotion_label'],'after':c['emotion_label']})
-   failures=[k for k in guard if delta[k.removesuffix('_delta_min')]<guard[k]-1e-9]
+   failures=[k for k in guard if delta['profile_mean' if k=='profile_delta_min' else k.removesuffix('_delta_min')]<guard[k]-1e-9]
    if m['json_valid']<1 or m['nonempty']<1:failures.append('json_or_nonempty')
    passed=not failures and m['p1_fallback']==m['p2_fallback']==0
    result['checkpoints'][name]={'adapter_path':str(R/'training/outputs/v2-e7-emotion-boundary'/('checkpoint-'+name.split('-')[-1])),'metrics':m,'delta':delta,'wrong_to_right':wr,'right_to_wrong':rw,'net':wr-rw,'changes':changes,'guardrail_failures':failures,'passed':passed}
