@@ -1,0 +1,685 @@
+{
+  "setup": {
+    "base_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
+    "target_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-80",
+    "adapter_compatible": true,
+    "keys": 392,
+    "rank": 16,
+    "lora_alpha": 32,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "v_proj",
+      "k_proj",
+      "up_proj",
+      "q_proj",
+      "o_proj"
+    ],
+    "layer_count": 28,
+    "endpoint_parameters_exact": true,
+    "interpolation": "W = W_V2E1 + alpha * (W_E7_80 - W_V2E1), parameter space, FP32",
+    "candidates": {
+      "a010": {
+        "alpha": 0.1,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a010",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "a8edaa336b9d3248adbdd1f977a67a44735e461b6a012eaefb70471ae49eb9f3"
+      },
+      "a015": {
+        "alpha": 0.15,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a015",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "6945596f3de14cfdaf068c8f3405a1f43462ccbe7f1c05c8e449d5f23379ec3f"
+      },
+      "a020": {
+        "alpha": 0.2,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a020",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "4e422e3d84ded31d61bf37c306158cc8b26e4d290976fd8059ef96abfd6a6c27"
+      },
+      "a025": {
+        "alpha": 0.25,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a025",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "2e23fa16bdb8758a27d28c5a6c3f2a3c9466929a90a2f1e8d9b66352b4617c67"
+      }
+    },
+    "runtime_hashes": {
+      "start.sh": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744",
+      "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+      "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+      "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "configs/inference_config.json": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a",
+      "model/lora_adapter/adapter_config.json": "822b9ce3855d29412381617933a2b360f38ccbe402cc30ee93afaa615891d932",
+      "model/lora_adapter/adapter_model.safetensors": "229ba09680f66a30ba66a68cbd6ff576320ebddaad046d694ecd0ef74797501b"
+    },
+    "guardrails": {
+      "emotion_delta_min": 0,
+      "profile_delta_min": 0,
+      "bleu_delta_min": 0,
+      "rouge_delta_min": 0,
+      "bert_delta_min": 0
+    },
+    "hard_profile_reject_delta": -0.007,
+    "fast192_rule": "Only emotion>=CURRENT AND profile_mean>=CURRENT AND response protection pass; JSON/nonempty/fallback also protected",
+    "training_performed": false,
+    "formal_runtime_modified": false,
+    "new_alphas": [
+      0.1,
+      0.15,
+      0.2
+    ],
+    "reference_alpha": 0.25
+  },
+  "adapter_compatible": true,
+  "fast96": {
+    "samples": 96,
+    "baseline": {
+      "emotion": 0.625,
+      "macro_f1": 0.5161529999088961,
+      "bleu": 0.1298288534188438,
+      "rouge": 0.2627028087209959,
+      "bert": 0.7260063290596008,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency_ms": 1579.2192603597261,
+      "p95_latency_ms": 3219.2775851581246,
+      "p1_fallback": 0,
+      "p2_fallback": 0,
+      "personality": 0.6666666666666666,
+      "interests": 0.7708333333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6701388888888888,
+      "recall": {
+        "anxiety": {
+          "support": 30,
+          "recall": 0.6333333333333333
+        },
+        "fear": {
+          "support": 5,
+          "recall": 1.0
+        },
+        "helplessness": {
+          "support": 6,
+          "recall": 0.3333333333333333
+        },
+        "mixed": {
+          "support": 7,
+          "recall": 0.42857142857142855
+        },
+        "relaxed": {
+          "support": 17,
+          "recall": 0.6470588235294118
+        },
+        "gratitude": {
+          "support": 5,
+          "recall": 0.4
+        }
+      }
+    },
+    "checkpoints": {
+      "a010": {
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a010",
+        "metrics": {
+          "emotion": 0.6354166666666666,
+          "macro_f1": 0.5208026348651349,
+          "bleu": 0.12995467396132146,
+          "rouge": 0.26348594233583195,
+          "bert": 0.7272626757621765,
+          "json_valid": 1.0,
+          "nonempty": 1.0,
+          "avg_latency_ms": 1558.5756574679788,
+          "p95_latency_ms": 3437.2185731772333,
+          "p1_fallback": 0,
+          "p2_fallback": 0,
+          "personality": 0.65625,
+          "interests": 0.8125,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6805555555555555,
+          "recall": {
+            "anxiety": {
+              "support": 30,
+              "recall": 0.6333333333333333
+            },
+            "fear": {
+              "support": 5,
+              "recall": 1.0
+            },
+            "helplessness": {
+              "support": 6,
+              "recall": 0.3333333333333333
+            },
+            "mixed": {
+              "support": 7,
+              "recall": 0.42857142857142855
+            },
+            "relaxed": {
+              "support": 17,
+              "recall": 0.6470588235294118
+            },
+            "gratitude": {
+              "support": 5,
+              "recall": 0.4
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.01041666666666663,
+          "macro_f1": 0.004649634956238824,
+          "personality": -0.01041666666666663,
+          "interests": 0.04166666666666663,
+          "style": 0.0,
+          "profile_mean": 0.01041666666666663,
+          "bleu": 0.0001258205424776726,
+          "rouge": 0.0007831336148360624,
+          "bert": 0.0012563467025756836
+        },
+        "wrong_to_right": 1,
+        "right_to_wrong": 0,
+        "net": 1,
+        "changes": [
+          {
+            "id": "test_000059_t1",
+            "gt": "mixed",
+            "before": "surprise",
+            "after": "shame"
+          },
+          {
+            "id": "test_000093_t1",
+            "gt": "shame",
+            "before": "anxiety",
+            "after": "shame"
+          }
+        ],
+        "guardrail_failures": [],
+        "passed": true,
+        "hard_profile_reject": false,
+        "decision": "FAST192_ELIGIBLE"
+      },
+      "a015": {
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a015",
+        "metrics": {
+          "emotion": 0.6354166666666666,
+          "macro_f1": 0.5311223906812143,
+          "bleu": 0.12798664345553332,
+          "rouge": 0.2610216312048929,
+          "bert": 0.7259893417358398,
+          "json_valid": 1.0,
+          "nonempty": 1.0,
+          "avg_latency_ms": 1553.7631943589076,
+          "p95_latency_ms": 2971.8998100142926,
+          "p1_fallback": 0,
+          "p2_fallback": 0,
+          "personality": 0.65625,
+          "interests": 0.7604166666666666,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6631944444444444,
+          "recall": {
+            "anxiety": {
+              "support": 30,
+              "recall": 0.6
+            },
+            "fear": {
+              "support": 5,
+              "recall": 1.0
+            },
+            "helplessness": {
+              "support": 6,
+              "recall": 0.3333333333333333
+            },
+            "mixed": {
+              "support": 7,
+              "recall": 0.42857142857142855
+            },
+            "relaxed": {
+              "support": 17,
+              "recall": 0.6470588235294118
+            },
+            "gratitude": {
+              "support": 5,
+              "recall": 0.4
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.01041666666666663,
+          "macro_f1": 0.01496939077231818,
+          "personality": -0.01041666666666663,
+          "interests": -0.01041666666666674,
+          "style": 0.0,
+          "profile_mean": -0.00694444444444442,
+          "bleu": -0.0018422099633104705,
+          "rouge": -0.0016811775161029718,
+          "bert": -1.6987323760986328e-05
+        },
+        "wrong_to_right": 2,
+        "right_to_wrong": 1,
+        "net": 1,
+        "changes": [
+          {
+            "id": "test_000004_t1",
+            "gt": "anger",
+            "before": "helplessness",
+            "after": "anger"
+          },
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "before": "anxiety",
+            "after": "fear"
+          },
+          {
+            "id": "test_000054_t1",
+            "gt": "joy",
+            "before": "mixed",
+            "after": "pride"
+          },
+          {
+            "id": "test_000093_t1",
+            "gt": "shame",
+            "before": "anxiety",
+            "after": "shame"
+          }
+        ],
+        "guardrail_failures": [
+          "profile_delta_min",
+          "bleu_delta_min",
+          "rouge_delta_min",
+          "bert_delta_min"
+        ],
+        "passed": false,
+        "hard_profile_reject": false,
+        "decision": "FAST96_ONLY"
+      },
+      "a020": {
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a020",
+        "metrics": {
+          "emotion": 0.625,
+          "macro_f1": 0.522599663408487,
+          "bleu": 0.13258305287926989,
+          "rouge": 0.26397154665530514,
+          "bert": 0.725674569606781,
+          "json_valid": 1.0,
+          "nonempty": 1.0,
+          "avg_latency_ms": 1532.311369170202,
+          "p95_latency_ms": 3406.93442360498,
+          "p1_fallback": 0,
+          "p2_fallback": 0,
+          "personality": 0.65625,
+          "interests": 0.7916666666666666,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.673611111111111,
+          "recall": {
+            "anxiety": {
+              "support": 30,
+              "recall": 0.6
+            },
+            "fear": {
+              "support": 5,
+              "recall": 1.0
+            },
+            "helplessness": {
+              "support": 6,
+              "recall": 0.3333333333333333
+            },
+            "mixed": {
+              "support": 7,
+              "recall": 0.42857142857142855
+            },
+            "relaxed": {
+              "support": 17,
+              "recall": 0.6470588235294118
+            },
+            "gratitude": {
+              "support": 5,
+              "recall": 0.4
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.0,
+          "macro_f1": 0.006446663499590888,
+          "personality": -0.01041666666666663,
+          "interests": 0.02083333333333326,
+          "style": 0.0,
+          "profile_mean": 0.00347222222222221,
+          "bleu": 0.002754199460426099,
+          "rouge": 0.0012687379343092609,
+          "bert": -0.0003317594528198242
+        },
+        "wrong_to_right": 1,
+        "right_to_wrong": 1,
+        "net": 0,
+        "changes": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "before": "anxiety",
+            "after": "fear"
+          },
+          {
+            "id": "test_000054_t1",
+            "gt": "joy",
+            "before": "mixed",
+            "after": "pride"
+          },
+          {
+            "id": "test_000093_t1",
+            "gt": "shame",
+            "before": "anxiety",
+            "after": "shame"
+          }
+        ],
+        "guardrail_failures": [
+          "bert_delta_min"
+        ],
+        "passed": false,
+        "hard_profile_reject": false,
+        "decision": "FAST96_ONLY"
+      },
+      "a025": {
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a025",
+        "metrics": {
+          "emotion": 0.625,
+          "macro_f1": 0.5247592685092686,
+          "bleu": 0.13289360202324826,
+          "rouge": 0.26229723340794703,
+          "bert": 0.7276086807250977,
+          "json_valid": 1.0,
+          "nonempty": 1.0,
+          "avg_latency_ms": 1494.8286372915998,
+          "p95_latency_ms": 3023.7232334911823,
+          "p1_fallback": 0,
+          "p2_fallback": 0,
+          "personality": 0.6770833333333334,
+          "interests": 0.7916666666666666,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6805555555555555,
+          "recall": {
+            "anxiety": {
+              "support": 30,
+              "recall": 0.6
+            },
+            "fear": {
+              "support": 5,
+              "recall": 0.8
+            },
+            "helplessness": {
+              "support": 6,
+              "recall": 0.3333333333333333
+            },
+            "mixed": {
+              "support": 7,
+              "recall": 0.42857142857142855
+            },
+            "relaxed": {
+              "support": 17,
+              "recall": 0.6470588235294118
+            },
+            "gratitude": {
+              "support": 5,
+              "recall": 0.4
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.0,
+          "macro_f1": 0.008606268600372502,
+          "personality": 0.01041666666666674,
+          "interests": 0.02083333333333326,
+          "style": 0.0,
+          "profile_mean": 0.01041666666666663,
+          "bleu": 0.003064748604404477,
+          "rouge": -0.00040557531304885597,
+          "bert": 0.0016023516654968262
+        },
+        "wrong_to_right": 2,
+        "right_to_wrong": 2,
+        "net": 0,
+        "changes": [
+          {
+            "id": "test_000004_t1",
+            "gt": "anger",
+            "before": "helplessness",
+            "after": "anger"
+          },
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "before": "anxiety",
+            "after": "fear"
+          },
+          {
+            "id": "test_000039_t1",
+            "gt": "fear",
+            "before": "fear",
+            "after": "anxiety"
+          },
+          {
+            "id": "test_000054_t1",
+            "gt": "joy",
+            "before": "mixed",
+            "after": "pride"
+          },
+          {
+            "id": "test_000093_t1",
+            "gt": "shame",
+            "before": "anxiety",
+            "after": "shame"
+          }
+        ],
+        "guardrail_failures": [
+          "rouge_delta_min"
+        ],
+        "passed": false,
+        "hard_profile_reject": false,
+        "decision": "FAST96_ONLY"
+      }
+    }
+  },
+  "fast192": {
+    "samples": 192,
+    "baseline": {
+      "emotion": 0.6875,
+      "macro_f1": 0.5963875328228405,
+      "bleu": 0.1302466871423156,
+      "rouge": 0.2650324203406957,
+      "bert": 0.7275770306587219,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency_ms": 1585.3884848814535,
+      "p95_latency_ms": 3476.3428576290585,
+      "p1_fallback": 0,
+      "p2_fallback": 0,
+      "personality": 0.65625,
+      "interests": 0.7760416666666666,
+      "style": 0.5260416666666666,
+      "profile_mean": 0.6527777777777778,
+      "recall": {
+        "anxiety": {
+          "support": 60,
+          "recall": 0.7
+        },
+        "fear": {
+          "support": 10,
+          "recall": 0.9
+        },
+        "helplessness": {
+          "support": 12,
+          "recall": 0.5
+        },
+        "mixed": {
+          "support": 14,
+          "recall": 0.21428571428571427
+        },
+        "relaxed": {
+          "support": 34,
+          "recall": 0.7352941176470589
+        },
+        "gratitude": {
+          "support": 10,
+          "recall": 0.7
+        }
+      }
+    },
+    "checkpoints": {
+      "a010": {
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-2-interp-a010",
+        "metrics": {
+          "emotion": 0.6927083333333334,
+          "macro_f1": 0.5977573578768761,
+          "bleu": 0.1282098123116112,
+          "rouge": 0.2638003899926168,
+          "bert": 0.7284901738166809,
+          "json_valid": 1.0,
+          "nonempty": 1.0,
+          "avg_latency_ms": 1546.1420762828009,
+          "p95_latency_ms": 3499.3356758728623,
+          "p1_fallback": 0,
+          "p2_fallback": 0,
+          "personality": 0.65625,
+          "interests": 0.8020833333333334,
+          "style": 0.5260416666666666,
+          "profile_mean": 0.6614583333333334,
+          "recall": {
+            "anxiety": {
+              "support": 60,
+              "recall": 0.7
+            },
+            "fear": {
+              "support": 10,
+              "recall": 0.9
+            },
+            "helplessness": {
+              "support": 12,
+              "recall": 0.5
+            },
+            "mixed": {
+              "support": 14,
+              "recall": 0.21428571428571427
+            },
+            "relaxed": {
+              "support": 34,
+              "recall": 0.7352941176470589
+            },
+            "gratitude": {
+              "support": 10,
+              "recall": 0.7
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.00520833333333337,
+          "macro_f1": 0.0013698250540356005,
+          "personality": 0.0,
+          "interests": 0.02604166666666674,
+          "style": 0.0,
+          "profile_mean": 0.00868055555555558,
+          "bleu": -0.002036874830704416,
+          "rouge": -0.0012320303480788941,
+          "bert": 0.0009131431579589844
+        },
+        "wrong_to_right": 1,
+        "right_to_wrong": 0,
+        "net": 1,
+        "changes": [
+          {
+            "id": "test_000059_t1",
+            "gt": "mixed",
+            "before": "surprise",
+            "after": "shame"
+          },
+          {
+            "id": "test_000093_t1",
+            "gt": "shame",
+            "before": "anxiety",
+            "after": "shame"
+          }
+        ],
+        "guardrail_failures": [
+          "bleu_delta_min",
+          "rouge_delta_min"
+        ],
+        "passed": false,
+        "hard_profile_reject": false,
+        "decision": "FAST96_ONLY"
+      }
+    }
+  },
+  "formal_runtime_modified": false,
+  "training_performed": false,
+  "automatic_promotion": false,
+  "blocking_issue": "NONE",
+  "elapsed_minutes": 21.219931940237682,
+  "best_observed_alpha": 0.1,
+  "best_candidate": "CURRENT",
+  "experiment_result": "REJECT_RESPONSE",
+  "fresh96": {
+    "p0": {
+      "emotion_correct": 72,
+      "emotion": 0.75,
+      "personality": 0.6458333333333334,
+      "interests": 0.78125,
+      "style": 0.4791666666666667,
+      "profile_mean": 0.6354166666666666,
+      "bleu": 0.13066452086578742,
+      "rouge": 0.2673620319603955
+    },
+    "a010": {
+      "emotion_correct": 72,
+      "emotion": 0.75,
+      "personality": 0.65625,
+      "interests": 0.7916666666666666,
+      "style": 0.4791666666666667,
+      "profile_mean": 0.642361111111111,
+      "bleu": 0.12646495066190092,
+      "rouge": 0.2641148376494016
+    },
+    "paired": {
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "net": 0
+    }
+  },
+  "formal_runtime_hashes_unchanged": true,
+  "decision_reason": "FAST192 alpha=0.10 fails BLEU and ROUGE non-decrease; emotion gain confined to initial FAST96",
+  "delta_vs_alpha025": {
+    "a010": {
+      "emotion": 0.01041666666666663,
+      "macro_f1": -0.003956633644133678,
+      "personality": -0.02083333333333337,
+      "interests": 0.02083333333333337,
+      "style": 0.0,
+      "profile_mean": 0.0,
+      "bleu": -0.0029389280619268043,
+      "rouge": 0.0011887089278849183,
+      "bert": -0.0003460049629211426
+    },
+    "a015": {
+      "emotion": 0.01041666666666663,
+      "macro_f1": 0.006363122171945679,
+      "personality": -0.02083333333333337,
+      "interests": -0.03125,
+      "style": 0.0,
+      "profile_mean": -0.01736111111111105,
+      "bleu": -0.004906958567714947,
+      "rouge": -0.0012756022030541159,
+      "bert": -0.0016193389892578125
+    },
+    "a020": {
+      "emotion": 0.0,
+      "macro_f1": -0.002159605100781614,
+      "personality": -0.02083333333333337,
+      "interests": 0.0,
+      "style": 0.0,
+      "profile_mean": -0.00694444444444442,
+      "bleu": -0.00031054914397837807,
+      "rouge": 0.0016743132473581168,
+      "bert": -0.0019341111183166504
+    }
+  }
+}
