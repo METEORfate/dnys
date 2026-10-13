@@ -1,5 +1,5 @@
 import pathlib,subprocess,time,json,os
-A=pathlib.Path(__file__).parent;PY='/opt/conda/envs/conda_env/bin/python';EP='/root/participant/python_env/bin/python';started=time.time()
+A=pathlib.Path(__file__).parent;PY='/root/participant/python_env/bin/python';EP='/root/participant/python_env/bin/python';started=time.time()
 def state(phase,**kwargs):(A/'status.json').write_text(json.dumps({'phase':phase,'started_at':started,**kwargs},indent=2))
 try:
  for script,python in [('extract_train_heads.py',PY),('evaluate_candidates.py',EP)]:
