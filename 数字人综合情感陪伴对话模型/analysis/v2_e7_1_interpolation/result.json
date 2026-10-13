@@ -1,0 +1,74 @@
+{
+  "adapter_compatible": true,
+  "setup": {
+    "base_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
+    "target_adapter": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-80",
+    "adapter_compatible": true,
+    "keys": 392,
+    "rank": 16,
+    "lora_alpha": 32,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "v_proj",
+      "k_proj",
+      "up_proj",
+      "q_proj",
+      "o_proj"
+    ],
+    "layer_count": 28,
+    "endpoint_parameters_exact": true,
+    "interpolation": "W = W_V2E1 + alpha * (W_E7_80 - W_V2E1), parameter space, FP32",
+    "candidates": {
+      "a025": {
+        "alpha": 0.25,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a025",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "2e23fa16bdb8758a27d28c5a6c3f2a3c9466929a90a2f1e8d9b66352b4617c67"
+      },
+      "a050": {
+        "alpha": 0.5,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a050",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "2b7f81792afd4ad025e497cc0d94a5410503fcaa9b919329df3d7f49a2fddbfd"
+      },
+      "a075": {
+        "alpha": 0.75,
+        "adapter_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a075",
+        "finite": true,
+        "saved_tensor_exact_verified": true,
+        "sha256": "ac121a5380cec078380f3b4032f8789f294b9683ab0e66c9bbe2bebe39bb887e"
+      }
+    },
+    "runtime_hashes": {
+      "start.sh": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744",
+      "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+      "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+      "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "configs/inference_config.json": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a",
+      "model/lora_adapter/adapter_config.json": "822b9ce3855d29412381617933a2b360f38ccbe402cc30ee93afaa615891d932",
+      "model/lora_adapter/adapter_model.safetensors": "229ba09680f66a30ba66a68cbd6ff576320ebddaad046d694ecd0ef74797501b"
+    },
+    "guardrails": {
+      "emotion_delta_min": 0,
+      "profile_delta_min": 0,
+      "bleu_delta_min": -0.003,
+      "rouge_delta_min": -0.003,
+      "bert_delta_min": -0.002
+    },
+    "hard_profile_reject_delta": -0.007,
+    "fast192_rule": "Only emotion>=CURRENT AND profile_mean>=CURRENT AND response protection pass; JSON/nonempty/fallback also protected",
+    "training_performed": false,
+    "formal_runtime_modified": false,
+    "macro_f1_report_only": true
+  },
+  "fast96": null,
+  "fast192": null,
+  "prediction_count": 0,
+  "formal_runtime_modified": false,
+  "training_performed": false,
+  "experiment_result": "INCOMPLETE_INFRA",
+  "blocking_issue": "GPU_PLATFORM_UNSTABLE"
+}
