@@ -1,0 +1,211 @@
+{
+  "champion": "V2_E1_FINAL_2334 + P0_CURRENT + V2_P1_STYLE_CLASSIFIER + V2_P2_PERSONALITY_MARGIN_GATE_0.50",
+  "formal_champion_confirmed": true,
+  "base_model": "/root/participant/model/Qwen2___5-7B-Instruct",
+  "lora_adapter": "/root/participant/model/lora_adapter",
+  "classifier_path": "/root/participant/profile_classifier",
+  "prompt_path": "/root/participant/configs/system_prompt_v1.txt",
+  "entry_command": "bash /root/participant/start.sh TEST_FILE RESULT_DIR",
+  "environment": {
+    "python": "3.12.12 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 20:16:04) [GCC 11.2.0]",
+    "actual_python": "/root/participant/python_env/bin/python",
+    "official_python_command": "/root/participant/python_env/bin/python",
+    "vllm_binary": "/opt/conda/envs/conda_env/bin/vllm",
+    "versions": {
+      "torch": "2.10.0",
+      "transformers": "4.57.6",
+      "peft": "0.21.0",
+      "vllm": "0.19.0",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "numpy": "2.2.6",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "generation": {
+    "max_new_tokens": 1200,
+    "do_sample": false,
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "assets": {
+    "start.sh": {
+      "path": "/root/participant/start.sh",
+      "size": 4590,
+      "sha256": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744"
+    },
+    "run_inference.py": {
+      "path": "/root/participant/run_inference.py",
+      "size": 16861,
+      "sha256": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e"
+    },
+    "style_postprocessor.py": {
+      "path": "/root/participant/style_postprocessor.py",
+      "size": 4686,
+      "sha256": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364"
+    },
+    "README.md": {
+      "path": "/root/participant/README.md",
+      "size": 4279,
+      "sha256": "d0dd0df7e8cceb990aae2a79e3de94994c09c117a21709a99442e9c792a202c7"
+    },
+    "requirements.txt": {
+      "path": "/root/participant/requirements.txt",
+      "size": 47,
+      "sha256": "f138a3692fc198597db34b45a50a3078a991bcc80a6a2afe8a3c0a2c534297a4"
+    },
+    "core/message_builder.py": {
+      "path": "/root/participant/core/message_builder.py",
+      "size": 1736,
+      "sha256": "bbb7be909ab5441593997a4bafea26ba49b2146c65e08753ab89ceeab12e473e"
+    },
+    "core/prompt_loader.py": {
+      "path": "/root/participant/core/prompt_loader.py",
+      "size": 464,
+      "sha256": "f7fac6242afdf8e5c6a70f3b9f499c9d9fff189009fe1f79b2aca9c8690e1aa9"
+    },
+    "core/__init__.py": {
+      "path": "/root/participant/core/__init__.py",
+      "size": 45,
+      "sha256": "e761f4d0cf7c6856fc97ad90a97e889ea4d153066ef518321960f317331d585f"
+    },
+    "core/output_schema.py": {
+      "path": "/root/participant/core/output_schema.py",
+      "size": 4269,
+      "sha256": "56d745e8cb7b59521a5489288c271df500d960dbea8279f0fd9ba2507273aee5"
+    },
+    "configs/inference_config.json": {
+      "path": "/root/participant/configs/inference_config.json",
+      "size": 542,
+      "sha256": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a"
+    },
+    "configs/system_prompt_v1.txt": {
+      "path": "/root/participant/configs/system_prompt_v1.txt",
+      "size": 4585,
+      "sha256": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873"
+    },
+    "templates/submission_template.json": {
+      "path": "/root/participant/templates/submission_template.json",
+      "size": 219,
+      "sha256": "d6a630a114ffd91e83fab02deb22a1a7e2bd84266519f45bf775f48a47e31a3c"
+    },
+    "templates/submission_schema.json": {
+      "path": "/root/participant/templates/submission_schema.json",
+      "size": 1590,
+      "sha256": "91c42d56ae433212aab7905eabdbb96cf8463c2f887dc46b3f31647ab3a5d591"
+    },
+    "profile_classifier/config.json": {
+      "path": "/root/participant/profile_classifier/config.json",
+      "size": 10580,
+      "sha256": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc"
+    },
+    "model/Qwen2___5-7B-Instruct/configuration.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/configuration.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "model/Qwen2___5-7B-Instruct/.mv": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/.mv",
+      "size": 36,
+      "sha256": "62f3785a1113f87512366c23f8d4cfff97f2f31253503c709ab6b1c89e64af84"
+    },
+    "model/Qwen2___5-7B-Instruct/model.safetensors.index.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/model.safetensors.index.json",
+      "size": 27752,
+      "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+    },
+    "model/Qwen2___5-7B-Instruct/generation_config.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/generation_config.json",
+      "size": 243,
+      "sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f"
+    },
+    "model/Qwen2___5-7B-Instruct/config.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/config.json",
+      "size": 663,
+      "sha256": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c"
+    },
+    "model/Qwen2___5-7B-Instruct/LICENSE": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/LICENSE",
+      "size": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    "model/Qwen2___5-7B-Instruct/tokenizer_config.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/tokenizer_config.json",
+      "size": 7305,
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "model/Qwen2___5-7B-Instruct/model-00001-of-00004.safetensors": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/model-00001-of-00004.safetensors",
+      "size": 3945441440,
+      "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+    },
+    "model/Qwen2___5-7B-Instruct/merges.txt.enc": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/merges.txt.enc",
+      "size": 1671856,
+      "sha256": "dd2995028490137f5033c56df6be943e0d03b6216013c60e88a80397a30508c3"
+    },
+    "model/Qwen2___5-7B-Instruct/tokenizer.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/tokenizer.json",
+      "size": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    "model/Qwen2___5-7B-Instruct/model-00004-of-00004.safetensors": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/model-00004-of-00004.safetensors",
+      "size": 3556377672,
+      "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+    },
+    "model/Qwen2___5-7B-Instruct/.msc": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/.msc",
+      "size": 1064,
+      "sha256": "47e663491ca87b4fdc0f5e67e45ba31978ace6e0e61929d266794bd919fd813c"
+    },
+    "model/Qwen2___5-7B-Instruct/.mdl": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/.mdl",
+      "size": 49,
+      "sha256": "a173aca752f2ceeb543b575493d4ca40898de7e999939ec1a1ab344159b002be"
+    },
+    "model/Qwen2___5-7B-Instruct/README.md.enc": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/README.md.enc",
+      "size": 6272,
+      "sha256": "2f825f28b805b41684fcde86061ece68f55e03b6aaf1212b18556b7fe5abd5d2"
+    },
+    "model/Qwen2___5-7B-Instruct/model-00002-of-00004.safetensors": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/model-00002-of-00004.safetensors",
+      "size": 3864726352,
+      "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+    },
+    "model/Qwen2___5-7B-Instruct/vocab.json": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/vocab.json",
+      "size": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "model/Qwen2___5-7B-Instruct/model-00003-of-00004.safetensors": {
+      "path": "/root/participant/model/Qwen2___5-7B-Instruct/model-00003-of-00004.safetensors",
+      "size": 3864726424,
+      "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+    },
+    "model/lora_adapter/adapter_config.json": {
+      "path": "/root/participant/model/lora_adapter/adapter_config.json",
+      "size": 1195,
+      "sha256": "822b9ce3855d29412381617933a2b360f38ccbe402cc30ee93afaa615891d932"
+    },
+    "model/lora_adapter/adapter_model.safetensors": {
+      "path": "/root/participant/model/lora_adapter/adapter_model.safetensors",
+      "size": 80792880,
+      "sha256": "229ba09680f66a30ba66a68cbd6ff576320ebddaad046d694ecd0ef74797501b"
+    },
+    "profile_classifier/classifiers.joblib": {
+      "path": "/root/participant/profile_classifier/classifiers.joblib",
+      "size": 230423798,
+      "sha256": "b4d2ffad6afbd167e1bf27df1408a856b125bd32b1b7dc1a55855c88f4b69f86"
+    },
+    "profile_classifier/vectorizer.joblib": {
+      "path": "/root/participant/profile_classifier/vectorizer.joblib",
+      "size": 4327827,
+      "sha256": "f000d8ae34f561b2e377fb66bcca1db3bf4ce85e15f680c932419fcf5577fb61"
+    }
+  },
+  "weights_backup_claim": false,
+  "git_tag_scope": "source only; binaries remain local and hashes do not constitute a backup",
+  "source_tag": "v2-e1-p1-p2-final-20261014"
+}

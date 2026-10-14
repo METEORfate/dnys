@@ -1,0 +1,214 @@
+{
+  "count_unit": "protected/removal-candidate path entries; directory entries protect whole subtree; suggestions only, no deletion",
+  "KEEP_RUNTIME": [
+    {
+      "path": "/root/participant",
+      "reason": "frozen complete official runtime, binaries and environment"
+    }
+  ],
+  "KEEP_SOURCE": [
+    {
+      "path": "/root/development/dnys/.git",
+      "reason": "all Git histories/worktree metadata"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型",
+      "reason": "original development checkout, tracked dirty data untouched"
+    },
+    {
+      "path": "/tmp/dnys-v2-final-release-20261014",
+      "reason": "verified release worktree"
+    },
+    {
+      "path": "/tmp/dnys-v2-archive-20261014",
+      "reason": "experimental archive worktree"
+    }
+  ],
+  "KEEP_EXPERIMENT_ARCHIVE": [
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/final_score_maximization",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/final_score_rule_validation",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_arch1",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_arch2",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_arch2_offline",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_c23_dual_input",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_c3_second_pass",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_p1",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_p2",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_p3",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr1",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr1b",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr2",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr2a_valdev",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq1",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq2",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq3",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq4",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq5",
+      "reason": "experiment sources/reports/configs/local evidence"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq6",
+      "reason": "experiment sources/reports/configs/local evidence"
+    }
+  ],
+  "KEEP_REVIEW_EVIDENCE": [
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/sanlogs",
+      "reason": "platform and experiment activity records"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/eval_results",
+      "reason": "full original validation/prediction evidence, not committed"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs",
+      "reason": "trained/checkpoint evidence; no binary backup guaranteed"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/data",
+      "reason": "original datasets, manifests and reproducibility"
+    },
+    {
+      "path": "/root/development/runtime_backups",
+      "reason": "rollback source/asset evidence"
+    },
+    {
+      "path": "/root/development/assets",
+      "reason": "local model/tokenizer and V1 rollback assets"
+    },
+    {
+      "path": "/tmp/dnys-release-audit-20261014",
+      "reason": "release audit logs, initial failed test evidence and source-state snapshot"
+    }
+  ],
+  "CANDIDATE_REMOVE": [
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/participant/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq4/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq3/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_p1_style/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_p2_profile/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_r1_single_prefix/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_p1_style/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_r1_prefix/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_p2_profile/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_e1_final/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    },
+    {
+      "path": "/root/development/runtime_candidates/v2_r1_single_gpu/core/__pycache__",
+      "reason": "Python bytecode cache only; review before a separate cleanup request"
+    }
+  ],
+  "files_deleted": 0
+}

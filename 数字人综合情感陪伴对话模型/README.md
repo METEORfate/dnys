@@ -28,3 +28,8 @@ bash /root/participant/start.sh /root/test_inference_data.jsonl /root/result
 
 运行完成后，`/root/result` 中应生成 `submission.jsonl` 和
 `performance_report.json`。详细配置和运行方式见 `participant/README.md`。
+
+
+## 正式冻结版本 2026-10-14
+
+正式冠军：V2_E1_FINAL_2334 + P0_CURRENT + V2-P1 Style + V2-P2 Personality margin 0.50。部署源码位于 `participant/`；模型和classifier二进制需另行准备。详见 `analysis/final_release_20261014/README.md`、资产manifest和清理建议。未晋级实验仅在 `archive/v2-final-experiments-20261014` 归档，不接入main正式推理。

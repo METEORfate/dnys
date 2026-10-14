@@ -1,0 +1,330 @@
+{
+  "main_before": "e06e1c95a4c6a38c52c6ac1c5091894605f6ea8f",
+  "source_head": "8fe47dc725ea2616a69a3168c43a880707bb18dd",
+  "unpublished_commits": [
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd",
+    "c1929a06e0427e72b765c8f4d887c1bf6c320aa4",
+    "a051844fb94b62afe75f8d8130e19c03eaf8f32f",
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733",
+    "9e5acdbcbc594add8f0b8c0d654f3f929b3b3670",
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970",
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee",
+    "06e39c116a1f7cc1fd04e9cdb051910346f87e59",
+    "1d52dd96cdebd7f6e42fdfd87674abdaf0c02817",
+    "79a528d9e2ff82ebcd3d55e37c7a6555a71b96d1",
+    "72748010350db1cddbb5a582e48784008da2f365",
+    "f638a1d58fec6acb0247f52db7cefdd28c2e6673",
+    "621ff6d429c49956759851ea3528baa5fbe05168",
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9",
+    "2df04269f7e847ae85caf4b1083f79f02768beae",
+    "d9b82fdbbc0d3da639eb162d4225e323b2b0361e"
+  ],
+  "historical_object_audit": {
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/V2_E7_2_RESULT.md": {
+      "size": 3894,
+      "flags": []
+    },
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/evaluate.py": {
+      "size": 10921,
+      "flags": []
+    },
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/fast192_result.json": {
+      "size": 3250,
+      "flags": []
+    },
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/fast96_result.json": {
+      "size": 10806,
+      "flags": []
+    },
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/prepare.py": {
+      "size": 3665,
+      "flags": []
+    },
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/result.json": {
+      "size": 20644,
+      "flags": []
+    },
+    "8fe47dc725ea2616a69a3168c43a880707bb18dd:数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/setup.json": {
+      "size": 3135,
+      "flags": []
+    },
+    "c1929a06e0427e72b765c8f4d887c1bf6c320aa4:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/V2_E7_1_RESULT.md": {
+      "size": 2362,
+      "flags": []
+    },
+    "c1929a06e0427e72b765c8f4d887c1bf6c320aa4:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/fast96_result.json": {
+      "size": 8647,
+      "flags": []
+    },
+    "c1929a06e0427e72b765c8f4d887c1bf6c320aa4:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/result.json": {
+      "size": 12851,
+      "flags": []
+    },
+    "a051844fb94b62afe75f8d8130e19c03eaf8f32f:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/V2_E7_1_RESULT.md": {
+      "size": 314,
+      "flags": []
+    },
+    "a051844fb94b62afe75f8d8130e19c03eaf8f32f:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/evaluate.py": {
+      "size": 10778,
+      "flags": []
+    },
+    "a051844fb94b62afe75f8d8130e19c03eaf8f32f:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/prepare.py": {
+      "size": 3368,
+      "flags": []
+    },
+    "a051844fb94b62afe75f8d8130e19c03eaf8f32f:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/result.json": {
+      "size": 3179,
+      "flags": []
+    },
+    "a051844fb94b62afe75f8d8130e19c03eaf8f32f:数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/setup.json": {
+      "size": 2791,
+      "flags": []
+    },
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/V2_E7_RESULT.md": {
+      "size": 3455,
+      "flags": []
+    },
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/evaluate.py": {
+      "size": 10953,
+      "flags": []
+    },
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/fast96_result.json": {
+      "size": 7187,
+      "flags": []
+    },
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/finalize_existing_fast96.py": {
+      "size": 6494,
+      "flags": []
+    },
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/result.json": {
+      "size": 12699,
+      "flags": []
+    },
+    "4c4ddcacabd0c06141a98fa0ccc8e25f03a0d733:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/resume_evaluation.py": {
+      "size": 1808,
+      "flags": []
+    },
+    "9e5acdbcbc594add8f0b8c0d654f3f929b3b3670:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/V2_E7_RESULT.md": {
+      "size": 2589,
+      "flags": []
+    },
+    "9e5acdbcbc594add8f0b8c0d654f3f929b3b3670:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/result.json": {
+      "size": 5359,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/V2_E7_RESULT.md": {
+      "size": 1819,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/dataset_manifest.jsonl": {
+      "size": 226646,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/dual_rank_preflight.py": {
+      "size": 175,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/evaluate.py": {
+      "size": 10907,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/pipeline.py": {
+      "size": 3290,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/prepare.py": {
+      "size": 5244,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/result.json": {
+      "size": 5731,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/setup.json": {
+      "size": 3087,
+      "flags": []
+    },
+    "0466136a2780fbeaaebb0e9521cde6e6b9035970:数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/train_boundary.py": {
+      "size": 3215,
+      "flags": []
+    },
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee:数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/format_only.txt": {
+      "size": 942,
+      "flags": []
+    },
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee:数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/minimal.txt": {
+      "size": 1030,
+      "flags": []
+    },
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee:数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/p0.txt": {
+      "size": 4585,
+      "flags": []
+    },
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee:数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/result.json": {
+      "size": 19428,
+      "flags": []
+    },
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee:数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/run_pr3.py": {
+      "size": 7827,
+      "flags": []
+    },
+    "ad095a069ffcde9ddbc4542fda704bdb76094dee:数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/setup.json": {
+      "size": 1766,
+      "flags": []
+    },
+    "06e39c116a1f7cc1fd04e9cdb051910346f87e59:数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_evaluation_pipeline.py": {
+      "size": 1114,
+      "flags": []
+    },
+    "1d52dd96cdebd7f6e42fdfd87674abdaf0c02817:数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_heads_only.py": {
+      "size": 4825,
+      "flags": []
+    },
+    "1d52dd96cdebd7f6e42fdfd87674abdaf0c02817:数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_heads_pipeline.py": {
+      "size": 1209,
+      "flags": []
+    },
+    "79a528d9e2ff82ebcd3d55e37c7a6555a71b96d1:数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_extract_heads.py": {
+      "size": 7545,
+      "flags": []
+    },
+    "79a528d9e2ff82ebcd3d55e37c7a6555a71b96d1:数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_pipeline.py": {
+      "size": 1182,
+      "flags": []
+    },
+    "72748010350db1cddbb5a582e48784008da2f365:数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluate_candidates.py": {
+      "size": 11543,
+      "flags": []
+    },
+    "f638a1d58fec6acb0247f52db7cefdd28c2e6673:数字人综合情感陪伴对话模型/analysis/final_score_maximization/run_pipeline.py": {
+      "size": 1084,
+      "flags": []
+    },
+    "621ff6d429c49956759851ea3528baa5fbe05168:数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluate_candidates.py": {
+      "size": 10917,
+      "flags": []
+    },
+    "621ff6d429c49956759851ea3528baa5fbe05168:数字人综合情感陪伴对话模型/analysis/final_score_maximization/extract_train_heads.py": {
+      "size": 7387,
+      "flags": []
+    },
+    "621ff6d429c49956759851ea3528baa5fbe05168:数字人综合情感陪伴对话模型/analysis/final_score_maximization/fast192_manifest.json": {
+      "size": 1385,
+      "flags": []
+    },
+    "621ff6d429c49956759851ea3528baa5fbe05168:数字人综合情感陪伴对话模型/analysis/final_score_maximization/run_pipeline.py": {
+      "size": 1081,
+      "flags": []
+    },
+    "621ff6d429c49956759851ea3528baa5fbe05168:数字人综合情感陪伴对话模型/analysis/final_score_maximization/setup.json": {
+      "size": 1805,
+      "flags": []
+    },
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9:数字人综合情感陪伴对话模型/analysis/v2_rq6/prepare_audit.py": {
+      "size": 3617,
+      "flags": []
+    },
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9:数字人综合情感陪伴对话模型/analysis/v2_rq6/run_pipeline.py": {
+      "size": 6155,
+      "flags": []
+    },
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9:数字人综合情感陪伴对话模型/training/dual_objective_stream.py": {
+      "size": 1011,
+      "flags": []
+    },
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9:数字人综合情感陪伴对话模型/training/emotion_anchor_loss.py": {
+      "size": 1906,
+      "flags": []
+    },
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9:数字人综合情感陪伴对话模型/training/test_dual_objective.py": {
+      "size": 1633,
+      "flags": []
+    },
+    "34e65491763f89fda6bf32e0b644da73ea3f84c9:数字人综合情感陪伴对话模型/training/train_dual_objective.py": {
+      "size": 3436,
+      "flags": []
+    },
+    "2df04269f7e847ae85caf4b1083f79f02768beae:数字人综合情感陪伴对话模型/analysis/v2_rq5/run_module_transplant.py": {
+      "size": 8234,
+      "flags": []
+    },
+    "d9b82fdbbc0d3da639eb162d4225e323b2b0361e:数字人综合情感陪伴对话模型/analysis/v2_rq5/run_module_transplant.py": {
+      "size": 7876,
+      "flags": []
+    }
+  },
+  "formal_files": [
+    "start.sh",
+    "run_inference.py",
+    "style_postprocessor.py",
+    "README.md",
+    "requirements.txt",
+    "core/message_builder.py",
+    "core/prompt_loader.py",
+    "core/__init__.py",
+    "core/output_schema.py",
+    "configs/inference_config.json",
+    "configs/system_prompt_v1.txt",
+    "templates/submission_template.json",
+    "templates/submission_schema.json",
+    "profile_classifier/config.json"
+  ],
+  "formal_main_diff": [
+    {
+      "runtime": "start.sh",
+      "main_path": "数字人综合情感陪伴对话模型/participant/start.sh",
+      "status": "different"
+    },
+    {
+      "runtime": "run_inference.py",
+      "main_path": "数字人综合情感陪伴对话模型/participant/run_inference.py",
+      "status": "different"
+    },
+    {
+      "runtime": "README.md",
+      "main_path": "数字人综合情感陪伴对话模型/participant/README.md",
+      "status": "different"
+    },
+    {
+      "runtime": "requirements.txt",
+      "main_path": "数字人综合情感陪伴对话模型/participant/requirements.txt",
+      "status": "different"
+    },
+    {
+      "runtime": "core/message_builder.py",
+      "main_path": "数字人综合情感陪伴对话模型/participant/core/message_builder.py",
+      "status": "missing"
+    },
+    {
+      "runtime": "core/prompt_loader.py",
+      "main_path": "数字人综合情感陪伴对话模型/participant/core/prompt_loader.py",
+      "status": "missing"
+    },
+    {
+      "runtime": "core/__init__.py",
+      "main_path": "数字人综合情感陪伴对话模型/participant/core/__init__.py",
+      "status": "missing"
+    },
+    {
+      "runtime": "core/output_schema.py",
+      "main_path": "数字人综合情感陪伴对话模型/participant/core/output_schema.py",
+      "status": "missing"
+    },
+    {
+      "runtime": "configs/inference_config.json",
+      "main_path": "数字人综合情感陪伴对话模型/participant/configs/inference_config.json",
+      "status": "different"
+    },
+    {
+      "runtime": "configs/system_prompt_v1.txt",
+      "main_path": "数字人综合情感陪伴对话模型/participant/configs/system_prompt_v1.txt",
+      "status": "missing"
+    },
+    {
+      "runtime": "profile_classifier/config.json",
+      "main_path": "数字人综合情感陪伴对话模型/participant/profile_classifier/config.json",
+      "status": "missing"
+    }
+  ],
+  "original_status": " M 数字人综合情感陪伴对话模型/训练-验证-数据集/train/train_public.jsonl\u0000 M 数字人综合情感陪伴对话模型/训练-验证-数据集/train/train_public.schema.json\u0000 M 数字人综合情感陪伴对话模型/训练-验证-数据集/val/val_public.jsonl\u0000 M 数字人综合情感陪伴对话模型/训练-验证-数据集/val/val_public.schema.json\u0000?? 数字人综合情感陪伴对话模型/analysis/fast_evaluate_lora_decode.py\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/FINAL_SCORE_MAXIMIZATION_REPORT.md\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/conservative_emotion_rule.py\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluate_candidates.py.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluation_resume_budget.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluation_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/extract_train_heads.py.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/fast192.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/fast192_result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/fast96_result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/fast_head_probabilities.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/feature_eta.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/generation.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/head_fast96_metrics.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/head_results.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/heads_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/inputs192.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_evaluation_pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_extract_heads.py.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_heads_only.py.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_heads_pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/resume_state.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/server.log\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/server_setup.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_maximization/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/final_score_rule_validation/\u0000?? 数字人综合情感陪伴对话模型/analysis/v1_hard_cases.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v1_vs_v2e1_bertscore_holdout_samples.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_arch1/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_arch2/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_arch2_offline/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/attempts/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/evaluation.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/evaluation_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/partial_fast96_metrics.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/predictions.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/server.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/server_setup.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_1_interpolation/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/evaluation.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/evaluation_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/partial_fast192_metrics.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/partial_fast96_metrics.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/predictions.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/server.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/server_setup.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_2_interpolation/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/attempts/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/evaluation.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/evaluation_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/gpu_preflight.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/mask_tests.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/partial_fast96_metrics.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/predictions.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/prepare.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/resume_evaluation.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/server.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/server_setup.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/training.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_e7_boundary_lora/training_completion.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_p2/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_p3/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr1/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr1b/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr2/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr2a_valdev/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/partial_metrics.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/predictions.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/server.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/server_setup.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_pr3_minimal_prompt/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq1/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq2/\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/bert_160.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/bert_240.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/bert_80.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/dataset_audit.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/eval_160.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/eval_240.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/eval_80.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/mask.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/mask_audit.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/missing_source_manifest.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/pipeline_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/preflight.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/resume_evaluation.py\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/resume_pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/run_pipeline.py\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq3/training.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/a020.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/a035.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/a050.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/a065.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/a080.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/baseline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/compatibility.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/histories.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/post_a020.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/post_a035.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/post_a050.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/post_a065.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/post_a080.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/post_baseline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/retry_pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/sanity3.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/sanity_a000.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/sanity_a100.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/sanity_indices.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq4/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/ATTN_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/LATE_HALF_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/LATE_HALF_ATTN.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/LATE_HALF_MLP.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/LATE_QUARTER_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/MLP_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/V2_RQ5_RESULT.md\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/cpu_completion.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/parameter_audit.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/post_ATTN_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/post_LATE_HALF_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/post_LATE_HALF_ATTN.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/post_LATE_HALF_MLP.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/post_LATE_QUARTER_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/post_MLP_ALL.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/recovery.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq5/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/anchor_source_manifest.jsonl\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/dual_rank_preflight.py\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/eval_120.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/eval_160.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/eval_40.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/eval_80.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/gpu_preflight.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/mask_audit.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/pipeline.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/post_120.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/post_160.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/post_40.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/post_80.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/prepare.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/prior_status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/recovery.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/result.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/resume_evaluation.py\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/status.json\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/tests.log\u0000?? 数字人综合情感陪伴对话模型/analysis/v2_rq6/training.log\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261002_082429_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261003_084310_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261003_151309_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261003_173614_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261004_124218_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261004_150304_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261006_182120_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261008_102428_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261008_150435_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261008_153142_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261008_154859_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261008_163550_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261009_010034_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261009_050715_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261009_145004_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261009_160629_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_031613_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_170838_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_171514_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_172343_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_173915_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_175819_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_181948_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_183717_gpu.md\u0000?? 数字人综合情感陪伴对话模型/sanlogs/log_20261010_185805_gpu.md\u0000?? 数字人综合情感陪伴对话模型/training/data/v2_e7_boundary_features/\u0000?? 数字人综合情感陪伴对话模型/training/data/v2_rq3_response_features/\u0000?? 数字人综合情感陪伴对话模型/training/data/v2_rq6_emotion_features/\u0000"
+}
