@@ -1,0 +1,122 @@
+{
+  "metrics": {
+    "p0_A": {
+      "emotion": 0.6354166666666666,
+      "macro_f1": 0.5264528873903874,
+      "bleu": 0.13488622476084647,
+      "rouge": 0.2642496113175679,
+      "bert": 0.7273312211036682,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.65625,
+      "interests": 0.8020833333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6770833333333334
+    },
+    "v2_A": {
+      "emotion": 0.625,
+      "macro_f1": 0.5167977447389213,
+      "bleu": 0.1276122462294152,
+      "rouge": 0.26169250241707626,
+      "bert": 0.7275245189666748,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.6041666666666666,
+      "interests": 0.8645833333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6805555555555555
+    },
+    "p0_B": {
+      "emotion": 0.6354166666666666,
+      "macro_f1": 0.5264528873903874,
+      "bleu": 0.13323811214466394,
+      "rouge": 0.26771737223880604,
+      "bert": 0.7280879020690918,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.6770833333333334,
+      "interests": 0.78125,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6770833333333334
+    },
+    "v2_B": {
+      "emotion": 0.6145833333333334,
+      "macro_f1": 0.516450234544713,
+      "bleu": 0.1285482707805166,
+      "rouge": 0.26024555131264265,
+      "bert": 0.7279542088508606,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.59375,
+      "interests": 0.8541666666666666,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.673611111111111
+    }
+  },
+  "repeatability": {
+    "emotion_label": 1.0,
+    "response_text": 0.28125,
+    "user_profile": 0.8854166666666666,
+    "emotion_delta": 0.0
+  },
+  "transitions": {
+    "A": {
+      "wrong_to_right": 5,
+      "right_to_wrong": 6,
+      "improvement_ids": [
+        "test_000004_t1",
+        "test_000020_t1",
+        "test_000032_t1",
+        "test_000081_t1",
+        "test_000090_t1"
+      ],
+      "regression_ids": [
+        "test_000009_t1",
+        "test_000016_t1",
+        "test_000023_t1",
+        "test_000039_t1",
+        "test_000052_t1",
+        "test_000064_t1"
+      ]
+    },
+    "B": {
+      "wrong_to_right": 3,
+      "right_to_wrong": 5,
+      "improvement_ids": [
+        "test_000004_t1",
+        "test_000032_t1",
+        "test_000081_t1"
+      ],
+      "regression_ids": [
+        "test_000009_t1",
+        "test_000016_t1",
+        "test_000023_t1",
+        "test_000039_t1",
+        "test_000052_t1"
+      ]
+    }
+  },
+  "mean_delta": {
+    "emotion": -0.015624999999999944,
+    "profile_mean": -1.1102230246251565e-16,
+    "bleu": -0.005981909947789313,
+    "rouge": -0.005014464913327521,
+    "bert": 2.9802322387695312e-05
+  },
+  "stable_improvement_ids": [
+    "test_000004_t1",
+    "test_000032_t1",
+    "test_000081_t1"
+  ],
+  "stable_regression_ids": [
+    "test_000009_t1",
+    "test_000016_t1",
+    "test_000023_t1",
+    "test_000039_t1",
+    "test_000052_t1"
+  ],
+  "historical_p0_67_reproduced": false,
+  "result": "REJECT",
+  "blocking_issue": "NONE",
+  "elapsed_minutes": 12.100883952776591
+}

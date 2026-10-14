@@ -1,0 +1,436 @@
+{
+  "samples": 1649,
+  "train_samples": 18657,
+  "train_val_conversation_overlap": 0,
+  "overlap_method": "canonical complete histories and cross-set history-prefix hashes",
+  "baseline": {
+    "bleu": 0.1467965098089046,
+    "rouge": 0.29692182297160624,
+    "bert": 0.7399427240873698
+  },
+  "retrieval": {
+    "LATEST_USER": {
+      "bleu": 0.04886971749221215,
+      "rouge": 0.17381982467751664,
+      "bert": 0.6798622607100436
+    },
+    "USER_HISTORY": {
+      "bleu": 0.03945354210018421,
+      "rouge": 0.15500307613876357,
+      "bert": 0.6726989672356045
+    }
+  },
+  "best_query": "LATEST_USER",
+  "query_selection": "highest mean of BLEU/ROUGE/BERTScore; internal proxy only",
+  "similarity_buckets": [
+    {
+      "bucket": ">=0.95",
+      "count": 0,
+      "v2": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      },
+      "retrieval": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      }
+    },
+    {
+      "bucket": "0.90-0.95",
+      "count": 0,
+      "v2": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      },
+      "retrieval": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      }
+    },
+    {
+      "bucket": "0.85-0.90",
+      "count": 0,
+      "v2": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      },
+      "retrieval": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      }
+    },
+    {
+      "bucket": "0.80-0.85",
+      "count": 0,
+      "v2": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      },
+      "retrieval": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      }
+    },
+    {
+      "bucket": "0.75-0.80",
+      "count": 0,
+      "v2": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      },
+      "retrieval": {
+        "bleu": null,
+        "rouge": null,
+        "bert": null
+      }
+    },
+    {
+      "bucket": "<0.75",
+      "count": 1649,
+      "v2": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "retrieval": {
+        "bleu": 0.04886971749221215,
+        "rouge": 0.17381982467751664,
+        "bert": 0.6798622607100436
+      }
+    }
+  ],
+  "gates": [
+    {
+      "threshold": 0.8,
+      "override_count": 0,
+      "override_percent": 0.0,
+      "metrics": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "paired_overridden_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        }
+      },
+      "unsafe_filtered_count": 0,
+      "promote": false,
+      "paired_all_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        }
+      }
+    },
+    {
+      "threshold": 0.85,
+      "override_count": 0,
+      "override_percent": 0.0,
+      "metrics": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "paired_overridden_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        }
+      },
+      "unsafe_filtered_count": 0,
+      "promote": false,
+      "paired_all_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        }
+      }
+    },
+    {
+      "threshold": 0.9,
+      "override_count": 0,
+      "override_percent": 0.0,
+      "metrics": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "paired_overridden_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        }
+      },
+      "unsafe_filtered_count": 0,
+      "promote": false,
+      "paired_all_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        }
+      }
+    },
+    {
+      "threshold": 0.92,
+      "override_count": 0,
+      "override_percent": 0.0,
+      "metrics": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "paired_overridden_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        }
+      },
+      "unsafe_filtered_count": 0,
+      "promote": false,
+      "paired_all_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        }
+      }
+    },
+    {
+      "threshold": 0.95,
+      "override_count": 0,
+      "override_percent": 0.0,
+      "metrics": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "paired_overridden_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        }
+      },
+      "unsafe_filtered_count": 0,
+      "promote": false,
+      "paired_all_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        }
+      }
+    },
+    {
+      "threshold": 0.97,
+      "override_count": 0,
+      "override_percent": 0.0,
+      "metrics": {
+        "bleu": 0.1467965098089046,
+        "rouge": 0.29692182297160624,
+        "bert": 0.7399427240873698
+      },
+      "delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "paired_overridden_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 0,
+          "net_better": 0
+        }
+      },
+      "unsafe_filtered_count": 0,
+      "promote": false,
+      "paired_all_samples": {
+        "rouge": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        },
+        "bert": {
+          "retrieval_better": 0,
+          "v2_better": 0,
+          "equal": 1649,
+          "net_better": 0
+        }
+      }
+    }
+  ],
+  "best_threshold": {
+    "threshold": 0.8,
+    "override_count": 0,
+    "override_percent": 0.0,
+    "metrics": {
+      "bleu": 0.1467965098089046,
+      "rouge": 0.29692182297160624,
+      "bert": 0.7399427240873698
+    },
+    "delta": {
+      "bleu": 0.0,
+      "rouge": 0.0,
+      "bert": 0.0
+    },
+    "paired_overridden_samples": {
+      "rouge": {
+        "retrieval_better": 0,
+        "v2_better": 0,
+        "equal": 0,
+        "net_better": 0
+      },
+      "bert": {
+        "retrieval_better": 0,
+        "v2_better": 0,
+        "equal": 0,
+        "net_better": 0
+      }
+    },
+    "unsafe_filtered_count": 0,
+    "promote": false,
+    "paired_all_samples": {
+      "rouge": {
+        "retrieval_better": 0,
+        "v2_better": 0,
+        "equal": 1649,
+        "net_better": 0
+      },
+      "bert": {
+        "retrieval_better": 0,
+        "v2_better": 0,
+        "equal": 1649,
+        "net_better": 0
+      }
+    }
+  },
+  "unsafe_filtered_count": 21,
+  "result": "REJECT",
+  "device": "cuda:0",
+  "safety_filter_limit": "heuristic contact/explicit-name/institution regex; not comprehensive NER",
+  "holdout_used": false,
+  "runtime_modified": false,
+  "blocking_issue": "NONE",
+  "paired_all_samples_definition": "Selective hybrid response vs V2 baseline over all 1649 rows; non-overridden rows count as equal."
+}

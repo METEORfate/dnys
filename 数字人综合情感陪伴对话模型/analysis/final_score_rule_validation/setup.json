@@ -1,0 +1,9 @@
+{
+  "rule_file": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/final_score_maximization/conservative_emotion_rule.py",
+  "rule_set_hash": "83d04374ad140709de0d4fd6c5c1152b041c328bbdad05b9a541052d9512e3d4",
+  "source_file": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluate_candidates.py",
+  "source_sha256": "563585fa3aab29a4645e0acae47ea3b7e2873629601f797e52ddba5baa4d53d3",
+  "validation_mode": "paired CPU replay of existing full official-stack P0 predictions",
+  "baseline_predictions": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr2a_valdev/paired_predictions.jsonl",
+  "only_emotion_diff": true
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "COMPLETED",
+  "started_at": 1791899491.5576906,
+  "blocking_issue": "NONE",
+  "dataset_count": 2800,
+  "child_pid": 305,
+  "training_started_at": 1791899496.8376348,
+  "training_steps": 80,
+  "training_minutes": 16.11917424996694,
+  "training_status": "COMPLETED",
+  "evaluation_resumed_at": 1791900892.1271114,
+  "best_candidate": "CURRENT",
+  "result": "REJECT"
+}

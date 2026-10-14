@@ -1,0 +1,69 @@
+{
+  "metrics": {
+    "p0": {
+      "emotion": 0.6458333333333334,
+      "macro_f1": 0.5305537884547319,
+      "bleu": 0.1278568288070658,
+      "rouge": 0.26135179606988057,
+      "bert": 0.7248920314013958,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "mean_response_length": 162.73958333333334,
+      "avg_latency": 1503.442678,
+      "p50_latency": 1206.465912,
+      "p95_latency": 2997.914348,
+      "personality": 0.6666666666666666,
+      "interests": 0.78125,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.673611111111111,
+      "recall": {
+        "anxiety": 0.6666666666666666,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "sadness": 0.8
+      }
+    }
+  },
+  "blocking_issue": "GPU_PLATFORM_UNSTABLE: NVML initialization failed; V1/V2 not evaluated",
+  "setup": {
+    "only_prompt_diff": true,
+    "candidates": [
+      {
+        "name": "p0",
+        "path": "/root/development/runtime_candidates/prompt_pr1_p0",
+        "prompt_sha256": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873"
+      },
+      {
+        "name": "v1",
+        "path": "/root/development/runtime_candidates/prompt_pr1_v1",
+        "prompt_sha256": "fc5ff37325131b18f5981be0bcd491bda6331be5be9fe185d2f2e6122aae7a83"
+      },
+      {
+        "name": "v2",
+        "path": "/root/development/runtime_candidates/prompt_pr1_v2",
+        "prompt_sha256": "ac3056972e84776da4910ae1fa96e42a81477cc82815fefd06d8dcf599d1335b"
+      }
+    ],
+    "mini_sha256": "47ae9b3dae29e30a7258d267e66af321003f10d5216f69bb64669c5476e9c9cb",
+    "runtime_hashes": {
+      "test_lora_runtime.py": "0adafcb7cacdcf1797fe02c6d22e7575a5974b5905beefa509a7872d95de980b",
+      "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+      "start.sh": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744",
+      "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+      "configs/inference_config.json": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a",
+      "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "profile_classifier/config.json": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc",
+      "profile_classifier/classifiers.joblib": "b4d2ffad6afbd167e1bf27df1408a856b125bd32b1b7dc1a55855c88f4b69f86",
+      "profile_classifier/vectorizer.joblib": "f000d8ae34f561b2e377fb66bcca1db3bf4ce85e15f680c932419fcf5577fb61",
+      "core/message_builder.py": "bbb7be909ab5441593997a4bafea26ba49b2146c65e08753ab89ceeab12e473e",
+      "core/prompt_loader.py": "f7fac6242afdf8e5c6a70f3b9f499c9d9fff189009fe1f79b2aca9c8690e1aa9",
+      "core/__init__.py": "e761f4d0cf7c6856fc97ad90a97e889ea4d153066ef518321960f317331d585f",
+      "core/output_schema.py": "56d745e8cb7b59521a5489288c271df500d960dbea8279f0fd9ba2507273aee5"
+    }
+  },
+  "winner": null,
+  "result": "NOT_COMPLETED",
+  "formal_runtime_unchanged": true
+}

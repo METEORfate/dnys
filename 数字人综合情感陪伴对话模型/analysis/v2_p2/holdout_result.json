@@ -1,0 +1,56 @@
+{
+  "samples": 705,
+  "personality": {
+    "baseline": 0.6340425531914894,
+    "hybrid": 0.6794326241134752,
+    "delta": 0.04539007092198582,
+    "delta_ci95": [
+      0.02553191489361702,
+      0.06666666666666667
+    ]
+  },
+  "override_count": 92,
+  "wrong_to_right": 45,
+  "right_to_wrong": 13,
+  "both_right": 434,
+  "both_wrong": 213,
+  "net_gain": 32,
+  "override_diagnostics": {
+    "EMPTY_TO_NONEMPTY": {
+      "count": 4,
+      "wrong_to_right": 1,
+      "right_to_wrong": 2
+    },
+    "NONEMPTY_TO_EMPTY": {
+      "count": 79,
+      "wrong_to_right": 41,
+      "right_to_wrong": 11
+    },
+    "SET_TO_SET": {
+      "count": 9,
+      "wrong_to_right": 3,
+      "right_to_wrong": 0
+    }
+  },
+  "final_profile": {
+    "personality": 0.6794326241134752,
+    "interests": 0.8609929078014185,
+    "style": 0.5531914893617021,
+    "current_profile_mean": 0.6827423167848701,
+    "profile_mean": 0.697872340425532,
+    "profile_mean_delta": 0.01513002364066194,
+    "profile_mean_delta_ci95": [
+      0.00851063829787234,
+      0.022222222222222223
+    ]
+  },
+  "combined_profile_postprocess_avg_ms": 1.6048803459852934,
+  "combined_profile_postprocess_p95_ms": 2.810310968197882,
+  "statistically_supported": true,
+  "result": "HOLDOUT_PROMOTE",
+  "fixed_margin": 0.5,
+  "bootstrap_seed": 42,
+  "bootstrap_iterations": 5000,
+  "runtime_modified": false,
+  "blocking_issue": "NONE"
+}

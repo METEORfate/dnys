@@ -1,0 +1,461 @@
+{
+  "dataset": {
+    "original_train_count": 18657,
+    "v2e1_unique_source_count": 11323,
+    "missing_original_count": 7334,
+    "duplicate_ids": 0,
+    "source_mapping": "conversation_id:target_user_turn_id:assistant_response_turn_id, raw preprocess exact alignment + resampled file exact alignment",
+    "missing_distribution": {
+      "anger": {
+        "count": 191,
+        "percent": 2.6043086992091626,
+        "original_count": 855,
+        "original_percent": 4.582730342498794
+      },
+      "anxiety": {
+        "count": 3689,
+        "percent": 50.29997272975184,
+        "original_count": 6340,
+        "original_percent": 33.98188347537117
+      },
+      "care": {
+        "count": 2,
+        "percent": 0.02727024815925825,
+        "original_count": 79,
+        "original_percent": 0.4234335638098301
+      },
+      "disgust": {
+        "count": 1,
+        "percent": 0.013635124079629125,
+        "original_count": 125,
+        "original_percent": 0.6699898161547945
+      },
+      "fear": {
+        "count": 474,
+        "percent": 6.463048813744206,
+        "original_count": 1388,
+        "original_percent": 7.4395669185828375
+      },
+      "gratitude": {
+        "count": 142,
+        "percent": 1.9361876193073355,
+        "original_count": 695,
+        "original_percent": 3.725143377820657
+      },
+      "helplessness": {
+        "count": 511,
+        "percent": 6.967548404690483,
+        "original_count": 1575,
+        "original_percent": 8.44187168355041
+      },
+      "joy": {
+        "count": 6,
+        "percent": 0.08181074447777476,
+        "original_count": 171,
+        "original_percent": 0.9165460684997588
+      },
+      "loneliness": {
+        "count": 204,
+        "percent": 2.7815653122443416,
+        "original_count": 876,
+        "original_percent": 4.6952886316128
+      },
+      "mixed": {
+        "count": 203,
+        "percent": 2.7679301881647125,
+        "original_count": 945,
+        "original_percent": 5.065123010130246
+      },
+      "neutral": {
+        "count": 144,
+        "percent": 1.9634578674665941,
+        "original_count": 654,
+        "original_percent": 3.5053867181218847
+      },
+      "pride": {
+        "count": 18,
+        "percent": 0.24543223343332427,
+        "original_count": 234,
+        "original_percent": 1.2542209358417753
+      },
+      "relaxed": {
+        "count": 1293,
+        "percent": 17.63021543496046,
+        "original_count": 2819,
+        "original_percent": 15.109610333922923
+      },
+      "sadness": {
+        "count": 300,
+        "percent": 4.090537223888737,
+        "original_count": 1085,
+        "original_percent": 5.815511604223616
+      },
+      "shame": {
+        "count": 156,
+        "percent": 2.1270793564221435,
+        "original_count": 752,
+        "original_percent": 4.030658733987243
+      },
+      "surprise": {
+        "count": 0,
+        "percent": 0.0,
+        "original_count": 64,
+        "original_percent": 0.34303478587125474
+      }
+    },
+    "response_length": {
+      "mean": 229.51649850013635,
+      "p50": 134.0,
+      "p90": 550.0
+    }
+  },
+  "mask_audit": {
+    "samples": 7334,
+    "zero_response_samples": 0,
+    "emotion_tokens_supervised": 0,
+    "profile_tokens_supervised": 0,
+    "memory_tokens_supervised": 0,
+    "status": "PASS",
+    "sampled20": [
+      {
+        "missing_row_index": 5238,
+        "response_tokens": 202,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2977,
+          3301
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 912,
+        "response_tokens": 532,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2517,
+          3392
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 204,
+        "response_tokens": 61,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2656,
+          2756
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 6074,
+        "response_tokens": 46,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3406,
+          3480
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 2253,
+        "response_tokens": 123,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3714,
+          3895
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 2006,
+        "response_tokens": 76,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3189,
+          3308
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 1828,
+        "response_tokens": 119,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3838,
+          4020
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 1143,
+        "response_tokens": 46,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3038,
+          3105
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 6033,
+        "response_tokens": 73,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2478,
+          2604
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 839,
+        "response_tokens": 93,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5315,
+          5460
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 5543,
+        "response_tokens": 103,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2625,
+          2794
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 6067,
+        "response_tokens": 44,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2958,
+          3026
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 7308,
+        "response_tokens": 390,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5187,
+          5728
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 4467,
+        "response_tokens": 153,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5154,
+          5395
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 712,
+        "response_tokens": 83,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3961,
+          4101
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 4837,
+        "response_tokens": 137,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3030,
+          3222
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 3456,
+        "response_tokens": 16,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2818,
+          2840
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 260,
+        "response_tokens": 536,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2732,
+          3584
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 244,
+        "response_tokens": 232,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5775,
+          6140
+        ],
+        "trimmed": false
+      },
+      {
+        "missing_row_index": 767,
+        "response_tokens": 348,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5453,
+          5996
+        ],
+        "trimmed": false
+      }
+    ],
+    "mask_method": "exact full-chat offsets; only tokens wholly inside response JSON string content, excluding quotes/boundary-crossing tokens",
+    "trimmed_samples": 387
+  },
+  "baseline": {
+    "emotion": 0.6979166666666666,
+    "profile_mean": 0.65625,
+    "bleu": 0.13465935079395705,
+    "rouge": 0.26947329601946673,
+    "bert_f1": 0.7311925292
+  },
+  "checkpoints": {
+    "80": {
+      "checkpoint": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-80",
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "profile_mean": 0.6631944444444444,
+        "bleu": 0.14914855451868822,
+        "rouge": 0.2796608725754857,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "bert_f1": 0.73459792137146
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": 0.00694444444444442,
+        "bleu": 0.01448920372473117,
+        "rouge": 0.010187576556018985,
+        "bert_f1": 0.0034053921714599644
+      },
+      "guardrail_pass": false,
+      "result": "REJECT"
+    },
+    "160": {
+      "checkpoint": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-160",
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "profile_mean": 0.6458333333333334,
+        "bleu": 0.14260189481930471,
+        "rouge": 0.27719465945236244,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "bert_f1": 0.7322105765342712
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": -0.01041666666666663,
+        "bleu": 0.007942544025347664,
+        "rouge": 0.0077213634328957,
+        "bert_f1": 0.0010180473342712437
+      },
+      "guardrail_pass": false,
+      "result": "REJECT"
+    },
+    "240": {
+      "checkpoint": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-240",
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "profile_mean": 0.65625,
+        "bleu": 0.14462404393314,
+        "rouge": 0.27985503885401014,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "bert_f1": 0.7335101962089539
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": 0.0,
+        "bleu": 0.00996469313918294,
+        "rouge": 0.010381742834543406,
+        "bert_f1": 0.002317667008953861
+      },
+      "guardrail_pass": false,
+      "result": "REJECT"
+    }
+  },
+  "winner": null,
+  "result": "REJECT",
+  "training_minutes": 42.846197911103566,
+  "training_steps": 240,
+  "blocking_issue": "NONE"
+}

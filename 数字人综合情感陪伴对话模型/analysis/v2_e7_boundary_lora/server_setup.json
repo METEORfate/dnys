@@ -1,0 +1,134 @@
+{
+  "prompt_sha256": {
+    "p0": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873"
+  },
+  "command": [
+    "/opt/conda/envs/conda_env/bin/vllm",
+    "serve",
+    "/root/participant/model/Qwen2___5-7B-Instruct",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--served-model-name",
+    "emotion-companion-lora",
+    "--enable-lora",
+    "--lora-modules",
+    "emotion-companion-lora=/root/participant/model/lora_adapter",
+    "e7-40=/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-40",
+    "e7-80=/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-80",
+    "--max-loras",
+    "3",
+    "--tensor-parallel-size",
+    "2",
+    "--max-num-seqs",
+    "8"
+  ],
+  "models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791900979,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/Qwen2___5-7B-Instruct",
+        "parent": null,
+        "max_model_len": 32768,
+        "permission": [
+          {
+            "id": "modelperm-b06ce64a5afe298c",
+            "object": "model_permission",
+            "created": 1791900979,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791900979,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/lora_adapter",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-851c7d83ef9ef03c",
+            "object": "model_permission",
+            "created": 1791900979,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "e7-40",
+        "object": "model",
+        "created": 1791900979,
+        "owned_by": "vllm",
+        "root": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-40",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-ae34ba56cd54b5df",
+            "object": "model_permission",
+            "created": 1791900979,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "e7-80",
+        "object": "model",
+        "created": 1791900979,
+        "owned_by": "vllm",
+        "root": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-emotion-boundary/checkpoint-80",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-a4fd276203f9f6ac",
+            "object": "model_permission",
+            "created": 1791900979,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "input_sha256": "68e96051ee47fed3ba97d51d8c1cc10577a352d77145e1cc7dfb417d6dbad6a9",
+  "server_restart_count": 0
+}

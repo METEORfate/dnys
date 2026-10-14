@@ -1,0 +1,541 @@
+{
+  "samples": 1649,
+  "setup": {
+    "rule_file": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/final_score_maximization/conservative_emotion_rule.py",
+    "rule_set_hash": "83d04374ad140709de0d4fd6c5c1152b041c328bbdad05b9a541052d9512e3d4",
+    "source_file": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/final_score_maximization/evaluate_candidates.py",
+    "source_sha256": "563585fa3aab29a4645e0acae47ea3b7e2873629601f797e52ddba5baa4d53d3",
+    "validation_mode": "paired CPU replay of existing full official-stack P0 predictions",
+    "baseline_predictions": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_pr2a_valdev/paired_predictions.jsonl",
+    "only_emotion_diff": true
+  },
+  "metrics": {
+    "current": {
+      "emotion": 0.7465130382049727,
+      "macro_f1": 0.6696286196284748,
+      "bert": 0.7365327819757131,
+      "personality": 0.6513038204972711,
+      "interests": 0.8053365676167374,
+      "style": 0.5548817465130382,
+      "profile_mean": 0.6705073782090155,
+      "bleu": 0.14082707683273876,
+      "rouge": 0.2893353268058923,
+      "avg_latency_ms": 1508.2689588883832,
+      "p95_latency_ms": 3876.899582333863,
+      "latency_scope": "stored current HTTP latency plus measured CPU rule call; candidate end-to-end estimate, not a new runtime benchmark",
+      "per_class": {
+        "anger": {
+          "precision": 0.7582417582417582,
+          "recall": 0.8734177215189873,
+          "f1": 0.8117647058823529,
+          "support": 79
+        },
+        "anxiety": {
+          "precision": 0.8741418764302059,
+          "recall": 0.7431906614785992,
+          "f1": 0.8033648790746583,
+          "support": 514
+        },
+        "care": {
+          "precision": 0.18181818181818182,
+          "recall": 0.2857142857142857,
+          "f1": 0.2222222222222222,
+          "support": 7
+        },
+        "disgust": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 15
+        },
+        "fear": {
+          "precision": 0.6111111111111112,
+          "recall": 0.8369565217391305,
+          "f1": 0.706422018348624,
+          "support": 92
+        },
+        "gratitude": {
+          "precision": 0.7613636363636364,
+          "recall": 0.7701149425287356,
+          "f1": 0.7657142857142857,
+          "support": 87
+        },
+        "helplessness": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7961165048543689,
+          "f1": 0.7256637168141592,
+          "support": 103
+        },
+        "joy": {
+          "precision": 1.0,
+          "recall": 0.23076923076923078,
+          "f1": 0.375,
+          "support": 13
+        },
+        "loneliness": {
+          "precision": 0.8461538461538461,
+          "recall": 0.8571428571428571,
+          "f1": 0.8516129032258064,
+          "support": 77
+        },
+        "mixed": {
+          "precision": 0.5789473684210527,
+          "recall": 0.36666666666666664,
+          "f1": 0.44897959183673464,
+          "support": 120
+        },
+        "neutral": {
+          "precision": 0.35714285714285715,
+          "recall": 0.38461538461538464,
+          "f1": 0.3703703703703704,
+          "support": 39
+        },
+        "pride": {
+          "precision": 0.4444444444444444,
+          "recall": 0.9032258064516129,
+          "f1": 0.5957446808510638,
+          "support": 31
+        },
+        "relaxed": {
+          "precision": 0.7973856209150327,
+          "recall": 0.8413793103448276,
+          "f1": 0.8187919463087248,
+          "support": 290
+        },
+        "sadness": {
+          "precision": 0.7528089887640449,
+          "recall": 0.7204301075268817,
+          "f1": 0.7362637362637361,
+          "support": 93
+        },
+        "shame": {
+          "precision": 0.7325581395348837,
+          "recall": 0.7682926829268293,
+          "f1": 0.75,
+          "support": 82
+        },
+        "surprise": {
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1": 0.8750000000000001,
+          "support": 7
+        }
+      }
+    },
+    "candidate": {
+      "emotion": 0.742874469375379,
+      "macro_f1": 0.6649639555937398,
+      "bert": 0.7365327819757131,
+      "personality": 0.6513038204972711,
+      "interests": 0.8053365676167374,
+      "style": 0.5548817465130382,
+      "profile_mean": 0.6705073782090155,
+      "bleu": 0.14082707683273876,
+      "rouge": 0.2893353268058923,
+      "avg_latency_ms": 1508.270016850496,
+      "p95_latency_ms": 3876.9015464931726,
+      "latency_scope": "stored current HTTP latency plus measured CPU rule call; candidate end-to-end estimate, not a new runtime benchmark",
+      "per_class": {
+        "anger": {
+          "precision": 0.7582417582417582,
+          "recall": 0.8734177215189873,
+          "f1": 0.8117647058823529,
+          "support": 79
+        },
+        "anxiety": {
+          "precision": 0.8574561403508771,
+          "recall": 0.7607003891050583,
+          "f1": 0.8061855670103093,
+          "support": 514
+        },
+        "care": {
+          "precision": 0.18181818181818182,
+          "recall": 0.2857142857142857,
+          "f1": 0.2222222222222222,
+          "support": 7
+        },
+        "disgust": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 15
+        },
+        "fear": {
+          "precision": 0.6355140186915887,
+          "recall": 0.7391304347826086,
+          "f1": 0.6834170854271356,
+          "support": 92
+        },
+        "gratitude": {
+          "precision": 0.7662337662337663,
+          "recall": 0.6781609195402298,
+          "f1": 0.7195121951219511,
+          "support": 87
+        },
+        "helplessness": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7961165048543689,
+          "f1": 0.7256637168141592,
+          "support": 103
+        },
+        "joy": {
+          "precision": 1.0,
+          "recall": 0.23076923076923078,
+          "f1": 0.375,
+          "support": 13
+        },
+        "loneliness": {
+          "precision": 0.8461538461538461,
+          "recall": 0.8571428571428571,
+          "f1": 0.8516129032258064,
+          "support": 77
+        },
+        "mixed": {
+          "precision": 0.5789473684210527,
+          "recall": 0.36666666666666664,
+          "f1": 0.44897959183673464,
+          "support": 120
+        },
+        "neutral": {
+          "precision": 0.35714285714285715,
+          "recall": 0.38461538461538464,
+          "f1": 0.3703703703703704,
+          "support": 39
+        },
+        "pride": {
+          "precision": 0.4444444444444444,
+          "recall": 0.9032258064516129,
+          "f1": 0.5957446808510638,
+          "support": 31
+        },
+        "relaxed": {
+          "precision": 0.7760252365930599,
+          "recall": 0.8482758620689655,
+          "f1": 0.8105436573311368,
+          "support": 290
+        },
+        "sadness": {
+          "precision": 0.7528089887640449,
+          "recall": 0.7204301075268817,
+          "f1": 0.7362637362637361,
+          "support": 93
+        },
+        "shame": {
+          "precision": 0.7325581395348837,
+          "recall": 0.7682926829268293,
+          "f1": 0.75,
+          "support": 82
+        },
+        "surprise": {
+          "precision": 0.7777777777777778,
+          "recall": 1.0,
+          "f1": 0.8750000000000001,
+          "support": 7
+        }
+      }
+    }
+  },
+  "delta": {
+    "emotion": -0.0036385688295936802,
+    "macro_f1": -0.004664664034734978,
+    "personality": 0.0,
+    "interests": 0.0,
+    "style": 0.0,
+    "profile_mean": 0.0,
+    "bleu": 0.0,
+    "rouge": 0.0,
+    "bert": 0.0
+  },
+  "paired": {
+    "wrong_to_right": 11,
+    "right_to_wrong": 17,
+    "net": -6,
+    "changed_count": 30
+  },
+  "preservation": {
+    "response_text": 1.0,
+    "user_profile": 1.0,
+    "memory_refs": 1.0,
+    "id": 1.0
+  },
+  "rule_latency_ms": {
+    "avg": 0.0010579621126754419,
+    "p95": 0.0022640451788902283
+  },
+  "decision": "REJECT",
+  "final_runtime_modified": false,
+  "blocking_issue": "NONE",
+  "changes": [
+    {
+      "id": "test_000058_t1",
+      "row_index": 57,
+      "gt": "relaxed",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000124_t1",
+      "row_index": 123,
+      "gt": "relaxed",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000183_t1",
+      "row_index": 182,
+      "gt": "mixed",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000228_t1",
+      "row_index": 227,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000291_t1",
+      "row_index": 290,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000298_t1",
+      "row_index": 297,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000312_t1",
+      "row_index": 311,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000332_t1",
+      "row_index": 331,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000333_t1",
+      "row_index": 332,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000359_t1",
+      "row_index": 358,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000424_t1",
+      "row_index": 423,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000425_t1",
+      "row_index": 424,
+      "gt": "anxiety",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000448_t1",
+      "row_index": 447,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000471_t1",
+      "row_index": 470,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000492_t1",
+      "row_index": 491,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000502_t1",
+      "row_index": 501,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000511_t1",
+      "row_index": 510,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000521_t1",
+      "row_index": 520,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000604_t1",
+      "row_index": 603,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_000689_t1",
+      "row_index": 688,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000779_t1",
+      "row_index": 778,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000911_t1",
+      "row_index": 910,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_000958_t1",
+      "row_index": 957,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_001134_t1",
+      "row_index": 1133,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_001139_t1",
+      "row_index": 1138,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_001185_t1",
+      "row_index": 1184,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_001255_t1",
+      "row_index": 1254,
+      "gt": "anxiety",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": true,
+      "right_to_wrong": false
+    },
+    {
+      "id": "test_001307_t1",
+      "row_index": 1306,
+      "gt": "fear",
+      "before": "fear",
+      "after": "anxiety",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_001370_t1",
+      "row_index": 1369,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    },
+    {
+      "id": "test_001394_t1",
+      "row_index": 1393,
+      "gt": "gratitude",
+      "before": "gratitude",
+      "after": "relaxed",
+      "wrong_to_right": false,
+      "right_to_wrong": true
+    }
+  ],
+  "validation_scope": "existing official-stack full val_dev P0 predictions, deterministic CPU replay; no new generation, no holdout"
+}

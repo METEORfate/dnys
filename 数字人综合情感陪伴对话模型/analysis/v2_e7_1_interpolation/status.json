@@ -1,0 +1,9 @@
+{
+  "phase": "COMPLETED",
+  "started_at": 1791903450.5761106,
+  "server_pid": 306,
+  "row_index": 95,
+  "variant": "a050",
+  "blocking_issue": "NONE",
+  "experiment_status": "COMPLETED_NO_FAST192_CANDIDATE"
+}

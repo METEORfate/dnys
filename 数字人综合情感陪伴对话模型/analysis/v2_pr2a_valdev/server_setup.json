@@ -1,0 +1,81 @@
+{
+  "prompt_sha256": {
+    "p0": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+    "a": "0e4d79a39c0c3a0ff70f0111bd21c76941ae89540dfed517ff32601b0a72da8a"
+  },
+  "command": [
+    "/opt/conda/envs/conda_env/bin/vllm",
+    "serve",
+    "/root/participant/model/Qwen2___5-7B-Instruct",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--served-model-name",
+    "emotion-companion-lora",
+    "--enable-lora",
+    "--lora-modules",
+    "emotion-companion-lora=/root/participant/model/lora_adapter",
+    "--tensor-parallel-size",
+    "2",
+    "--max-num-seqs",
+    "8"
+  ],
+  "models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791733589,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/Qwen2___5-7B-Instruct",
+        "parent": null,
+        "max_model_len": 32768,
+        "permission": [
+          {
+            "id": "modelperm-88fa21030dbe163a",
+            "object": "model_permission",
+            "created": 1791733589,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791733589,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/lora_adapter",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-a02ca07e8741d1ea",
+            "object": "model_permission",
+            "created": 1791733589,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "input_sha256": "297dfcc52f6bbbaad260d332b162809450cb603c5e5e0a0f3526a4f965326858",
+  "server_restart_count": 0
+}

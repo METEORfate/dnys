@@ -1,0 +1,198 @@
+{
+  "setup": {
+    "v2e1_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
+    "rq3_path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-80",
+    "adapter_compatible": true,
+    "rank": 16,
+    "alpha": 32,
+    "target_modules": [
+      "down_proj",
+      "gate_proj",
+      "v_proj",
+      "k_proj",
+      "up_proj",
+      "q_proj",
+      "o_proj"
+    ],
+    "base_model": "participant/model/Qwen2___5-7B-Instruct",
+    "vllm_version": "0.19.0",
+    "multi_lora_supported": true,
+    "candidate_path": "/root/development/runtime_candidates/v2_arch1",
+    "rq3_weights_sha256": "f814ab43123712e05c51de577a1448e8abe6b84912e8249cce1db0e7404e554d",
+    "official_runtime_hashes": {
+      "test_lora_runtime.py": "0adafcb7cacdcf1797fe02c6d22e7575a5974b5905beefa509a7872d95de980b",
+      "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+      "start.sh": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744",
+      "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+      "configs/inference_config.json": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a",
+      "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "profile_classifier/config.json": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc",
+      "profile_classifier/classifiers.joblib": "b4d2ffad6afbd167e1bf27df1408a856b125bd32b1b7dc1a55855c88f4b69f86",
+      "profile_classifier/vectorizer.joblib": "f000d8ae34f561b2e377fb66bcca1db3bf4ce85e15f680c932419fcf5577fb61",
+      "core/message_builder.py": "bbb7be909ab5441593997a4bafea26ba49b2146c65e08753ab89ceeab12e473e",
+      "core/prompt_loader.py": "f7fac6242afdf8e5c6a70f3b9f499c9d9fff189009fe1f79b2aca9c8690e1aa9",
+      "core/__init__.py": "e761f4d0cf7c6856fc97ad90a97e889ea4d153066ef518321960f317331d585f",
+      "core/output_schema.py": "56d745e8cb7b59521a5489288c271df500d960dbea8279f0fd9ba2507273aee5"
+    },
+    "concurrency_capacity_change": "max_loras=2 required for two adapters in one batch",
+    "rq3_provenance": "original response-coverage-recovery/checkpoint-80; no interpolation or transplant"
+  },
+  "modes": {
+    "sequential": {
+      "metrics": {
+        "baseline": {
+          "emotion": 0.6458333333333334,
+          "macro_f1": 0.5305537884547319,
+          "bleu": 0.1338144872591829,
+          "rouge": 0.26624963989589395,
+          "bert": 0.7280745506286621,
+          "avg_latency": 1581.503757101018,
+          "p50_latency": 1255.7035549543798,
+          "p95_latency": 3175.772935617715,
+          "mean_response_chars": 173.92708333333334,
+          "nonempty": 1.0,
+          "json_valid": 1.0,
+          "memory_refs_valid": 1.0,
+          "personality": 0.6666666666666666,
+          "interests": 0.7604166666666666,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6666666666666666
+        },
+        "candidate": {
+          "emotion": 0.6458333333333334,
+          "macro_f1": 0.5305537884547319,
+          "bleu": 0.12927791803457137,
+          "rouge": 0.26704634235848995,
+          "bert": 0.7259946465492249,
+          "avg_latency": 3151.1386328881295,
+          "p50_latency": 2560.3820770047605,
+          "p95_latency": 6786.1481758300215,
+          "mean_response_chars": 171.58333333333334,
+          "nonempty": 1.0,
+          "json_valid": 1.0,
+          "memory_refs_valid": 1.0,
+          "personality": 0.6666666666666666,
+          "interests": 0.7604166666666666,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6666666666666666
+        }
+      },
+      "delta": {
+        "emotion": 0.0,
+        "profile_mean": 0.0,
+        "bleu": -0.004536569224611542,
+        "rouge": 0.0007967024625959995,
+        "bert": -0.002079904079437256
+      },
+      "paired": {
+        "rouge": {
+          "better": 45,
+          "worse": 49,
+          "equal": 2,
+          "net": -4
+        },
+        "bert": {
+          "better": 47,
+          "worse": 47,
+          "equal": 2,
+          "net": 0
+        }
+      },
+      "decision": "REJECT",
+      "a_request_avg_ms": 1581.503757101018,
+      "b_request_avg_ms": 1566.1050637524265,
+      "latency_increase_percent": 99.24951924643779,
+      "causal_classification_preserved": true,
+      "latency_increase_vs_single_baseline_percent": 99.24951924643779,
+      "fixed_baseline_delta": {
+        "emotion": 0.0,
+        "profile_mean": 0.0,
+        "bleu": -0.004536569224611542,
+        "rouge": 0.0007967024625959995,
+        "bert": -0.002079904079437256
+      },
+      "same_condition_decision": "REJECT"
+    },
+    "concurrent": {
+      "metrics": {
+        "baseline": {
+          "emotion": 0.625,
+          "macro_f1": 0.521494865428689,
+          "bleu": 0.13336068069837934,
+          "rouge": 0.2638573550732539,
+          "bert": 0.7255430221557617,
+          "avg_latency": 1511.7292013116337,
+          "p50_latency": 1278.0168703757226,
+          "p95_latency": 2958.783529466018,
+          "mean_response_chars": 166.25,
+          "nonempty": 1.0,
+          "json_valid": 1.0,
+          "memory_refs_valid": 1.0,
+          "personality": 0.65625,
+          "interests": 0.78125,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6701388888888888
+        },
+        "candidate": {
+          "emotion": 0.625,
+          "macro_f1": 0.521494865428689,
+          "bleu": 0.13465057885894557,
+          "rouge": 0.2689691078549203,
+          "bert": 0.7273548245429993,
+          "avg_latency": 1687.6432611218963,
+          "p50_latency": 1347.7159701287746,
+          "p95_latency": 3872.882161056623,
+          "mean_response_chars": 174.30208333333334,
+          "nonempty": 1.0,
+          "json_valid": 1.0,
+          "memory_refs_valid": 1.0,
+          "personality": 0.65625,
+          "interests": 0.78125,
+          "style": 0.5729166666666666,
+          "profile_mean": 0.6701388888888888
+        }
+      },
+      "delta": {
+        "emotion": 0.0,
+        "profile_mean": 0.0,
+        "bleu": 0.0012898981605662385,
+        "rouge": 0.005111752781666368,
+        "bert": 0.0018118023872375488
+      },
+      "paired": {
+        "rouge": {
+          "better": 52,
+          "worse": 42,
+          "equal": 2,
+          "net": 10
+        },
+        "bert": {
+          "better": 50,
+          "worse": 44,
+          "equal": 2,
+          "net": 6
+        }
+      },
+      "decision": "IMPLEMENTATION_FAILURE",
+      "a_request_avg_ms": 1511.7292013116337,
+      "b_request_avg_ms": 1565.4756349492043,
+      "latency_increase_percent": 11.63661187847882,
+      "causal_classification_preserved": true,
+      "latency_increase_vs_single_baseline_percent": 6.711302679131026,
+      "fixed_baseline_delta": {
+        "emotion": -0.02083333333333337,
+        "profile_mean": 0.00347222222222221,
+        "bleu": 0.0008360915997626672,
+        "rouge": 0.0027194679590263338,
+        "bert": -0.0007197260856628418
+      },
+      "same_condition_decision": "PROMOTE_WEAK",
+      "classification_schedule_check_required": true
+    }
+  },
+  "best_mode": "concurrent",
+  "decision": "IMPLEMENTATION_FAILURE",
+  "formal_runtime_modified": false,
+  "blocking_issue": "CONCURRENT_CLASSIFICATION_REGRESSION_VS_SINGLE_BASELINE: 60/96 vs 62/96; same-request field preservation PASS, scheduling/repeatability requires diagnosis",
+  "elapsed_minutes": 10.718488923708598
+}

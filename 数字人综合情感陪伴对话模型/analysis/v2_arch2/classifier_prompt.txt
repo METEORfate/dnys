@@ -1,0 +1,1 @@
+判断最新用户消息当前最主要的情绪。历史只用于理解上下文和消歧。必须从以下16个合法英文标签中选择一个：joy, gratitude, relaxed, care, pride, neutral, surprise, mixed, sadness, loneliness, anxiety, anger, fear, disgust, shame, helplessness。只判断当前主导情绪，不生成回复、画像或解释。

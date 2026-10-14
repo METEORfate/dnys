@@ -1,0 +1,125 @@
+{
+  "metrics": {
+    "p0": {
+      "emotion": 0.6354166666666666,
+      "macro_f1": 0.5219074328449328,
+      "bleu": 0.13252793478110939,
+      "rouge": 0.2621143407285363,
+      "bert": 0.7255651354789734,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1496.0441790753976,
+      "p50_latency": 1199.0150730125606,
+      "p95_latency": 2986.165340989828,
+      "personality": 0.6666666666666666,
+      "interests": 0.7708333333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6701388888888888,
+      "recall": {
+        "anxiety": 0.6333333333333333,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    },
+    "candidate": {
+      "emotion": 0.59375,
+      "macro_f1": 0.5057649196042053,
+      "bleu": 0.1307892238212946,
+      "rouge": 0.2635151217142365,
+      "bert": 0.728430986404419,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1537.7071943463914,
+      "p50_latency": 1211.0866187140346,
+      "p95_latency": 3455.6807233020663,
+      "personality": 0.6666666666666666,
+      "interests": 0.78125,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.673611111111111,
+      "recall": {
+        "anxiety": 0.5333333333333333,
+        "fear": 0.8,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    }
+  },
+  "delta": {
+    "emotion": -0.04166666666666663,
+    "profile_mean": 0.00347222222222221,
+    "bleu": -0.0017387109598147876,
+    "rouge": 0.001400780985700234,
+    "bert": 0.0028658509254455566
+  },
+  "wrong_to_right": [],
+  "right_to_wrong": [
+    {
+      "id": "test_000016_t1",
+      "gt": "anxiety",
+      "p0": "anxiety",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000022_t1",
+      "gt": "anxiety",
+      "p0": "anxiety",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000023_t1",
+      "gt": "anxiety",
+      "p0": "anxiety",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000042_t1",
+      "gt": "fear",
+      "p0": "fear",
+      "candidate": "sadness"
+    }
+  ],
+  "changes": [
+    {
+      "id": "test_000016_t1",
+      "gt": "anxiety",
+      "p0": "anxiety",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000022_t1",
+      "gt": "anxiety",
+      "p0": "anxiety",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000023_t1",
+      "gt": "anxiety",
+      "p0": "anxiety",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000042_t1",
+      "gt": "fear",
+      "p0": "fear",
+      "candidate": "sadness"
+    },
+    {
+      "id": "test_000054_t1",
+      "gt": "joy",
+      "p0": "pride",
+      "candidate": "mixed"
+    },
+    {
+      "id": "test_000059_t1",
+      "gt": "mixed",
+      "p0": "shame",
+      "candidate": "surprise"
+    }
+  ],
+  "decision": "REJECT"
+}

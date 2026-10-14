@@ -1,0 +1,9 @@
+{
+  "cpu_tests": "PASS",
+  "tests_run": 39,
+  "compileall_main": "PASS",
+  "compileall_archive": "PASS",
+  "initial_test_failures": "old P1-only test fixture omitted P2 fields; tokenizer/train sample absent from clean worktree. Fixed test fixture and explicitly supplied existing external test assets; no production code change",
+  "runtime_source_modification": "copied exact frozen official files only; no experimental hook",
+  "git_tag_scope": "source only, binary asset backup NOT claimed"
+}

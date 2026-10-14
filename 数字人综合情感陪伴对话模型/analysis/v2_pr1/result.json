@@ -1,0 +1,350 @@
+{
+  "setup": {
+    "only_prompt_diff": true,
+    "candidates": [
+      {
+        "name": "p0",
+        "path": "/root/development/runtime_candidates/prompt_pr1_p0",
+        "prompt_sha256": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873"
+      },
+      {
+        "name": "v1",
+        "path": "/root/development/runtime_candidates/prompt_pr1_v1",
+        "prompt_sha256": "fc5ff37325131b18f5981be0bcd491bda6331be5be9fe185d2f2e6122aae7a83"
+      },
+      {
+        "name": "v2",
+        "path": "/root/development/runtime_candidates/prompt_pr1_v2",
+        "prompt_sha256": "ac3056972e84776da4910ae1fa96e42a81477cc82815fefd06d8dcf599d1335b"
+      }
+    ],
+    "mini_sha256": "47ae9b3dae29e30a7258d267e66af321003f10d5216f69bb64669c5476e9c9cb",
+    "runtime_hashes": {
+      "test_lora_runtime.py": "0adafcb7cacdcf1797fe02c6d22e7575a5974b5905beefa509a7872d95de980b",
+      "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+      "start.sh": "f30832623d387486ac2ede5b31d67a65ebdc2834fd1a7476ae457c82503c0744",
+      "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+      "configs/inference_config.json": "868e129daf8527a7175127b430b52969d8b7ddcb72dadff7d5a06052c709c99a",
+      "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "profile_classifier/config.json": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc",
+      "profile_classifier/classifiers.joblib": "b4d2ffad6afbd167e1bf27df1408a856b125bd32b1b7dc1a55855c88f4b69f86",
+      "profile_classifier/vectorizer.joblib": "f000d8ae34f561b2e377fb66bcca1db3bf4ce85e15f680c932419fcf5577fb61",
+      "core/message_builder.py": "bbb7be909ab5441593997a4bafea26ba49b2146c65e08753ab89ceeab12e473e",
+      "core/prompt_loader.py": "f7fac6242afdf8e5c6a70f3b9f499c9d9fff189009fe1f79b2aca9c8690e1aa9",
+      "core/__init__.py": "e761f4d0cf7c6856fc97ad90a97e889ea4d153066ef518321960f317331d585f",
+      "core/output_schema.py": "56d745e8cb7b59521a5489288c271df500d960dbea8279f0fd9ba2507273aee5"
+    }
+  },
+  "metrics": {
+    "p0": {
+      "emotion": 0.6458333333333334,
+      "macro_f1": 0.5305537884547319,
+      "bleu": 0.1278568288070658,
+      "rouge": 0.26135179606988057,
+      "bert": 0.7248920276761055,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "mean_response_length": 162.73958333333334,
+      "avg_latency": 1503.442678,
+      "p50_latency": 1206.465912,
+      "p95_latency": 2997.914348,
+      "personality": 0.6666666666666666,
+      "interests": 0.78125,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.673611111111111,
+      "recall": {
+        "anxiety": 0.6666666666666666,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "sadness": 0.8
+      }
+    },
+    "v1": {
+      "emotion": 0.5833333333333334,
+      "macro_f1": 0.5054519724556489,
+      "bleu": 0.12705947327108683,
+      "rouge": 0.2619946299812241,
+      "bert": 0.7275400441139936,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "mean_response_length": 167.65625,
+      "avg_latency": 1504.968385,
+      "p50_latency": 1295.710952,
+      "p95_latency": 3238.190967,
+      "personality": 0.59375,
+      "interests": 0.8645833333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6770833333333334,
+      "recall": {
+        "anxiety": 0.43333333333333335,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.7058823529411765,
+        "fear": 0.8,
+        "helplessness": 0.3333333333333333,
+        "sadness": 1.0
+      },
+      "decision": "REJECT"
+    },
+    "v2": {
+      "emotion": 0.6145833333333334,
+      "macro_f1": 0.514290588635067,
+      "bleu": 0.12733138906494376,
+      "rouge": 0.2611258430148972,
+      "bert": 0.727051387851437,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "mean_response_length": 172.51041666666666,
+      "avg_latency": 1555.235149,
+      "p50_latency": 1220.383293,
+      "p95_latency": 3065.274812,
+      "personality": 0.6145833333333334,
+      "interests": 0.8645833333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6840277777777778,
+      "recall": {
+        "anxiety": 0.5666666666666667,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.7058823529411765,
+        "fear": 0.8,
+        "helplessness": 0.16666666666666666,
+        "sadness": 0.8
+      },
+      "decision": "REJECT"
+    }
+  },
+  "detail": {
+    "v1": {
+      "delta": {
+        "emotion": -0.0625,
+        "profile_mean": 0.003472222222222321,
+        "bleu": -0.000797355535978983,
+        "rouge": 0.00064283391134351,
+        "bert": 0.0026480164378881454,
+        "latency_delta_percent": 0.10148088931662969
+      },
+      "wrong_to_right": 3,
+      "right_to_wrong": 9,
+      "emotion_changes": [
+        {
+          "id": "test_000004_t1",
+          "gt": "anger",
+          "p0": "helplessness",
+          "candidate": "anger"
+        },
+        {
+          "id": "test_000009_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000015_t1",
+          "gt": "anxiety",
+          "p0": "helplessness",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000016_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "care"
+        },
+        {
+          "id": "test_000018_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "care"
+        },
+        {
+          "id": "test_000022_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000023_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000024_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "fear"
+        },
+        {
+          "id": "test_000031_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "shame"
+        },
+        {
+          "id": "test_000039_t1",
+          "gt": "fear",
+          "p0": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000054_t1",
+          "gt": "joy",
+          "p0": "pride",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "p0": "gratitude",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000082_t1",
+          "gt": "relaxed",
+          "p0": "pride",
+          "candidate": "care"
+        },
+        {
+          "id": "test_000090_t1",
+          "gt": "sadness",
+          "p0": "helplessness",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000093_t1",
+          "gt": "shame",
+          "p0": "shame",
+          "candidate": "anxiety"
+        }
+      ],
+      "paired": {
+        "rouge": {
+          "better": 37,
+          "worse": 50,
+          "equal": 9,
+          "net_better": -13
+        },
+        "bert": {
+          "better": 51,
+          "worse": 38,
+          "equal": 7,
+          "net_better": 13
+        }
+      },
+      "guardrail": false,
+      "latency_warning": false
+    },
+    "v2": {
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": 0.01041666666666674,
+        "bleu": -0.0005254397421220469,
+        "rouge": -0.00022595305498335216,
+        "bert": 0.0021593601753314706,
+        "latency_delta_percent": 3.4449248885829675
+      },
+      "wrong_to_right": 3,
+      "right_to_wrong": 6,
+      "emotion_changes": [
+        {
+          "id": "test_000004_t1",
+          "gt": "anger",
+          "p0": "helplessness",
+          "candidate": "anger"
+        },
+        {
+          "id": "test_000009_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000015_t1",
+          "gt": "anxiety",
+          "p0": "helplessness",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000016_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "care"
+        },
+        {
+          "id": "test_000023_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000031_t1",
+          "gt": "anxiety",
+          "p0": "anxiety",
+          "candidate": "fear"
+        },
+        {
+          "id": "test_000032_t1",
+          "gt": "anxiety",
+          "p0": "shame",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000036_t1",
+          "gt": "care",
+          "p0": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000039_t1",
+          "gt": "fear",
+          "p0": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000052_t1",
+          "gt": "helplessness",
+          "p0": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000054_t1",
+          "gt": "joy",
+          "p0": "pride",
+          "candidate": "surprise"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "p0": "gratitude",
+          "candidate": "relaxed"
+        }
+      ],
+      "paired": {
+        "rouge": {
+          "better": 44,
+          "worse": 47,
+          "equal": 5,
+          "net_better": -3
+        },
+        "bert": {
+          "better": 47,
+          "worse": 45,
+          "equal": 4,
+          "net_better": 2
+        }
+      },
+      "guardrail": false,
+      "latency_warning": false
+    }
+  },
+  "winner": "p0",
+  "result": "REJECT",
+  "elapsed_minutes": 8.63912945985794,
+  "blocking_issue": "NONE",
+  "response_stability_tolerances": {
+    "bleu": -0.002,
+    "rouge": -0.002,
+    "bert": -0.001
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "prompt_sha256": {
+    "p0": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873"
+  },
+  "command": [
+    "/opt/conda/envs/conda_env/bin/vllm",
+    "serve",
+    "/root/participant/model/Qwen2___5-7B-Instruct",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--served-model-name",
+    "emotion-companion-lora",
+    "--enable-lora",
+    "--lora-modules",
+    "emotion-companion-lora=/root/participant/model/lora_adapter",
+    "a025=/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a025",
+    "a050=/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a050",
+    "a075=/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a075",
+    "--max-loras",
+    "4",
+    "--tensor-parallel-size",
+    "2",
+    "--max-num-seqs",
+    "8"
+  ],
+  "models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791903535,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/Qwen2___5-7B-Instruct",
+        "parent": null,
+        "max_model_len": 32768,
+        "permission": [
+          {
+            "id": "modelperm-a579f1506939c67f",
+            "object": "model_permission",
+            "created": 1791903535,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791903535,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/lora_adapter",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-809b330c27d6213a",
+            "object": "model_permission",
+            "created": 1791903535,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "a025",
+        "object": "model",
+        "created": 1791903535,
+        "owned_by": "vllm",
+        "root": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a025",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-85cc8ca29189cf72",
+            "object": "model_permission",
+            "created": 1791903535,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "a050",
+        "object": "model",
+        "created": 1791903535,
+        "owned_by": "vllm",
+        "root": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a050",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-af923898603bb91c",
+            "object": "model_permission",
+            "created": 1791903535,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "a075",
+        "object": "model",
+        "created": 1791903535,
+        "owned_by": "vllm",
+        "root": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e7-1-interp-a075",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-b8a8acf872da3c45",
+            "object": "model_permission",
+            "created": 1791903535,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "input_sha256": "68e96051ee47fed3ba97d51d8c1cc10577a352d77145e1cc7dfb417d6dbad6a9",
+  "server_restart_count": 0
+}

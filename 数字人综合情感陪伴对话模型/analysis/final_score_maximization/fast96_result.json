@@ -1,0 +1,846 @@
+{
+  "baseline": {
+    "emotion": 0.6354166666666666,
+    "macro_f1": 0.5264528873903874,
+    "bleu": 0.13630014451905595,
+    "rouge": 0.2642777376189181,
+    "bert": 0.7269485592842102,
+    "avg_latency": 1551.3645200893127,
+    "p95_latency": 3310.9257225878537,
+    "json_valid": 1.0,
+    "nonempty": 1.0,
+    "personality": 0.6666666666666666,
+    "interests": 0.7916666666666666,
+    "style": 0.5729166666666666,
+    "profile_mean": 0.6770833333333334
+  },
+  "candidates": {
+    "linear": {
+      "metrics": {
+        "emotion": 0.5625,
+        "macro_f1": 0.36603535353535355,
+        "bleu": 0.13630014451905595,
+        "rouge": 0.2642777376189181,
+        "bert": 0.7269485592842102,
+        "avg_latency": 1876.8510872276966,
+        "p95_latency": 3636.4122897262373,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7916666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6770833333333334
+      },
+      "delta": {
+        "emotion": -0.07291666666666663,
+        "macro_f1": -0.16041753385503388,
+        "profile_mean": 0.0,
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "wrong_to_right": 18,
+      "right_to_wrong": 25,
+      "transitions": [
+        {
+          "id": "test_000001_t1",
+          "gt": "anger",
+          "baseline": "anger",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000002_t1",
+          "gt": "anger",
+          "baseline": "anger",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000004_t1",
+          "gt": "anger",
+          "baseline": "helplessness",
+          "candidate": "anger"
+        },
+        {
+          "id": "test_000006_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000009_t1",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000012_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000015_t1",
+          "gt": "anxiety",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000018_t1",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "care"
+        },
+        {
+          "id": "test_000020_t1",
+          "gt": "anxiety",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000021_t1",
+          "gt": "anxiety",
+          "baseline": "relaxed",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000027_t1",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "fear"
+        },
+        {
+          "id": "test_000029_t1",
+          "gt": "anxiety",
+          "baseline": "anger",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000030_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000031_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000032_t1",
+          "gt": "anxiety",
+          "baseline": "shame",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000036_t1",
+          "gt": "care",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000037_t1",
+          "gt": "disgust",
+          "baseline": "disgust",
+          "candidate": "anger"
+        },
+        {
+          "id": "test_000038_t1",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000041_t1",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000042_t1",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000045_t1",
+          "gt": "gratitude",
+          "baseline": "relaxed",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000046_t1",
+          "gt": "gratitude",
+          "baseline": "relaxed",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000047_t1",
+          "gt": "gratitude",
+          "baseline": "gratitude",
+          "candidate": "loneliness"
+        },
+        {
+          "id": "test_000048_t1",
+          "gt": "helplessness",
+          "baseline": "anger",
+          "candidate": "helplessness"
+        },
+        {
+          "id": "test_000050_t1",
+          "gt": "helplessness",
+          "baseline": "sadness",
+          "candidate": "helplessness"
+        },
+        {
+          "id": "test_000052_t1",
+          "gt": "helplessness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000053_t1",
+          "gt": "helplessness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000054_t1",
+          "gt": "joy",
+          "baseline": "pride",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000055_t1",
+          "gt": "loneliness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000059_t1",
+          "gt": "mixed",
+          "baseline": "surprise",
+          "candidate": "shame"
+        },
+        {
+          "id": "test_000060_t1",
+          "gt": "mixed",
+          "baseline": "sadness",
+          "candidate": "anger"
+        },
+        {
+          "id": "test_000061_t1",
+          "gt": "mixed",
+          "baseline": "mixed",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000063_t1",
+          "gt": "mixed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000064_t1",
+          "gt": "mixed",
+          "baseline": "mixed",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000065_t1",
+          "gt": "mixed",
+          "baseline": "neutral",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000066_t1",
+          "gt": "neutral",
+          "baseline": "neutral",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000067_t1",
+          "gt": "neutral",
+          "baseline": "neutral",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000072_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000075_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000076_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000078_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000079_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000080_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "baseline": "gratitude",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000082_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000085_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000086_t1",
+          "gt": "relaxed",
+          "baseline": "anxiety",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000087_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "loneliness"
+        },
+        {
+          "id": "test_000088_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000089_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000090_t1",
+          "gt": "sadness",
+          "baseline": "helplessness",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000092_t1",
+          "gt": "shame",
+          "baseline": "shame",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000093_t1",
+          "gt": "shame",
+          "baseline": "shame",
+          "candidate": "anxiety"
+        }
+      ],
+      "passes": false
+    },
+    "mlp": {
+      "metrics": {
+        "emotion": 0.6041666666666666,
+        "macro_f1": 0.4635149572649573,
+        "bleu": 0.13630014451905595,
+        "rouge": 0.2642777376189181,
+        "bert": 0.7269485592842102,
+        "avg_latency": 1876.8982981226873,
+        "p95_latency": 3636.459500621228,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7916666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6770833333333334
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "macro_f1": -0.06293793012543014,
+        "profile_mean": 0.0,
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "wrong_to_right": 17,
+      "right_to_wrong": 20,
+      "transitions": [
+        {
+          "id": "test_000006_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000008_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000009_t1",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000012_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000015_t1",
+          "gt": "anxiety",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000020_t1",
+          "gt": "anxiety",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000021_t1",
+          "gt": "anxiety",
+          "baseline": "relaxed",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000027_t1",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "fear"
+        },
+        {
+          "id": "test_000031_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000032_t1",
+          "gt": "anxiety",
+          "baseline": "shame",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000036_t1",
+          "gt": "care",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000042_t1",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "helplessness"
+        },
+        {
+          "id": "test_000046_t1",
+          "gt": "gratitude",
+          "baseline": "relaxed",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000047_t1",
+          "gt": "gratitude",
+          "baseline": "gratitude",
+          "candidate": "loneliness"
+        },
+        {
+          "id": "test_000048_t1",
+          "gt": "helplessness",
+          "baseline": "anger",
+          "candidate": "helplessness"
+        },
+        {
+          "id": "test_000050_t1",
+          "gt": "helplessness",
+          "baseline": "sadness",
+          "candidate": "helplessness"
+        },
+        {
+          "id": "test_000052_t1",
+          "gt": "helplessness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000053_t1",
+          "gt": "helplessness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000054_t1",
+          "gt": "joy",
+          "baseline": "pride",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000055_t1",
+          "gt": "loneliness",
+          "baseline": "helplessness",
+          "candidate": "loneliness"
+        },
+        {
+          "id": "test_000059_t1",
+          "gt": "mixed",
+          "baseline": "surprise",
+          "candidate": "shame"
+        },
+        {
+          "id": "test_000060_t1",
+          "gt": "mixed",
+          "baseline": "sadness",
+          "candidate": "helplessness"
+        },
+        {
+          "id": "test_000061_t1",
+          "gt": "mixed",
+          "baseline": "mixed",
+          "candidate": "neutral"
+        },
+        {
+          "id": "test_000063_t1",
+          "gt": "mixed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000064_t1",
+          "gt": "mixed",
+          "baseline": "mixed",
+          "candidate": "loneliness"
+        },
+        {
+          "id": "test_000065_t1",
+          "gt": "mixed",
+          "baseline": "neutral",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000066_t1",
+          "gt": "neutral",
+          "baseline": "neutral",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000072_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000075_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000076_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "mixed"
+        },
+        {
+          "id": "test_000078_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000079_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000080_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "joy"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "baseline": "gratitude",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000082_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000085_t1",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000086_t1",
+          "gt": "relaxed",
+          "baseline": "anxiety",
+          "candidate": "gratitude"
+        },
+        {
+          "id": "test_000087_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "loneliness"
+        },
+        {
+          "id": "test_000088_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000089_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000090_t1",
+          "gt": "sadness",
+          "baseline": "helplessness",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000091_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000092_t1",
+          "gt": "shame",
+          "baseline": "shame",
+          "candidate": "sadness"
+        },
+        {
+          "id": "test_000093_t1",
+          "gt": "shame",
+          "baseline": "shame",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000095_t1",
+          "gt": "shame",
+          "baseline": "anxiety",
+          "candidate": "shame"
+        },
+        {
+          "id": "test_000096_t1",
+          "gt": "shame",
+          "baseline": "shame",
+          "candidate": "sadness"
+        }
+      ],
+      "passes": false
+    },
+    "rule": {
+      "metrics": {
+        "emotion": 0.65625,
+        "macro_f1": 0.5348213877625643,
+        "bleu": 0.13630014451905595,
+        "rouge": 0.2642777376189181,
+        "bert": 0.7269485592842102,
+        "avg_latency": 1551.3809440696302,
+        "p95_latency": 3310.942146568171,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7916666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6770833333333334
+      },
+      "delta": {
+        "emotion": 0.02083333333333337,
+        "macro_f1": 0.008368500372176846,
+        "profile_mean": 0.0,
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "wrong_to_right": 3,
+      "right_to_wrong": 1,
+      "transitions": [
+        {
+          "id": "test_000008_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000030_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000041_t1",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "baseline": "gratitude",
+          "candidate": "relaxed"
+        }
+      ],
+      "passes": true
+    },
+    "hybrid": {
+      "metrics": {
+        "emotion": 0.6354166666666666,
+        "macro_f1": 0.5062424052555632,
+        "bleu": 0.13630014451905595,
+        "rouge": 0.2642777376189181,
+        "bert": 0.7269485592842102,
+        "avg_latency": 1876.9733619460992,
+        "p95_latency": 3636.53456444464,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7916666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6770833333333334
+      },
+      "delta": {
+        "emotion": 0.0,
+        "macro_f1": -0.020210482134824237,
+        "profile_mean": 0.0,
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "wrong_to_right": 5,
+      "right_to_wrong": 5,
+      "transitions": [
+        {
+          "id": "test_000008_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000027_t1",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "fear"
+        },
+        {
+          "id": "test_000030_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000052_t1",
+          "gt": "helplessness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000053_t1",
+          "gt": "helplessness",
+          "baseline": "helplessness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000078_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "baseline": "gratitude",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000082_t1",
+          "gt": "relaxed",
+          "baseline": "pride",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000089_t1",
+          "gt": "sadness",
+          "baseline": "sadness",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000093_t1",
+          "gt": "shame",
+          "baseline": "shame",
+          "candidate": "anxiety"
+        }
+      ],
+      "passes": false
+    },
+    "response_wrapper": {
+      "metrics": {
+        "emotion": 0.6354166666666666,
+        "macro_f1": 0.5264528873903874,
+        "bleu": 0.1375855847409067,
+        "rouge": 0.2692106163634808,
+        "bert": 0.7276226878166199,
+        "avg_latency": 3084.4867278453116,
+        "p95_latency": 6194.513206137344,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7916666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6770833333333334
+      },
+      "delta": {
+        "emotion": 0.0,
+        "macro_f1": 0.0,
+        "profile_mean": 0.0,
+        "bleu": 0.0012854402218507588,
+        "rouge": 0.004932878744562719,
+        "bert": 0.000674128532409668
+      },
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "transitions": [],
+      "passes": false
+    }
+  }
+}

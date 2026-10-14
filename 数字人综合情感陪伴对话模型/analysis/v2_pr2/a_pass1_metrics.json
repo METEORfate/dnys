@@ -1,0 +1,89 @@
+{
+  "metrics": {
+    "p0": {
+      "emotion": 0.625,
+      "macro_f1": 0.5180542088630323,
+      "bleu": 0.13035446223293956,
+      "rouge": 0.26072867268619726,
+      "bert": 0.7259302735328674,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1595.4930297739338,
+      "p50_latency": 1290.4079807922244,
+      "p95_latency": 3464.343875646591,
+      "personality": 0.65625,
+      "interests": 0.7916666666666666,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.673611111111111,
+      "recall": {
+        "anxiety": 0.6,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    },
+    "candidate": {
+      "emotion": 0.6458333333333334,
+      "macro_f1": 0.5288226989513755,
+      "bleu": 0.13012184643316696,
+      "rouge": 0.26156866104048104,
+      "bert": 0.7279974818229675,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1607.8138533242357,
+      "p50_latency": 1280.8456313796341,
+      "p95_latency": 3644.622459076345,
+      "personality": 0.6666666666666666,
+      "interests": 0.7916666666666666,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6770833333333334,
+      "recall": {
+        "anxiety": 0.6333333333333333,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.7058823529411765,
+        "sadness": 0.8
+      }
+    }
+  },
+  "delta": {
+    "emotion": 0.02083333333333337,
+    "profile_mean": 0.003472222222222321,
+    "bleu": -0.00023261579977260083,
+    "rouge": 0.0008399883542837827,
+    "bert": 0.0020672082901000977
+  },
+  "wrong_to_right": [
+    {
+      "id": "test_000026_t1",
+      "gt": "anxiety",
+      "p0": "fear",
+      "candidate": "anxiety"
+    },
+    {
+      "id": "test_000081_t1",
+      "gt": "relaxed",
+      "p0": "gratitude",
+      "candidate": "relaxed"
+    }
+  ],
+  "right_to_wrong": [],
+  "changes": [
+    {
+      "id": "test_000026_t1",
+      "gt": "anxiety",
+      "p0": "fear",
+      "candidate": "anxiety"
+    },
+    {
+      "id": "test_000081_t1",
+      "gt": "relaxed",
+      "p0": "gratitude",
+      "candidate": "relaxed"
+    }
+  ],
+  "decision": "STRONG_PROMOTE"
+}

@@ -1,0 +1,170 @@
+{
+  "adapter_compatible": true,
+  "baseline": {
+    "emotion": 0.6979166666666666,
+    "bleu": 0.13465935079395705,
+    "rouge": 0.26947329601946673,
+    "json_valid": 1.0,
+    "nonempty": 1.0,
+    "personality": 0.6770833333333334,
+    "interests": 0.8333333333333334,
+    "style": 0.5729166666666666,
+    "profile_mean": 0.6944444444444445,
+    "bert_f1": 0.7311925888061523
+  },
+  "candidates": [
+    {
+      "alpha": 0.2,
+      "metrics": {
+        "emotion": 0.6875,
+        "bleu": 0.13344610556209346,
+        "rouge": 0.26623734788891634,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6875,
+        "interests": 0.8645833333333334,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.7083333333333334,
+        "bert_f1": 0.7283503413200378
+      },
+      "delta": {
+        "emotion": -0.01041666666666663,
+        "profile_mean": 0.01388888888888884,
+        "bleu": -0.0012132452318635856,
+        "rouge": -0.0032359481305503923,
+        "bert_f1": -0.002842247486114502
+      },
+      "guardrail_pass": true,
+      "response_gain_score": -0.00729144084852848,
+      "result": "REJECT"
+    },
+    {
+      "alpha": 0.35,
+      "metrics": {
+        "emotion": 0.6770833333333334,
+        "bleu": 0.13708291265288666,
+        "rouge": 0.2712094317507105,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6770833333333334,
+        "interests": 0.8229166666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6909722222222222,
+        "bert_f1": 0.732269287109375
+      },
+      "delta": {
+        "emotion": -0.02083333333333326,
+        "profile_mean": -0.003472222222222321,
+        "bleu": 0.0024235618589296126,
+        "rouge": 0.0017361357312437597,
+        "bert_f1": 0.0010766983032226562
+      },
+      "guardrail_pass": false,
+      "response_gain_score": 0.005236395893396029,
+      "result": "REJECT"
+    },
+    {
+      "alpha": 0.5,
+      "metrics": {
+        "emotion": 0.6770833333333334,
+        "bleu": 0.13653773961783117,
+        "rouge": 0.2676411922140363,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.84375,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6944444444444443,
+        "bert_f1": 0.7310262322425842
+      },
+      "delta": {
+        "emotion": -0.02083333333333326,
+        "profile_mean": -2.220446049250313e-16,
+        "bleu": 0.0018783888238741164,
+        "rouge": -0.0018321038054304184,
+        "bert_f1": -0.00016635656356811523
+      },
+      "guardrail_pass": false,
+      "response_gain_score": -0.0001200715451244172,
+      "result": "REJECT"
+    },
+    {
+      "alpha": 0.65,
+      "metrics": {
+        "emotion": 0.6770833333333334,
+        "bleu": 0.1377030488614126,
+        "rouge": 0.2671674945178567,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6875,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.704861111111111,
+        "bert_f1": 0.7304121851921082
+      },
+      "delta": {
+        "emotion": -0.02083333333333326,
+        "profile_mean": 0.010416666666666519,
+        "bleu": 0.0030436980674555525,
+        "rouge": -0.0023058015016100275,
+        "bert_f1": -0.0007804036140441895
+      },
+      "guardrail_pass": false,
+      "response_gain_score": -4.2507048198664465e-05,
+      "result": "REJECT"
+    },
+    {
+      "alpha": 0.8,
+      "metrics": {
+        "emotion": 0.65625,
+        "bleu": 0.14776269959067267,
+        "rouge": 0.2759149146584771,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6979166666666666,
+        "bert_f1": 0.732008159160614
+      },
+      "delta": {
+        "emotion": -0.04166666666666663,
+        "profile_mean": 0.003472222222222099,
+        "bleu": 0.013103348796715625,
+        "rouge": 0.0064416186390103825,
+        "bert_f1": 0.0008155703544616699
+      },
+      "guardrail_pass": false,
+      "response_gain_score": 0.020360537790187677,
+      "result": "REJECT"
+    }
+  ],
+  "best": {
+    "alpha": 0.2,
+    "metrics": {
+      "emotion": 0.6875,
+      "bleu": 0.13344610556209346,
+      "rouge": 0.26623734788891634,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.6875,
+      "interests": 0.8645833333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.7083333333333334,
+      "bert_f1": 0.7283503413200378
+    },
+    "delta": {
+      "emotion": -0.01041666666666663,
+      "profile_mean": 0.01388888888888884,
+      "bleu": -0.0012132452318635856,
+      "rouge": -0.0032359481305503923,
+      "bert_f1": -0.002842247486114502
+    },
+    "guardrail_pass": true,
+    "response_gain_score": -0.00729144084852848,
+    "result": "REJECT"
+  },
+  "result": "REJECT",
+  "blocking_issue": "NONE",
+  "weak_bert_tolerance": -0.0005
+}

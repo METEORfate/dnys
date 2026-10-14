@@ -1,0 +1,100 @@
+{
+  "final_score_maximization": {
+    "best_candidate": "rule",
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 12.485306775569915
+  },
+  "final_score_rule_validation": {
+    "decision": "REJECT",
+    "blocking_issue": "NONE",
+    "samples": 1649
+  },
+  "v2_arch1": {
+    "decision": "IMPLEMENTATION_FAILURE",
+    "blocking_issue": "CONCURRENT_CLASSIFICATION_REGRESSION_VS_SINGLE_BASELINE: 60/96 vs 62/96; same-request field preservation PASS, scheduling/repeatability requires diagnosis",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 10.718488923708598
+  },
+  "v2_arch2_offline": {
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 4.311433426539103
+  },
+  "v2_c3_second_pass": {},
+  "v2_e7_1_interpolation": {
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 12.892025303840636
+  },
+  "v2_e7_2_interpolation": {
+    "experiment_result": "REJECT_RESPONSE",
+    "best_candidate": "CURRENT",
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 21.219931940237682
+  },
+  "v2_e7_boundary_lora": {
+    "experiment_result": "REJECT",
+    "best_candidate": "CURRENT",
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false
+  },
+  "v2_p1": {
+    "result": "STRONG_PROMOTE",
+    "samples": 1649
+  },
+  "v2_pr1": {
+    "result": "REJECT",
+    "blocking_issue": "NONE",
+    "elapsed_minutes": 8.63912945985794
+  },
+  "v2_pr1b": {
+    "result": "REJECT",
+    "blocking_issue": "NONE",
+    "elapsed_minutes": 12.100883952776591
+  },
+  "v2_pr2": {
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 28.740389362970987
+  },
+  "v2_pr2a_valdev": {
+    "decision": "INCONCLUSIVE",
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 94.6830170671145,
+    "samples": 1649
+  },
+  "v2_pr3_minimal_prompt": {
+    "blocking_issue": "NONE",
+    "formal_runtime_modified": false,
+    "elapsed_minutes": 18.07730925877889,
+    "samples": 192
+  },
+  "v2_rq1": {
+    "result": "REJECT",
+    "blocking_issue": "NONE",
+    "samples": 1649
+  },
+  "v2_rq2": {
+    "blocking_issue": "NONE",
+    "samples": 1649
+  },
+  "v2_rq3": {
+    "result": "REJECT",
+    "blocking_issue": "NONE"
+  },
+  "v2_rq4": {
+    "result": "REJECT",
+    "blocking_issue": "NONE"
+  },
+  "v2_rq5": {
+    "result": "REJECT",
+    "blocking_issue": "NONE"
+  },
+  "v2_rq6": {
+    "result": "REJECT",
+    "blocking_issue": "NONE"
+  }
+}

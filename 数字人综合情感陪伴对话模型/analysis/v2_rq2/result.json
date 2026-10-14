@@ -1,0 +1,465 @@
+{
+  "samples": 1649,
+  "length_diagnostic": {
+    "gt": {
+      "mean": 157.63735597331717,
+      "p25": 64.0,
+      "p50": 99.0,
+      "p75": 182.0,
+      "p90": 329.4000000000001,
+      "p95": 500.5999999999999
+    },
+    "v2": {
+      "mean": 159.14614918132202,
+      "p25": 64.0,
+      "p50": 99.0,
+      "p75": 181.0,
+      "p90": 340.0,
+      "p95": 516.0
+    },
+    "mean_pred_gt_length_ratio": 1.1680249414442334,
+    "median_pred_gt_length_ratio": 1.0,
+    "ratio_of_mean_lengths": 1.0095712922783369
+  },
+  "length_ratio_buckets": [
+    {
+      "bucket": "<=0.75",
+      "count": 323,
+      "metrics": {
+        "bleu": 0.1019800207019245,
+        "rouge": 0.2751469909009369,
+        "bert": 0.7306307148269087
+      }
+    },
+    {
+      "bucket": "0.75-1.00",
+      "count": 525,
+      "metrics": {
+        "bleu": 0.1777813246230399,
+        "rouge": 0.3233255347561095,
+        "bert": 0.7508208388373965
+      }
+    },
+    {
+      "bucket": "1.00-1.25",
+      "count": 387,
+      "metrics": {
+        "bleu": 0.16067689735789115,
+        "rouge": 0.30053598218005184,
+        "bert": 0.7433860263467144
+      }
+    },
+    {
+      "bucket": "1.25-1.50",
+      "count": 202,
+      "metrics": {
+        "bleu": 0.15281423516887988,
+        "rouge": 0.3035447864920803,
+        "bert": 0.7402105467154247
+      }
+    },
+    {
+      "bucket": "1.50-2.00",
+      "count": 124,
+      "metrics": {
+        "bleu": 0.120414817144577,
+        "rouge": 0.26935752444559624,
+        "bert": 0.7288426468449254
+      }
+    },
+    {
+      "bucket": ">2.00",
+      "count": 88,
+      "metrics": {
+        "bleu": 0.08875943697182925,
+        "rouge": 0.22706701438505006,
+        "bert": 0.7091077342629433
+      }
+    }
+  ],
+  "baseline": {
+    "bleu": 0.1467965098089046,
+    "rouge": 0.29692182297160624,
+    "bert": 0.7399427245211211
+  },
+  "rules": [
+    {
+      "name": "SENTENCE_LIMIT_1",
+      "type": "SENTENCE_LIMIT",
+      "value": 1,
+      "changed_count": 1618,
+      "changed_percent": 98.12007277137658,
+      "metrics": {
+        "bleu": 0.04022233649671977,
+        "rouge": 0.19980089194034092,
+        "bert": 0.6971014717660433
+      },
+      "delta": {
+        "bleu": -0.10657417331218483,
+        "rouge": -0.09712093103126532,
+        "bert": -0.042841252755077774
+      },
+      "paired": {
+        "rouge": {
+          "better": 191,
+          "worse": 1427,
+          "equal": 31,
+          "net_better": -1236
+        },
+        "bert": {
+          "better": 206,
+          "worse": 1412,
+          "equal": 31,
+          "net_better": -1206
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "SENTENCE_LIMIT_2",
+      "type": "SENTENCE_LIMIT",
+      "value": 2,
+      "changed_count": 1193,
+      "changed_percent": 72.34687689508793,
+      "metrics": {
+        "bleu": 0.10304092431297557,
+        "rouge": 0.2667867551657767,
+        "bert": 0.7229187603499978
+      },
+      "delta": {
+        "bleu": -0.043755585495929034,
+        "rouge": -0.03013506780582953,
+        "bert": -0.017023964171123285
+      },
+      "paired": {
+        "rouge": {
+          "better": 266,
+          "worse": 926,
+          "equal": 457,
+          "net_better": -660
+        },
+        "bert": {
+          "better": 235,
+          "worse": 958,
+          "equal": 456,
+          "net_better": -723
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "SENTENCE_LIMIT_3",
+      "type": "SENTENCE_LIMIT",
+      "value": 3,
+      "changed_count": 826,
+      "changed_percent": 50.09096422073984,
+      "metrics": {
+        "bleu": 0.12508068979040354,
+        "rouge": 0.28410167413369425,
+        "bert": 0.7321082101654761
+      },
+      "delta": {
+        "bleu": -0.02171582001850106,
+        "rouge": -0.012820148837911993,
+        "bert": -0.007834514355644973
+      },
+      "paired": {
+        "rouge": {
+          "better": 259,
+          "worse": 566,
+          "equal": 824,
+          "net_better": -307
+        },
+        "bert": {
+          "better": 250,
+          "worse": 576,
+          "equal": 823,
+          "net_better": -326
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "SENTENCE_LIMIT_4",
+      "type": "SENTENCE_LIMIT",
+      "value": 4,
+      "changed_count": 560,
+      "changed_percent": 33.95997574287447,
+      "metrics": {
+        "bleu": 0.13340454678918984,
+        "rouge": 0.29012953857011803,
+        "bert": 0.7352257155880486
+      },
+      "delta": {
+        "bleu": -0.013391963019714764,
+        "rouge": -0.006792284401488213,
+        "bert": -0.004717008933072475
+      },
+      "paired": {
+        "rouge": {
+          "better": 180,
+          "worse": 380,
+          "equal": 1089,
+          "net_better": -200
+        },
+        "bert": {
+          "better": 177,
+          "worse": 383,
+          "equal": 1089,
+          "net_better": -206
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "CHAR_BUDGET_80",
+      "type": "CHAR_BUDGET",
+      "value": 80,
+      "changed_count": 1015,
+      "changed_percent": 61.55245603395998,
+      "metrics": {
+        "bleu": 0.10496614786541307,
+        "rouge": 0.26450578223051374,
+        "bert": 0.7217927049188053
+      },
+      "delta": {
+        "bleu": -0.04183036194349153,
+        "rouge": -0.0324160407410925,
+        "bert": -0.01815001960231577
+      },
+      "paired": {
+        "rouge": {
+          "better": 191,
+          "worse": 823,
+          "equal": 635,
+          "net_better": -632
+        },
+        "bert": {
+          "better": 181,
+          "worse": 834,
+          "equal": 634,
+          "net_better": -653
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "CHAR_BUDGET_120",
+      "type": "CHAR_BUDGET",
+      "value": 120,
+      "changed_count": 686,
+      "changed_percent": 41.600970285021226,
+      "metrics": {
+        "bleu": 0.12310954829436901,
+        "rouge": 0.2812579917040577,
+        "bert": 0.7306900551421777
+      },
+      "delta": {
+        "bleu": -0.023686961514535587,
+        "rouge": -0.015663831267548556,
+        "bert": -0.009252669378943423
+      },
+      "paired": {
+        "rouge": {
+          "better": 177,
+          "worse": 509,
+          "equal": 963,
+          "net_better": -332
+        },
+        "bert": {
+          "better": 176,
+          "worse": 510,
+          "equal": 963,
+          "net_better": -334
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "CHAR_BUDGET_160",
+      "type": "CHAR_BUDGET",
+      "value": 160,
+      "changed_count": 486,
+      "changed_percent": 29.472407519708916,
+      "metrics": {
+        "bleu": 0.13210599101761594,
+        "rouge": 0.2888999736585422,
+        "bert": 0.7342193312107107
+      },
+      "delta": {
+        "bleu": -0.01469051879128866,
+        "rouge": -0.008021849313064044,
+        "bert": -0.005723393310410385
+      },
+      "paired": {
+        "rouge": {
+          "better": 138,
+          "worse": 348,
+          "equal": 1163,
+          "net_better": -210
+        },
+        "bert": {
+          "better": 135,
+          "worse": 351,
+          "equal": 1163,
+          "net_better": -216
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "CHAR_BUDGET_200",
+      "type": "CHAR_BUDGET",
+      "value": 200,
+      "changed_count": 363,
+      "changed_percent": 22.013341419041843,
+      "metrics": {
+        "bleu": 0.1363650953956401,
+        "rouge": 0.2919880867427315,
+        "bert": 0.7364977633251863
+      },
+      "delta": {
+        "bleu": -0.010431414413264506,
+        "rouge": -0.004933736228874719,
+        "bert": -0.003444961195934737
+      },
+      "paired": {
+        "rouge": {
+          "better": 102,
+          "worse": 261,
+          "equal": 1286,
+          "net_better": -159
+        },
+        "bert": {
+          "better": 97,
+          "worse": 266,
+          "equal": 1286,
+          "net_better": -169
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "CHAR_BUDGET_240",
+      "type": "CHAR_BUDGET",
+      "value": 240,
+      "changed_count": 283,
+      "changed_percent": 17.16191631291692,
+      "metrics": {
+        "bleu": 0.13937465386731657,
+        "rouge": 0.2937224835272325,
+        "bert": 0.7370239275379424
+      },
+      "delta": {
+        "bleu": -0.007421855941588035,
+        "rouge": -0.0031993394443737277,
+        "bert": -0.002918796983178651
+      },
+      "paired": {
+        "rouge": {
+          "better": 89,
+          "worse": 194,
+          "equal": 1366,
+          "net_better": -105
+        },
+        "bert": {
+          "better": 91,
+          "worse": 193,
+          "equal": 1365,
+          "net_better": -102
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    },
+    {
+      "name": "CHAR_BUDGET_300",
+      "type": "CHAR_BUDGET",
+      "value": 300,
+      "changed_count": 206,
+      "changed_percent": 12.49241964827168,
+      "metrics": {
+        "bleu": 0.1420338704913132,
+        "rouge": 0.29511542631913035,
+        "bert": 0.7371433482812056
+      },
+      "delta": {
+        "bleu": -0.004762639317591411,
+        "rouge": -0.0018063966524758945,
+        "bert": -0.002799376239915441
+      },
+      "paired": {
+        "rouge": {
+          "better": 69,
+          "worse": 137,
+          "equal": 1443,
+          "net_better": -68
+        },
+        "bert": {
+          "better": 61,
+          "worse": 146,
+          "equal": 1442,
+          "net_better": -85
+        }
+      },
+      "empty_response_count": 0,
+      "result": "REJECT"
+    }
+  ],
+  "best_rule": {
+    "name": "CHAR_BUDGET_300",
+    "type": "CHAR_BUDGET",
+    "value": 300,
+    "changed_count": 206,
+    "changed_percent": 12.49241964827168,
+    "metrics": {
+      "bleu": 0.1420338704913132,
+      "rouge": 0.29511542631913035,
+      "bert": 0.7371433482812056
+    },
+    "delta": {
+      "bleu": -0.004762639317591411,
+      "rouge": -0.0018063966524758945,
+      "bert": -0.002799376239915441
+    },
+    "paired": {
+      "rouge": {
+        "better": 69,
+        "worse": 137,
+        "equal": 1443,
+        "net_better": -68
+      },
+      "bert": {
+        "better": 61,
+        "worse": 146,
+        "equal": 1442,
+        "net_better": -85
+      }
+    },
+    "empty_response_count": 0,
+    "result": "REJECT"
+  },
+  "best_rule_length": {
+    "mean": 128.1904184354154,
+    "p25": 64.0,
+    "p50": 99.0,
+    "p75": 181.0,
+    "p90": 274.0,
+    "p95": 288.0
+  },
+  "rule_definition": "Sentence: cut at nth terminal punctuation if present, otherwise unchanged. Budget: last terminal punctuation at or before budget, otherwise unchanged. Preserve punctuation; no lexical rewriting.",
+  "example_count": 10,
+  "examples_path": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_rq2/truncation_examples.json",
+  "holdout_used": false,
+  "runtime_modified": false,
+  "device": "cuda:0",
+  "blocking_issue": "NONE"
+}

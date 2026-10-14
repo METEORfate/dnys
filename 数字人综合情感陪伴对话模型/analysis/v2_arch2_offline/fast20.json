@@ -1,0 +1,35 @@
+{
+  "completed": 20,
+  "gpu_memory_before": {
+    "allocated_mib": 5467.62353515625,
+    "reserved_mib": 6960.0,
+    "free_mib": 16655.75,
+    "peak_allocated_mib": 6744.25537109375
+  },
+  "gpu_memory_after": {
+    "allocated_mib": 5468.62353515625,
+    "reserved_mib": 6900.0,
+    "free_mib": 16709.75,
+    "peak_allocated_mib": 6005.58984375
+  },
+  "oom": "NO",
+  "prediction_distribution": {
+    "sum": {
+      "joy": 8,
+      "anger": 4,
+      "loneliness": 1,
+      "shame": 4,
+      "neutral": 2,
+      "sadness": 1
+    },
+    "mean": {
+      "shame": 5,
+      "joy": 4,
+      "anger": 2,
+      "loneliness": 1,
+      "disgust": 6,
+      "sadness": 1,
+      "anxiety": 1
+    }
+  }
+}

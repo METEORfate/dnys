@@ -1,0 +1,9 @@
+{
+  "compatible": true,
+  "parameter_keys": 392,
+  "endpoint_parameters_exact": true,
+  "rank": 16,
+  "lora_alpha": 32,
+  "base": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e1-emotion-rebalance-fixed18657-rerun2",
+  "target": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-80"
+}

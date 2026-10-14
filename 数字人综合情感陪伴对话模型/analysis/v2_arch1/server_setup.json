@@ -1,0 +1,108 @@
+{
+  "prompt_sha256": {
+    "p0": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873"
+  },
+  "command": [
+    "/opt/conda/envs/conda_env/bin/vllm",
+    "serve",
+    "/root/participant/model/Qwen2___5-7B-Instruct",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8000",
+    "--served-model-name",
+    "emotion-companion-lora",
+    "--enable-lora",
+    "--lora-modules",
+    "emotion-companion-lora=/root/participant/model/lora_adapter",
+    "rq3-response=/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-80",
+    "--max-loras",
+    "2",
+    "--tensor-parallel-size",
+    "2",
+    "--max-num-seqs",
+    "8"
+  ],
+  "models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791781087,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/Qwen2___5-7B-Instruct",
+        "parent": null,
+        "max_model_len": 32768,
+        "permission": [
+          {
+            "id": "modelperm-89828206c74951ed",
+            "object": "model_permission",
+            "created": 1791781087,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "emotion-companion-lora",
+        "object": "model",
+        "created": 1791781087,
+        "owned_by": "vllm",
+        "root": "/root/participant/model/lora_adapter",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-811b4e344570ce53",
+            "object": "model_permission",
+            "created": 1791781087,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      },
+      {
+        "id": "rq3-response",
+        "object": "model",
+        "created": 1791781087,
+        "owned_by": "vllm",
+        "root": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-80",
+        "parent": "emotion-companion-lora",
+        "max_model_len": null,
+        "permission": [
+          {
+            "id": "modelperm-aec36adc334cedf0",
+            "object": "model_permission",
+            "created": 1791781087,
+            "allow_create_engine": false,
+            "allow_sampling": true,
+            "allow_logprobs": true,
+            "allow_search_indices": false,
+            "allow_view": true,
+            "allow_fine_tuning": false,
+            "organization": "*",
+            "group": null,
+            "is_blocking": false
+          }
+        ]
+      }
+    ]
+  },
+  "input_sha256": "26d366877567fe49061c77f1c22ee7d8cf5f5b90eac71e29be62da0cd66787a6",
+  "server_restart_count": 0
+}

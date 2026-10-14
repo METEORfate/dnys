@@ -1,0 +1,1499 @@
+[
+  {
+    "path": "analysis/final_score_maximization/evaluate_candidates.py.log",
+    "size": 2388,
+    "sha256": "34ff59289d9ef499f0fa65a1863b8739ac845c27460e3b0780d376486b333d39",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/extract_train_heads.py.log",
+    "size": 1116,
+    "sha256": "5e37a420ea52999bdb2e8424f650a759455ff4318f4a30713a85a6d839f31998",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/pipeline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/resume_evaluation_pipeline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/resume_extract_heads.py.log",
+    "size": 3509,
+    "sha256": "93ee89ad97e359b94f51ef7e39404ea0d19d40b460c729cfd925b4c9b9ef6846",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 10,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 4
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/resume_heads_only.py.log",
+    "size": 4249,
+    "sha256": "4a39590af8910848dbf84b26639b87abb46b4e3d7b922f0724d8f4b938489139",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/resume_heads_pipeline.log",
+    "size": 396,
+    "sha256": "0380bf14a41e95779f38e275f3b486ea187f17ebd34c8464eb43f87fd50f872e",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 2
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/resume_pipeline.log",
+    "size": 391,
+    "sha256": "56f16636e2ff56e42df8b1bcf1320c7f448819ac65f105139bc7868b19762d75",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 2
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/final_score_maximization/server.log",
+    "size": 69238,
+    "sha256": "69044629818b8cdf9b49e16eac59788dd38e9bc93b77fc776ac902275bc7ae02",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_arch1/pipeline.log",
+    "size": 3438,
+    "sha256": "d95c42ab495273fb29e904735dd79715a0329c9a1b3e442a5c7e6415fc287011",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_arch1/server.log",
+    "size": 65688,
+    "sha256": "36ed171ef436672bb013f9bc5979742da8c16510ce8e40f2a7cf17f48a4985bd",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_arch2/pipeline.log",
+    "size": 2644,
+    "sha256": "1921d982087bfe7219480d5b60d2edb3f17d3ba8ec8715d44b7a8481d43485f1",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 2,
+      "NaN": 0,
+      "ERROR": 8
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_arch2/server.log",
+    "size": 75704,
+    "sha256": "6f865802b78b9f0efd15d6f4245190073ff934fe79291e07a7a96050f02ba6d0",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 90,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 10,
+      "NaN": 0,
+      "ERROR": 333
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_arch2_offline/pipeline.log",
+    "size": 12819,
+    "sha256": "0539159096dfc5951c509a03a423e4138936deb9c70b40121d6f45ebedd27a65",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_1_interpolation/evaluation.log",
+    "size": 1631,
+    "sha256": "e5798a71eca7eba2378305ffc3419550b56079c6f7af886ced81ecbba8f3a306",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_1_interpolation/server.log",
+    "size": 70119,
+    "sha256": "8eabe345b70fcede9e589785fe479f87c07e9321f3036a3f2dbddf83dd713146",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_2_interpolation/evaluation.log",
+    "size": 3384,
+    "sha256": "5fa8e1feb90b484efdb73059ccd69f98a4819024cf4b8161dab05de842767939",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_2_interpolation/server.log",
+    "size": 108862,
+    "sha256": "48fe68605ecbd97707e2a5d07231c4f07f862e6c0549e8c98ce98ee421306d84",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/evaluation.log",
+    "size": 2241,
+    "sha256": "12e7266f84d9e4b18287cb9590420e3e2a76cc98e6d166680a8eb751ad289692",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/gpu_preflight.log",
+    "size": 599,
+    "sha256": "e0fa92d681f4a9a5fc044e92c0369cb50b2436e36fc8f3583cfa5b8e6fc84788",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/mask_tests.log",
+    "size": 105,
+    "sha256": "84696f27998eff50edbb4841c2cd47a18c451d5be490961c3a26617212db97a9",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/pipeline.log",
+    "size": 978,
+    "sha256": "ee73a6002aae073c236513398c8385730b62966b43a64e1caf0dee38615aa4fe",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 2
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/prepare.log",
+    "size": 42868,
+    "sha256": "ac0a8c38d1ddbf6f6a37ff821490e63b460d687d237edecd3fbf24feee021061",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/resume_evaluation.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/server.log",
+    "size": 57411,
+    "sha256": "ecb2f77d196e91f82c27c98cdf5e6ff5f68390b28f198525b3b107849ccfc522",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_e7_boundary_lora/training.log",
+    "size": 9741,
+    "sha256": "e0832296515c92d2be36f0a340806e939ddd08c2bab06dd733606990e60a0c3a",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 1,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": [
+      "{'loss': 0.946, 'grad_norm': 1.1881839036941528, 'learning_rate': 2.6250000000000003e-06, 'epoch': 0.34}",
+      "{'loss': 0.9226, 'grad_norm': 1.0282073020935059, 'learning_rate': 1.3750000000000002e-06, 'epoch': 0.4}",
+      "{'loss': 0.8633, 'grad_norm': 1.2233697175979614, 'learning_rate': 1.2500000000000002e-07, 'epoch': 0.46}"
+    ]
+  },
+  {
+    "path": "analysis/v2_pr1/p0.log",
+    "size": 4029,
+    "sha256": "4ede076ef4e4c9bdaf4a7a437faa28460ec225a23d9ff79098aacbd91adbe352",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1/pipeline.log",
+    "size": 255,
+    "sha256": "ec2f6c6f734275a68fbe157d1af97bfd2fa0be32f18244cf1b699817fc804df6",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1/resume.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1/score_p0.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1/v1.log",
+    "size": 4027,
+    "sha256": "595735709dacb729813683a76a3c4086a1a13371c15565e242b5688c7394d944",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1/v2.log",
+    "size": 4034,
+    "sha256": "1464c7e6b2baf89ff147b9d8acf06d75de3cfa6fb33c71ef6c5bf102d1479544",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1b/pipeline.log",
+    "size": 272,
+    "sha256": "a891f85b40a7436880b9bab7dc73d474b3714f1ebac6c3f8d49e2a74d85b389d",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1b/pipeline_seqs8.log",
+    "size": 1710,
+    "sha256": "8cc16c37c99e5050a05bfde7b5361d9c1431f347176b378501652cfe3cf8ffc5",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr1b/server.log",
+    "size": 68565,
+    "sha256": "d329791e1d230ec350740e88d9c25b15e9296ec44cb0e3778b748db6d2f34d07",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr2/pipeline.log",
+    "size": 5235,
+    "sha256": "37777eb49e18cd66e11bdb9e3717eb70a3b4c8c871cb3fa50a30e45f5ac41cac",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr2/server.log",
+    "size": 144973,
+    "sha256": "58dac58f9ac2f7ca7136b0cbb01dd679c62d627ee578ce35d6f32d8f3566b6a8",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr2a_valdev/pipeline.log",
+    "size": 27072,
+    "sha256": "bc7ff4b381d541adc55ab0e8ed1328a4f671793725e164668c6490409b374cb8",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr2a_valdev/server.log",
+    "size": 441486,
+    "sha256": "2adc1dedf3df94014eb6a578b6de4e207e1484b21b0aa066df704def0df19506",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 50,
+      "NCCL": 4,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr3_minimal_prompt/pipeline.log",
+    "size": 3312,
+    "sha256": "8a3574fbbb69e29f80678cacfd7b72df47f0d31cf75c556008b8f3196907d08d",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_pr3_minimal_prompt/server.log",
+    "size": 94320,
+    "sha256": "86f9d0da3e4127fd5697325b93fe1fc2ac2134d3256eac12c4a8ba9ecf521cd0",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 35,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 2
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq1/run.log",
+    "size": 5178,
+    "sha256": "9596880fdae82fb287e07a124a6e068e80d363dd83b98a000284cab1b3e43a5a",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 2,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq2/run.log",
+    "size": 8347,
+    "sha256": "bae2d708490a608f33dbc722483b40e9a373760c0c325c780abf4e06b7fdfcdf",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 1,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/bert_160.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/bert_240.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/bert_80.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/eval_160.log",
+    "size": 2278,
+    "sha256": "65675ea78afb14e3ba2b985279f6213168f8e47173474bbf47db613c02c2f4f7",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/eval_240.log",
+    "size": 2318,
+    "sha256": "c5955f60437c04315b43e520ff5f7b6e3a7b99d625d68dfe8bc8f2949b7e163c",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/eval_80.log",
+    "size": 2304,
+    "sha256": "52559868c9478bd8b44e6ccda224989ebeafa904f3a8faf010559f9a09f7c0b5",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/mask.log",
+    "size": 684,
+    "sha256": "98f9daf54ed40fa886d59cc8d126c2db3df7246a7c0d0dde3b918a6c18c15d33",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/pipeline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/preflight.log",
+    "size": 9,
+    "sha256": "e5c76b88b09bb009ade60770c3230fddcce2824678eee6400805a9ef68669fee",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/resume_pipeline.log",
+    "size": 388,
+    "sha256": "b279cb615a41d23a78ec64b955164cd03e42a0cd74ac424527df33f2fecac919",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq3/training.log",
+    "size": 23074,
+    "sha256": "ba55a8229a502a6a3ce4b9dda72c285d20b44bc3e9e20c24b4e93591fed936dc",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 1,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": [
+      "{'loss': 1.5709, 'grad_norm': 1.336527943611145, 'learning_rate': 4.375e-07, 'epoch': 0.48}",
+      "{'loss': 1.6068, 'grad_norm': 1.9163390398025513, 'learning_rate': 2.2916666666666666e-07, 'epoch': 0.5}",
+      "{'loss': 1.6286, 'grad_norm': 1.52658212184906, 'learning_rate': 2.0833333333333335e-08, 'epoch': 0.52}"
+    ]
+  },
+  {
+    "path": "analysis/v2_rq4/a020.log",
+    "size": 2259,
+    "sha256": "d8cf24cd825388fc3b07146914e1f830aa55f3e8892c5ed00dc40a57476339ff",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/a035.log",
+    "size": 2261,
+    "sha256": "ad691c22d883a313de8341b50e5f59deaccd66c0583412b70f88623714be8349",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/a050.log",
+    "size": 2261,
+    "sha256": "43df24b8822a9bca3bede6d27def3a0ddf1fed875767c917eb8451d755461f17",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/a065.log",
+    "size": 2283,
+    "sha256": "1a8a7d172249742733c14094f35c429a55b512350e749fc68212efda825f56ef",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/a080.log",
+    "size": 2250,
+    "sha256": "3a0c934c8e9080c79ad4533d63e815bdf95f1fff82c28fffd971d67846e604af",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/baseline.log",
+    "size": 2290,
+    "sha256": "386b7474716a6b46a2f891bf1a38124557d3d6108fc5363c924db06fff21dac1",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/pipeline.log",
+    "size": 714,
+    "sha256": "42feb1b9be1d4e79e785523bfed0c2c945f0e700b97df15e42415bc4cd8c3a87",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 2,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/post_a020.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/post_a035.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/post_a050.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/post_a065.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/post_a080.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/post_baseline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/retry_pipeline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/sanity_a000.log",
+    "size": 2205,
+    "sha256": "7e8e7ebf957a14b27ea8d5a586b43e6055fb00007d4edd90e418b8f5922708ca",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq4/sanity_a100.log",
+    "size": 2217,
+    "sha256": "f7e610b1bf10157f0966ba42287d8c47c135b2507d18e66811ae137b87da6172",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/ATTN_ALL.log",
+    "size": 2272,
+    "sha256": "84e0da5055e3b3e2510af1f41d0f110e2f0dfd5e2562375c509a98bc235ac296",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/LATE_HALF_ALL.log",
+    "size": 2281,
+    "sha256": "8208684dc705d6dc7a819acbc030758e21fd3d848ec626b6a4d63ea99315712b",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/LATE_HALF_ATTN.log",
+    "size": 2284,
+    "sha256": "a4a9a8a4a825d99474ccd543b1504eac7788ce26829baeb10319a02b2fa150b0",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/LATE_HALF_MLP.log",
+    "size": 2281,
+    "sha256": "3d92597b356d53648097bacec7169573e3641a7612f9ae618265eb44364655d9",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/LATE_QUARTER_ALL.log",
+    "size": 2290,
+    "sha256": "c20eb91002526e780fe79ef00966deb4ddc025b1fbf5b6bec46eccd85049aeb0",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/MLP_ALL.log",
+    "size": 2283,
+    "sha256": "f637646553c048636ff85b8fe3427505495bf90d00f549d49d891564fd823bbb",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/cpu_completion.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/pipeline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/post_ATTN_ALL.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/post_LATE_HALF_ALL.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/post_LATE_HALF_ATTN.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/post_LATE_HALF_MLP.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/post_LATE_QUARTER_ALL.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/post_MLP_ALL.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq5/recovery.log",
+    "size": 876,
+    "sha256": "325d1bea7b6714e4c182e09bd17994db488b8933a7117887ee474443d88b4119",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 1,
+      "NaN": 0,
+      "ERROR": 2
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/eval_120.log",
+    "size": 2316,
+    "sha256": "9aedf63e9583c6110a17b66ee87f658f7fe94377de047757c16fb50c239edba8",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/eval_160.log",
+    "size": 2304,
+    "sha256": "c7798fec03cb2f3b1b0d2dd105b70228f7e70229ba021fa3987bcae9ea192e8a",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/eval_40.log",
+    "size": 2290,
+    "sha256": "ace40ceaf53213aebe4cd7a1d3fa038a327148034f552d4cf9fbf5b056cf9503",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/eval_80.log",
+    "size": 2326,
+    "sha256": "0f1983d0ee7feca602db822b84f166c30e3a971a2597d9470c4d5295662a35e3",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 1
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/gpu_preflight.log",
+    "size": 599,
+    "sha256": "8fec4b67d791dc5002a5748b7dde75519b32507dd03bb3ba7136acc396652523",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/pipeline.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/post_120.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/post_160.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/post_40.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/post_80.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/prepare.log",
+    "size": 518,
+    "sha256": "3dc617b781e25f40ceaa3291ea5b15a542b94e9b8cda4b5bfd5ffbd14104c84e",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/recovery.log",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/tests.log",
+    "size": 100,
+    "sha256": "63a9e3e5bd1d5f3a08776dea8e41de5e3b99d0ff4e497243376ee4c62546a4d1",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 0,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": []
+  },
+  {
+    "path": "analysis/v2_rq6/training.log",
+    "size": 16128,
+    "sha256": "dfed62109031735034d383d0e432522d85011028cff43f93733e72f2deb65e86",
+    "event_counts": {
+      "OOM": 0,
+      "CUDA": 0,
+      "NCCL": 1,
+      "NVML": 0,
+      "Traceback": 0,
+      "NaN": 0,
+      "ERROR": 0
+    },
+    "loss_records": [
+      "{'loss': 1.2507, 'grad_norm': 4.9173502922058105, 'learning_rate': 3.9375000000000004e-07, 'epoch': 0.88}",
+      "{'loss': 1.2719, 'grad_norm': 2.7358806133270264, 'learning_rate': 2.0625e-07, 'epoch': 0.94}",
+      "{'loss': 1.3173, 'grad_norm': 6.092125415802002, 'learning_rate': 1.8750000000000002e-08, 'epoch': 1.0}"
+    ]
+  }
+]

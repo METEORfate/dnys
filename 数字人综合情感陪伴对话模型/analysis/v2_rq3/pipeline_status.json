@@ -1,0 +1,76 @@
+{
+  "phase": "COMPLETED",
+  "started_at": 1791648385.6207833,
+  "blocking_issue": "NONE",
+  "child_pid": 7244,
+  "train_started_at": 1791649227.814158,
+  "training_minutes": 42.846197911103566,
+  "evaluating_checkpoint": 240,
+  "resumed_at": 1791686491.109708,
+  "completed_checkpoints": {
+    "80": {
+      "checkpoint": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-80",
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "profile_mean": 0.6631944444444444,
+        "bleu": 0.14914855451868822,
+        "rouge": 0.2796608725754857,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "bert_f1": 0.73459792137146
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": 0.00694444444444442,
+        "bleu": 0.01448920372473117,
+        "rouge": 0.010187576556018985,
+        "bert_f1": 0.0034053921714599644
+      },
+      "guardrail_pass": false,
+      "result": "REJECT"
+    },
+    "160": {
+      "checkpoint": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-160",
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "profile_mean": 0.6458333333333334,
+        "bleu": 0.14260189481930471,
+        "rouge": 0.27719465945236244,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "bert_f1": 0.7322105765342712
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": -0.01041666666666663,
+        "bleu": 0.007942544025347664,
+        "rouge": 0.0077213634328957,
+        "bert_f1": 0.0010180473342712437
+      },
+      "guardrail_pass": false,
+      "result": "REJECT"
+    },
+    "240": {
+      "checkpoint": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq3-response-coverage-recovery/checkpoint-240",
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "profile_mean": 0.65625,
+        "bleu": 0.14462404393314,
+        "rouge": 0.27985503885401014,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "bert_f1": 0.7335101962089539
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": 0.0,
+        "bleu": 0.00996469313918294,
+        "rouge": 0.010381742834543406,
+        "bert_f1": 0.002317667008953861
+      },
+      "guardrail_pass": false,
+      "result": "REJECT"
+    }
+  },
+  "result": "REJECT"
+}

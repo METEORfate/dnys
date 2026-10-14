@@ -1,0 +1,104 @@
+{
+  "baseline": {
+    "emotion": 0.6979166666666666,
+    "macro_f1": 0.6035926882020703,
+    "bleu": 0.13361710748454556,
+    "rouge": 0.26499824734801536,
+    "bert": 0.7282049655914307,
+    "avg_latency": 1532.0457842511435,
+    "p95_latency": 3247.9539808817203,
+    "json_valid": 1.0,
+    "nonempty": 1.0,
+    "personality": 0.6614583333333334,
+    "interests": 0.7760416666666666,
+    "style": 0.5260416666666666,
+    "profile_mean": 0.6545138888888888
+  },
+  "candidates": {
+    "rule": {
+      "metrics": {
+        "emotion": 0.7239583333333334,
+        "macro_f1": 0.6151612525319973,
+        "bleu": 0.13361710748454556,
+        "rouge": 0.26499824734801536,
+        "bert": 0.7282049655914307,
+        "avg_latency": 1532.0507275755517,
+        "p95_latency": 3247.9589242061284,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6614583333333334,
+        "interests": 0.7760416666666666,
+        "style": 0.5260416666666666,
+        "profile_mean": 0.6545138888888888
+      },
+      "delta": {
+        "emotion": 0.02604166666666674,
+        "macro_f1": 0.011568564329926923,
+        "profile_mean": 0.0,
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "wrong_to_right": 6,
+      "right_to_wrong": 1,
+      "transitions": [
+        {
+          "id": "test_000008_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000030_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000041_t1",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000081_t1",
+          "gt": "relaxed",
+          "baseline": "gratitude",
+          "candidate": "relaxed"
+        },
+        {
+          "id": "test_000129_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000139_t1",
+          "gt": "mixed",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000156_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "id": "test_000167_t1",
+          "gt": "anxiety",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        }
+      ],
+      "passes": true,
+      "fresh96_emotion_delta": 0.03125,
+      "fresh96_response_delta": {
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bert": 0.0
+      },
+      "fresh96_passes": true
+    }
+  }
+}

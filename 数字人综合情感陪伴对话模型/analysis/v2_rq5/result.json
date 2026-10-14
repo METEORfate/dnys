@@ -1,0 +1,318 @@
+{
+  "adapter_compatible": true,
+  "layer_count": 28,
+  "baseline": {
+    "emotion": 0.6979166666666666,
+    "bleu": 0.13465935079395705,
+    "rouge": 0.26947329601946673,
+    "json_valid": 1.0,
+    "nonempty": 1.0,
+    "personality": 0.6770833333333334,
+    "interests": 0.8333333333333334,
+    "style": 0.5729166666666666,
+    "profile_mean": 0.6944444444444445,
+    "bert_f1": 0.7311925888061523
+  },
+  "candidates": [
+    {
+      "name": "ATTN_ALL",
+      "parameter_audit": {
+        "selected_key_count": 224,
+        "total_lora_key_count": 392,
+        "selected_parameter_percent": 25.0,
+        "unselected_tensor_and_dtype_exact": true,
+        "nan_count": 0,
+        "inf_count": 0,
+        "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-attn_all"
+      },
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "bleu": 0.13572332242773966,
+        "rouge": 0.26377128181088566,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6770833333333334,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.7013888888888888,
+        "bert_f1": 0.7301786541938782
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": 0.006944444444444309,
+        "bleu": 0.0010639716337826066,
+        "rouge": -0.005702014208581074,
+        "bert_f1": -0.00101393461227417
+      },
+      "guardrail_pass": false,
+      "response_gain_score": -0.005651977187072638,
+      "decision": "REJECT",
+      "emotion_diagnostic": null
+    },
+    {
+      "name": "MLP_ALL",
+      "parameter_audit": {
+        "selected_key_count": 168,
+        "total_lora_key_count": 392,
+        "selected_parameter_percent": 75.0,
+        "unselected_tensor_and_dtype_exact": true,
+        "nan_count": 0,
+        "inf_count": 0,
+        "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-mlp_all"
+      },
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "bleu": 0.13916009133777157,
+        "rouge": 0.2713907728725211,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.65625,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6944444444444443,
+        "bert_f1": 0.7324594855308533
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": -2.220446049250313e-16,
+        "bleu": 0.004500740543814524,
+        "rouge": 0.0019174768530543784,
+        "bert_f1": 0.0012668967247009277
+      },
+      "guardrail_pass": false,
+      "response_gain_score": 0.00768511412156983,
+      "decision": "REJECT",
+      "emotion_diagnostic": null
+    },
+    {
+      "name": "LATE_HALF_ALL",
+      "parameter_audit": {
+        "selected_key_count": 196,
+        "total_lora_key_count": 392,
+        "selected_parameter_percent": 50.0,
+        "unselected_tensor_and_dtype_exact": true,
+        "nan_count": 0,
+        "inf_count": 0,
+        "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_all"
+      },
+      "metrics": {
+        "emotion": 0.6666666666666666,
+        "bleu": 0.14033829020029295,
+        "rouge": 0.26843516832033737,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.8333333333333334,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6909722222222222,
+        "bert_f1": 0.7308788299560547
+      },
+      "delta": {
+        "emotion": -0.03125,
+        "profile_mean": -0.003472222222222321,
+        "bleu": 0.005678939406335903,
+        "rouge": -0.0010381276991293653,
+        "bert_f1": -0.00031375885009765625
+      },
+      "guardrail_pass": false,
+      "response_gain_score": 0.004327052857108882,
+      "decision": "REJECT",
+      "emotion_diagnostic": null
+    },
+    {
+      "name": "LATE_HALF_ATTN",
+      "parameter_audit": {
+        "selected_key_count": 112,
+        "total_lora_key_count": 392,
+        "selected_parameter_percent": 12.5,
+        "unselected_tensor_and_dtype_exact": true,
+        "nan_count": 0,
+        "inf_count": 0,
+        "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_attn"
+      },
+      "metrics": {
+        "emotion": 0.6875,
+        "bleu": 0.1366437754183905,
+        "rouge": 0.26714051058326804,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6875,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.704861111111111,
+        "bert_f1": 0.7301421165466309
+      },
+      "delta": {
+        "emotion": -0.01041666666666663,
+        "profile_mean": 0.010416666666666519,
+        "bleu": 0.001984424624433462,
+        "rouge": -0.002332785436198692,
+        "bert_f1": -0.0010504722595214844
+      },
+      "guardrail_pass": true,
+      "response_gain_score": -0.0013988330712867147,
+      "decision": "REJECT",
+      "emotion_diagnostic": {
+        "wrong_to_right": 1,
+        "right_to_wrong": 2,
+        "regressions": [
+          {
+            "row_index": 38,
+            "sample_id": "fast96_row_038",
+            "gt": "fear",
+            "baseline": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "row_index": 41,
+            "sample_id": "fast96_row_041",
+            "gt": "fear",
+            "baseline": "fear",
+            "candidate": "sadness"
+          }
+        ],
+        "sample_id_note": "row identifier used when source id absent"
+      }
+    },
+    {
+      "name": "LATE_HALF_MLP",
+      "parameter_audit": {
+        "selected_key_count": 84,
+        "total_lora_key_count": 392,
+        "selected_parameter_percent": 37.5,
+        "unselected_tensor_and_dtype_exact": true,
+        "nan_count": 0,
+        "inf_count": 0,
+        "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_mlp"
+      },
+      "metrics": {
+        "emotion": 0.6875,
+        "bleu": 0.13182606962701102,
+        "rouge": 0.262512836452026,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6979166666666666,
+        "bert_f1": 0.727277934551239
+      },
+      "delta": {
+        "emotion": -0.01041666666666663,
+        "profile_mean": 0.003472222222222099,
+        "bleu": -0.0028332811669460334,
+        "rouge": -0.0069604595674407355,
+        "bert_f1": -0.00391465425491333
+      },
+      "guardrail_pass": true,
+      "response_gain_score": -0.013708394989300099,
+      "decision": "REJECT",
+      "emotion_diagnostic": {
+        "wrong_to_right": 0,
+        "right_to_wrong": 1,
+        "regressions": [
+          {
+            "row_index": 81,
+            "sample_id": "fast96_row_081",
+            "gt": "relaxed",
+            "baseline": "relaxed",
+            "candidate": "pride"
+          }
+        ],
+        "sample_id_note": "row identifier used when source id absent"
+      }
+    },
+    {
+      "name": "LATE_QUARTER_ALL",
+      "parameter_audit": {
+        "selected_key_count": 98,
+        "total_lora_key_count": 392,
+        "selected_parameter_percent": 25.0,
+        "unselected_tensor_and_dtype_exact": true,
+        "nan_count": 0,
+        "inf_count": 0,
+        "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_quarter_all"
+      },
+      "metrics": {
+        "emotion": 0.6770833333333334,
+        "bleu": 0.13806309342298206,
+        "rouge": 0.27173008299184614,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6770833333333334,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.7013888888888888,
+        "bert_f1": 0.7315769195556641
+      },
+      "delta": {
+        "emotion": -0.02083333333333326,
+        "profile_mean": 0.006944444444444309,
+        "bleu": 0.003403742629025014,
+        "rouge": 0.00225678697237941,
+        "bert_f1": 0.00038433074951171875
+      },
+      "guardrail_pass": false,
+      "response_gain_score": 0.0060448603509161425,
+      "decision": "REJECT",
+      "emotion_diagnostic": null
+    }
+  ],
+  "best": {
+    "name": "LATE_HALF_ATTN",
+    "parameter_audit": {
+      "selected_key_count": 112,
+      "total_lora_key_count": 392,
+      "selected_parameter_percent": 12.5,
+      "unselected_tensor_and_dtype_exact": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "path": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-rq5-late_half_attn"
+    },
+    "metrics": {
+      "emotion": 0.6875,
+      "bleu": 0.1366437754183905,
+      "rouge": 0.26714051058326804,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.6875,
+      "interests": 0.8541666666666666,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.704861111111111,
+      "bert_f1": 0.7301421165466309
+    },
+    "delta": {
+      "emotion": -0.01041666666666663,
+      "profile_mean": 0.010416666666666519,
+      "bleu": 0.001984424624433462,
+      "rouge": -0.002332785436198692,
+      "bert_f1": -0.0010504722595214844
+    },
+    "guardrail_pass": true,
+    "response_gain_score": -0.0013988330712867147,
+    "decision": "REJECT",
+    "emotion_diagnostic": {
+      "wrong_to_right": 1,
+      "right_to_wrong": 2,
+      "regressions": [
+        {
+          "row_index": 38,
+          "sample_id": "fast96_row_038",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "anxiety"
+        },
+        {
+          "row_index": 41,
+          "sample_id": "fast96_row_041",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "sadness"
+        }
+      ],
+      "sample_id_note": "row identifier used when source id absent"
+    }
+  },
+  "result": "REJECT",
+  "blocking_issue": "NONE"
+}

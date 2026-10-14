@@ -1,0 +1,239 @@
+{
+  "samples": 1649,
+  "baseline_accuracy": 0.6373559733171619,
+  "classifier_accuracy": 0.6015767131594906,
+  "complementarity": {
+    "v2_wrong_classifier_right": 136,
+    "v2_right_classifier_wrong": 195,
+    "both_right": 856,
+    "both_wrong": 462
+  },
+  "v2_empty_group": {
+    "count": 1007,
+    "v2_accuracy": 0.8232373386295928,
+    "classifier_accuracy": 0.8003972194637538
+  },
+  "v2_nonempty_group": {
+    "count": 642,
+    "v2_accuracy": 0.34579439252336447,
+    "classifier_accuracy": 0.2897196261682243
+  },
+  "classifier_prediction_groups": {
+    "empty": {
+      "count": 1304,
+      "v2_accuracy": 0.7062883435582822,
+      "classifier_accuracy": 0.6940184049079755
+    },
+    "single_label": {
+      "count": 317,
+      "v2_accuracy": 0.3785488958990536,
+      "classifier_accuracy": 0.2586750788643533
+    },
+    "multi_label": {
+      "count": 28,
+      "v2_accuracy": 0.35714285714285715,
+      "classifier_accuracy": 0.17857142857142858
+    }
+  },
+  "margin_gates": [
+    {
+      "rule": "MARGIN",
+      "threshold": 0.25,
+      "accuracy": 0.635536688902365,
+      "accuracy_delta": -0.0018192844147968401,
+      "override_count": 347,
+      "wrong_to_right": 105,
+      "right_to_wrong": 108,
+      "net_gain": -3
+    },
+    {
+      "rule": "MARGIN",
+      "threshold": 0.5,
+      "accuracy": 0.6494845360824743,
+      "accuracy_delta": 0.012128562765312378,
+      "override_count": 206,
+      "wrong_to_right": 74,
+      "right_to_wrong": 54,
+      "net_gain": 20
+    },
+    {
+      "rule": "MARGIN",
+      "threshold": 0.75,
+      "accuracy": 0.6470588235294118,
+      "accuracy_delta": 0.009702850212249925,
+      "override_count": 119,
+      "wrong_to_right": 48,
+      "right_to_wrong": 32,
+      "net_gain": 16
+    },
+    {
+      "rule": "MARGIN",
+      "threshold": 1,
+      "accuracy": 0.6440266828380837,
+      "accuracy_delta": 0.006670709520921858,
+      "override_count": 61,
+      "wrong_to_right": 29,
+      "right_to_wrong": 18,
+      "net_gain": 11
+    },
+    {
+      "rule": "MARGIN",
+      "threshold": 1.5,
+      "accuracy": 0.6434202546998181,
+      "accuracy_delta": 0.006064281382656245,
+      "override_count": 16,
+      "wrong_to_right": 11,
+      "right_to_wrong": 1,
+      "net_gain": 10
+    },
+    {
+      "rule": "MARGIN",
+      "threshold": 2,
+      "accuracy": 0.6373559733171619,
+      "accuracy_delta": 0.0,
+      "override_count": 0,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "net_gain": 0
+    }
+  ],
+  "empty_gates": [
+    {
+      "rule": "A",
+      "threshold": 0.5,
+      "accuracy": 0.6373559733171619,
+      "accuracy_delta": 0.0,
+      "override_count": 7,
+      "wrong_to_right": 3,
+      "right_to_wrong": 3,
+      "net_gain": 0
+    },
+    {
+      "rule": "A",
+      "threshold": 1,
+      "accuracy": 0.6367495451788963,
+      "accuracy_delta": -0.0006064281382656134,
+      "override_count": 1,
+      "wrong_to_right": 0,
+      "right_to_wrong": 1,
+      "net_gain": -1
+    },
+    {
+      "rule": "A",
+      "threshold": 1.5,
+      "accuracy": 0.6373559733171619,
+      "accuracy_delta": 0.0,
+      "override_count": 0,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "net_gain": 0
+    },
+    {
+      "rule": "B",
+      "threshold": 0.5,
+      "accuracy": 0.648271679805943,
+      "accuracy_delta": 0.010915706488781152,
+      "override_count": 181,
+      "wrong_to_right": 69,
+      "right_to_wrong": 51,
+      "net_gain": 18
+    },
+    {
+      "rule": "B",
+      "threshold": 1,
+      "accuracy": 0.6446331109763493,
+      "accuracy_delta": 0.0072771376591874715,
+      "override_count": 58,
+      "wrong_to_right": 29,
+      "right_to_wrong": 17,
+      "net_gain": 12
+    },
+    {
+      "rule": "B",
+      "threshold": 1.5,
+      "accuracy": 0.6434202546998181,
+      "accuracy_delta": 0.006064281382656245,
+      "override_count": 16,
+      "wrong_to_right": 11,
+      "right_to_wrong": 1,
+      "net_gain": 10
+    }
+  ],
+  "high_value_gates": [
+    {
+      "rule": "HIGH_VALUE",
+      "threshold": 0.5,
+      "accuracy": 0.6385688295936931,
+      "accuracy_delta": 0.0012128562765312267,
+      "override_count": 25,
+      "wrong_to_right": 5,
+      "right_to_wrong": 3,
+      "net_gain": 2
+    },
+    {
+      "rule": "HIGH_VALUE",
+      "threshold": 1,
+      "accuracy": 0.6367495451788963,
+      "accuracy_delta": -0.0006064281382656134,
+      "override_count": 3,
+      "wrong_to_right": 0,
+      "right_to_wrong": 1,
+      "net_gain": -1
+    },
+    {
+      "rule": "HIGH_VALUE",
+      "threshold": 1.5,
+      "accuracy": 0.6373559733171619,
+      "accuracy_delta": 0.0,
+      "override_count": 0,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0,
+      "net_gain": 0
+    }
+  ],
+  "best_margin_gate": {
+    "rule": "MARGIN",
+    "threshold": 0.5,
+    "accuracy": 0.6494845360824743,
+    "accuracy_delta": 0.012128562765312378,
+    "override_count": 206,
+    "wrong_to_right": 74,
+    "right_to_wrong": 54,
+    "net_gain": 20
+  },
+  "best_empty_gate": {
+    "rule": "B",
+    "threshold": 0.5,
+    "accuracy": 0.648271679805943,
+    "accuracy_delta": 0.010915706488781152,
+    "override_count": 181,
+    "wrong_to_right": 69,
+    "right_to_wrong": 51,
+    "net_gain": 18
+  },
+  "best_high_value_gate": {
+    "rule": "HIGH_VALUE",
+    "threshold": 0.5,
+    "accuracy": 0.6385688295936931,
+    "accuracy_delta": 0.0012128562765312267,
+    "override_count": 25,
+    "wrong_to_right": 5,
+    "right_to_wrong": 3,
+    "net_gain": 2
+  },
+  "best_method": {
+    "rule": "MARGIN",
+    "threshold": 0.5,
+    "accuracy": 0.6494845360824743,
+    "accuracy_delta": 0.012128562765312378,
+    "override_count": 206,
+    "wrong_to_right": 74,
+    "right_to_wrong": 54,
+    "net_gain": 20
+  },
+  "result": "PROMOTE",
+  "holdout_used": false,
+  "retrained": false,
+  "runtime_modified": false,
+  "blocking_issue": "NONE"
+}

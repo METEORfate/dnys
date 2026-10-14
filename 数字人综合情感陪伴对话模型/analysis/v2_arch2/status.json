@@ -1,0 +1,7 @@
+{
+  "phase": "BLOCKED",
+  "started_at": 1791849368.7961626,
+  "server_pid": 640,
+  "row_index": 2,
+  "blocking_issue": "PROMPT_LOGPROBS_CUDA_OOM: candidate scoring failed on FAST96 row 2; 2/96 completed"
+}

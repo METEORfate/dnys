@@ -1,0 +1,1835 @@
+{
+  "groups": {
+    "root_analysis": [
+      "analysis/FINAL_HOLDOUT_V1_VS_V2E1.md",
+      "analysis/FINAL_V2_PROMOTION.md",
+      "analysis/HUMAN_REVIEW_PACKET.md",
+      "analysis/HUMAN_REVIEW_SUMMARY.md",
+      "analysis/HUMAN_REVIEW_SUMMARY_TEMPLATE.md",
+      "analysis/V1_ERROR_AUDIT.md",
+      "analysis/V1_FULL_ERROR_AUDIT.md",
+      "analysis/V1_VS_V2E1_BERTSCORE_HOLDOUT.md",
+      "analysis/V1_VS_V2E1_PAIRED_COMPARISON.md",
+      "analysis/V2_C1_RESULT.md",
+      "analysis/V2_E1_EMOTION_REBALANCE_FIXED_PLAN.md",
+      "analysis/V2_E1_EMOTION_REBALANCE_PLAN.md",
+      "analysis/V2_E1_RERUN2_RESULT.md",
+      "analysis/V2_E1_RUNTIME_VALIDATION.md",
+      "analysis/V2_E2_FAST_RESULT.md",
+      "analysis/V2_E3_CKPT40_VALDEV_CONFIRMATION.md",
+      "analysis/V2_E3_FAST_RESULT.md",
+      "analysis/V2_E4_FAST_RESULT.md",
+      "analysis/V2_HARD_CASE_AUDIT.md",
+      "analysis/V2_P1_FINAL_PROMOTION.md",
+      "analysis/V2_P2_FINAL_PROMOTION.md",
+      "analysis/V2_R1_RESIDUAL_EMOTION_AUDIT.md",
+      "analysis/V2_R1_RUNTIME_OPTIMIZATION.md",
+      "analysis/design_emotion_rebalance.py",
+      "analysis/emotion_confusion.csv",
+      "analysis/evaluate_emotion_second_pass.py",
+      "analysis/fast_checkpoint_selection_96.json",
+      "analysis/fast_decoding_sweep_96.json",
+      "analysis/fast_evaluate_lora_decode.py",
+      "analysis/final_holdout_v1_vs_v2e1.json",
+      "analysis/label_conflict_summary.csv",
+      "analysis/profile_error_summary.csv",
+      "analysis/v1_error_audit.json",
+      "analysis/v1_full_error_audit.json",
+      "analysis/v1_valdev_row_manifest.jsonl",
+      "analysis/v1_vs_v2e1_bertscore_holdout.json",
+      "analysis/v1_vs_v2e1_paired_comparison.json",
+      "analysis/v2_c1_result.json",
+      "analysis/v2_e1_emotion_rebalance_fixed_plan.json",
+      "analysis/v2_e1_emotion_rebalance_plan.json",
+      "analysis/v2_e1_rerun2_result.json",
+      "analysis/v2_e1_runtime_validation.json",
+      "analysis/v2_e2_fast_result.json",
+      "analysis/v2_e3_ckpt40_valdev_confirmation.json",
+      "analysis/v2_e3_fast_result.json",
+      "analysis/v2_e4_dataset_stats.json",
+      "analysis/v2_e4_fast_result.json",
+      "analysis/v2_hard_case_audit.json",
+      "analysis/v2_r1_residual_emotion_audit.json",
+      "analysis/v2_r1_runtime_optimization.json"
+    ],
+    "final_score_maximization": [
+      "analysis/final_score_maximization/FINAL_SCORE_MAXIMIZATION_REPORT.md",
+      "analysis/final_score_maximization/conservative_emotion_rule.py",
+      "analysis/final_score_maximization/evaluate_candidates.py",
+      "analysis/final_score_maximization/evaluation_resume_budget.json",
+      "analysis/final_score_maximization/evaluation_status.json",
+      "analysis/final_score_maximization/extract_train_heads.py",
+      "analysis/final_score_maximization/fast192_manifest.json",
+      "analysis/final_score_maximization/fast192_result.json",
+      "analysis/final_score_maximization/fast96_result.json",
+      "analysis/final_score_maximization/feature_eta.json",
+      "analysis/final_score_maximization/head_fast96_metrics.json",
+      "analysis/final_score_maximization/head_results.json",
+      "analysis/final_score_maximization/heads_status.json",
+      "analysis/final_score_maximization/result.json",
+      "analysis/final_score_maximization/resume_evaluation_pipeline.py",
+      "analysis/final_score_maximization/resume_extract_heads.py",
+      "analysis/final_score_maximization/resume_heads_only.py",
+      "analysis/final_score_maximization/resume_heads_pipeline.py",
+      "analysis/final_score_maximization/resume_pipeline.py",
+      "analysis/final_score_maximization/resume_state.json",
+      "analysis/final_score_maximization/run_pipeline.py",
+      "analysis/final_score_maximization/server_setup.json",
+      "analysis/final_score_maximization/setup.json",
+      "analysis/final_score_maximization/status.json"
+    ],
+    "final_score_rule_validation": [
+      "analysis/final_score_rule_validation/FINAL_SCORE_MAXIMIZATION_RULE_VALIDATION.md",
+      "analysis/final_score_rule_validation/result.json",
+      "analysis/final_score_rule_validation/setup.json",
+      "analysis/final_score_rule_validation/validate_rule.py"
+    ],
+    "v2_arch1": [
+      "analysis/v2_arch1/partial_result.json",
+      "analysis/v2_arch1/result.json",
+      "analysis/v2_arch1/run_arch1.py",
+      "analysis/v2_arch1/server_setup.json",
+      "analysis/v2_arch1/setup.json",
+      "analysis/v2_arch1/status.json"
+    ],
+    "v2_arch2": [
+      "analysis/v2_arch2/classifier_prompt.txt",
+      "analysis/v2_arch2/label_tokens.json",
+      "analysis/v2_arch2/run_arch2.py",
+      "analysis/v2_arch2/setup.json",
+      "analysis/v2_arch2/status.json"
+    ],
+    "v2_arch2_offline": [
+      "analysis/v2_arch2_offline/fast20.json",
+      "analysis/v2_arch2_offline/result.json",
+      "analysis/v2_arch2_offline/run_offline.py",
+      "analysis/v2_arch2_offline/status.json"
+    ],
+    "v2_c23_dual_input": [
+      "analysis/v2_c23_dual_input/latest.json",
+      "analysis/v2_c23_dual_input/recent.json"
+    ],
+    "v2_c3_second_pass": [
+      "analysis/v2_c3_second_pass/A.json",
+      "analysis/v2_c3_second_pass/B.json",
+      "analysis/v2_c3_second_pass/result.json"
+    ],
+    "v2_e7_1_interpolation": [
+      "analysis/v2_e7_1_interpolation/V2_E7_1_RESULT.md",
+      "analysis/v2_e7_1_interpolation/evaluate.py",
+      "analysis/v2_e7_1_interpolation/evaluation_status.json",
+      "analysis/v2_e7_1_interpolation/fast96_result.json",
+      "analysis/v2_e7_1_interpolation/partial_fast96_metrics.json",
+      "analysis/v2_e7_1_interpolation/prepare.py",
+      "analysis/v2_e7_1_interpolation/result.json",
+      "analysis/v2_e7_1_interpolation/server_setup.json",
+      "analysis/v2_e7_1_interpolation/setup.json",
+      "analysis/v2_e7_1_interpolation/status.json"
+    ],
+    "v2_e7_2_interpolation": [
+      "analysis/v2_e7_2_interpolation/V2_E7_2_RESULT.md",
+      "analysis/v2_e7_2_interpolation/evaluate.py",
+      "analysis/v2_e7_2_interpolation/evaluation_status.json",
+      "analysis/v2_e7_2_interpolation/fast192_result.json",
+      "analysis/v2_e7_2_interpolation/fast96_result.json",
+      "analysis/v2_e7_2_interpolation/partial_fast192_metrics.json",
+      "analysis/v2_e7_2_interpolation/partial_fast96_metrics.json",
+      "analysis/v2_e7_2_interpolation/prepare.py",
+      "analysis/v2_e7_2_interpolation/result.json",
+      "analysis/v2_e7_2_interpolation/server_setup.json",
+      "analysis/v2_e7_2_interpolation/setup.json",
+      "analysis/v2_e7_2_interpolation/status.json"
+    ],
+    "v2_e7_boundary_lora": [
+      "analysis/v2_e7_boundary_lora/V2_E7_RESULT.md",
+      "analysis/v2_e7_boundary_lora/dataset_manifest.jsonl",
+      "analysis/v2_e7_boundary_lora/dual_rank_preflight.py",
+      "analysis/v2_e7_boundary_lora/evaluate.py",
+      "analysis/v2_e7_boundary_lora/evaluation_status.json",
+      "analysis/v2_e7_boundary_lora/fast96_result.json",
+      "analysis/v2_e7_boundary_lora/finalize_existing_fast96.py",
+      "analysis/v2_e7_boundary_lora/partial_fast96_metrics.json",
+      "analysis/v2_e7_boundary_lora/pipeline.py",
+      "analysis/v2_e7_boundary_lora/prepare.py",
+      "analysis/v2_e7_boundary_lora/result.json",
+      "analysis/v2_e7_boundary_lora/resume_evaluation.py",
+      "analysis/v2_e7_boundary_lora/server_setup.json",
+      "analysis/v2_e7_boundary_lora/setup.json",
+      "analysis/v2_e7_boundary_lora/status.json",
+      "analysis/v2_e7_boundary_lora/train_boundary.py",
+      "analysis/v2_e7_boundary_lora/training_completion.json"
+    ],
+    "v2_p1": [
+      "analysis/v2_p1/causal_integration_result.json",
+      "analysis/v2_p1/holdout_result.json",
+      "analysis/v2_p1/result.json",
+      "analysis/v2_p1/runtime_integration_result.json"
+    ],
+    "v2_p2": [
+      "analysis/v2_p2/final_promotion_result.json",
+      "analysis/v2_p2/holdout_result.json",
+      "analysis/v2_p2/runtime_integration_result.json",
+      "analysis/v2_p2/selective_personality_result.json"
+    ],
+    "v2_p3": [
+      "analysis/v2_p3/selective_interests_result.json"
+    ],
+    "v2_pr1": [
+      "analysis/v2_pr1/partial_result.json",
+      "analysis/v2_pr1/result.json",
+      "analysis/v2_pr1/results_p0/metrics.json",
+      "analysis/v2_pr1/results_p0/performance_report.json",
+      "analysis/v2_pr1/results_v1/metrics.json",
+      "analysis/v2_pr1/results_v1/performance_report.json",
+      "analysis/v2_pr1/results_v2/metrics.json",
+      "analysis/v2_pr1/results_v2/performance_report.json",
+      "analysis/v2_pr1/resume_screen.py",
+      "analysis/v2_pr1/run_screen.py",
+      "analysis/v2_pr1/score_p0_only.py",
+      "analysis/v2_pr1/setup.json",
+      "analysis/v2_pr1/status.json"
+    ],
+    "v2_pr1b": [
+      "analysis/v2_pr1b/partial_metrics.json",
+      "analysis/v2_pr1b/result.json",
+      "analysis/v2_pr1b/run_paired.py",
+      "analysis/v2_pr1b/run_paired_seqs8.py",
+      "analysis/v2_pr1b/setup.json",
+      "analysis/v2_pr1b/status.json"
+    ],
+    "v2_pr2": [
+      "analysis/v2_pr2/a_pass1_metrics.json",
+      "analysis/v2_pr2/a_pass2_metrics.json",
+      "analysis/v2_pr2/b_pass1_metrics.json",
+      "analysis/v2_pr2/c_pass1_metrics.json",
+      "analysis/v2_pr2/c_pass2_metrics.json",
+      "analysis/v2_pr2/failure_taxonomy.json",
+      "analysis/v2_pr2/partial_result.json",
+      "analysis/v2_pr2/result.json",
+      "analysis/v2_pr2/run_pr2.py",
+      "analysis/v2_pr2/server_setup.json",
+      "analysis/v2_pr2/setup.json",
+      "analysis/v2_pr2/status.json"
+    ],
+    "v2_pr2a_valdev": [
+      "analysis/v2_pr2a_valdev/partial_metrics.json",
+      "analysis/v2_pr2a_valdev/result.json",
+      "analysis/v2_pr2a_valdev/run_full.py",
+      "analysis/v2_pr2a_valdev/server_setup.json",
+      "analysis/v2_pr2a_valdev/setup.json",
+      "analysis/v2_pr2a_valdev/status.json"
+    ],
+    "v2_pr3_minimal_prompt": [
+      "analysis/v2_pr3_minimal_prompt/format_only.txt",
+      "analysis/v2_pr3_minimal_prompt/minimal.txt",
+      "analysis/v2_pr3_minimal_prompt/p0.txt",
+      "analysis/v2_pr3_minimal_prompt/partial_metrics.json",
+      "analysis/v2_pr3_minimal_prompt/result.json",
+      "analysis/v2_pr3_minimal_prompt/run_pr3.py",
+      "analysis/v2_pr3_minimal_prompt/server_setup.json",
+      "analysis/v2_pr3_minimal_prompt/setup.json",
+      "analysis/v2_pr3_minimal_prompt/status.json"
+    ],
+    "v2_rq1": [
+      "analysis/v2_rq1/result.json",
+      "analysis/v2_rq1/run_retrieval.py"
+    ],
+    "v2_rq2": [
+      "analysis/v2_rq2/result.json",
+      "analysis/v2_rq2/run_length_calibration.py",
+      "analysis/v2_rq2/truncation_examples.json"
+    ],
+    "v2_rq3": [
+      "analysis/v2_rq3/audit_mask.py",
+      "analysis/v2_rq3/dataset_audit.json",
+      "analysis/v2_rq3/mask_audit.json",
+      "analysis/v2_rq3/missing_source_manifest.jsonl",
+      "analysis/v2_rq3/pipeline_status.json",
+      "analysis/v2_rq3/result.json",
+      "analysis/v2_rq3/resume_evaluation.py",
+      "analysis/v2_rq3/run_pipeline.py",
+      "analysis/v2_rq3/score_checkpoint.py"
+    ],
+    "v2_rq4": [
+      "analysis/v2_rq4/compatibility.json",
+      "analysis/v2_rq4/result.json",
+      "analysis/v2_rq4/run_interpolation.py",
+      "analysis/v2_rq4/sanity_indices.json",
+      "analysis/v2_rq4/status.json"
+    ],
+    "v2_rq5": [
+      "analysis/v2_rq5/V2_RQ5_RESULT.md",
+      "analysis/v2_rq5/parameter_audit.json",
+      "analysis/v2_rq5/result.json",
+      "analysis/v2_rq5/run_module_transplant.py",
+      "analysis/v2_rq5/status.json"
+    ],
+    "v2_rq6": [
+      "analysis/v2_rq6/anchor_source_manifest.jsonl",
+      "analysis/v2_rq6/dual_rank_preflight.py",
+      "analysis/v2_rq6/mask_audit.json",
+      "analysis/v2_rq6/prepare_audit.py",
+      "analysis/v2_rq6/prior_status.json",
+      "analysis/v2_rq6/result.json",
+      "analysis/v2_rq6/resume_evaluation.py",
+      "analysis/v2_rq6/run_pipeline.py",
+      "analysis/v2_rq6/status.json"
+    ]
+  },
+  "files": [
+    {
+      "path": "analysis/FINAL_HOLDOUT_V1_VS_V2E1.md",
+      "size": 913,
+      "sha256": "94f4bac9a59ce6f5c2644460363ae0a1503a8b3a9262a03c14af402070ec5442",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/FINAL_V2_PROMOTION.md",
+      "size": 743,
+      "sha256": "a4a76d94c1c5b0f433e866527de3da8f4e5eecc11308e60975fca60cd6c9f942",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/HUMAN_REVIEW_PACKET.md",
+      "size": 514125,
+      "sha256": "7874efb3612af3576fad86f7ba1ea0a96e526bf34c50aabf16f1a32bda3a1eeb",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/HUMAN_REVIEW_SUMMARY.md",
+      "size": 1067,
+      "sha256": "e6b278255d8bf43f481f936e95abf027584f1c75955973faebcba6641803fa5c",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/HUMAN_REVIEW_SUMMARY_TEMPLATE.md",
+      "size": 228,
+      "sha256": "13c084bd3d038990fe6a45d5c4506ae244062c5cdeefb88cea850a9747035523",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V1_ERROR_AUDIT.md",
+      "size": 861,
+      "sha256": "414f3c2d5cc67c51ec06668bd370cecec73ae5a0953106cdfa2a22ca1456225d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V1_FULL_ERROR_AUDIT.md",
+      "size": 27342,
+      "sha256": "106b01c12d8ac70e9051d38ac9cce75dccb87ef7603813144697554bbf21e407",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V1_VS_V2E1_BERTSCORE_HOLDOUT.md",
+      "size": 792,
+      "sha256": "d426fd0a11b47ca0bc2052074122965fc9c6681493c1b3ea9db1c59ee3a95dbc",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V1_VS_V2E1_PAIRED_COMPARISON.md",
+      "size": 6463,
+      "sha256": "de481d469451bd235f004ac122b7f63ba4e2b37039e5d4f31ddad5c07c6899ce",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_C1_RESULT.md",
+      "size": 1502,
+      "sha256": "4586ef58bd01c27ef2a4546f9077da86a0a186fff9faf094da167c2af1202143",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E1_EMOTION_REBALANCE_FIXED_PLAN.md",
+      "size": 5475,
+      "sha256": "4cda3f81fd22ddcb6c52afa7f33cdab682689f701d67b22e0521de4f67539322",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E1_EMOTION_REBALANCE_PLAN.md",
+      "size": 6376,
+      "sha256": "bab4d4d4b494b06c84536ffdc992250e33f75727486e3fe69c2b510baca0629f",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E1_RERUN2_RESULT.md",
+      "size": 831,
+      "sha256": "8e1d4eb3a4231ca293361fdc38e94883d61219e506e77d367a96e14791b3b03b",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E1_RUNTIME_VALIDATION.md",
+      "size": 448,
+      "sha256": "6519595b637c97035670971bb6653a5d591b0b82adf9edfc5b99d8a759057ccc",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E2_FAST_RESULT.md",
+      "size": 1086,
+      "sha256": "80894121e884eb2ad002ee3696a867bc0d4faa9ce0f05e3b0707f0f55f39396c",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E3_CKPT40_VALDEV_CONFIRMATION.md",
+      "size": 1163,
+      "sha256": "4b8bf0ee18fe13b0a0943a439561e4a073e7ca952d708b34d39211b3e6331dec",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E3_FAST_RESULT.md",
+      "size": 788,
+      "sha256": "652be89f3a1df747a5a83356a4e50da86bbb01aa030f3c808e3c987943a3c23f",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_E4_FAST_RESULT.md",
+      "size": 1294,
+      "sha256": "c65e51ca77046366e229ea606653a9850bb7c945e1c7831287a23bc2f43ca42d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_HARD_CASE_AUDIT.md",
+      "size": 6090,
+      "sha256": "196d37e4acac4b658ad3dc4ecd6e4b0427724e1f8b86aa166f98828ddeb0ff5a",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_P1_FINAL_PROMOTION.md",
+      "size": 589,
+      "sha256": "ac75de82f689c2bc0667847b83eb9cbc06524fb6a1712f88fbca2a551fc3b1a5",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_P2_FINAL_PROMOTION.md",
+      "size": 1383,
+      "sha256": "57f97a5689958ce9c484889f4d43dedfc95866ffe990830bf2d75dd450bab242",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_R1_RESIDUAL_EMOTION_AUDIT.md",
+      "size": 2412,
+      "sha256": "ca1dd5d331af6744085209ada086a2154d827b382e925e3d9fdf52a3e0673971",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/V2_R1_RUNTIME_OPTIMIZATION.md",
+      "size": 1862,
+      "sha256": "0c9246f975fdd2dae9fb2256278341e1a074e42bc06cfce00311e1b43462e4f5",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/design_emotion_rebalance.py",
+      "size": 3248,
+      "sha256": "44346d15df9db988618651ae6bbbf95b6b4f52c53728efefa150d9d3b20da384",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/emotion_confusion.csv",
+      "size": 880,
+      "sha256": "19c908078156b9fbfe439a8824c1c707850689a1ace8654532a7ac9fa5bee3fb",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/evaluate_emotion_second_pass.py",
+      "size": 3416,
+      "sha256": "01984b2ce238710fad96784784ba6e3fa524755a15e42b255bc5cc4d8cc8794d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/fast_checkpoint_selection_96.json",
+      "size": 817,
+      "sha256": "62e7a0017bbe7d99bae3a8dd0f1376abf8a2f3a406616ad09165b327d9e056de",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/fast_decoding_sweep_96.json",
+      "size": 639,
+      "sha256": "ae512a4bfe072173f0f5573a74a99a18380cec720ffd0990f22583de6f2efac8",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/fast_evaluate_lora_decode.py",
+      "size": 12704,
+      "sha256": "0f9eadebc09552312ede32a03299432af3f67ee0e877e4020a8689e243d11c9b",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_holdout_v1_vs_v2e1.json",
+      "size": 644,
+      "sha256": "6df2851caf6f2417cfbe9a3ac8a9a46f264cc64e7d92f3388d6a70dbaa632f83",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/FINAL_SCORE_MAXIMIZATION_REPORT.md",
+      "size": 7600,
+      "sha256": "2a7e03d17044e79de22144a536be28bca0902454166fba3253760ed3826a253a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/conservative_emotion_rule.py",
+      "size": 525,
+      "sha256": "83d04374ad140709de0d4fd6c5c1152b041c328bbdad05b9a541052d9512e3d4",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/evaluate_candidates.py",
+      "size": 11543,
+      "sha256": "563585fa3aab29a4645e0acae47ea3b7e2873629601f797e52ddba5baa4d53d3",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/evaluation_resume_budget.json",
+      "size": 137,
+      "sha256": "a3787044e11eb3c92cfeebeb70b57389478909ff4998fe18b6b448fa93031411",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/evaluation_status.json",
+      "size": 131,
+      "sha256": "8935bc29fa1a762cb0e8a5f27eae3b5cd1ff785537300ee3ad9a017e7a617bb1",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/extract_train_heads.py",
+      "size": 7387,
+      "sha256": "8a573ce43f9f34d371eaa8a75c191f0b43adb71e4ab1ece0506e6a41bac2f745",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/fast192_manifest.json",
+      "size": 1385,
+      "sha256": "d9b18b74d6d0335d0af3be8d794458b84fb670799ef98fce0157abc544bc097d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/fast192_result.json",
+      "size": 2668,
+      "sha256": "d98fe609be1955635fb9d87d0014c901b988a47fb9edd144da9d7485ba7a90f3",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/fast96_result.json",
+      "size": 21400,
+      "sha256": "abebce6873b9e1898a7226177b8c20a633d1393a6dac6aaf7fcdfa684094fcb6",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/feature_eta.json",
+      "size": 83,
+      "sha256": "6a224391d45ef404830790ab1e9b062faac97e352e80470d3206f8bbe5d9759d",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/head_fast96_metrics.json",
+      "size": 196,
+      "sha256": "dd7c9bbff55d730dbdc144f74c1cca2c6a92dc2f96b475428e14444914696c14",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/head_results.json",
+      "size": 7053,
+      "sha256": "ef0c5b77bf14b85727c39b2a705783aadf9693f9861afa395c5e16df0aa24a35",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/heads_status.json",
+      "size": 136,
+      "sha256": "819ad783c194e3ba34bf043c6eaaa07bfc7597590ecb7bc1f8edc4508f0a4b4e",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/result.json",
+      "size": 33693,
+      "sha256": "26518a96518ebb67af84ca6fe9b494318eb546947ec46e5e85dbfd7a79a54662",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/resume_evaluation_pipeline.py",
+      "size": 1114,
+      "sha256": "d6beddd79559856f57a4a595e47e1c91a7b8f084f18dfa2a9a5480a0052a2a50",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/resume_extract_heads.py",
+      "size": 7545,
+      "sha256": "ea28e491aca549e2c539c401fe108b119bf5ce5185530452c48ab649d5b06d0e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/resume_heads_only.py",
+      "size": 4825,
+      "sha256": "8f7ada5232dc622da551049f2c3edea8a676a6fd1cefbd7feecfd163bd2f037e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/resume_heads_pipeline.py",
+      "size": 1209,
+      "sha256": "f7908ff2808fd2729b87a45e0b90f66e050d7bb010c834e0ca66162f32a2b0a4",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/resume_pipeline.py",
+      "size": 1182,
+      "sha256": "26b7b4b38b11e55dee391cadac3d05ca6dcc7d6b4ef847797f87bac44a0c4b65",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/resume_state.json",
+      "size": 146,
+      "sha256": "eba669df5678f9399d3080ab3a58e9aad6ffed33a8c9e23412c6dca4d82f3fa2",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/run_pipeline.py",
+      "size": 1084,
+      "sha256": "b386bbe130b38de00d256f1b71a8561a40e02926eec65b8ff074c9e437f73cbc",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/server_setup.json",
+      "size": 2249,
+      "sha256": "a0fff221a780d6d13ed3d281e0043d9e9f6782e88cdfb3ef0661cfb5e5d50b22",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_maximization/setup.json",
+      "size": 1805,
+      "sha256": "de4707075ec3155e3b723f34467e51ef92066d817942b055fd70179bce87f2d4",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/final_score_maximization/status.json",
+      "size": 87,
+      "sha256": "d7ea33c9ff47e1e25ee6d3444c4d2e0584b9bafb1d257bfd4ce9eeecf97f832b",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_rule_validation/FINAL_SCORE_MAXIMIZATION_RULE_VALIDATION.md",
+      "size": 5764,
+      "sha256": "1461231b9e703c699d369bf299392af0b192cf45bb58c86075c76679501e4b92",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_rule_validation/result.json",
+      "size": 14297,
+      "sha256": "134a670a05ea4e55ff239395723173db24efaf99073d4ad5d8af2c1a6927fb14",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_rule_validation/setup.json",
+      "size": 719,
+      "sha256": "1e0aab598e2ceb96e8ca93ce4e97f1796fd18cc25a743c41902c19f3edaf26ce",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/final_score_rule_validation/validate_rule.py",
+      "size": 6451,
+      "sha256": "45368400463fc3b0afc6c66c051bc42e97961cb11e1dc7e44898184d1900b905",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/label_conflict_summary.csv",
+      "size": 88,
+      "sha256": "157996c32dab7091bf9262ffcff8f958de64e35f3c7440ccd98b6818e115662e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/profile_error_summary.csv",
+      "size": 2512,
+      "sha256": "e559d452b02e43b53c245cf13254b204d74abbb57b593af2c1014ae0e8559794",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v1_error_audit.json",
+      "size": 1071,
+      "sha256": "e7553edea5593e7b55424d8739978e02e1baa3aedcae6a41648d169ce938ea48",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v1_full_error_audit.json",
+      "size": 27319,
+      "sha256": "610a46e09aecccb300d92971f28cbd933b72b361fb3c6e50a7848ecded58c7f3",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v1_valdev_row_manifest.jsonl",
+      "size": 295710,
+      "sha256": "488b093635a384bcef033926120c59b9067ac50d59f1e419c01dc44689eb0ece",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v1_vs_v2e1_bertscore_holdout.json",
+      "size": 759,
+      "sha256": "6e5164771d841cefde3e99de5992cf7204f656727c31ef7409526bcac86b953f",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v1_vs_v2e1_paired_comparison.json",
+      "size": 6430,
+      "sha256": "621c27753dbc6286215e63e850c6c36ed4e413922a761d0471eecd82eaaa947f",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_arch1/partial_result.json",
+      "size": 3855,
+      "sha256": "683fe351fba7ba8cdcd9fea7d15f1428b9888bd8646a2745c2c39fe0f263f30d",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch1/result.json",
+      "size": 7582,
+      "sha256": "8262b770bc72fc732d4f9771f7565033d81c7728e8870d2fbf3feb3a9abb3010",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch1/run_arch1.py",
+      "size": 9024,
+      "sha256": "3aed40ba33b24af2b368b20e3540ce9274d84f9cc1e7eacf944c58debe5dab8c",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch1/server_setup.json",
+      "size": 3285,
+      "sha256": "8443c921e373d8471f895928c2104cb0e878d9d7b897dccead465a051778a653",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch1/setup.json",
+      "size": 2279,
+      "sha256": "b594a728992c5c0de0cee93ace846526ee9bf6938aa76962fdff5b58599e1ced",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch1/status.json",
+      "size": 164,
+      "sha256": "a0562f244b64198b03434931807b4b21206c14c7ce4612248a0dd423d620fd5c",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2/classifier_prompt.txt",
+      "size": 353,
+      "sha256": "f835ff92af3c0d5ba565967f657f1a95b1096ca0005f18729caefe8031e4019a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2/label_tokens.json",
+      "size": 578,
+      "sha256": "25bcc741c5b361311e9dde90f7c4f31555368c9f6cb505af60d9de071929e597",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2/run_arch2.py",
+      "size": 10411,
+      "sha256": "f02750505b3175b2ad63c2912f458a3ff77db1f144cb49ac2e17b658f7d70855",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2/setup.json",
+      "size": 2249,
+      "sha256": "276dc109f5e5c743336117633ed736d0e53d916470b9728db52324615f75b3c4",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2/status.json",
+      "size": 205,
+      "sha256": "7fca63c8ed995cbbc8468f1068cd803579376da623ad8a31e56fd54501d30b82",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2_offline/fast20.json",
+      "size": 688,
+      "sha256": "9345e1ae21dd9d1fe61cbce15ef46e99ebd340900151d592d969a5170b7dbb9a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2_offline/result.json",
+      "size": 1959,
+      "sha256": "ad95af5a91571b3c97d45ecb7a46fad9301d000261a701630d63692f46eaaa0e",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2_offline/run_offline.py",
+      "size": 5727,
+      "sha256": "57f88c5f90294f11e9cef8d7d76dc3a2cb3a256e769ec9e02620bd2b87917988",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_arch2_offline/status.json",
+      "size": 80,
+      "sha256": "d8b2a13f05474a3f317098538cfe3d81d5dc4087fe71e80cd9623da267817b38",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_c1_result.json",
+      "size": 8975,
+      "sha256": "abc9516d6b102c64407eb60003e1805db322d6a6b678c37d0719bb8621f812b1",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_c23_dual_input/latest.json",
+      "size": 4285,
+      "sha256": "91f2c8e73dec1954ff41076c8c7c72dc7169fc22e514c5ec8d58aa443997e2ce",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_c23_dual_input/recent.json",
+      "size": 4551,
+      "sha256": "a3ee1973667acd7bce724f98245ad139b584729cda5c1d30423c5c1ebcc8b484",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_c3_second_pass/A.json",
+      "size": 18607,
+      "sha256": "f2a15bc32476d926ce8009c639bb9dad5d810d4e53ddf0f0cae9fcd6bee685c7",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_c3_second_pass/B.json",
+      "size": 18476,
+      "sha256": "216466dc479837bda744e22d4cd16e2af700d9b207fb11ed969d2c048a5576fa",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_c3_second_pass/result.json",
+      "size": 3309,
+      "sha256": "57235927236ee19ec44d01b11636cbd86ac1ca14f01e6c233085f9abfc67ecad",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e1_emotion_rebalance_fixed_plan.json",
+      "size": 5437,
+      "sha256": "64cb6fb23d7bba3bbcd7be8a1e2f6604dcadcdabb3e71450eedd215f5b7e3eaa",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e1_emotion_rebalance_plan.json",
+      "size": 6344,
+      "sha256": "181032eea8e80e818eccdea1e47b04d2fea6f7374ab50799e07868260c8db541",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e1_rerun2_result.json",
+      "size": 695,
+      "sha256": "b2dcc15d527cf7df38ab57b01725a4d2e85e6eff2950df9172d1a02f8ac8d21e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e1_runtime_validation.json",
+      "size": 945,
+      "sha256": "6461e74980880c7ffe9db6ebd9d309427a93a63b2d07ec098f7df620bdde0df2",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e2_fast_result.json",
+      "size": 1269,
+      "sha256": "b285b5a20645ce0e59731552363b9988be2ba728f2fa6f82ebd2322ea02fc2c8",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e3_ckpt40_valdev_confirmation.json",
+      "size": 2390,
+      "sha256": "3d8ed80bcb2c0cb4f396e821c1c99bbe9b0426f3ca76dfb754188bb5a7335e88",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e3_fast_result.json",
+      "size": 2330,
+      "sha256": "2e06055d9efb947febdaea28e299b3103f5d4fbd0f13047a25e950f6f24e550e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e4_dataset_stats.json",
+      "size": 344,
+      "sha256": "eb46a253928708e9c6eea96fa1dc82f1d36412f1313cd2012e1f44bb67399a77",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e4_fast_result.json",
+      "size": 1294,
+      "sha256": "c65e51ca77046366e229ea606653a9850bb7c945e1c7831287a23bc2f43ca42d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/V2_E7_1_RESULT.md",
+      "size": 2362,
+      "sha256": "1484f2f54b9b1504e521ebb33f1b7682e2d35263c8dc285ef415cbcf005af23e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/evaluate.py",
+      "size": 10778,
+      "sha256": "9ed46b4df56236a8377fbc00da7902b41e9929d113280a4225b9ab8c3c116a9d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/evaluation_status.json",
+      "size": 123,
+      "sha256": "727e5353ade78e89ef47abfd19cef417791a2bc2e6766a566778d7a18081c586",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/fast96_result.json",
+      "size": 8647,
+      "sha256": "2fbc8a3280ab920abdd85e817463ddc1b4a0c524946605327cec79f483cb1333",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/partial_fast96_metrics.json",
+      "size": 4011,
+      "sha256": "93a3922273db2434cbdd6e77bf86e9c3dc7668d3d9bdb6746ffebf3ecb17e457",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/prepare.py",
+      "size": 3368,
+      "sha256": "02d183fe6a85058390fb8a7e0351be654d236ca4b208b325939e8ccdaabd4bba",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/result.json",
+      "size": 12851,
+      "sha256": "e1bb041454fdf9d2d277a525150987f3303fbda05a1da52802141f846e79e9aa",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/server_setup.json",
+      "size": 5085,
+      "sha256": "ddae0450fab7f6ccae5ce341bec25d63bdb3a0840eaac7aa91776dd75db67295",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/setup.json",
+      "size": 2791,
+      "sha256": "4f439c63df8f8754d965224c9efac293f1a7a8169f07a83ff8ddf1c2923909c1",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/status.json",
+      "size": 208,
+      "sha256": "2f270247176bf20f5db3d778a32258c525355eda1da9fb29d3a7b2620c2c9884",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/V2_E7_2_RESULT.md",
+      "size": 3894,
+      "sha256": "beb64331707863f3ba74649336b7f5c2575bce26d4f50c1be2f156032b628f83",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/evaluate.py",
+      "size": 10921,
+      "sha256": "e2497632c2149c5387cea95819dd7bb3ac7778d8b583d085ad7965658f88fdd6",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/evaluation_status.json",
+      "size": 121,
+      "sha256": "109501b84b47c025db6e6552db6753834c0b7a5e4c571dad3452414e1c298bbc",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/fast192_result.json",
+      "size": 3250,
+      "sha256": "ef0e11d74368bb3e65b8d14971b46d4761ad978d4704d352248edcf79c9252d3",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/fast96_result.json",
+      "size": 10806,
+      "sha256": "1c6aaf62ec1480ff63d5844a5c1dc4fa1084b770bb7432b4e5998925f1f6beca",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/partial_fast192_metrics.json",
+      "size": 1962,
+      "sha256": "162b447c004df2ca0beff329ba0ca52db6989c1621ef0638aac6a12b1cb350ad",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/partial_fast96_metrics.json",
+      "size": 4992,
+      "sha256": "cce7bd8d53956fa678738e2c6865c794e21a57d04dc36759d27bc8c1e853c054",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/prepare.py",
+      "size": 3665,
+      "sha256": "c0e391dc5553a7ee21a36848d570a220d13c5b49591c6ed0ae8503927bc01d50",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/result.json",
+      "size": 20644,
+      "sha256": "45a589fe6ce96ed20f9a0d31be88b4782a735dd6bf37bae040935802e9af78f7",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/server_setup.json",
+      "size": 6021,
+      "sha256": "ffb94c00550cf2b2f7ef177bfd7868f5ccb236e8e6a07e91dea4361aefd6f788",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/setup.json",
+      "size": 3135,
+      "sha256": "4bc3d20657cb02118ba3b8b0f8e19d44d8c6e0aeecb3f18df5ad654c2a14eb90",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/status.json",
+      "size": 222,
+      "sha256": "e0b0b5b2642de8b6b61eed7fdf2e58b18ef512ff17c5c9622a6b870df300b9ff",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/V2_E7_RESULT.md",
+      "size": 3455,
+      "sha256": "af80411378b1c35fcfb0aea3571be43f51a6afb5ba7e8a22df857c012b6f45a9",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/dataset_manifest.jsonl",
+      "size": 226646,
+      "sha256": "8c82633bee008c26cdc61833324297ced24fa599f53952038a7f68995da56da1",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/dual_rank_preflight.py",
+      "size": 175,
+      "sha256": "cb0820f6aaa48bf96c52043ea1dccb9fb06a74319e3c41e6b97b89b6d094d93e",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/evaluate.py",
+      "size": 10953,
+      "sha256": "789fc0b3029045be007c17c3b7519f1b46de7978c3c25e394f48b7088c9bf9e5",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/evaluation_status.json",
+      "size": 205,
+      "sha256": "c85b110708228619dc7ca84eaad734fc973996fcd5a5f5bc8e4cb686d9970bf3",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/fast96_result.json",
+      "size": 7187,
+      "sha256": "d0ac743a7a9a1a72bff5e3af3597aa353c977ca76fbaa191b6798e738e8e38ae",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/finalize_existing_fast96.py",
+      "size": 6494,
+      "sha256": "322267d594bdc8cd3f5608056a1e823ca1539be9e39036cbca9be8e7f33aa48a",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/partial_fast96_metrics.json",
+      "size": 2994,
+      "sha256": "7f4870a387d017db0f56c3261091e89bab7e13aab2952e7584b3284d7d337823",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/pipeline.py",
+      "size": 3290,
+      "sha256": "ed00e53bbe9db1c2771eb3b7429dd5df38ee6d04c3f1eb839b42f28bc550bb38",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/prepare.py",
+      "size": 5244,
+      "sha256": "be50ab138e978b990ade95e4512c9875662f0206a0f030fef4b90b463200de8b",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/result.json",
+      "size": 12699,
+      "sha256": "6378cd8539341399ac207d306ccab718cb4b85717e55b0fc0411102f216a5df2",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/resume_evaluation.py",
+      "size": 1808,
+      "sha256": "c6e06bd1a108c8d4c3f503296f1f9d2eb66eaabec3ebc0dba5612252dc552045",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/server_setup.json",
+      "size": 4221,
+      "sha256": "bcb580d4a14ad3f0efd49a954247069571f2d4d585f651318867835911eed1fc",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/setup.json",
+      "size": 3087,
+      "sha256": "79f42af3cc25c921226db49a77368b9d6d0dd398a946b39b6540cecacb0662ec",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/status.json",
+      "size": 379,
+      "sha256": "12f8fdcaf9ba4b6bd9401c01f888a8486ccbb9b91a5db7e5a93c6d2df0de0fcf",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/train_boundary.py",
+      "size": 3215,
+      "sha256": "86b1a0343685ed8f0ad6855c307b85f30de1670a2b94503a4774a68d044a8bb7",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/training_completion.json",
+      "size": 52,
+      "sha256": "f39501610d711ffaa73ea61a41e6c4ec8f2b9c880548bfdae09b0a6f8de7d9bb",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_hard_case_audit.json",
+      "size": 6068,
+      "sha256": "2097d25472dfaa801bab55b7e169fd089a4ed505d53595af94ba317d0005d552",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_p1/causal_integration_result.json",
+      "size": 1166,
+      "sha256": "ed41b39278b8bd60f38b8d5b6915e6910f8d40d042f94a75fb64fa59d1905aa0",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_p1/holdout_result.json",
+      "size": 3531,
+      "sha256": "a93ead8c82bd0e23c7f25d0936e44ecc36ccec28230f4d4cccaf79807b55629d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_p1/result.json",
+      "size": 10580,
+      "sha256": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_p1/runtime_integration_result.json",
+      "size": 6608,
+      "sha256": "563496f02e907e6bae0c25e3449aa6ec7f046b9e01f5756fc270a1999acac172",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_p2/final_promotion_result.json",
+      "size": 1050,
+      "sha256": "44b9a3bde1da58377656d532493a85a7a81b61e360ddc0a81539d14409ceeb57",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_p2/holdout_result.json",
+      "size": 1387,
+      "sha256": "3850c32fc35d52ff167c612c60d9fe2d1e1beae4057b54177ae4831996d5b90c",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_p2/runtime_integration_result.json",
+      "size": 1101,
+      "sha256": "02b9404a2242f247679252a133285891a3f609536bf7ef3c73995241bf0f74c0",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_p2/selective_personality_result.json",
+      "size": 5811,
+      "sha256": "5193188d864b4c84ec1a163653aafd8291427e7fccc24e7ee140f56c1a1b37c8",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_p3/selective_interests_result.json",
+      "size": 5730,
+      "sha256": "50f5821c5c83837edbf4e1bd5ddbe748856a0a1b2046ffab0be441da719228f9",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/partial_result.json",
+      "size": 3085,
+      "sha256": "9d0c7e6d669738aab364a50242e7e5d9d33548236e61306824d866a869533caa",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/result.json",
+      "size": 9967,
+      "sha256": "d7d942f4ca6f67ef765a8c0fc333b20413a9f9e91b56f6ccabf30a7dc3e3c6e3",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/results_p0/metrics.json",
+      "size": 665,
+      "sha256": "625cd5e89c6fcf306076f7de75c0f7af2021f4573a390252dc60fa55ec66be7a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/results_p0/performance_report.json",
+      "size": 2833,
+      "sha256": "fc7942b30c8cb4f802123740b5ac85f5e4b80ff66ac0165e967a578257bc4ab0",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v1/metrics.json",
+      "size": 658,
+      "sha256": "155f9fc0e7e397230e93dc8b1d68ffeb55d5f83ed8db45ddc6851236e49496f6",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v1/performance_report.json",
+      "size": 2825,
+      "sha256": "2d07bf65f834c08b608b601f16c4c2c9f05123fdf9a8aa84ffad4d96c87c9afe",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v2/metrics.json",
+      "size": 676,
+      "sha256": "3e86be3f7a9a00d21480e7e40039759ec18d64af49a9348a5ff3a9f615be00dc",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v2/performance_report.json",
+      "size": 2825,
+      "sha256": "5a27ee89d3a38717f432566fcba88017e0f7ad67f416547102e1885c9be8c2f0",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/resume_screen.py",
+      "size": 6284,
+      "sha256": "c9d79a99168fce007eadd98e5eb81c6bb2e4313f84a6418102f81aa32a5b606b",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/run_screen.py",
+      "size": 6083,
+      "sha256": "f666b3c992136c6184a6b18aa05ebe008f09eea4195bdb18b417b66ad040149d",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/score_p0_only.py",
+      "size": 2644,
+      "sha256": "8d8c3766f3842ace486f7064b99a0dd7b28ed5eb4aad11224c903fee322ba2e7",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/setup.json",
+      "size": 2031,
+      "sha256": "a52db5c1a299f36b38e65f25ebf87c8c48409563d389a8ca258ea7b0c740697a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1/status.json",
+      "size": 119,
+      "sha256": "784113ca649195eb7454262602439706b43dc281c4833ca3227f87cd3f888c65",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1b/partial_metrics.json",
+      "size": 1467,
+      "sha256": "89006c1b3f5c8a19bc75f1879933a87529181ea15c9615ac4740d89b9c699840",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1b/result.json",
+      "size": 3120,
+      "sha256": "d720cbc651a1fe036a0c38229854ccef8b79aab92fc761df96cf081995ec06df",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1b/run_paired.py",
+      "size": 7734,
+      "sha256": "b88787286fdface9c941bd5f1d006ab92e3232820d8944543a515be86ea567c2",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1b/run_paired_seqs8.py",
+      "size": 7755,
+      "sha256": "4398e4eb8ee2a96e6c85450cbc0f4339e45b438d4d1b94a6ec2b93c4e14ea6e0",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1b/setup.json",
+      "size": 2327,
+      "sha256": "ff43acd6619a5281862bdc176f89a9366b08802b219e0b48257304c8a199427f",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr1b/status.json",
+      "size": 164,
+      "sha256": "9bfbb2e3cdd7da2ebcdca489be035b9b1ef742867e33f33e5209a5e8e5b1f75c",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/a_pass1_metrics.json",
+      "size": 2274,
+      "sha256": "3811676a1358275a50900d3eaf593ed08d51a171b3f6a9efd15ea05064dca21a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/a_pass2_metrics.json",
+      "size": 2366,
+      "sha256": "9ba013c9985db764177c5ece6ae6e55cd48b227d66eb68bb8b28722ed0355f95",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/b_pass1_metrics.json",
+      "size": 2953,
+      "sha256": "1e2c300300ca2de7fd31ebf5088c60c148f6396273fb83584053247c27587c95",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/c_pass1_metrics.json",
+      "size": 2230,
+      "sha256": "13836e570f5afebd9aa54aec82aa5a4fbd87992211479f8220fe613b5a5337c1",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/c_pass2_metrics.json",
+      "size": 2743,
+      "sha256": "c8a58266e7808eb43ef2c55d270a9a8d9798da779ab7af633961ac79074eec4d",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/failure_taxonomy.json",
+      "size": 848,
+      "sha256": "eef0d1ae0bfc024ff05797b02880c0456352784d4d8b60b8779cdaaa39aa5720",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/partial_result.json",
+      "size": 15511,
+      "sha256": "e5c05a70987310da0563a1cb252bdbbd0a8d7e1a6ad1eafad38a1d19ddf884d5",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/result.json",
+      "size": 18335,
+      "sha256": "553615aca24e49a02b709e917a78013c790a0d271773d8646ddc8d52d8ce51c4",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/run_pr2.py",
+      "size": 9685,
+      "sha256": "35fc14e892b5abdff7276700d7a3f7ad56e2224947b091410ed5edc6c9284fb8",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/server_setup.json",
+      "size": 2327,
+      "sha256": "880cad12a65b2d3674bafee49af13f8aa2370acb5544b50d5e5335860f3eab3f",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/setup.json",
+      "size": 2812,
+      "sha256": "8b226e7d72b39c31259569cbcefdd314f5b16941e116eb04925bdacf283b89ac",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2/status.json",
+      "size": 198,
+      "sha256": "a860dfbf094fcb849605e84d2b6b70d906265138dc88bcefdc38766ce7697f4c",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/partial_metrics.json",
+      "size": 6390,
+      "sha256": "2463f383b3a8548c5933fddb0deb62dc3bc1dbb28a9fe74d79a1bafc1e8cb0e7",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/result.json",
+      "size": 27287,
+      "sha256": "80b347b4d716e5b1296255247b4c13a205dcd187ddf5ca412208f2958ef3f2cd",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/run_full.py",
+      "size": 10310,
+      "sha256": "13e68d5b183c4ba63fbc4a93758b83a66bd1a6dc6720f0ca5e16b1e800fdd16e",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/server_setup.json",
+      "size": 2326,
+      "sha256": "8272831dba379367d3521a7d60cab7a73e118c07fc50261e4c2005d654e7f620",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/setup.json",
+      "size": 1693,
+      "sha256": "3755f1a9a283d32b789424a3557b0db6703e370c0d129a3c058394df93b46b5b",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/status.json",
+      "size": 149,
+      "sha256": "c80c6d02a3d9c36a4d0f26485ff23a333f6f53ee0de8021f72c6304a5ffb0a46",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/format_only.txt",
+      "size": 942,
+      "sha256": "84794d20a4d557e17edd43124cd0f5c815f469532ee8d0ca63fbaaa45f97a64b",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/minimal.txt",
+      "size": 1030,
+      "sha256": "9aa8d9603faa34d7f69e8bd1ab86dc482bd996c6359d722c18fe65543d8fd1f1",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/p0.txt",
+      "size": 4585,
+      "sha256": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/partial_metrics.json",
+      "size": 7821,
+      "sha256": "89bfcf7d3d9613dc4c3045c37a53c5ce86289956c826d2febecf17ef4b3ccf4d",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/result.json",
+      "size": 19428,
+      "sha256": "e0da0997c15978422fa153106beb2601afacec67c39fd95fd8cd094c02166bd5",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/run_pr3.py",
+      "size": 7827,
+      "sha256": "4dfc1211c587ee72e8ca4666933cfb4c6c61264b30b4877dff4844a2a3258224",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/server_setup.json",
+      "size": 2419,
+      "sha256": "f150fba43209a952b7e6d7e6aa7279a0c30509c16a8e3c23acbd0f76a13c3ce1",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/setup.json",
+      "size": 1766,
+      "sha256": "8dbe37b00723ab41c0371e95b15f3293d2e021b5d929721bca2fc32632d9d161",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/status.json",
+      "size": 128,
+      "sha256": "4645ca9a32cbb053a1e194935a21b660b3bdcb6fee2bdb851e4a12f17231a0de",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_r1_residual_emotion_audit.json",
+      "size": 30372,
+      "sha256": "d51b18e5ae37a3a58d8fa53a555552097211ee5fe556c695ec89fc26e4c0d1a2",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_r1_runtime_optimization.json",
+      "size": 1862,
+      "sha256": "0c9246f975fdd2dae9fb2256278341e1a074e42bc06cfce00311e1b43462e4f5",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq1/result.json",
+      "size": 9701,
+      "sha256": "93f5b08d7edefc176fc9249b4cd2ca4e0c594cc2095cdca6553582a7840f555e",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq1/run_retrieval.py",
+      "size": 7230,
+      "sha256": "3a91d157fcda2d28e94f586ab6cba31419234b03551bc5db15be88aeba5a821f",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq2/result.json",
+      "size": 11174,
+      "sha256": "299ca0e2a1121c43bdcdb57979e3fc38e3803af5df008a8bc20e671ba45ae3a5",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq2/run_length_calibration.py",
+      "size": 5794,
+      "sha256": "b112b97f52ff55ba4d72b15f80ad24108961bc1944af1d1ee2113f1a6ef21539",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq2/truncation_examples.json",
+      "size": 13762,
+      "sha256": "8c07169a2e493e7bf9d6d98976da18f684be1d81a99bae51c2e580f787d4c299",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/audit_mask.py",
+      "size": 1672,
+      "sha256": "1930b67a99c8a4759aec1d6d2762f494dc76ccfc7bc938b09ce3d26f34b5c344",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq3/dataset_audit.json",
+      "size": 2850,
+      "sha256": "3d4af3e32c07e6fc95196c0823c7b2ce2d1f5d2d182783b5314aa6f97a0d867d",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/mask_audit.json",
+      "size": 6526,
+      "sha256": "3d8bda2bf225d155882d355ac280e6eaf669983b355df6bcd7b12a854af56236",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/missing_source_manifest.jsonl",
+      "size": 522623,
+      "sha256": "2d32c3554337a319d1cb6106146525ef7d936a5766e76774d707c5e5bc8515c8",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/pipeline_status.json",
+      "size": 2443,
+      "sha256": "c29c73968c6ed14e05d005f17f5ade090299e25b8f45f250427897a330612f68",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/result.json",
+      "size": 12636,
+      "sha256": "3e34421f110e0c273262e2aca889daff13027cd2b83756510bfa5e512c0be6b4",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/resume_evaluation.py",
+      "size": 4061,
+      "sha256": "a41a26283e99a4581052f7a9c74a3f0731cec05dfee65d8b6635110bfea15fa3",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/run_pipeline.py",
+      "size": 4673,
+      "sha256": "d45ebe6f02e8385465e00e6a68fcd4f6cd66caa9784cc0172773d6c19674c3b3",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq3/score_checkpoint.py",
+      "size": 891,
+      "sha256": "cc40c934582acb74fafa98bb616a1e2e943a939845d634a402368acc1d06f25d",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq4/compatibility.json",
+      "size": 398,
+      "sha256": "8caa3264e995f5fbfd1edf758b6f61c2a25d905ab5dfea8cb11e96e0dfc6df74",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq4/result.json",
+      "size": 4990,
+      "sha256": "00506eaae40e86c50ad00596362a65ef82b3ebe19bd84aeecde50285ac04c057",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq4/run_interpolation.py",
+      "size": 8709,
+      "sha256": "cf19c0c1b09c03c3cf94e17388f56b523456bbff54a7ebfae789d2bc6f78a42b",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq4/sanity_indices.json",
+      "size": 19,
+      "sha256": "2eecc8723ce8160cd746129706095ffc04ac3c3de77a06a26f8b63db1cf217fb",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq4/status.json",
+      "size": 112,
+      "sha256": "2c254b312363bbccd25950eb252b7821cf079ccad4062d75f88a8b318df6ecde",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq5/V2_RQ5_RESULT.md",
+      "size": 4051,
+      "sha256": "0909884c56e81108f1a40b7bf2170759fe493ac7f6dbe1641ededc2e8fcb95a4",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq5/parameter_audit.json",
+      "size": 2223,
+      "sha256": "b04c373ecddddfca2b3ecc4343f6fb7f48e7e818b51c35e99833f31f3c4373e5",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq5/result.json",
+      "size": 10016,
+      "sha256": "30bc8c460aa4483be738262a3c5aadc4d9276acbbfcc461a78084655922498ae",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq5/run_module_transplant.py",
+      "size": 8234,
+      "sha256": "f0709280f139e6c112a059a62ed44d1e8c5952831f95cf84804d6ca9187cc516",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq5/status.json",
+      "size": 112,
+      "sha256": "f29a98bf2779e2e8c78af7a960cfb0f3bf1fa87d922f7b63424fbcde1ad11ed7",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/anchor_source_manifest.jsonl",
+      "size": 90576,
+      "sha256": "9f959d9b6ce99e656c8a97935d30c91dd99d9cea9a26879fab5bc4f6a65fb425",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/dual_rank_preflight.py",
+      "size": 177,
+      "sha256": "a2ea23d4183a1890005e229d8f166e294898d7bd303a2dfafafb66e4870a22e5",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/mask_audit.json",
+      "size": 12487,
+      "sha256": "f6082bd1b5b87f82764412fb7f1aca41c7abebce9c02a513819a88a503adb98c",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/prepare_audit.py",
+      "size": 3617,
+      "sha256": "c4c0d2c34afc1f1e67fb9a14802a51f04c938babcaaa6ba4b7ea9ad2d4610e5a",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq6/prior_status.json",
+      "size": 191,
+      "sha256": "33ea737b09271dec6912043af481f006d425abc9a1df44fc9541fd1631e548b9",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/result.json",
+      "size": 24309,
+      "sha256": "88456494ba3755db23d0ab5d6d4c9ec21edfe322c28c7cca19ac73294b85f3fc",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/resume_evaluation.py",
+      "size": 5995,
+      "sha256": "34a583bb7fc8b77f5abc577e5c9876e68b944106290819e98246b278d35d9f4a",
+      "status": "copied_current_source"
+    },
+    {
+      "path": "analysis/v2_rq6/run_pipeline.py",
+      "size": 6155,
+      "sha256": "2ee4436a95c44d390672136404c1e0ab836fc7eebd1849dc9bd622496a7c7b31",
+      "status": "already_in_local_history"
+    },
+    {
+      "path": "analysis/v2_rq6/status.json",
+      "size": 171,
+      "sha256": "a5cd16aeb52e2a708cac233a43c102ab38d9e5f87b22e0cb18f8e96d81a680af",
+      "status": "copied_current_source"
+    }
+  ],
+  "skipped": [
+    {
+      "path": "analysis/fast_iter_mini_dev_96.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/final_score_maximization/fast192.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/final_score_maximization/fast_head_probabilities.json",
+      "reason": "per-row prediction probabilities or large file excluded"
+    },
+    {
+      "path": "analysis/final_score_maximization/generation.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/final_score_maximization/inputs192.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/final_score_rule_validation/candidate_predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/final_score_rule_validation/emotion_changes.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/human_review_packet.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v1_hard_cases.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v1_vs_v2e1_bertscore_holdout_samples.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_arch1/concurrent.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_arch1/sequential.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_arch2/scores96.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_arch2_offline/scores96.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_c3_second_pass/A_predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_c3_second_pass/B_predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_e7_1_interpolation/predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_e7_2_interpolation/predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_e7_boundary_lora/predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_p2/valdev_personality_scores.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/inputs96.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/results_p0/style_causal_audit.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/results_p0/submission.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v1/style_causal_audit.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v1/submission.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v2/style_causal_audit.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1/results_v2/submission.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1b/pass_A.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr1b/pass_B.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2/a_pass1.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2/a_pass2.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2/b_pass1.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2/c_pass1.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2/c_pass2.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/emotion_changes.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/inputs1649.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr2a_valdev/paired_predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_pr3_minimal_prompt/predictions.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_rq1/retrieval_rows.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_rq4/histories.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    },
+    {
+      "path": "analysis/v2_rq4/sanity3.jsonl",
+      "reason": "dataset/input/prediction JSONL excluded"
+    }
+  ],
+  "prompt_snapshots": [
+    {
+      "original_path": "/root/prompt_research_package/prompt_research/prompts/v1_system.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/prompt_research_v1_system.txt",
+      "sha256": "fc5ff37325131b18f5981be0bcd491bda6331be5be9fe185d2f2e6122aae7a83"
+    },
+    {
+      "original_path": "/root/prompt_research_package/prompt_research/prompts/v0_baseline.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/prompt_research_v0_baseline.txt",
+      "sha256": "30d8bd3acd8214b7b13bf06f9b615255e6297cfb758c379a345dc428a61665a2"
+    },
+    {
+      "original_path": "/root/prompt_research_package/prompt_research/prompts/v3_system.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/prompt_research_v3_system.txt",
+      "sha256": "17af58f601c5b15e9498687b90c088c6693c83866ef0f50922217e8b2996bb79"
+    },
+    {
+      "original_path": "/root/prompt_research_package/prompt_research/prompts/v2_system.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/prompt_research_v2_system.txt",
+      "sha256": "ac3056972e84776da4910ae1fa96e42a81477cc82815fefd06d8dcf599d1335b"
+    },
+    {
+      "original_path": "/root/development/runtime_candidates/pr2_a/configs/system_prompt_v1.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/pr2_a.txt",
+      "sha256": "0e4d79a39c0c3a0ff70f0111bd21c76941ae89540dfed517ff32601b0a72da8a"
+    },
+    {
+      "original_path": "/root/development/runtime_candidates/pr2_b/configs/system_prompt_v1.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/pr2_b.txt",
+      "sha256": "e9cf48766a521d582a4dad2b9f174e29b2969680fe18ce989644a45d08b0c49d"
+    },
+    {
+      "original_path": "/root/development/runtime_candidates/pr2_c/configs/system_prompt_v1.txt",
+      "archive_path": "数字人综合情感陪伴对话模型/analysis/final_release_archive_20261014/prompt_snapshots/pr2_c.txt",
+      "sha256": "4e807a0e7e9ef495f3b5c166709b6af742b5c81727a4740007eb99daf061dab1"
+    }
+  ],
+  "weights_and_datasets_excluded": true
+}

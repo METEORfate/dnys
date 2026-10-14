@@ -1,0 +1,114 @@
+{
+  "metrics": {
+    "p0": {
+      "emotion": 0.6354166666666666,
+      "macro_f1": 0.5338176121264356,
+      "bleu": 0.13557150551556346,
+      "rouge": 0.26487424796528075,
+      "bert": 0.7282113432884216,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1511.2357648516384,
+      "p50_latency": 1251.1779498308897,
+      "p95_latency": 3454.5107362791896,
+      "personality": 0.6666666666666666,
+      "interests": 0.7604166666666666,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6666666666666666,
+      "recall": {
+        "anxiety": 0.6,
+        "fear": 1.0,
+        "helplessness": 0.5,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    },
+    "candidate": {
+      "emotion": 0.6145833333333334,
+      "macro_f1": 0.5099412161912162,
+      "bleu": 0.13496462157449032,
+      "rouge": 0.268975610856014,
+      "bert": 0.7299864888191223,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1488.6966395036627,
+      "p50_latency": 1199.8315248638391,
+      "p95_latency": 3513.9768067747355,
+      "personality": 0.6666666666666666,
+      "interests": 0.7708333333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6701388888888888,
+      "recall": {
+        "anxiety": 0.6333333333333333,
+        "fear": 0.8,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.2857142857142857,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    }
+  },
+  "delta": {
+    "emotion": -0.02083333333333326,
+    "profile_mean": 0.00347222222222221,
+    "bleu": -0.0006068839410731386,
+    "rouge": 0.004101362890733262,
+    "bert": 0.0017751455307006836
+  },
+  "wrong_to_right": [
+    {
+      "id": "test_000026_t1",
+      "gt": "anxiety",
+      "p0": "fear",
+      "candidate": "anxiety"
+    }
+  ],
+  "right_to_wrong": [
+    {
+      "id": "test_000039_t1",
+      "gt": "fear",
+      "p0": "fear",
+      "candidate": "anxiety"
+    },
+    {
+      "id": "test_000049_t1",
+      "gt": "helplessness",
+      "p0": "helplessness",
+      "candidate": "sadness"
+    },
+    {
+      "id": "test_000062_t1",
+      "gt": "mixed",
+      "p0": "mixed",
+      "candidate": "anxiety"
+    }
+  ],
+  "changes": [
+    {
+      "id": "test_000026_t1",
+      "gt": "anxiety",
+      "p0": "fear",
+      "candidate": "anxiety"
+    },
+    {
+      "id": "test_000039_t1",
+      "gt": "fear",
+      "p0": "fear",
+      "candidate": "anxiety"
+    },
+    {
+      "id": "test_000049_t1",
+      "gt": "helplessness",
+      "p0": "helplessness",
+      "candidate": "sadness"
+    },
+    {
+      "id": "test_000062_t1",
+      "gt": "mixed",
+      "p0": "mixed",
+      "candidate": "anxiety"
+    }
+  ],
+  "decision": "REJECT"
+}

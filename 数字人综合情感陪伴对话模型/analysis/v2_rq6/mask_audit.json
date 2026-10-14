@@ -1,0 +1,537 @@
+{
+  "response_data_count": 7334,
+  "emotion_anchor_count": 1200,
+  "anchor_distribution": {
+    "anxiety": 200,
+    "mixed": 200,
+    "relaxed": 200,
+    "fear": 200,
+    "helplessness": 200,
+    "sadness": 200
+  },
+  "seed": 61,
+  "zero_supervised_samples": 0,
+  "response_mask": "PASS",
+  "emotion_mask": "PASS",
+  "response_random20": [
+    {
+      "response_row_index": 4050,
+      "response_tokens": 96,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        6239,
+        6387
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 1488,
+      "response_tokens": 447,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2703,
+        3383
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 4560,
+      "response_tokens": 77,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3724,
+        3848
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 1775,
+      "response_tokens": 10,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2689,
+        2700
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 6633,
+      "response_tokens": 184,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        4011,
+        4277
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 2626,
+      "response_tokens": 136,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        5757,
+        5973
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 2402,
+      "response_tokens": 123,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2928,
+        3117
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 2629,
+      "response_tokens": 79,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3319,
+        3433
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 6586,
+      "response_tokens": 42,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3030,
+        3093
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 5678,
+      "response_tokens": 57,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3136,
+        3216
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 227,
+      "response_tokens": 81,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2896,
+        3024
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 3982,
+      "response_tokens": 185,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2468,
+        2775
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 2928,
+      "response_tokens": 136,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2632,
+        2850
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 2943,
+      "response_tokens": 89,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        2750,
+        2900
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 533,
+      "response_tokens": 205,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3203,
+        3530
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 3321,
+      "response_tokens": 26,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3197,
+        3233
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 3779,
+      "response_tokens": 308,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        6617,
+        7106
+      ],
+      "trimmed": true
+    },
+    {
+      "response_row_index": 2701,
+      "response_tokens": 75,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        6851,
+        6967
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 1372,
+      "response_tokens": 59,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        3041,
+        3136
+      ],
+      "trimmed": false
+    },
+    {
+      "response_row_index": 2741,
+      "response_tokens": 167,
+      "non_response_supervised": 0,
+      "emotion_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "response_span": [
+        5032,
+        5311
+      ],
+      "trimmed": false
+    }
+  ],
+  "emotion_random20": [
+    {
+      "anchor_index": 1012,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        7329,
+        7336
+      ]
+    },
+    {
+      "anchor_index": 372,
+      "emotion_tokens": 1,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4807,
+        4812
+      ]
+    },
+    {
+      "anchor_index": 1140,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4138,
+        4145
+      ]
+    },
+    {
+      "anchor_index": 443,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        2922,
+        2929
+      ]
+    },
+    {
+      "anchor_index": 656,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        7223,
+        7227
+      ]
+    },
+    {
+      "anchor_index": 600,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4147,
+        4151
+      ]
+    },
+    {
+      "anchor_index": 657,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3603,
+        3607
+      ]
+    },
+    {
+      "anchor_index": 56,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4039,
+        4046
+      ]
+    },
+    {
+      "anchor_index": 995,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4590,
+        4602
+      ]
+    },
+    {
+      "anchor_index": 732,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3318,
+        3322
+      ]
+    },
+    {
+      "anchor_index": 735,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        7064,
+        7068
+      ]
+    },
+    {
+      "anchor_index": 133,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3558,
+        3565
+      ]
+    },
+    {
+      "anchor_index": 830,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3727,
+        3739
+      ]
+    },
+    {
+      "anchor_index": 944,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3562,
+        3574
+      ]
+    },
+    {
+      "anchor_index": 675,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3355,
+        3359
+      ]
+    },
+    {
+      "anchor_index": 343,
+      "emotion_tokens": 1,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        2873,
+        2878
+      ]
+    },
+    {
+      "anchor_index": 685,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4066,
+        4070
+      ]
+    },
+    {
+      "anchor_index": 12,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        3332,
+        3339
+      ]
+    },
+    {
+      "anchor_index": 1029,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        2803,
+        2810
+      ]
+    },
+    {
+      "anchor_index": 187,
+      "emotion_tokens": 2,
+      "response_tokens_supervised": 0,
+      "profile_tokens_supervised": 0,
+      "memory_tokens_supervised": 0,
+      "non_emotion_supervised": 0,
+      "emotion_span": [
+        4097,
+        4104
+      ]
+    }
+  ],
+  "mixing": [
+    {
+      "rank": 0,
+      "microbatches": 1280,
+      "response_batches": 960,
+      "emotion_batches": 320
+    },
+    {
+      "rank": 1,
+      "microbatches": 1280,
+      "response_batches": 960,
+      "emotion_batches": 320
+    }
+  ],
+  "status": "PASS",
+  "train_only": true,
+  "anchor_gratitude_note": "six fixed focus classes only; relaxed anchors include boundary exposure, no extra seventh class added"
+}

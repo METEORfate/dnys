@@ -1,0 +1,90 @@
+{
+  "metrics": {
+    "p0": {
+      "emotion": 0.625,
+      "macro_f1": 0.5180542088630323,
+      "bleu": 0.13438404804065163,
+      "rouge": 0.2625315964915291,
+      "bert": 0.7280976176261902,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1502.2014813536468,
+      "p50_latency": 1254.1993148624897,
+      "p95_latency": 3079.0353566408157,
+      "personality": 0.6458333333333334,
+      "interests": 0.7708333333333334,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6631944444444445,
+      "recall": {
+        "anxiety": 0.6,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.42857142857142855,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    },
+    "candidate": {
+      "emotion": 0.625,
+      "macro_f1": 0.5119547675856638,
+      "bleu": 0.13741263300162307,
+      "rouge": 0.2665494259119767,
+      "bert": 0.7297336459159851,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "avg_latency": 1563.2734882819932,
+      "p50_latency": 1244.4839952513576,
+      "p95_latency": 3466.1387680098414,
+      "personality": 0.6666666666666666,
+      "interests": 0.8125,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.6840277777777777,
+      "recall": {
+        "anxiety": 0.6333333333333333,
+        "fear": 1.0,
+        "helplessness": 0.3333333333333333,
+        "mixed": 0.2857142857142857,
+        "relaxed": 0.6470588235294118,
+        "sadness": 0.8
+      }
+    }
+  },
+  "delta": {
+    "emotion": 0.0,
+    "profile_mean": 0.02083333333333315,
+    "bleu": 0.003028584960971442,
+    "rouge": 0.0040178294204476495,
+    "bert": 0.0016360282897949219
+  },
+  "wrong_to_right": [
+    {
+      "id": "test_000026_t1",
+      "gt": "anxiety",
+      "p0": "fear",
+      "candidate": "anxiety"
+    }
+  ],
+  "right_to_wrong": [
+    {
+      "id": "test_000062_t1",
+      "gt": "mixed",
+      "p0": "mixed",
+      "candidate": "anxiety"
+    }
+  ],
+  "changes": [
+    {
+      "id": "test_000026_t1",
+      "gt": "anxiety",
+      "p0": "fear",
+      "candidate": "anxiety"
+    },
+    {
+      "id": "test_000062_t1",
+      "gt": "mixed",
+      "p0": "mixed",
+      "candidate": "anxiety"
+    }
+  ],
+  "decision": "STRONG_PROMOTE"
+}

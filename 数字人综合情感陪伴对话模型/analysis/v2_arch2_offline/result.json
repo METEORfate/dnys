@@ -1,0 +1,83 @@
+{
+  "offline_scorer": "PASS",
+  "fast20": {
+    "completed": 20,
+    "gpu_memory_before": {
+      "allocated_mib": 5467.62353515625,
+      "reserved_mib": 6960.0,
+      "free_mib": 16655.75,
+      "peak_allocated_mib": 6744.25537109375
+    },
+    "gpu_memory_after": {
+      "allocated_mib": 5468.62353515625,
+      "reserved_mib": 6900.0,
+      "free_mib": 16709.75,
+      "peak_allocated_mib": 6005.58984375
+    },
+    "oom": "NO",
+    "prediction_distribution": {
+      "sum": {
+        "joy": 8,
+        "anger": 4,
+        "loneliness": 1,
+        "shame": 4,
+        "neutral": 2,
+        "sadness": 1
+      },
+      "mean": {
+        "shame": 5,
+        "joy": 4,
+        "anger": 2,
+        "loneliness": 1,
+        "disgust": 6,
+        "sadness": 1,
+        "anxiety": 1
+      }
+    }
+  },
+  "fast96_completed": 96,
+  "gpu_memory_final": {
+    "allocated_mib": 5468.62353515625,
+    "reserved_mib": 6900.0,
+    "free_mib": 16709.75,
+    "peak_allocated_mib": 6284.3818359375
+  },
+  "oom": "NO",
+  "metrics": {
+    "sum": {
+      "accuracy": 0.10416666666666667,
+      "prediction_distribution": {
+        "joy": 61,
+        "anger": 6,
+        "loneliness": 3,
+        "shame": 11,
+        "neutral": 6,
+        "sadness": 6,
+        "mixed": 1,
+        "fear": 1,
+        "anxiety": 1
+      }
+    },
+    "mean": {
+      "accuracy": 0.125,
+      "prediction_distribution": {
+        "shame": 14,
+        "joy": 43,
+        "anger": 2,
+        "loneliness": 3,
+        "disgust": 20,
+        "sadness": 8,
+        "anxiety": 2,
+        "mixed": 1,
+        "fear": 1,
+        "gratitude": 1,
+        "relaxed": 1
+      }
+    }
+  },
+  "model_loading": "same existing offline evaluator NF4 double quant, bf16 compute; cuda:0; eval/no_grad; batch=1; direct teacher-forcing, use_cache=False; logits_to_keep=label_count+1",
+  "prompt_unchanged": true,
+  "formal_runtime_modified": false,
+  "blocking_issue": "NONE",
+  "elapsed_minutes": 4.311433426539103
+}

@@ -1,0 +1,134 @@
+{
+  "sequential": {
+    "metrics": {
+      "baseline": {
+        "emotion": 0.6458333333333334,
+        "macro_f1": 0.5305537884547319,
+        "bleu": 0.1338144872591829,
+        "rouge": 0.26624963989589395,
+        "bert": 0.7280745506286621,
+        "avg_latency": 1581.503757101018,
+        "p50_latency": 1255.7035549543798,
+        "p95_latency": 3175.772935617715,
+        "mean_response_chars": 173.92708333333334,
+        "nonempty": 1.0,
+        "json_valid": 1.0,
+        "memory_refs_valid": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7604166666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6666666666666666
+      },
+      "candidate": {
+        "emotion": 0.6458333333333334,
+        "macro_f1": 0.5305537884547319,
+        "bleu": 0.12927791803457137,
+        "rouge": 0.26704634235848995,
+        "bert": 0.7259946465492249,
+        "avg_latency": 3151.1386328881295,
+        "p50_latency": 2560.3820770047605,
+        "p95_latency": 6786.1481758300215,
+        "mean_response_chars": 171.58333333333334,
+        "nonempty": 1.0,
+        "json_valid": 1.0,
+        "memory_refs_valid": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.7604166666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6666666666666666
+      }
+    },
+    "delta": {
+      "emotion": 0.0,
+      "profile_mean": 0.0,
+      "bleu": -0.004536569224611542,
+      "rouge": 0.0007967024625959995,
+      "bert": -0.002079904079437256
+    },
+    "paired": {
+      "rouge": {
+        "better": 45,
+        "worse": 49,
+        "equal": 2,
+        "net": -4
+      },
+      "bert": {
+        "better": 47,
+        "worse": 47,
+        "equal": 2,
+        "net": 0
+      }
+    },
+    "decision": "REJECT",
+    "a_request_avg_ms": 1581.503757101018,
+    "b_request_avg_ms": 1566.1050637524265,
+    "latency_increase_percent": 99.24951924643779,
+    "causal_classification_preserved": true
+  },
+  "concurrent": {
+    "metrics": {
+      "baseline": {
+        "emotion": 0.625,
+        "macro_f1": 0.521494865428689,
+        "bleu": 0.13336068069837934,
+        "rouge": 0.2638573550732539,
+        "bert": 0.7255430221557617,
+        "avg_latency": 1511.7292013116337,
+        "p50_latency": 1278.0168703757226,
+        "p95_latency": 2958.783529466018,
+        "mean_response_chars": 166.25,
+        "nonempty": 1.0,
+        "json_valid": 1.0,
+        "memory_refs_valid": 1.0,
+        "personality": 0.65625,
+        "interests": 0.78125,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6701388888888888
+      },
+      "candidate": {
+        "emotion": 0.625,
+        "macro_f1": 0.521494865428689,
+        "bleu": 0.13465057885894557,
+        "rouge": 0.2689691078549203,
+        "bert": 0.7273548245429993,
+        "avg_latency": 1687.6432611218963,
+        "p50_latency": 1347.7159701287746,
+        "p95_latency": 3872.882161056623,
+        "mean_response_chars": 174.30208333333334,
+        "nonempty": 1.0,
+        "json_valid": 1.0,
+        "memory_refs_valid": 1.0,
+        "personality": 0.65625,
+        "interests": 0.78125,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6701388888888888
+      }
+    },
+    "delta": {
+      "emotion": 0.0,
+      "profile_mean": 0.0,
+      "bleu": 0.0012898981605662385,
+      "rouge": 0.005111752781666368,
+      "bert": 0.0018118023872375488
+    },
+    "paired": {
+      "rouge": {
+        "better": 52,
+        "worse": 42,
+        "equal": 2,
+        "net": 10
+      },
+      "bert": {
+        "better": 50,
+        "worse": 44,
+        "equal": 2,
+        "net": 6
+      }
+    },
+    "decision": "PROMOTE_WEAK",
+    "a_request_avg_ms": 1511.7292013116337,
+    "b_request_avg_ms": 1565.4756349492043,
+    "latency_increase_percent": 11.63661187847882,
+    "causal_classification_preserved": true
+  }
+}

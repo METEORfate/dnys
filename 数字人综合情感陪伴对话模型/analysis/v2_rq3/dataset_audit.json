@@ -1,0 +1,110 @@
+{
+  "original_train_count": 18657,
+  "v2e1_unique_source_count": 11323,
+  "missing_original_count": 7334,
+  "duplicate_ids": 0,
+  "source_mapping": "conversation_id:target_user_turn_id:assistant_response_turn_id, raw preprocess exact alignment + resampled file exact alignment",
+  "missing_distribution": {
+    "anger": {
+      "count": 191,
+      "percent": 2.6043086992091626,
+      "original_count": 855,
+      "original_percent": 4.582730342498794
+    },
+    "anxiety": {
+      "count": 3689,
+      "percent": 50.29997272975184,
+      "original_count": 6340,
+      "original_percent": 33.98188347537117
+    },
+    "care": {
+      "count": 2,
+      "percent": 0.02727024815925825,
+      "original_count": 79,
+      "original_percent": 0.4234335638098301
+    },
+    "disgust": {
+      "count": 1,
+      "percent": 0.013635124079629125,
+      "original_count": 125,
+      "original_percent": 0.6699898161547945
+    },
+    "fear": {
+      "count": 474,
+      "percent": 6.463048813744206,
+      "original_count": 1388,
+      "original_percent": 7.4395669185828375
+    },
+    "gratitude": {
+      "count": 142,
+      "percent": 1.9361876193073355,
+      "original_count": 695,
+      "original_percent": 3.725143377820657
+    },
+    "helplessness": {
+      "count": 511,
+      "percent": 6.967548404690483,
+      "original_count": 1575,
+      "original_percent": 8.44187168355041
+    },
+    "joy": {
+      "count": 6,
+      "percent": 0.08181074447777476,
+      "original_count": 171,
+      "original_percent": 0.9165460684997588
+    },
+    "loneliness": {
+      "count": 204,
+      "percent": 2.7815653122443416,
+      "original_count": 876,
+      "original_percent": 4.6952886316128
+    },
+    "mixed": {
+      "count": 203,
+      "percent": 2.7679301881647125,
+      "original_count": 945,
+      "original_percent": 5.065123010130246
+    },
+    "neutral": {
+      "count": 144,
+      "percent": 1.9634578674665941,
+      "original_count": 654,
+      "original_percent": 3.5053867181218847
+    },
+    "pride": {
+      "count": 18,
+      "percent": 0.24543223343332427,
+      "original_count": 234,
+      "original_percent": 1.2542209358417753
+    },
+    "relaxed": {
+      "count": 1293,
+      "percent": 17.63021543496046,
+      "original_count": 2819,
+      "original_percent": 15.109610333922923
+    },
+    "sadness": {
+      "count": 300,
+      "percent": 4.090537223888737,
+      "original_count": 1085,
+      "original_percent": 5.815511604223616
+    },
+    "shame": {
+      "count": 156,
+      "percent": 2.1270793564221435,
+      "original_count": 752,
+      "original_percent": 4.030658733987243
+    },
+    "surprise": {
+      "count": 0,
+      "percent": 0.0,
+      "original_count": 64,
+      "original_percent": 0.34303478587125474
+    }
+  },
+  "response_length": {
+    "mean": 229.51649850013635,
+    "p50": 134.0,
+    "p90": 550.0
+  }
+}

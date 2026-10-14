@@ -1,0 +1,583 @@
+{
+  "candidates": {
+    "a": {
+      "modification": "优先选择当前主导体验，历史不能覆盖当前变化。已释然、压力减轻时，计划行动不自动等于自豪，结尾礼貌感谢也不自动等于感激为主。",
+      "token_delta": 36,
+      "prompt_path": "/root/development/runtime_candidates/pr2_a/configs/system_prompt_v1.txt",
+      "sha256": "0e4d79a39c0c3a0ff70f0111bd21c76941ae89540dfed517ff32601b0a72da8a"
+    },
+    "b": {
+      "modification": "语气平静或请求办法不代表没有担忧。假设未来不良结果以anxiety为主；明确害怕具体威胁可为fear；当前强调无力改变、怎么选都不对时，优先区分helplessness。",
+      "token_delta": 43,
+      "prompt_path": "/root/development/runtime_candidates/pr2_b/configs/system_prompt_v1.txt",
+      "sha256": "e9cf48766a521d582a4dad2b9f174e29b2969680fe18ce989644a45d08b0c49d"
+    },
+    "c": {
+      "modification": "mixed不因轻微次要情绪或多个想法触发；仅当两种显著情绪并列且无法确定主导时使用。回复先承接当前需要，不重复解释已明白的道理；未请求分析时不追加分析。",
+      "token_delta": 46,
+      "prompt_path": "/root/development/runtime_candidates/pr2_c/configs/system_prompt_v1.txt",
+      "sha256": "4e807a0e7e9ef495f3b5c166709b6af742b5c81727a4740007eb99daf061dab1"
+    }
+  },
+  "results": {
+    "a": {
+      "first": {
+        "metrics": {
+          "p0": {
+            "emotion": 0.625,
+            "macro_f1": 0.5180542088630323,
+            "bleu": 0.13035446223293956,
+            "rouge": 0.26072867268619726,
+            "bert": 0.7259302735328674,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1595.4930297739338,
+            "p50_latency": 1290.4079807922244,
+            "p95_latency": 3464.343875646591,
+            "personality": 0.65625,
+            "interests": 0.7916666666666666,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.673611111111111,
+            "recall": {
+              "anxiety": 0.6,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          },
+          "candidate": {
+            "emotion": 0.6458333333333334,
+            "macro_f1": 0.5288226989513755,
+            "bleu": 0.13012184643316696,
+            "rouge": 0.26156866104048104,
+            "bert": 0.7279974818229675,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1607.8138533242357,
+            "p50_latency": 1280.8456313796341,
+            "p95_latency": 3644.622459076345,
+            "personality": 0.6666666666666666,
+            "interests": 0.7916666666666666,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6770833333333334,
+            "recall": {
+              "anxiety": 0.6333333333333333,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.7058823529411765,
+              "sadness": 0.8
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.02083333333333337,
+          "profile_mean": 0.003472222222222321,
+          "bleu": -0.00023261579977260083,
+          "rouge": 0.0008399883542837827,
+          "bert": 0.0020672082901000977
+        },
+        "wrong_to_right": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000081_t1",
+            "gt": "relaxed",
+            "p0": "gratitude",
+            "candidate": "relaxed"
+          }
+        ],
+        "right_to_wrong": [],
+        "changes": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000081_t1",
+            "gt": "relaxed",
+            "p0": "gratitude",
+            "candidate": "relaxed"
+          }
+        ],
+        "decision": "STRONG_PROMOTE"
+      },
+      "retest": {
+        "metrics": {
+          "p0": {
+            "emotion": 0.625,
+            "macro_f1": 0.522599663408487,
+            "bleu": 0.1322256833128789,
+            "rouge": 0.2642657559394706,
+            "bert": 0.7258526682853699,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1479.482841513042,
+            "p50_latency": 1200.7590956054628,
+            "p95_latency": 3186.3546147942543,
+            "personality": 0.6666666666666666,
+            "interests": 0.8125,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6840277777777777,
+            "recall": {
+              "anxiety": 0.6,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          },
+          "candidate": {
+            "emotion": 0.6458333333333334,
+            "macro_f1": 0.5288226989513755,
+            "bleu": 0.13502548372702455,
+            "rouge": 0.26410429325464896,
+            "bert": 0.7279734015464783,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1534.0428009124782,
+            "p50_latency": 1154.1274334304035,
+            "p95_latency": 3442.463572137058,
+            "personality": 0.65625,
+            "interests": 0.7916666666666666,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.673611111111111,
+            "recall": {
+              "anxiety": 0.6333333333333333,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.7058823529411765,
+              "sadness": 0.8
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.02083333333333337,
+          "profile_mean": -0.01041666666666663,
+          "bleu": 0.0027998004141456534,
+          "rouge": -0.00016146268482164494,
+          "bert": 0.0021207332611083984
+        },
+        "wrong_to_right": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000081_t1",
+            "gt": "relaxed",
+            "p0": "gratitude",
+            "candidate": "relaxed"
+          }
+        ],
+        "right_to_wrong": [],
+        "changes": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000059_t1",
+            "gt": "mixed",
+            "p0": "surprise",
+            "candidate": "shame"
+          },
+          {
+            "id": "test_000081_t1",
+            "gt": "relaxed",
+            "p0": "gratitude",
+            "candidate": "relaxed"
+          }
+        ],
+        "decision": "REJECT"
+      },
+      "decision": "STRONG_PROMOTE",
+      "mean_delta": {
+        "emotion": 0.02083333333333337,
+        "profile_mean": -0.0034722222222221544,
+        "bleu": 0.0012835923071865263,
+        "rouge": 0.0003392628347310689,
+        "bert": 0.002093970775604248
+      },
+      "stable_improvement_ids": [
+        "test_000026_t1",
+        "test_000081_t1"
+      ],
+      "stable_regression_ids": []
+    },
+    "b": {
+      "first": {
+        "metrics": {
+          "p0": {
+            "emotion": 0.6354166666666666,
+            "macro_f1": 0.5219074328449328,
+            "bleu": 0.13252793478110939,
+            "rouge": 0.2621143407285363,
+            "bert": 0.7255651354789734,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1496.0441790753976,
+            "p50_latency": 1199.0150730125606,
+            "p95_latency": 2986.165340989828,
+            "personality": 0.6666666666666666,
+            "interests": 0.7708333333333334,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6701388888888888,
+            "recall": {
+              "anxiety": 0.6333333333333333,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          },
+          "candidate": {
+            "emotion": 0.59375,
+            "macro_f1": 0.5057649196042053,
+            "bleu": 0.1307892238212946,
+            "rouge": 0.2635151217142365,
+            "bert": 0.728430986404419,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1537.7071943463914,
+            "p50_latency": 1211.0866187140346,
+            "p95_latency": 3455.6807233020663,
+            "personality": 0.6666666666666666,
+            "interests": 0.78125,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.673611111111111,
+            "recall": {
+              "anxiety": 0.5333333333333333,
+              "fear": 0.8,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          }
+        },
+        "delta": {
+          "emotion": -0.04166666666666663,
+          "profile_mean": 0.00347222222222221,
+          "bleu": -0.0017387109598147876,
+          "rouge": 0.001400780985700234,
+          "bert": 0.0028658509254455566
+        },
+        "wrong_to_right": [],
+        "right_to_wrong": [
+          {
+            "id": "test_000016_t1",
+            "gt": "anxiety",
+            "p0": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000022_t1",
+            "gt": "anxiety",
+            "p0": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000023_t1",
+            "gt": "anxiety",
+            "p0": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000042_t1",
+            "gt": "fear",
+            "p0": "fear",
+            "candidate": "sadness"
+          }
+        ],
+        "changes": [
+          {
+            "id": "test_000016_t1",
+            "gt": "anxiety",
+            "p0": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000022_t1",
+            "gt": "anxiety",
+            "p0": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000023_t1",
+            "gt": "anxiety",
+            "p0": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000042_t1",
+            "gt": "fear",
+            "p0": "fear",
+            "candidate": "sadness"
+          },
+          {
+            "id": "test_000054_t1",
+            "gt": "joy",
+            "p0": "pride",
+            "candidate": "mixed"
+          },
+          {
+            "id": "test_000059_t1",
+            "gt": "mixed",
+            "p0": "shame",
+            "candidate": "surprise"
+          }
+        ],
+        "decision": "REJECT"
+      },
+      "retest": null,
+      "decision": "REJECT"
+    },
+    "c": {
+      "first": {
+        "metrics": {
+          "p0": {
+            "emotion": 0.625,
+            "macro_f1": 0.5180542088630323,
+            "bleu": 0.13438404804065163,
+            "rouge": 0.2625315964915291,
+            "bert": 0.7280976176261902,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1502.2014813536468,
+            "p50_latency": 1254.1993148624897,
+            "p95_latency": 3079.0353566408157,
+            "personality": 0.6458333333333334,
+            "interests": 0.7708333333333334,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6631944444444445,
+            "recall": {
+              "anxiety": 0.6,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          },
+          "candidate": {
+            "emotion": 0.625,
+            "macro_f1": 0.5119547675856638,
+            "bleu": 0.13741263300162307,
+            "rouge": 0.2665494259119767,
+            "bert": 0.7297336459159851,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1563.2734882819932,
+            "p50_latency": 1244.4839952513576,
+            "p95_latency": 3466.1387680098414,
+            "personality": 0.6666666666666666,
+            "interests": 0.8125,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6840277777777777,
+            "recall": {
+              "anxiety": 0.6333333333333333,
+              "fear": 1.0,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.2857142857142857,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          }
+        },
+        "delta": {
+          "emotion": 0.0,
+          "profile_mean": 0.02083333333333315,
+          "bleu": 0.003028584960971442,
+          "rouge": 0.0040178294204476495,
+          "bert": 0.0016360282897949219
+        },
+        "wrong_to_right": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          }
+        ],
+        "right_to_wrong": [
+          {
+            "id": "test_000062_t1",
+            "gt": "mixed",
+            "p0": "mixed",
+            "candidate": "anxiety"
+          }
+        ],
+        "changes": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000062_t1",
+            "gt": "mixed",
+            "p0": "mixed",
+            "candidate": "anxiety"
+          }
+        ],
+        "decision": "STRONG_PROMOTE"
+      },
+      "retest": {
+        "metrics": {
+          "p0": {
+            "emotion": 0.6354166666666666,
+            "macro_f1": 0.5338176121264356,
+            "bleu": 0.13557150551556346,
+            "rouge": 0.26487424796528075,
+            "bert": 0.7282113432884216,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1511.2357648516384,
+            "p50_latency": 1251.1779498308897,
+            "p95_latency": 3454.5107362791896,
+            "personality": 0.6666666666666666,
+            "interests": 0.7604166666666666,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6666666666666666,
+            "recall": {
+              "anxiety": 0.6,
+              "fear": 1.0,
+              "helplessness": 0.5,
+              "mixed": 0.42857142857142855,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          },
+          "candidate": {
+            "emotion": 0.6145833333333334,
+            "macro_f1": 0.5099412161912162,
+            "bleu": 0.13496462157449032,
+            "rouge": 0.268975610856014,
+            "bert": 0.7299864888191223,
+            "json_valid": 1.0,
+            "nonempty": 1.0,
+            "avg_latency": 1488.6966395036627,
+            "p50_latency": 1199.8315248638391,
+            "p95_latency": 3513.9768067747355,
+            "personality": 0.6666666666666666,
+            "interests": 0.7708333333333334,
+            "style": 0.5729166666666666,
+            "profile_mean": 0.6701388888888888,
+            "recall": {
+              "anxiety": 0.6333333333333333,
+              "fear": 0.8,
+              "helplessness": 0.3333333333333333,
+              "mixed": 0.2857142857142857,
+              "relaxed": 0.6470588235294118,
+              "sadness": 0.8
+            }
+          }
+        },
+        "delta": {
+          "emotion": -0.02083333333333326,
+          "profile_mean": 0.00347222222222221,
+          "bleu": -0.0006068839410731386,
+          "rouge": 0.004101362890733262,
+          "bert": 0.0017751455307006836
+        },
+        "wrong_to_right": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          }
+        ],
+        "right_to_wrong": [
+          {
+            "id": "test_000039_t1",
+            "gt": "fear",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000049_t1",
+            "gt": "helplessness",
+            "p0": "helplessness",
+            "candidate": "sadness"
+          },
+          {
+            "id": "test_000062_t1",
+            "gt": "mixed",
+            "p0": "mixed",
+            "candidate": "anxiety"
+          }
+        ],
+        "changes": [
+          {
+            "id": "test_000026_t1",
+            "gt": "anxiety",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000039_t1",
+            "gt": "fear",
+            "p0": "fear",
+            "candidate": "anxiety"
+          },
+          {
+            "id": "test_000049_t1",
+            "gt": "helplessness",
+            "p0": "helplessness",
+            "candidate": "sadness"
+          },
+          {
+            "id": "test_000062_t1",
+            "gt": "mixed",
+            "p0": "mixed",
+            "candidate": "anxiety"
+          }
+        ],
+        "decision": "REJECT"
+      },
+      "decision": "PROMOTE_WEAK",
+      "mean_delta": {
+        "emotion": -0.01041666666666663,
+        "profile_mean": 0.012152777777777679,
+        "bleu": 0.0012108505099491518,
+        "rouge": 0.004059596155590456,
+        "bert": 0.0017055869102478027
+      },
+      "stable_improvement_ids": [
+        "test_000026_t1"
+      ],
+      "stable_regression_ids": [
+        "test_000062_t1"
+      ]
+    }
+  },
+  "winner": "a",
+  "final_decision": "STRONG_PROMOTE",
+  "prompt_optimization_exhausted": false,
+  "formal_runtime_modified": false,
+  "blocking_issue": "NONE",
+  "elapsed_minutes": 28.740389362970987,
+  "tolerances": {
+    "response_stable_bleu": -0.002,
+    "response_stable_rouge": -0.002,
+    "response_stable_bert": -0.001
+  }
+}

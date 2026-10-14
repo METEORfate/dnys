@@ -1,0 +1,939 @@
+{
+  "dataset": {
+    "response_data_count": 7334,
+    "emotion_anchor_count": 1200,
+    "anchor_distribution": {
+      "anxiety": 200,
+      "mixed": 200,
+      "relaxed": 200,
+      "fear": 200,
+      "helplessness": 200,
+      "sadness": 200
+    }
+  },
+  "mask_audit": {
+    "response_data_count": 7334,
+    "emotion_anchor_count": 1200,
+    "anchor_distribution": {
+      "anxiety": 200,
+      "mixed": 200,
+      "relaxed": 200,
+      "fear": 200,
+      "helplessness": 200,
+      "sadness": 200
+    },
+    "seed": 61,
+    "zero_supervised_samples": 0,
+    "response_mask": "PASS",
+    "emotion_mask": "PASS",
+    "response_random20": [
+      {
+        "response_row_index": 4050,
+        "response_tokens": 96,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          6239,
+          6387
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 1488,
+        "response_tokens": 447,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2703,
+          3383
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 4560,
+        "response_tokens": 77,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3724,
+          3848
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 1775,
+        "response_tokens": 10,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2689,
+          2700
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 6633,
+        "response_tokens": 184,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          4011,
+          4277
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 2626,
+        "response_tokens": 136,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5757,
+          5973
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 2402,
+        "response_tokens": 123,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2928,
+          3117
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 2629,
+        "response_tokens": 79,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3319,
+          3433
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 6586,
+        "response_tokens": 42,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3030,
+          3093
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 5678,
+        "response_tokens": 57,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3136,
+          3216
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 227,
+        "response_tokens": 81,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2896,
+          3024
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 3982,
+        "response_tokens": 185,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2468,
+          2775
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 2928,
+        "response_tokens": 136,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2632,
+          2850
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 2943,
+        "response_tokens": 89,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          2750,
+          2900
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 533,
+        "response_tokens": 205,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3203,
+          3530
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 3321,
+        "response_tokens": 26,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3197,
+          3233
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 3779,
+        "response_tokens": 308,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          6617,
+          7106
+        ],
+        "trimmed": true
+      },
+      {
+        "response_row_index": 2701,
+        "response_tokens": 75,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          6851,
+          6967
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 1372,
+        "response_tokens": 59,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          3041,
+          3136
+        ],
+        "trimmed": false
+      },
+      {
+        "response_row_index": 2741,
+        "response_tokens": 167,
+        "non_response_supervised": 0,
+        "emotion_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "response_span": [
+          5032,
+          5311
+        ],
+        "trimmed": false
+      }
+    ],
+    "emotion_random20": [
+      {
+        "anchor_index": 1012,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          7329,
+          7336
+        ]
+      },
+      {
+        "anchor_index": 372,
+        "emotion_tokens": 1,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4807,
+          4812
+        ]
+      },
+      {
+        "anchor_index": 1140,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4138,
+          4145
+        ]
+      },
+      {
+        "anchor_index": 443,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          2922,
+          2929
+        ]
+      },
+      {
+        "anchor_index": 656,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          7223,
+          7227
+        ]
+      },
+      {
+        "anchor_index": 600,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4147,
+          4151
+        ]
+      },
+      {
+        "anchor_index": 657,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3603,
+          3607
+        ]
+      },
+      {
+        "anchor_index": 56,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4039,
+          4046
+        ]
+      },
+      {
+        "anchor_index": 995,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4590,
+          4602
+        ]
+      },
+      {
+        "anchor_index": 732,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3318,
+          3322
+        ]
+      },
+      {
+        "anchor_index": 735,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          7064,
+          7068
+        ]
+      },
+      {
+        "anchor_index": 133,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3558,
+          3565
+        ]
+      },
+      {
+        "anchor_index": 830,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3727,
+          3739
+        ]
+      },
+      {
+        "anchor_index": 944,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3562,
+          3574
+        ]
+      },
+      {
+        "anchor_index": 675,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3355,
+          3359
+        ]
+      },
+      {
+        "anchor_index": 343,
+        "emotion_tokens": 1,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          2873,
+          2878
+        ]
+      },
+      {
+        "anchor_index": 685,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4066,
+          4070
+        ]
+      },
+      {
+        "anchor_index": 12,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          3332,
+          3339
+        ]
+      },
+      {
+        "anchor_index": 1029,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          2803,
+          2810
+        ]
+      },
+      {
+        "anchor_index": 187,
+        "emotion_tokens": 2,
+        "response_tokens_supervised": 0,
+        "profile_tokens_supervised": 0,
+        "memory_tokens_supervised": 0,
+        "non_emotion_supervised": 0,
+        "emotion_span": [
+          4097,
+          4104
+        ]
+      }
+    ],
+    "mixing": [
+      {
+        "rank": 0,
+        "microbatches": 1280,
+        "response_batches": 960,
+        "emotion_batches": 320
+      },
+      {
+        "rank": 1,
+        "microbatches": 1280,
+        "response_batches": 960,
+        "emotion_batches": 320
+      }
+    ],
+    "status": "PASS",
+    "train_only": true,
+    "anchor_gratitude_note": "six fixed focus classes only; relaxed anchors include boundary exposure, no extra seventh class added"
+  },
+  "baseline": {
+    "emotion": 0.6979166666666666,
+    "bleu": 0.13465935079395705,
+    "rouge": 0.26947329601946673,
+    "json_valid": 1.0,
+    "nonempty": 1.0,
+    "personality": 0.6770833333333334,
+    "interests": 0.8333333333333334,
+    "style": 0.5729166666666666,
+    "profile_mean": 0.6944444444444445,
+    "bert_f1": 0.7311925888061523
+  },
+  "checkpoints": [
+    {
+      "checkpoint": 40,
+      "metrics": {
+        "emotion": 0.6875,
+        "bleu": 0.12698111609938742,
+        "rouge": 0.2591682780593613,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6770833333333334,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.7013888888888888,
+        "bert_f1": 0.727630615234375
+      },
+      "delta": {
+        "emotion": -0.01041666666666663,
+        "profile_mean": 0.006944444444444309,
+        "bleu": -0.00767823469456963,
+        "rouge": -0.010305017960105411,
+        "bert_f1": -0.0035619735717773438
+      },
+      "guardrail_pass": true,
+      "decision": "REJECT",
+      "response_gain_score": -0.021545226226452385,
+      "emotion_diagnostic": {
+        "wrong_to_right": 4,
+        "right_to_wrong": 5,
+        "regressions": [
+          {
+            "row_index": 15,
+            "sample_id": "fast96_row_015",
+            "gt": "anxiety",
+            "baseline": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "row_index": 22,
+            "sample_id": "fast96_row_022",
+            "gt": "anxiety",
+            "baseline": "anxiety",
+            "candidate": "mixed"
+          },
+          {
+            "row_index": 30,
+            "sample_id": "fast96_row_030",
+            "gt": "anxiety",
+            "baseline": "anxiety",
+            "candidate": "fear"
+          },
+          {
+            "row_index": 41,
+            "sample_id": "fast96_row_041",
+            "gt": "fear",
+            "baseline": "fear",
+            "candidate": "helplessness"
+          },
+          {
+            "row_index": 76,
+            "sample_id": "fast96_row_076",
+            "gt": "relaxed",
+            "baseline": "relaxed",
+            "candidate": "mixed"
+          }
+        ]
+      },
+      "recall": {
+        "anxiety": {
+          "support": 30,
+          "baseline": 0.7333333333333333,
+          "candidate": 0.6333333333333333
+        },
+        "mixed": {
+          "support": 7,
+          "baseline": 0.42857142857142855,
+          "candidate": 0.8571428571428571
+        },
+        "relaxed": {
+          "support": 17,
+          "baseline": 0.7647058823529411,
+          "candidate": 0.7058823529411765
+        },
+        "fear": {
+          "support": 5,
+          "baseline": 1.0,
+          "candidate": 0.8
+        },
+        "helplessness": {
+          "support": 6,
+          "baseline": 0.3333333333333333,
+          "candidate": 0.3333333333333333
+        },
+        "sadness": {
+          "support": 5,
+          "baseline": 0.8,
+          "candidate": 1.0
+        }
+      }
+    },
+    {
+      "checkpoint": 80,
+      "metrics": {
+        "emotion": 0.6770833333333334,
+        "bleu": 0.1277096399498497,
+        "rouge": 0.26000185377426044,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.65625,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.6944444444444443,
+        "bert_f1": 0.7287953495979309
+      },
+      "delta": {
+        "emotion": -0.02083333333333326,
+        "profile_mean": -2.220446049250313e-16,
+        "bleu": -0.006949710844107337,
+        "rouge": -0.009471442245206296,
+        "bert_f1": -0.0023972392082214355
+      },
+      "guardrail_pass": false,
+      "decision": "REJECT",
+      "response_gain_score": -0.01881839229753507,
+      "emotion_diagnostic": null,
+      "recall": {
+        "anxiety": {
+          "support": 30,
+          "baseline": 0.7333333333333333,
+          "candidate": 0.6666666666666666
+        },
+        "mixed": {
+          "support": 7,
+          "baseline": 0.42857142857142855,
+          "candidate": 0.8571428571428571
+        },
+        "relaxed": {
+          "support": 17,
+          "baseline": 0.7647058823529411,
+          "candidate": 0.7058823529411765
+        },
+        "fear": {
+          "support": 5,
+          "baseline": 1.0,
+          "candidate": 0.8
+        },
+        "helplessness": {
+          "support": 6,
+          "baseline": 0.3333333333333333,
+          "candidate": 0.3333333333333333
+        },
+        "sadness": {
+          "support": 5,
+          "baseline": 0.8,
+          "candidate": 1.0
+        }
+      }
+    },
+    {
+      "checkpoint": 120,
+      "metrics": {
+        "emotion": 0.65625,
+        "bleu": 0.1343786126640071,
+        "rouge": 0.2650906985320516,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6770833333333334,
+        "interests": 0.8541666666666666,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.7013888888888888,
+        "bert_f1": 0.7295680046081543
+      },
+      "delta": {
+        "emotion": -0.04166666666666663,
+        "profile_mean": 0.006944444444444309,
+        "bleu": -0.0002807381299499423,
+        "rouge": -0.004382597487415152,
+        "bert_f1": -0.0016245841979980469
+      },
+      "guardrail_pass": false,
+      "decision": "REJECT",
+      "response_gain_score": -0.006287919815363141,
+      "emotion_diagnostic": null,
+      "recall": {
+        "anxiety": {
+          "support": 30,
+          "baseline": 0.7333333333333333,
+          "candidate": 0.6666666666666666
+        },
+        "mixed": {
+          "support": 7,
+          "baseline": 0.42857142857142855,
+          "candidate": 0.8571428571428571
+        },
+        "relaxed": {
+          "support": 17,
+          "baseline": 0.7647058823529411,
+          "candidate": 0.7058823529411765
+        },
+        "fear": {
+          "support": 5,
+          "baseline": 1.0,
+          "candidate": 0.8
+        },
+        "helplessness": {
+          "support": 6,
+          "baseline": 0.3333333333333333,
+          "candidate": 0.16666666666666666
+        },
+        "sadness": {
+          "support": 5,
+          "baseline": 0.8,
+          "candidate": 1.0
+        }
+      }
+    },
+    {
+      "checkpoint": 160,
+      "metrics": {
+        "emotion": 0.65625,
+        "bleu": 0.13954139049510686,
+        "rouge": 0.26980139214546356,
+        "json_valid": 1.0,
+        "nonempty": 1.0,
+        "personality": 0.6666666666666666,
+        "interests": 0.8645833333333334,
+        "style": 0.5729166666666666,
+        "profile_mean": 0.7013888888888888,
+        "bert_f1": 0.7307993769645691
+      },
+      "delta": {
+        "emotion": -0.04166666666666663,
+        "profile_mean": 0.006944444444444309,
+        "bleu": 0.0048820397011498096,
+        "rouge": 0.00032809612599682403,
+        "bert_f1": -0.00039321184158325195
+      },
+      "guardrail_pass": false,
+      "decision": "REJECT",
+      "response_gain_score": 0.004816923985563382,
+      "emotion_diagnostic": null,
+      "recall": {
+        "anxiety": {
+          "support": 30,
+          "baseline": 0.7333333333333333,
+          "candidate": 0.6333333333333333
+        },
+        "mixed": {
+          "support": 7,
+          "baseline": 0.42857142857142855,
+          "candidate": 0.8571428571428571
+        },
+        "relaxed": {
+          "support": 17,
+          "baseline": 0.7647058823529411,
+          "candidate": 0.7058823529411765
+        },
+        "fear": {
+          "support": 5,
+          "baseline": 1.0,
+          "candidate": 0.8
+        },
+        "helplessness": {
+          "support": 6,
+          "baseline": 0.3333333333333333,
+          "candidate": 0.3333333333333333
+        },
+        "sadness": {
+          "support": 5,
+          "baseline": 0.8,
+          "candidate": 0.8
+        }
+      }
+    }
+  ],
+  "best": {
+    "checkpoint": 40,
+    "metrics": {
+      "emotion": 0.6875,
+      "bleu": 0.12698111609938742,
+      "rouge": 0.2591682780593613,
+      "json_valid": 1.0,
+      "nonempty": 1.0,
+      "personality": 0.6770833333333334,
+      "interests": 0.8541666666666666,
+      "style": 0.5729166666666666,
+      "profile_mean": 0.7013888888888888,
+      "bert_f1": 0.727630615234375
+    },
+    "delta": {
+      "emotion": -0.01041666666666663,
+      "profile_mean": 0.006944444444444309,
+      "bleu": -0.00767823469456963,
+      "rouge": -0.010305017960105411,
+      "bert_f1": -0.0035619735717773438
+    },
+    "guardrail_pass": true,
+    "decision": "REJECT",
+    "response_gain_score": -0.021545226226452385,
+    "emotion_diagnostic": {
+      "wrong_to_right": 4,
+      "right_to_wrong": 5,
+      "regressions": [
+        {
+          "row_index": 15,
+          "sample_id": "fast96_row_015",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "mixed"
+        },
+        {
+          "row_index": 22,
+          "sample_id": "fast96_row_022",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "mixed"
+        },
+        {
+          "row_index": 30,
+          "sample_id": "fast96_row_030",
+          "gt": "anxiety",
+          "baseline": "anxiety",
+          "candidate": "fear"
+        },
+        {
+          "row_index": 41,
+          "sample_id": "fast96_row_041",
+          "gt": "fear",
+          "baseline": "fear",
+          "candidate": "helplessness"
+        },
+        {
+          "row_index": 76,
+          "sample_id": "fast96_row_076",
+          "gt": "relaxed",
+          "baseline": "relaxed",
+          "candidate": "mixed"
+        }
+      ]
+    },
+    "recall": {
+      "anxiety": {
+        "support": 30,
+        "baseline": 0.7333333333333333,
+        "candidate": 0.6333333333333333
+      },
+      "mixed": {
+        "support": 7,
+        "baseline": 0.42857142857142855,
+        "candidate": 0.8571428571428571
+      },
+      "relaxed": {
+        "support": 17,
+        "baseline": 0.7647058823529411,
+        "candidate": 0.7058823529411765
+      },
+      "fear": {
+        "support": 5,
+        "baseline": 1.0,
+        "candidate": 0.8
+      },
+      "helplessness": {
+        "support": 6,
+        "baseline": 0.3333333333333333,
+        "candidate": 0.3333333333333333
+      },
+      "sadness": {
+        "support": 5,
+        "baseline": 0.8,
+        "candidate": 1.0
+      }
+    }
+  },
+  "result": "REJECT",
+  "training_steps": 160,
+  "training_minutes": 29.0834894100825,
+  "blocking_issue": "NONE"
+}

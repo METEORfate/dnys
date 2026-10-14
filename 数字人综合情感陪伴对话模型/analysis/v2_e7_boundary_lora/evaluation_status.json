@@ -1,0 +1,10 @@
+{
+  "phase": "COMPLETED",
+  "started_at": 1791900893.3585286,
+  "server_pid": 450,
+  "row_index": 95,
+  "variant": "e7-40",
+  "blocking_issue": "NONE",
+  "best_candidate": "CURRENT",
+  "result": "REJECT"
+}

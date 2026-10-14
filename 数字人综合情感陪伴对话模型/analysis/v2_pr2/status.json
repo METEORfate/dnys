@@ -1,0 +1,10 @@
+{
+  "phase": "COMPLETED",
+  "started_at": 1791728737.6030338,
+  "server_pid": 520,
+  "candidate": "c",
+  "pass_number": 2,
+  "row_index": 95,
+  "variant": "candidate",
+  "result": "STRONG_PROMOTE"
+}

@@ -1,0 +1,8 @@
+{
+  "phase": "COMPLETED",
+  "started_at": 1791780996.5122507,
+  "server_pid": 609,
+  "mode": "concurrent",
+  "row_index": 95,
+  "result": "IMPLEMENTATION_FAILURE"
+}
