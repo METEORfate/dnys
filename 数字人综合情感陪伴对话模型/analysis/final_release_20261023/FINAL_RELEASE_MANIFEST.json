@@ -1,0 +1,100 @@
+{
+  "release": "v2-final-20261023",
+  "candidate": "E91_a075",
+  "checkpoint_source": "/root/development/dnys/数字人综合情感陪伴对话模型/training/outputs/v2-e9-1-adapter-interpolation-20261018/a075",
+  "checkpoint_hashes": {
+    "adapter_model.safetensors": "6962eaf73b5a26b735566b7f0227753be8ac7a4eb486885258c2ce30e34fe4d1",
+    "adapter_config.json": "822b9ce3855d29412381617933a2b360f38ccbe402cc30ee93afaa615891d932"
+  },
+  "formal_entry": "bash /root/participant/start.sh TEST_FILE RESULT_DIR",
+  "generation": {
+    "backend": "openai_compatible",
+    "model_path": "./model/Qwen2___5-7B-Instruct",
+    "trust_remote_code": false,
+    "device_map": "auto",
+    "torch_dtype": "auto",
+    "base_url": "http://127.0.0.1:8000/v1",
+    "api_model": "emotion-companion-lora",
+    "lora_adapter_path": "./model/lora_adapter",
+    "api_key": "",
+    "request_timeout_seconds": 600,
+    "api_options": {
+      "repetition_penalty": 1.05
+    },
+    "generation": {
+      "max_new_tokens": 1200,
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "performance_rounds": 100,
+    "hardware_label": "4090*2"
+  },
+  "asset_hashes": {
+    "start.sh": "403a3eac2a253c7d7e4131afb53811314aebadcdcf81a2300e3f7a4ec64cb3c8",
+    "run_inference.py": "d68ee3c74cfce149404b9ad49ad06cca643a701b6584f97647c1738c9bec024e",
+    "style_postprocessor.py": "00a7db23376f7b01e22824b5b5943100bd009072fa448450a93d511ea17d0364",
+    "README.md": "f7559e187960c114e3c4cab065c69af870a413592ab529d616c73dd5ffe487d0",
+    "requirements.txt": "f138a3692fc198597db34b45a50a3078a991bcc80a6a2afe8a3c0a2c534297a4",
+    "core/message_builder.py": "bbb7be909ab5441593997a4bafea26ba49b2146c65e08753ab89ceeab12e473e",
+    "core/prompt_loader.py": "f7fac6242afdf8e5c6a70f3b9f499c9d9fff189009fe1f79b2aca9c8690e1aa9",
+    "core/__init__.py": "e761f4d0cf7c6856fc97ad90a97e889ea4d153066ef518321960f317331d585f",
+    "core/output_schema.py": "56d745e8cb7b59521a5489288c271df500d960dbea8279f0fd9ba2507273aee5",
+    "configs/inference_config.json": "48e1b7f9dc34b8c13b550467a50ebe72870492a3e09a96e1638d262f7f40d26a",
+    "configs/system_prompt_v1.txt": "1ade81131d0983a1224ddcb9b60bd2aaa6979f7a75ffa26cee711602b738d873",
+    "templates/submission_template.json": "d6a630a114ffd91e83fab02deb22a1a7e2bd84266519f45bf775f48a47e31a3c",
+    "templates/submission_schema.json": "91c42d56ae433212aab7905eabdbb96cf8463c2f887dc46b3f31647ab3a5d591",
+    "profile_classifier/config.json": "13f411a1cb7414cd42b21a4ef62fc8b3753870af7743a9a77a913da98a52d0bc",
+    "model/Qwen2___5-7B-Instruct/configuration.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "model/Qwen2___5-7B-Instruct/.mv": "62f3785a1113f87512366c23f8d4cfff97f2f31253503c709ab6b1c89e64af84",
+    "model/Qwen2___5-7B-Instruct/model.safetensors.index.json": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+    "model/Qwen2___5-7B-Instruct/generation_config.json": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+    "model/Qwen2___5-7B-Instruct/config.json": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+    "model/Qwen2___5-7B-Instruct/LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "model/Qwen2___5-7B-Instruct/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "model/Qwen2___5-7B-Instruct/model-00001-of-00004.safetensors": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+    "model/Qwen2___5-7B-Instruct/merges.txt.enc": "dd2995028490137f5033c56df6be943e0d03b6216013c60e88a80397a30508c3",
+    "model/Qwen2___5-7B-Instruct/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "model/Qwen2___5-7B-Instruct/model-00004-of-00004.safetensors": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+    "model/Qwen2___5-7B-Instruct/.msc": "47e663491ca87b4fdc0f5e67e45ba31978ace6e0e61929d266794bd919fd813c",
+    "model/Qwen2___5-7B-Instruct/.mdl": "a173aca752f2ceeb543b575493d4ca40898de7e999939ec1a1ab344159b002be",
+    "model/Qwen2___5-7B-Instruct/README.md.enc": "2f825f28b805b41684fcde86061ece68f55e03b6aaf1212b18556b7fe5abd5d2",
+    "model/Qwen2___5-7B-Instruct/model-00002-of-00004.safetensors": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+    "model/Qwen2___5-7B-Instruct/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "model/Qwen2___5-7B-Instruct/model-00003-of-00004.safetensors": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+    "model/lora_adapter/adapter_config.json": "822b9ce3855d29412381617933a2b360f38ccbe402cc30ee93afaa615891d932",
+    "model/lora_adapter/adapter_model.safetensors": "6962eaf73b5a26b735566b7f0227753be8ac7a4eb486885258c2ce30e34fe4d1",
+    "profile_classifier/classifiers.joblib": "b4d2ffad6afbd167e1bf27df1408a856b125bd32b1b7dc1a55855c88f4b69f86",
+    "profile_classifier/vectorizer.joblib": "f000d8ae34f561b2e377fb66bcca1db3bf4ce85e15f680c932419fcf5577fb61"
+  },
+  "previous_champion_backup": "/root/development/dnys/数字人综合情感陪伴对话模型/outputs/v2_final_release_20261023/formal_previous/participant",
+  "official_total_score": "UNKNOWN",
+  "PROXY_SCORE": 42.041082340642305,
+  "score_scope": "1649 exploratory VAL_DEV; CPU BERT; first100 latency; repeated development selection",
+  "known_risks": [
+    "官方总分公式、专家评审与失败处罚仍未知；PROXY_SCORE不是官方比赛总分。",
+    "VAL_DEV已重复用于选模；全部结论为探索性开发集证据，没有新增独立泛化验证。",
+    "历史候选完整运行时逐请求配置记录不齐，不能保证重新部署逐字复现1649条历史输出。",
+    "跨运行前100条计时受缓存/调度/机器负载影响；性能敏感性排名不应视为已证明的速度优势。",
+    "本轮按用户最终SCORE-FIRST授权作一次具体取舍，不宣称已经确定通用类别损伤容忍阈值。",
+    "所选版本少数类正确数201/281，CURRENT为207/281；neutral 16→13，pride 29→28。",
+    "Git源码提交不包含模型/训练数据/分类器二进制；赛事平台提交仍需人工核对镜像或包的要求。"
+  ],
+  "acceptance": {
+    "CPU": "PASS",
+    "official_entry_staged": "PASS",
+    "complete_evaluation": 1649
+  },
+  "source_parent_commit": "789f1726cf748b86090166d450db5fe19333b752",
+  "git_tag": "v2-final-20261023",
+  "model_weights_in_git": false,
+  "validation_prediction_evidence": {
+    "source": "/root/development/dnys/数字人综合情感陪伴对话模型/analysis/v2_e9_1_full_valdev_20261018/full_predictions.jsonl",
+    "source_sha256": "6cc9303fbb1434326336042229993dbb8f968807cc9eb0466531376a2a7351c4",
+    "derived_copy": "/root/development/dnys/数字人综合情感陪伴对话模型/outputs/v2_final_release_20261023/FINAL_SELECTED_VALDEV_PREDICTIONS.jsonl",
+    "derived_copy_sha256": "96d1dac06ca93c1af799a1f6e5abb14eeba6bb94214e7c90093ed23a96c51e90",
+    "coverage": 1649,
+    "raw_text_preserved": true,
+    "not_competition_test_submission": true
+  }
+}

@@ -1,0 +1,13 @@
+.....PERSONALITY_CLASSIFIER_FALLBACK: ValueError illegal personality_traits
+.PERSONALITY_CLASSIFIER_FALLBACK: RuntimeError injected
+..PERSONALITY_CLASSIFIER_FALLBACK: RuntimeError personality classifier unavailable
+.STYLE_CLASSIFIER_FALLBACK: ValueError illegal style
+PERSONALITY_CLASSIFIER_FALLBACK: RuntimeError personality classifier unavailable
+.PERSONALITY_CLASSIFIER_FALLBACK: RuntimeError personality classifier unavailable
+.STYLE_CLASSIFIER_FALLBACK: RuntimeError test failure
+PERSONALITY_CLASSIFIER_FALLBACK: RuntimeError personality classifier unavailable
+..
+----------------------------------------------------------------------
+Ran 13 tests in 0.003s
+
+OK

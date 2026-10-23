@@ -9,7 +9,9 @@
   "lora_adapter_path": "./model/lora_adapter",
   "api_key": "",
   "request_timeout_seconds": 600,
-  "api_options": {},
+  "api_options": {
+    "repetition_penalty": 1.05
+  },
   "generation": {
     "max_new_tokens": 1200,
     "do_sample": false,

@@ -102,3 +102,8 @@ bash /root/participant/start.sh TEST_FILE RESULT_DIR
 命中分。模型输出无法解析为 JSON object 时，脚本会尝试提取 `response_text`；若无法
 单独提取，则将去除思考标签和代码围栏后的完整原始输出作为回复文本，其余字段置空并
 继续下一条。失败数量和样本 ID 记录在性能报告中。
+
+
+## 正式版本 2026-10-23
+
+E91_a075 + P0 + P1 Style + P2 Personality Gate0.50; repetition_penalty=1.05。以新发布的 FINAL_RELEASE_MANIFEST.json 为资产核验依据。历史报告保留作历史证据，不表示当前模型版本。PROXY_SCORE 为反复使用开发集上的代理指标，不是官方比赛成绩。正式入口、Prompt、Schema、P1/P2 保持原协议；重复惩罚及服务容量已显式冻结。

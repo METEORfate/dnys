@@ -1,0 +1,236 @@
+{
+  "PASS": true,
+  "input_count": 3,
+  "raw_schema_valid": 3,
+  "submission_count": 3,
+  "effective_configs": [
+    {
+      "adapter": {
+        "__audit_object_type__": "vllm.lora.request.LoRARequest",
+        "base_model_name": null,
+        "load_inplace": false,
+        "lora_int_id": 1,
+        "lora_name": "emotion-companion-lora",
+        "lora_path": "/root/development/dnys/数字人综合情感陪伴对话模型/outputs/v2_final_release_20261023/release_stage/participant/model/lora_adapter",
+        "tensorizer_config_dict": null
+      },
+      "config": {
+        "__audit_object_type__": "vllm.sampling_params.SamplingParams",
+        "_all_stop_token_ids": {
+          "__audit_kind__": "set",
+          "items": [
+            151643,
+            151645
+          ],
+          "type": "builtins.set"
+        },
+        "_bad_words_token_ids": null,
+        "_eos_token_id": 151645,
+        "allowed_token_ids": null,
+        "bad_words": [],
+        "detokenize": true,
+        "extra_args": null,
+        "flat_logprobs": false,
+        "frequency_penalty": 0.0,
+        "ignore_eos": false,
+        "include_stop_str_in_output": false,
+        "logit_bias": null,
+        "logprobs": null,
+        "max_tokens": 1200,
+        "min_p": 0.0,
+        "min_tokens": 0,
+        "n": 1,
+        "output_kind": {
+          "__audit_kind__": "enum",
+          "name": "FINAL_ONLY",
+          "type": "vllm.sampling_params.RequestOutputKind",
+          "value": 2
+        },
+        "output_text_buffer_length": 0,
+        "presence_penalty": 0.0,
+        "prompt_logprobs": null,
+        "repetition_detection": null,
+        "repetition_penalty": 1.05,
+        "seed": null,
+        "skip_clone": true,
+        "skip_reading_prefix_cache": false,
+        "skip_special_tokens": true,
+        "spaces_between_special_tokens": true,
+        "stop": [],
+        "stop_token_ids": [
+          151643
+        ],
+        "structured_outputs": null,
+        "temperature": 0.0,
+        "thinking_token_budget": null,
+        "top_k": 0,
+        "top_p": 1.0
+      },
+      "config_sha256": "aa9cc58ea0d5fee309131644ce140dab06caa364b6d52b47974a0f48e65d7188",
+      "kind": "engine_submit",
+      "pid": 38290,
+      "prompt_ids_sha256": "c6a7cdd37b9c872e963ae6569eb17504adc97d8598b6592b89242acdc6976139",
+      "request_id": "chatcmpl-b4c9d4851ff085b6-a6ec3de4",
+      "serialization_protocol": "e193-audit-json-v1",
+      "stage": "REAL_ENGINE_ADD_REQUEST_SUBMISSION",
+      "time_ns": 1792729243962288087,
+      "without_rep_sha256": "793247c301dc30a66748ce1162688178d1879bb2ea0d1241dd3abfab85ac391f"
+    },
+    {
+      "adapter": {
+        "__audit_object_type__": "vllm.lora.request.LoRARequest",
+        "base_model_name": null,
+        "load_inplace": false,
+        "lora_int_id": 1,
+        "lora_name": "emotion-companion-lora",
+        "lora_path": "/root/development/dnys/数字人综合情感陪伴对话模型/outputs/v2_final_release_20261023/release_stage/participant/model/lora_adapter",
+        "tensorizer_config_dict": null
+      },
+      "config": {
+        "__audit_object_type__": "vllm.sampling_params.SamplingParams",
+        "_all_stop_token_ids": {
+          "__audit_kind__": "set",
+          "items": [
+            151643,
+            151645
+          ],
+          "type": "builtins.set"
+        },
+        "_bad_words_token_ids": null,
+        "_eos_token_id": 151645,
+        "allowed_token_ids": null,
+        "bad_words": [],
+        "detokenize": true,
+        "extra_args": null,
+        "flat_logprobs": false,
+        "frequency_penalty": 0.0,
+        "ignore_eos": false,
+        "include_stop_str_in_output": false,
+        "logit_bias": null,
+        "logprobs": null,
+        "max_tokens": 1200,
+        "min_p": 0.0,
+        "min_tokens": 0,
+        "n": 1,
+        "output_kind": {
+          "__audit_kind__": "enum",
+          "name": "FINAL_ONLY",
+          "type": "vllm.sampling_params.RequestOutputKind",
+          "value": 2
+        },
+        "output_text_buffer_length": 0,
+        "presence_penalty": 0.0,
+        "prompt_logprobs": null,
+        "repetition_detection": null,
+        "repetition_penalty": 1.05,
+        "seed": null,
+        "skip_clone": true,
+        "skip_reading_prefix_cache": false,
+        "skip_special_tokens": true,
+        "spaces_between_special_tokens": true,
+        "stop": [],
+        "stop_token_ids": [
+          151643
+        ],
+        "structured_outputs": null,
+        "temperature": 0.0,
+        "thinking_token_budget": null,
+        "top_k": 0,
+        "top_p": 1.0
+      },
+      "config_sha256": "aa9cc58ea0d5fee309131644ce140dab06caa364b6d52b47974a0f48e65d7188",
+      "kind": "engine_submit",
+      "pid": 38290,
+      "prompt_ids_sha256": "a0742cb8fc594a1f36c88413e17b1347ce2463d0168fe96f4e7b9d8417d18a3c",
+      "request_id": "chatcmpl-b9a05dbdbea24317-ab41ff34",
+      "serialization_protocol": "e193-audit-json-v1",
+      "stage": "REAL_ENGINE_ADD_REQUEST_SUBMISSION",
+      "time_ns": 1792729246017609270,
+      "without_rep_sha256": "793247c301dc30a66748ce1162688178d1879bb2ea0d1241dd3abfab85ac391f"
+    },
+    {
+      "adapter": {
+        "__audit_object_type__": "vllm.lora.request.LoRARequest",
+        "base_model_name": null,
+        "load_inplace": false,
+        "lora_int_id": 1,
+        "lora_name": "emotion-companion-lora",
+        "lora_path": "/root/development/dnys/数字人综合情感陪伴对话模型/outputs/v2_final_release_20261023/release_stage/participant/model/lora_adapter",
+        "tensorizer_config_dict": null
+      },
+      "config": {
+        "__audit_object_type__": "vllm.sampling_params.SamplingParams",
+        "_all_stop_token_ids": {
+          "__audit_kind__": "set",
+          "items": [
+            151643,
+            151645
+          ],
+          "type": "builtins.set"
+        },
+        "_bad_words_token_ids": null,
+        "_eos_token_id": 151645,
+        "allowed_token_ids": null,
+        "bad_words": [],
+        "detokenize": true,
+        "extra_args": null,
+        "flat_logprobs": false,
+        "frequency_penalty": 0.0,
+        "ignore_eos": false,
+        "include_stop_str_in_output": false,
+        "logit_bias": null,
+        "logprobs": null,
+        "max_tokens": 1200,
+        "min_p": 0.0,
+        "min_tokens": 0,
+        "n": 1,
+        "output_kind": {
+          "__audit_kind__": "enum",
+          "name": "FINAL_ONLY",
+          "type": "vllm.sampling_params.RequestOutputKind",
+          "value": 2
+        },
+        "output_text_buffer_length": 0,
+        "presence_penalty": 0.0,
+        "prompt_logprobs": null,
+        "repetition_detection": null,
+        "repetition_penalty": 1.05,
+        "seed": null,
+        "skip_clone": true,
+        "skip_reading_prefix_cache": false,
+        "skip_special_tokens": true,
+        "spaces_between_special_tokens": true,
+        "stop": [],
+        "stop_token_ids": [
+          151643
+        ],
+        "structured_outputs": null,
+        "temperature": 0.0,
+        "thinking_token_budget": null,
+        "top_k": 0,
+        "top_p": 1.0
+      },
+      "config_sha256": "aa9cc58ea0d5fee309131644ce140dab06caa364b6d52b47974a0f48e65d7188",
+      "kind": "engine_submit",
+      "pid": 38290,
+      "prompt_ids_sha256": "1d2fb17708de116f33fe54bae5cb5460fa56aa3d2b175575528cc484a49aef8a",
+      "request_id": "chatcmpl-b71067e8708dd41e-baac8dd3",
+      "serialization_protocol": "e193-audit-json-v1",
+      "stage": "REAL_ENGINE_ADD_REQUEST_SUBMISSION",
+      "time_ns": 1792729249427761992,
+      "without_rep_sha256": "793247c301dc30a66748ce1162688178d1879bb2ea0d1241dd3abfab85ac391f"
+    }
+  ],
+  "raw_output_hashes": [
+    "4d9ad910265a07c0d16e9c6eadb71f099ee4e96f1d65a4ca4f93e85908cd9e0f",
+    "f11f53ebb5145ccc180bca8c47cddedbdc2919f92a2f53682bf621d7e9bc6317",
+    "bb091e333b475e7ab6edd8fbf535fa6187f0f7c60ebe95617fe067b69c3d1456"
+  ],
+  "seconds": 86.51151181198657,
+  "performance_complete": false,
+  "performance_limitation": "3-sample entry acceptance only, not a new100sample latency estimate",
+  "GPU_peak_used_MiB": 22574,
+  "GPU_min_free_MiB": 1510,
+  "stage_path": "/root/development/dnys/数字人综合情感陪伴对话模型/outputs/v2_final_release_20261023/release_stage/participant",
+  "formal_active_unchanged_during_acceptance": true
+}

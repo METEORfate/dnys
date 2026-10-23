@@ -1,0 +1,8 @@
+{
+  "original_failure": "activate not found in non-interactive shell; no GPU/model requests",
+  "original_evidence": "/root/development/dnys/\u6570\u5b57\u4eba\u7efc\u5408\u60c5\u611f\u966a\u4f34\u5bf9\u8bdd\u6a21\u578b/outputs/v2_final_release_20261023/RELEASE_ENTRY_TEST",
+  "change": "Explicit source of existing /opt/conda/etc/profile.d/conda.sh; same conda_env",
+  "bash_syntax": "PASS",
+  "CPU_activation_output": "/opt/conda/envs/conda_env/bin/vllm\nPython 3.12.12\n",
+  "model_decoding_change": false
+}

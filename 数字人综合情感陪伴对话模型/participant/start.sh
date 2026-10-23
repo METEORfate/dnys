@@ -2,7 +2,8 @@
 set -euo pipefail
 
 # 启动虚拟环境conda_env, 名称固定，不要修改
-source activate conda_env
+source /opt/conda/etc/profile.d/conda.sh
+conda activate conda_env
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_FILE="$SCRIPT_DIR/configs/inference_config.json"
@@ -14,7 +15,7 @@ API_KEY="${VLLM_API_KEY:-}"
 START_TIMEOUT="${VLLM_START_TIMEOUT:-600}"
 PYTHON_CMD="${PYTHON_BIN:-$SCRIPT_DIR/python_env/bin/python}"
 VLLM_BIN="${VLLM_BIN:-vllm}"
-VLLM_ARGS=(--tensor-parallel-size 2) # 例如：VLLM_ARGS=(--tensor-parallel-size 2)
+VLLM_ARGS=(--tensor-parallel-size 2 --max-num-seqs 8 --max-loras 2 --max-cpu-loras 9) # 例如：VLLM_ARGS=(--tensor-parallel-size 2 --max-num-seqs 8 --max-loras 2 --max-cpu-loras 9)
 
 if [[ $# -ne 2 ]]; then
   echo "用法: $0 TEST_FILE RESULT_DIR" >&2
